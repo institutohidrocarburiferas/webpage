@@ -4,39 +4,38 @@ import { useState } from 'react'
 import { navItems } from '@constants/navItems'
 import { useRouter } from 'next/router'
 
-/*
-1. Arreglar las imagenes
-2. Agregar las rutas de las páginas debidamente
-*/
-
 export function Navbar () {
   const [collapse, setCollapse] = useState('hidden')
 
   const { pathname } = useRouter()
 
-  console.log(pathname)
-
   const handleCollapse = () => {
-    if (collapse === 'hidden') {
-      setCollapse('block')
-    } else {
-      setCollapse('hidden')
-    }
+    collapse === 'hidden'
+      ? setCollapse('block')
+      : setCollapse('hidden')
   }
+
+  /*
+      1. Logo
+      2. Hamburguer svg
+      3. Navbar Items
+        3.1 Navbar subitems
+  */
 
   return <nav className="px-2.5 sm:py-4 bg-white border-gray-200 dark:bg-gray-900 dark:border-gray-700">
     <div className="container flex flex-wrap items-center justify-between mx-auto">
       <Link href="/" >
         <a className="flex items-center">
           <Image
-          width={279}
-          height={80}
+            width={279}
+            height={80}
             src="/logoiih.jpg"
             className="h-16 mr-2 sm:h-20"
             alt="Instituto de Investigaciones Logo"
           />
         </a>
       </Link>
+
       <button
         data-collapse-toggle="navbar-default"
         type="button"
@@ -85,7 +84,7 @@ export function Navbar () {
                     : <div
                       className="block py-2 pl-3 pr-4 text-gray-700 border rounded md:border-none md:hover:bg-transparent md:border-0 md:hover:text-amber-700 md:p-0 dark:text-gray-400 md:dark:hover:text-white dark:hover:bg-gray-700 dark:hover:text-white md:dark:hover:bg-transparent"
                     >
-                      <span className={`${subItems.some(el => el.url === pathname) && styleCurrentPage} font-bold cursor-pointer`}>
+                      <span className={`${subItems.some(({ url }) => url === pathname) && styleCurrentPage} font-bold cursor-pointer`}>
                         {name}
                       </span>
                       <ul
@@ -111,9 +110,7 @@ export function Navbar () {
                         }
                       </ul>
                     </div>
-
                 }
-
               </li>)
             })
           }
