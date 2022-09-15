@@ -15,7 +15,7 @@ export function Navbar () {
       : setCollapse('hidden')
   }
 
-  return <nav className="px-2.5 py-4 bg-white dark:bg-gray-900">
+  return <nav className="px-2.5 py-4">
     <div
       className="container flex flex-wrap items-center justify-between w-full mx-auto lg:flex-nowrap">
       {/* Logo */}
@@ -71,7 +71,7 @@ export function Navbar () {
                     ? <Link href={url} >
                       <a
                         className={`${pathname === url && styleCurrentPage} block py-2 pl-3 pr-4 font-bold  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-700 dark:md:hover:text-gray-200 md:p-0 dark:text-gray-400 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent`}
-                        onClick={handleCollapse}
+                        onClick={() => setCollapse('hidden')}
                       >
                         {name}
                       </a>
@@ -95,7 +95,7 @@ export function Navbar () {
                               <Link href={url}>
                                 <a
                                   className={`${pathname === url && styleCurrentPage} block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white`}
-                                  onClick={handleCollapse}
+                                  onClick={() => setCollapse('hidden')}
                                 >
                                   {name}
                                 </a>
