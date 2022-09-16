@@ -27,17 +27,17 @@ export default function Home () {
             <NoticeCard
               title={'Poster SAMO'}
               image={'/noticias/poster-samo.png'}
-              url={'#'}
+              url={'/noticias/poster-samo'}
             />
             <NoticeCard
               title={'Perspectivas del Sector Energético del Ecuador'}
               image={'/noticias/perspectivas-sector-energetico.jpeg'}
-              url={'#'}
+              url={'/noticias/perspectivas-sector-energetico'}
             />
             <NoticeCard
               title={'Perspectivas del Sector Energético del Ecuador'}
               image={'/noticias/perspectivas-sector-energetico.jpeg'}
-              url={'#'}
+              url={'/noticias/perspectivas-sector-energetico'}
             />
           </div>
         </section>
