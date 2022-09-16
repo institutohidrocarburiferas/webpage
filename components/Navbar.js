@@ -20,7 +20,7 @@ export function Navbar () {
       className="container flex flex-wrap items-center justify-between w-full mx-auto lg:flex-nowrap">
       {/* Logo */}
       <Link href="/" >
-        <a>
+        <a onClick={() => setCollapse('hidden')}>
           <Image
             width={279}
             height={80}
