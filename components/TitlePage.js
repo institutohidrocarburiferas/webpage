@@ -1,7 +1,7 @@
 export function TitlePage ({ title, image }) {
   const bgStyle = {
     backgroundImage: `url(${image})`,
-    backgroundPosition: 'center',
+    backgroundPosition: 'top center',
     backgroundRepeat: 'no-repeat',
     backgroundSize: 'cover',
   }
