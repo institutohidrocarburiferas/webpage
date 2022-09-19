@@ -1,5 +1,10 @@
+import { PublicationCard } from '@components/PublicationCard'
 import { TitlePage } from '@components/TitlePage'
+import { Publications } from '@components/Publications'
 import Head from 'next/head'
+import { publications } from '@constants/publications'
+import { extenalLinks } from '@constants/extenalLinks'
+import { ExternalLink } from '@components/ExternalLink'
 
 export default function Publicaciones () {
   return (
@@ -12,15 +17,19 @@ export default function Publicaciones () {
 
       <TitlePage title={'Publicaciones'} image={'/prueba.png'} />
 
-      <main className='w-screen dark:text-gray-100'>
-        <section className='flex flex-col md:flex-row'>
-          <h2 className='mt-10 mb-4 text-3xl font-bold border-b-2'>Últimas publicaciones</h2>
-          <div>
-
-          </div>
-        </section>
-        <section>
-
+      <main className='container flex flex-col p-10 mx-auto justify-evenly lg:flex-row dark:text-gray-100'>
+        <Publications items={publications}/>
+        <section className='flex flex-row flex-wrap justify-center gap-10 lg:flex-col-lime-500'>
+          {
+            extenalLinks.map(({ title, image, url }) => (
+              <ExternalLink
+                key={title}
+                title={title}
+                image={image}
+                url={url}
+              />
+            ))
+            }
         </section>
 
       </main>
