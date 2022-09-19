@@ -28,6 +28,7 @@ export default function ContratosPetroleros () {
               width={752}
               height={456}
               src="/proyectos-investigacion/contratos-petroleros.png"
+              alt="Modelo económico por campo/contrato (prestación de servicios)"
             />
           </Text>
           <Text>
