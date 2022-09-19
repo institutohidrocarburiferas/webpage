@@ -1,3 +1,4 @@
+import { Return } from '@components/Return'
 import { Text } from '@components/Text'
 import { TitlePage } from '@components/TitlePage'
 import Head from 'next/head'
@@ -27,6 +28,9 @@ export default function PosterSamo () {
           <Text>
             Disponible en:
             <a className="mb-4 text-blue-700 hover:text-blue-800 active:text-blue-900" href="https://samo2022.math.fsu.edu/"> https://samo2022.math.fsu.edu/</a>
+          </Text>
+          <Text>
+            <Return text="Regresar" url="/noticias" />
           </Text>
         </article>
       </main>

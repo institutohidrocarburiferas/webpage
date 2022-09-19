@@ -1,3 +1,4 @@
+import { Return } from '@components/Return'
 import { Text } from '@components/Text'
 import { TitlePage } from '@components/TitlePage'
 import Head from 'next/head'
@@ -20,6 +21,9 @@ export default function PerspectivasSectorEnergetico () {
           </Text>
           <Text>
             Parte de los resultados de esta investigación fueron presentados en el foro sobre “Perspectivas del Sector Energético del Ecuador”, desarrollado el 11 de agosto de 2022 en donde estuvieron representantes de las instituciones públicas, privadas, gremios y académicos referente al sector hidrocarburífero del Ecuador.
+          </Text>
+          <Text>
+            <Return text="Regresar" url="/noticias" />
           </Text>
         </article>
       </main>
