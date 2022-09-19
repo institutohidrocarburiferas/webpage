@@ -14,10 +14,7 @@ export function NoticeCard ({ title, image, url }) {
     className='relative md:hover:scale-105 rounded-xl w-80 h-96'
     >
       <div
-        style = {{
-          backgroundColor: 'rgba(0,0,0,0.6)'
-        }}
-        className='absolute bottom-0 grid items-center w-full p-5 text-xl font-bold text-white h-28 rounded-b-xl'
+        className='absolute bottom-0 grid items-center w-full p-5 text-xl font-bold text-white bg-black/60 h-28 rounded-b-xl'
       >{title}</div>
 
     </a>
