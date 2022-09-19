@@ -1,4 +1,3 @@
-import { PublicationCard } from '@components/PublicationCard'
 import { TitlePage } from '@components/TitlePage'
 import { Publications } from '@components/Publications'
 import Head from 'next/head'
