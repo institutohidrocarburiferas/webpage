@@ -27,7 +27,7 @@ export function Footer ({ bgColor, image = '/prueba.png' }) {
         <span>Quito - Ecuador </span>
       </section>
 
-      <section className='flex flex-row items-center justify-center gap-5 outline md:w-1/3 place-content-center'>
+      <section className='flex flex-row items-center justify-center gap-5 md:w-1/3 place-content-center'>
         <Image
           width={341}
           height={100}
