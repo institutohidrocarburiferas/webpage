@@ -30,9 +30,7 @@ export default function Publicaciones () {
             ))
             }
         </section>
-
       </main>
-
     </div>
   )
 }

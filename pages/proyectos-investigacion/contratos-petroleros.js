@@ -13,7 +13,7 @@ export default function ContratosPetroleros () {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <TitlePage title={'Contratos petroleros'} image={'/prueba.png'} />
+      <TitlePage position={'bottom center'} title={'Contratos petroleros'} image={'/proyectos-investigacion/contratos-petroleros/contratos-petroleros.jpeg'} />
 
       <main className='w-screen dark:text-gray-100'>
         <article className="max-w-sm mx-auto my-10 sm:max-w-lg md:max-w-2xl" >
@@ -27,7 +27,7 @@ export default function ContratosPetroleros () {
             <Image
               width={752}
               height={456}
-              src="/proyectos-investigacion/contratos-petroleros.png"
+              src="/proyectos-investigacion/contratos-petroleros/img1.png"
               alt="Modelo económico por campo/contrato (prestación de servicios)"
             />
           </Text>
