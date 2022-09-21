@@ -4,7 +4,7 @@ export default function Document () {
   return (
     <Html>
       <Head />
-      <body className="dark:bg-gray-900">
+      <body className="overscroll-none dark:bg-gray-900">
         <Main />
         <NextScript />
       </body>
