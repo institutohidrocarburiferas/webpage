@@ -15,15 +15,15 @@ export function Navbar () {
       : setCollapse('hidden')
   }
 
-  return <nav className="px-2.5 py-4">
+  return <nav className="p-2.5 lg:p-0">
     <div
       className="container flex flex-wrap items-center justify-between w-full mx-auto lg:flex-nowrap">
       {/* Logo */}
       <Link href="/" >
         <a onClick={() => setCollapse('hidden')}>
           <Image
-            width={279}
-            height={80}
+            width={325}
+            height={90}
             src="/logoiih.png"
             alt="Instituto de Investigaciones Logo"
           />
