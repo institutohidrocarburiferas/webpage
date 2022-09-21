@@ -13,7 +13,7 @@ export default function PosterSamo () {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <TitlePage title={'Poster SAMO'} image={'/noticias/poster-samo.png'} />
+      <TitlePage title={'Poster SAMO'} image={'/noticias/poster-samo/poster-samo.png'} />
 
       <main className='w-screen dark:text-gray-100'>
         <article className="max-w-sm mx-auto my-10 sm:max-w-lg md:max-w-3xl" >
@@ -28,7 +28,7 @@ export default function PosterSamo () {
           </Text>
           <Text>
             Disponible en:
-            <a className="mb-4 text-blue-700 hover:text-blue-800 active:text-blue-900" href="https://samo2022.math.fsu.edu/"> https://samo2022.math.fsu.edu/</a>
+            <a className="mb-4 text-blue-700 hover:text-blue-800 active:text-blue-900" href="https://samo2022.math.fsu.edu/" target="_blank" rel="noreferrer"> https://samo2022.math.fsu.edu/</a>
           </Text>
             <Image
               width={1242}
