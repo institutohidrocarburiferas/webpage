@@ -2,8 +2,8 @@ export function TitlePage ({ title, image }) {
   const bgStyle = {
     backgroundImage: `url(${image})`,
     backgroundPosition: 'top center',
-    backgroundRepeat: 'no-repeat',
-    backgroundSize: 'cover',
+    backgroundRepeat: 'repeat',
+    // backgroundSize: 'cover',
   }
 
   return <header className='relative overflow-hidden -z-10 md:pt-0'>
