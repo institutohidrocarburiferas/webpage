@@ -2,6 +2,7 @@ import { Return } from '@components/Return'
 import { Text } from '@components/Text'
 import { TitlePage } from '@components/TitlePage'
 import Head from 'next/head'
+import Image from 'next/image'
 
 export default function PosterSamo () {
   return (
@@ -15,7 +16,7 @@ export default function PosterSamo () {
       <TitlePage title={'Poster SAMO'} image={'/noticias/poster-samo.png'} />
 
       <main className='w-screen dark:text-gray-100'>
-        <article className="max-w-sm mx-auto my-10 sm:max-w-lg md:max-w-2xl" >
+        <article className="max-w-sm mx-auto my-10 sm:max-w-lg md:max-w-3xl" >
           <Text>
             El El IIH participó con la presentación de un <strong>POSTER</strong> en el <strong><em>10th International Conference on Sensitivity Analysis of Model Output</em></strong> desarrollado desde 14th - 16th de marzo de 2022 en Tallahassee/Florida (Florida State University).
           </Text>
@@ -29,6 +30,13 @@ export default function PosterSamo () {
             Disponible en:
             <a className="mb-4 text-blue-700 hover:text-blue-800 active:text-blue-900" href="https://samo2022.math.fsu.edu/"> https://samo2022.math.fsu.edu/</a>
           </Text>
+            <Image
+              width={1242}
+              height={666}
+
+              src="/noticias/poster-samo/img1.jpg"
+              alt="Sistemas de energías funcionales"
+            />
           <Text>
             <Return text="Regresar" url="/noticias" />
           </Text>
