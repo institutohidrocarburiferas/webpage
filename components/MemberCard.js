@@ -7,10 +7,10 @@ export function MemberCard ({ name, image, openModal }) {
     className="relative w-64 h-64 bg-gray-200 rounded-md cursor-pointer md:hover:scale-105">
 
     <Image
-      className='object-cover rounded-md'
+      className='object-cover object-top rounded-md'
       src={image}
-      width={320}
-      height={320}
+      width={350}
+      height={350}
       alt={name}
     />
 

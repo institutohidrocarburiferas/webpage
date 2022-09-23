@@ -8,7 +8,7 @@ export default function MemberInfo ({ name, image, title, description }) {
     <Image
       width={200}
       height={200}
-      className="rounded-full"
+      className="object-cover object-top rounded-full"
       src={image}
       alt={name}
     />
