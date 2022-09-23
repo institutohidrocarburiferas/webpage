@@ -17,7 +17,7 @@ export default function Publicaciones () {
       <TitlePage title={'Publicaciones'} image={'/prueba.png'} />
 
       <main className='container flex flex-col p-10 mx-auto justify-evenly lg:flex-row dark:text-gray-100'>
-        <Publications items={publications}/>
+        <Publications title='Últimas publicaciones' items={publications}/>
         <section className='flex flex-row flex-wrap justify-center gap-10 lg:flex-col-lime-500'>
           {
             extenalLinks.map(({ title, image, url }) => (
