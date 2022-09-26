@@ -13,5 +13,10 @@ export const publications = [
     title: 'Understanding The Future Metabolism of Ecuador’s Energy System Using MuSIASEM (pág 109 - 110)',
     image: '/publicaciones/future-metabolism-ecuador.png',
     url: 'https://samo2022.math.fsu.edu/sites/g/files/upcbnu3196/files/2022-03/booklet.pdf#page=111'
+  },
+  {
+    title: 'Comportamiento del margen de refinación en el sector hidrocarburífero del Ecuador en el 2018',
+    image: '/publicaciones/comportamiento-margen-refinacion.jpg',
+    url: 'https://revistadigital.uce.edu.ec/index.php/RevFIG/article/view/2630/3780'
   }
 ]
