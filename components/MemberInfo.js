@@ -12,11 +12,11 @@ export default function MemberInfo ({ name, image, title, description }) {
       src={image}
       alt={name}
     />
-    <p className='pb-2 leading-normal tracking-wide border-b-2 '>{title}</p>
+    <p className='pb-2 leading-normal tracking-wide'>{title}</p>
 
     </div>
 
-    <p className='py-5 leading-loose tracking-wide text-justify lg:text-lg lg:w-4/5'>{description}</p>
+    <p className='py-5 leading-loose tracking-wide text-justify border-t-2 lg:text-lg lg:w-4/5 '>{description}</p>
 
   </div>
 }

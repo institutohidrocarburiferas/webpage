@@ -21,7 +21,7 @@ export default function Home () {
             </Text>
         </article>
         <section className='relative flex flex-col gap-10'>
-          <h2 className='px-2 py-1 mx-auto text-3xl border-b-2 sm:px-20 md:px-40'>Noticias más importantes</h2>
+          <h2 className='px-2 py-1 mx-auto text-3xl border-b-2 sm:px-20 md:px-40'>Noticias recientes</h2>
           <div className='flex flex-col items-center justify-center gap-10 pb-20 pl-4 pr-8 md:flex-row'>
 
             {
