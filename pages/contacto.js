@@ -18,6 +18,20 @@ export default function Contacto () {
         <section className='w-full h-auto'>
           <h2 className='mb-4 text-3xl font-bold border-b-2 '>Contáctanos</h2>
           <p className='text-justify'>Sus mensajes son muy importantes para nosotros. Envíe su mensaje y nos pondremos en contacto con usted.</p>
+          <div className='grid items-center justify-between w-full grid-cols-3 my-3 text-sm'>
+            <div className='text'>
+              <p className='flex items-end h-10 mx-2 border-b'>Ing. Ronny Parra, PhD</p>
+              <p className='mx-2 mt-1 italic'>rmparra@uce.edu.ec</p>
+            </div>
+            <div>
+              <p className='flex items-end h-10 mx-2 border-b'>Ing. Génesis Yánez</p>
+              <p className='mx-2 mt-1 italic'>gbyanez@uce.edu.ec</p>
+            </div>
+            <div >
+              <p className='flex items-end h-10 mx-2 border-b'>Instituto de Investigaciones Hidrocarburíferas</p>
+              <p className='mx-2 mt-1 italic'>iih@uce.edu.ec</p>
+            </div>
+          </div>
 
           <FormContact />
         </section>
