@@ -37,4 +37,10 @@ export const members = [
     title: null,
     description: 'Es profesor de la Universidad Central del Ecuador, obtuvo un título de Ingeniero de Petróleos en la Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental de la Universidad Central del Ecuador y una Maestría en Salud y Seguridad Ocupacional con mención en Prevención de Riesgos Laborales de la Universidad Internacional SEK. Posee experiencia como Ingeniero de Operaciones en el área de perforación y reacondicionamiento de pozos; Técnico de Seguridad en programas de identificación, medición, evaluación y control de los riesgos laborales. Adicionalmente, se encuentra coordinando el programa de Maestría en Ingeniería de Petróleos con mención en Recuperación Mejorada.'
   },
+  {
+    name: 'Carlos Carrillo',
+    image: '/integrantes/Carlos-Carrillo.png',
+    title: 'Integración de procesos hidrocaburíferos y energéticos con ciencia de datos y desarrollo de algoritmos en lenguaje de programación Python y R para análisis de la información.',
+    description: 'Es Ingeniero de Implementación Digital de activos en la empresa Schlumberger, fue profesor de las carreras de Desarrollo de Software y Redes y Telecomunicaciones, donde se desempeñó como líder de investigación y director de vinculación con la sociedad en el Instituto Tecnológico Superior Quito Metropolitano. En la Universidad IEXE – México obtuvo el grado de Máster en Tecnologías de la Información y Comunicación. En Ecuador obtuvo una Ingeniera de Petróleo en la Universidad Central del Ecuador. Es Investigador independiente y participe de proyectos ambientales, económicos, hidrocarburíferos, geotérmicos, de digitalización y automatización. Con su experiencia ha desarrollado cursos de formación y aprendizaje basado en proyectos del lenguaje de programación Python dictado a estudiantes universitarios, jóvenes profesionales y profesionales senior para su actualización de conocimientos.'
+  },
 ]
