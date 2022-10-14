@@ -31,10 +31,21 @@ const useStyles = createStyles((theme, _params, getRef) => ({
     textTransform: 'uppercase',
   },
 
+  indicators: {
+    button: {
+      backgroundColor: 'white'
+    }
+  },
+
   controls: {
     ref: getRef('controls'),
     transition: 'opacity 150ms ease',
     opacity: 0,
+
+    button: {
+      fontSize: 25,
+      backgroundColor: 'white',
+    }
   },
 
   root: {
@@ -71,7 +82,7 @@ function Card ({ image, title, url }) {
   )
 }
 
-export function Slider ({ data }) {
+export function Slider ({ data, indicators = false }) {
   const { classes } = useStyles()
   const autoplay = useRef(Autoplay({ delay: 3000 }))
   const slides = data.map((item) => (
@@ -91,7 +102,7 @@ export function Slider ({ data }) {
       onMouseEnter={autoplay.current.stop}
       onMouseLeave={autoplay.current.reset}
       loop
-      withIndicators
+      withIndicators={indicators}
       speed={4}
     >
       {slides}

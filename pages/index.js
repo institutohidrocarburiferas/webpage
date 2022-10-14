@@ -14,7 +14,7 @@ export default function Home () {
 
       <HeroTitle />
       <main className='container mx-auto dark:text-gray-100'>
-      <section className='flex flex-col gap-5 my-12'>
+      <section className='flex flex-col gap-5 p-5 my-12'>
           <h2 className='px-2 py-1 mx-auto text-3xl border-b-2 sm:px-20 md:px-40'>Noticias más importantes</h2>
           <Slider data={notices}/>
       </section>
