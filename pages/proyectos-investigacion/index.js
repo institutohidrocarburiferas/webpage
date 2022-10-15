@@ -21,10 +21,17 @@ export default function Publicaciones ({ allPostsData }) {
       />
       <main>
         <section className='flex flex-col gap-5 p-5'>
-          <Slider data={allPostsData} />
+          <Slider
+            data={allPostsData}
+            urlPath={'/proyectos-investigacion'}
+          />
         </section>
         <section className='container flex flex-col p-10 mx-auto justify-evenly lg:flex-row dark:text-gray-100'>
-          <Posts items={allPostsData} title={'Proyectos recientes'} />
+          <Posts
+            items={allPostsData}
+            title={'Proyectos recientes'}
+            urlPath={'/proyectos-investigacion'}
+          />
           <section className='flex flex-row flex-wrap justify-center gap-10 lg:flex-col-lime-500'>
             {extenalLinks.map(({ title, image, url }) => (
               <ExternalLink
@@ -47,7 +54,7 @@ export async function getStaticProps () {
   const allPostsData = getPostsData(dataDirectory)
   return {
     props: {
-      allPostsData
+      allPostsData,
     }
   }
 }

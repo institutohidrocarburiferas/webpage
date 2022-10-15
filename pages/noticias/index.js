@@ -18,11 +18,18 @@ export default function Noticias ({ allPostsData }) {
 
       <main className='w-screen dark:text-gray-100'>
         <section className='flex flex-col gap-5 p-5'>
-          <Slider data={allPostsData} />
+          <Slider
+            data={allPostsData}
+            urlPath={'/noticias'}
+          />
         </section>
         <section className='relative'>
           <div className='flex flex-col flex-wrap items-center justify-center gap-10 pt-10 pb-40 pl-4 pr-8 mt-10 md:flex-row'>
-            <Posts items={allPostsData} title={'Noticias recientes'} />
+            <Posts
+              items={allPostsData}
+              title={'Noticias recientes'}
+              urlPath={'/noticias'}
+            />
           </div>
         </section>
       </main>

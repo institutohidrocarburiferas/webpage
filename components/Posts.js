@@ -8,7 +8,7 @@ function Card ({ title, image, url, date }) {
       <div
         className='grid w-20 h-20 place-content-center'>
         <Image
-          className='object-cover object-center-top bg-gray-500 rounded-lg'
+          className='object-cover bg-gray-500 rounded-lg object-center-top'
           width={180}
           height={180}
           src={image}
@@ -25,14 +25,14 @@ function Card ({ title, image, url, date }) {
   </Link>
 }
 
-export function Posts ({ items, title }) {
+export function Posts ({ items, title, urlPath }) {
   const posts = items.map(({ id, date, title, image }) => (
     <Card
       key={title}
       title={title}
       image={image}
       date={date}
-      url={`/noticias/${id}`}
+      url={`${urlPath}/${id}`}
     />
   ))
 

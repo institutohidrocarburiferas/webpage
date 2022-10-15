@@ -58,38 +58,38 @@ const useStyles = createStyles((theme, _params, getRef) => ({
   },
 }))
 
-function Card ({ id, title, image, date }) {
+function Card ({ id, title, image, date, urlPath }) {
   const { classes } = useStyles()
 
   return (
-    <Link href={`/noticias/${id}`} >
+    <Link href={`${urlPath}/${id}`} >
       <a >
-      <Paper
-      shadow="md"
-      p="xl"
-      radius="md"
-      sx={{ backgroundImage: `url(${image})` }}
-      className={classes.card}
-    >
-      <div>
+        <Paper
+          shadow="md"
+          p="xl"
+          radius="md"
+          sx={{ backgroundImage: `url(${image})` }}
+          className={classes.card}
+        >
+          <div>
 
-        <Title order={3} className={classes.title}>
-         {title}
-        </Title>
-      </div>
-    </Paper>
+            <Title order={3} className={classes.title}>
+              {title}
+            </Title>
+          </div>
+        </Paper>
       </a>
     </Link>
 
   )
 }
 
-export function Slider ({ data, indicators = false }) {
+export function Slider ({ data, urlPath, indicators = false }) {
   const { classes } = useStyles()
   const autoplay = useRef(Autoplay({ delay: 3000 }))
   const slides = data.slice(0, 4).map((item) => (
     <Carousel.Slide key={item.title}>
-      <Card {...item} />
+      <Card {...item} urlPath={urlPath} />
     </Carousel.Slide>
   ))
 

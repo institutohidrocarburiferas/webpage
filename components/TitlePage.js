@@ -6,15 +6,15 @@ export function TitlePage ({ title, image }) {
     // backgroundSize: 'cover',
   }
 
-  return <header className='relative overflow-hidden -z-10 md:pt-0 h-48'>
+  return <header className='relative h-48 overflow-hidden -z-10 md:pt-0'>
     {/* Background image */}
     <section
       style={bgStyle}
-      className="w-full h-full absolute -z-20">
+      className="absolute w-full h-full -z-20">
     </section>
     {/* Title */}
     <h1
-      className="bg-black/40 h-full grid place-content-center text-center px-8 lg:px-40 pb-20 text-2xl font-bold tracking-wider text-white sm:text-3xl dark:text-gray-100"
+      className="grid h-full px-4 pb-20 text-xl font-bold tracking-wider text-center text-white bg-black/40 place-content-center xl:px-40 sm:text-2xl lg:text-3xl lg:px-20 dark:text-gray-100"
     >
       {title}
     </h1>
