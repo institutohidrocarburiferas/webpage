@@ -1,0 +1,31 @@
+.content{
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+  margin: 1rem 0;
+  font-size: clamp(1rem, 0.5rem + 1.5vw, 1.25rem);
+}
+.content > p{
+  line-height: 1.5;
+  text-align: justify;
+}
+
+.content > ul{
+  padding: 0 2rem;
+}
+
+.content ul > li{
+  list-style: initial;
+}
+
+.content a{
+  color: #2563eb;
+}
+
+.content a:hover{
+  color: #1e40af
+}
+
+.content a:active{
+  color: #1e3a8a
+}
