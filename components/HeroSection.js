@@ -65,7 +65,7 @@ const useStyles = createStyles((theme) => ({
   },
 }))
 
-export function HeroTitle () {
+export function HeroSection ({ title, text }) {
   const { classes } = useStyles()
   return (
     <div className={classes.root}>
@@ -73,21 +73,17 @@ export function HeroTitle () {
         <div className={classes.inner}>
           <div className={classes.content}>
             <Title className={classes.title}>
-
               <Text
                 component="span"
                 inherit
                 variant="gradient"
                 gradient={{ from: 'pink', to: 'yellow' }}
-
               >
-                Descripción del Instituto
+                {title}
               </Text>
-
             </Title>
-
             <Text className={classes.description} mt={30}>
-            IIH es un organismo de investigación que desarrolla investigaciones hidrocarburíferas y de energía bajo la comprensión profunda de aspectos cruciales en la relación de los sistemas socioeconómicos y los ecosistemas; tales como: peak oil, limitaciones biofísicas, transición y descarbonización de las economías y sistemas de gobernanza, incluidas las formas de abordar nuestros patrones de producción y consumo. Finalmente contribuye al debate de sostenibilidad más allá de la ilusión de una disponibilidad energética ilimitada y una solución tecnológica.
+                {text}
             </Text>
           </div>
         </div>

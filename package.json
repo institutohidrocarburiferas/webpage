@@ -10,18 +10,22 @@
     "lint": "next lint"
   },
   "dependencies": {
-    "@emotion/react": "^11.10.4",
-    "@emotion/server": "^11.10.0",
-    "@mantine/carousel": "^5.5.5",
-    "@mantine/core": "^5.5.5",
-    "@mantine/ds": "^5.5.5",
-    "@mantine/hooks": "^5.5.5",
-    "@mantine/next": "^5.5.5",
+    "@emotion/react": "11.10.4",
+    "@emotion/server": "11.10.0",
+    "@mantine/carousel": "5.5.5",
+    "@mantine/core": "5.5.5",
+    "@mantine/ds": "5.5.5",
+    "@mantine/hooks": "5.5.5",
+    "@mantine/next": "5.5.5",
     "autoprefixer": "10.4.9",
-    "embla-carousel-autoplay": "^7.0.3",
+    "date-fns": "^2.29.3",
+    "embla-carousel-autoplay": "7.0.3",
+    "gray-matter": "^4.0.3",
     "next": "12.3.0",
     "react": "18.2.0",
-    "react-dom": "18.2.0"
+    "react-dom": "18.2.0",
+    "remark": "14.0.2",
+    "remark-html": "15.0.1"
   },
   "devDependencies": {
     "eslint": "8.23.0",
