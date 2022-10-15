@@ -1,7 +1,7 @@
 ---
 title: "Postulación al Grand Challenge de Minería Artesanal y Pequeña Minería en la Amazonía 2021"
 date: "2020-01-01"
-image: "/noticias/postulacion-grand-challenge-mineria/index.jpg"
+image: "/noticias/postulacion-grand-challenge-mineria.jpg"
 ---
 
 Investigadores del IIH en conjunto con docentes investigadores de la FIGEMPA y de IKIAM postularon al Gran Reto de Minería Artesanal: La Amazonía con la propuesta denominada Sistema de Monitoreo de Bioindicadores “ANZU”.

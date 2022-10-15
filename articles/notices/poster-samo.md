@@ -1,7 +1,7 @@
 ---
 title: 'Presentación del poster “Understanding The Future Metabolism of Ecuador’s Energy System Using MuSIASEM”  '
 date: "2020-01-01"
-image: "/noticias/poster-samo/index.png"
+image: "/noticias/poster-samo.png"
 ---
 
 El IIH participó con la presentación de un **POSTER** en el ***10th International Conference on Sensitivity Analysis of Model Output*** desarrollado desde 14th - 16th de marzo de 2022 en Tallahassee/Florida (Florida State University).
@@ -12,4 +12,4 @@ El documento fue ***PUBLICADO*** en el libro de actas del congreso internacional
 
 Disponible en: [https://samo2022.math.fsu.edu/](https://samo2022.math.fsu.edu/)
 
-![Sistemas de energías funcionales](/noticias/poster-samo/01-sistemas-energias-funcionales.jpg)
+![Sistemas de energías funcionales](/noticias/poster-samo-sistemas-energias-funcionales.jpg)

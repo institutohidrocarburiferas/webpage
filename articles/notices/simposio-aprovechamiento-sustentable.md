@@ -1,7 +1,7 @@
 ---
 title: 'El Instituto de Investigaciones Hidrocarburíferas participa en el primer Simposio "Aprovechamiento sustentable de recursos naturales y energéticos"'
 date: "2020-01-01"
-image: "/noticias/simposio-aprovechamiento-sustentable/index.jpeg"
+image: "/noticias/simposio-aprovechamiento-sustentable.jpeg"
 ---
 
 Investigadores del IIH en conjunto con docentes investigadores de la FIGEMPA y de IKIAM postularon al Gran Reto de Minería Artesanal: La Amazonía con la propuesta denominada Sistema de Monitoreo de Bioindicadores “ANZU”.
