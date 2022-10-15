@@ -22,6 +22,7 @@ const useStyles = createStyles((theme, _params, getRef) => ({
     lineHeight: 1.2,
     fontSize: 32,
     marginTop: theme.spacing.xs,
+    textShadow: '2px 2px 2px black'
   },
 
   category: {
@@ -57,11 +58,11 @@ const useStyles = createStyles((theme, _params, getRef) => ({
   },
 }))
 
-function Card ({ image, title, url }) {
+function Card ({ id, title, image, date }) {
   const { classes } = useStyles()
 
   return (
-    <Link href={url} >
+    <Link href={`/noticias/${id}`} >
       <a >
       <Paper
       shadow="md"
@@ -71,8 +72,9 @@ function Card ({ image, title, url }) {
       className={classes.card}
     >
       <div>
+
         <Title order={3} className={classes.title}>
-          {title}
+         {title}
         </Title>
       </div>
     </Paper>
@@ -85,7 +87,7 @@ function Card ({ image, title, url }) {
 export function Slider ({ data, indicators = false }) {
   const { classes } = useStyles()
   const autoplay = useRef(Autoplay({ delay: 3000 }))
-  const slides = data.map((item) => (
+  const slides = data.slice(0, 6).map((item) => (
     <Carousel.Slide key={item.title}>
       <Card {...item} />
     </Carousel.Slide>
