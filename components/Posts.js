@@ -16,11 +16,10 @@ function Card ({ title, image, url, date }) {
         />
       </div>
       <div className='w-3/4 '>
-      <div className='font-semibold'>
-        {title}
-      </div>
+        <div className='font-semibold'>
+          {title}
+        </div>
         <Date dateString={date} />
-
       </div>
     </a>
   </Link>
@@ -42,7 +41,7 @@ export function Posts ({ items, title }) {
       {title}
     </h2>
     <div className='flex flex-col gap-2'>
-      { posts }
+      {posts}
     </div>
   </section>
 }
