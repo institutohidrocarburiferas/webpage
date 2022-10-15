@@ -87,7 +87,7 @@ function Card ({ id, title, image, date }) {
 export function Slider ({ data, indicators = false }) {
   const { classes } = useStyles()
   const autoplay = useRef(Autoplay({ delay: 3000 }))
-  const slides = data.slice(0, 6).map((item) => (
+  const slides = data.slice(0, 4).map((item) => (
     <Carousel.Slide key={item.title}>
       <Card {...item} />
     </Carousel.Slide>

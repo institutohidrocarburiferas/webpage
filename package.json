@@ -18,14 +18,18 @@
     "@mantine/hooks": "5.5.5",
     "@mantine/next": "5.5.5",
     "autoprefixer": "10.4.9",
-    "date-fns": "^2.29.3",
+    "date-fns": "2.29.3",
     "embla-carousel-autoplay": "7.0.3",
-    "gray-matter": "^4.0.3",
+    "gray-matter": "4.0.3",
     "next": "12.3.0",
     "react": "18.2.0",
     "react-dom": "18.2.0",
-    "remark": "14.0.2",
-    "remark-html": "15.0.1"
+    "rehype-raw": "6.1.1",
+    "rehype-sanitize": "5.0.1",
+    "rehype-stringify": "9.0.3",
+    "remark-parse": "10.0.1",
+    "remark-rehype": "10.1.0",
+    "unified": "10.1.2"
   },
   "devDependencies": {
     "eslint": "8.23.0",
