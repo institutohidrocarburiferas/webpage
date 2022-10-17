@@ -7,9 +7,12 @@ const useStyles = createStyles((theme) => ({
     backgroundPosition: 'center',
     backgroundImage:
       'linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80)',
-    paddingTop: theme.spacing.xl * 3,
-    paddingBottom: theme.spacing.xl * 3,
-    height: 'auto'
+    paddingTop: theme.spacing.xl * 8,
+    paddingBottom: theme.spacing.xl * 4,
+    paddingRight: theme.spacing.xl * 2,
+    paddingLeft: theme.spacing.xl * 2,
+
+    height: '100vh'
   },
 
   inner: {
@@ -55,7 +58,7 @@ const useStyles = createStyles((theme) => ({
   description: {
     color: theme.white,
     opacity: 0.75,
-    maxWidth: 600,
+    maxWidth: 1000,
     textAlign: 'justify',
     fontSize: theme.fontSizes.xl,
 

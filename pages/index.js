@@ -4,6 +4,7 @@ import { Footer } from '@components/Footer'
 import { getPostsData } from '@utils/posts'
 import path from 'node:path'
 import Head from 'next/head'
+// import { TitlePage } from '@components/TitlePage'
 
 const content = {
   title: 'Nosotros',
@@ -17,7 +18,7 @@ export default function Home ({ allPostsData }) {
         <title>{titlePage}</title>
         <meta name="description" content={titlePage} />
       </Head>
-
+      {/* <TitlePage image={'/prueba.png'} /> */}
       <HeroSection
         title={content.title}
         text={content.text}
