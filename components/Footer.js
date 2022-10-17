@@ -27,17 +27,10 @@ export function Footer ({ bgColor, image = '/prueba.png' }) {
     >
       {/* Left section */}
       <section className='text-3xl md:text-xl lg:text-3xl md:w-1/4'>
-        <Image
-          width={341}
-          height={100}
-          className="bg-white rounded-lg"
-          src="/logoiih.png"
-          alt="Instituto de Investigaciones Logo"
-        />
       </section>
 
       {/* Middle section */}
-      <section className='flex flex-col gap-1 md:w-1/2 '>
+      <section className='flex flex-col text-sm md:w-1/2 '>
         <span>Universidad Central del Ecuador</span>
         <span>Ingreso por las Calles Jerónimo Leyton y Gilberto Gatto Sobral </span>
         <span>Facultad de Ingeniería en Geología, Petróleos, Minas y Ambiental - FIGEMPA </span>
@@ -48,8 +41,8 @@ export function Footer ({ bgColor, image = '/prueba.png' }) {
       {/* Right section */}
       <section className='flex flex-col items-center justify-center gap-5 md:w-1/4 place-content-center'>
         <Image
-          width={150}
-          height={150}
+          width={100}
+          height={100}
           src="/UCE-logo.png"
           alt="Universidad Central del Ecuador Logo"
         />
