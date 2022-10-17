@@ -28,7 +28,10 @@ export default function Home ({ allPostsData }) {
           <h2 className='px-2 py-1 mx-auto text-3xl border-b-2 sm:px-20 md:px-40'>
             Noticias recientes
           </h2>
-          <Slider data={allPostsData} />
+          <Slider
+            data={allPostsData}
+            urlPath={'/noticias'}
+          />
         </section>
       </main>
       <Footer />
