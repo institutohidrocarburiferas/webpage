@@ -73,27 +73,27 @@ export function Navbar () {
                   (subItems === undefined)
                     ? <Link href={url} >
                       <a
-                        className={`${pathname === url && styleCurrentPage} block py-2 pl-3 pr-4 font-bold  rounded hover:bg-gray-100 md:hover:bg-transparent md:border-0 md:hover:text-amber-700 dark:md:hover:text-gray-200 md:p-0 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-gray-100 md:dark:hover:bg-transparent`}
+                        className={`${pathname === url && `${styleCurrentPage} md:border-amber-600`} rounded transition-colors delay-75 md:border-b-2 md:rounded-none border-transparent hover:md:border-amber-700 block py-2 pl-3 pr-4 font-bold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-amber-700  md:py-2 md:px-0 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-amber-700 dark:hover:md:border-amber-700 md:dark:hover:bg-transparent`}
                         onClick={() => setCollapse('hidden')}
                       >
                         {name}
                       </a>
                     </Link>
                     : <div
-                      className="block py-2 pl-3 pr-4 text-gray-700 border rounded md:border-none md:hover:bg-transparent md:border-0 md:hover:text-amber-700 dark:md:hover:text-gray-200 md:p-0 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent dark:border-gray-600"
+                      className={`${subItems.some(({ url }) => url === pathname) && 'md:border-amber-600 md:border-b-2'} block py-2 pl-3 pr-4 text-gray-700 border rounded  md:hover:bg-transparent md:rounded-none md:border-0 md:hover:text-amber-700 dark:md:hover:text-gray-200 md:px-0 md:py-2 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent dark:border-gray-600`}
                     >
-                      <span className={`${subItems.some(({ url }) => url === pathname) && styleCurrentPage} font-bold cursor-pointer`}>
+                      <span className={`${subItems.some(({ url }) => url === pathname) && 'text-amber-600 dark:text-amber-500'} font-bold md:cursor-pointer `}>
                         {name}
                       </span>
                       <ul
-                        className="block rounded-md md:border md:block md:transition-opacity md:delay-300 md:opacity-0 md:absolute group-hover:opacity-100 group-hover:transition-opacity dark:hover:bg-gray-700 dark:bg-gray-700 dark:border-gray-600 "
+                        className={`${subItems.some(({ url }) => url === pathname) && styleCurrentPage} block rounded-md md:pointer-events-none md:border md:block md:transition-opacity md:delay-300 group-hover:md:delay-75 md:opacity-0 md:absolute group-hover:opacity-100 group-hover:pointer-events-auto group-hover:transition-opacity dark:hover:bg-gray-700 dark:bg-gray-700 dark:border-gray-600`}
                       >
                         {
                           subItems.map(({ name, url }) => (
 
                             <li
                               key={name}
-                              className="py-1 text-sm text-gray-700 md:bg-white dark:text-gray-200 dark:md:bg-gray-700"
+                              className="py-1 text-sm font-semibold text-gray-700 md:bg-white dark:text-gray-200 dark:md:bg-gray-700"
                             >
                               <Link href={url}>
                                 <a
