@@ -21,8 +21,12 @@ export const navItems = [
     url: '/publicaciones',
   },
   {
-    name: 'Proyectos de investigación',
+    name: 'Proyectos',
     url: '/proyectos-investigacion',
+  },
+  {
+    name: 'Evento',
+    url: '/evento',
   },
   {
     name: 'Noticias',
