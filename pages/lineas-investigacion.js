@@ -24,7 +24,7 @@ const pageContent = {
   {
     label: 'Energía',
     items: [
-      'Relaciones economía, ambiente y sociedad',
+      'Energía, ambiente y cambio climático',
       'Relaciones economía, ambiente y sociedad',
       'Transición energética',
     ]
