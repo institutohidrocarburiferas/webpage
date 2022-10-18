@@ -1,56 +1,59 @@
-import { TitlePage } from '@components/TitlePage'
-import Head from 'next/head'
-import { extenalLinks } from '@constants/extenalLinks'
 import { ExternalLink } from '@components/ExternalLink'
-import { getPostsData } from '@utils/posts'
-import path from 'node:path'
-import { Slider } from '@components/Slider'
+import { Content } from '@components/Content'
 import { Posts } from '@components/Posts'
-import { Footer } from '@components/Footer'
+import { Slider } from '@components/Slider'
+import path from 'node:path'
+import { getPostsData } from '@utils/posts'
+import { extenalLinks } from '@constants/extenalLinks'
 
-export default function Publicaciones ({ allPostsData }) {
+const pageData = {
+  title: 'Proyectos de investigación',
+  description: 'Proyectos de investigación',
+  image: '/prueba.png',
+  mainURL: '/proyectos-investigacion',
+  postsTitle: 'Proyectos recientes',
+}
+
+export default function Proyectos ({ allPostsData }) {
+  const links = extenalLinks.map(({ title, image, url }) => (
+    <ExternalLink
+      key={title}
+      title={title}
+      image={image}
+      url={url}
+    />
+  ))
+
   return (
-    <div className="overflow-hidden ">
-      <Head>
-        <title>Proyectos de investigación | IIH</title>
-        <meta name="description" content="Proyectos de investigación IIH" />
-      </Head>
-      <TitlePage
-        title={'Proyectos de investigación'}
-        image={'/prueba.png'}
-      />
+    <Content
+      title={pageData.title}
+      image={pageData.image}
+      description={pageData.description}
+    >
       <main>
         <section className='flex flex-col gap-5 p-5'>
           <Slider
             data={allPostsData}
-            urlPath={'/proyectos-investigacion'}
+            urlPath={pageData.mainURL}
           />
         </section>
         <section className='container flex flex-col p-10 mx-auto justify-evenly lg:flex-row dark:text-gray-100'>
           <Posts
             items={allPostsData}
-            title={'Proyectos recientes'}
-            urlPath={'/proyectos-investigacion'}
+            title={pageData.postsTitle}
+            urlPath={pageData.mainURL}
           />
           <section className='flex flex-row flex-wrap justify-center gap-10 lg:flex-col-lime-500'>
-            {extenalLinks.map(({ title, image, url }) => (
-              <ExternalLink
-                key={title}
-                title={title}
-                image={image}
-                url={url}
-              />
-            ))}
+            {links}
           </section>
         </section>
       </main>
-      <Footer />
-    </div>
+    </Content>
   )
 }
 
 export async function getStaticProps () {
-  const dataDirectory = path.join(process.cwd(), 'articles', 'proyectos-investigacion')
+  const dataDirectory = path.join(process.cwd(), 'articles', pageData.mainURL)
   const allPostsData = getPostsData(dataDirectory)
   return {
     props: {
