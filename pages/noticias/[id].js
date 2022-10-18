@@ -7,7 +7,7 @@ import { TitlePage } from '@components/TitlePage'
 import path from 'node:path'
 import { Footer } from '@components/Footer'
 
-const dataDirectory = path.join(process.cwd(), 'articles', 'notices')
+const dataDirectory = path.join(process.cwd(), 'articles', 'noticias')
 
 export default function Post ({ postData }) {
   return (

@@ -39,7 +39,7 @@ export default function Noticias ({ allPostsData }) {
 }
 
 export async function getStaticProps () {
-  const dataDirectory = path.join(process.cwd(), 'articles', 'notices')
+  const dataDirectory = path.join(process.cwd(), 'articles', 'noticias')
   const allPostsData = getPostsData(dataDirectory)
   return {
     props: {
