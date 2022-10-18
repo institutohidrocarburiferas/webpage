@@ -1,8 +1,8 @@
 import { Content } from '@components/Content'
 
 const pageContent = {
-  title: 'Resumen',
-  description: 'Resumen IIH',
+  title: 'Líneas de investigación',
+  description: 'Líneas de investigación IIH',
   image: '/prueba.png',
   content: [{
     label: 'Hidrocarburos',
