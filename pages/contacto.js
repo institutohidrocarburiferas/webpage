@@ -1,44 +1,68 @@
+import { Content } from '@components/Content'
 import { FormContact } from '@components/FormContact'
-import { TitlePage } from '@components/TitlePage'
-import Head from 'next/head'
+import { PageMap } from '@components/PageMap'
+
+const pageData = {
+  title: 'Contacto',
+  description: 'Contacto IIH',
+  image: '/prueba.png',
+  content: {
+    title: 'Contáctenos',
+    intro: 'Sus mensajes son muy importantes para nosotros. Envíe su mensaje y nos pondremos en contacto con usted.',
+  },
+  contacts: [
+    {
+      name: 'Ing. Ronny Parra, PhD',
+      role: 'Director del instituto',
+      email: 'rmparra@uce.edu.ec',
+    },
+    {
+      name: 'Ing. Génesis Yánez',
+      role: 'Técnica de investigación',
+      email: 'gbyanez@uce.edu.ec',
+    },
+    {
+      name: 'Instituto de Investigaciones Hidrocarburíferas',
+      role: 'IIH',
+      email: 'iih@uce.edu.ec',
+    }
+  ]
+}
 
 export default function Contacto () {
+  const contacts = pageData.contacts.map(({ name, role, email }) => (
+    <div key={name}>
+      <p className='flex items-end h-10 mx-2 border-b'>{name}</p>
+      <p className='mx-2 mt-1 font-bold'>{role}</p>
+      <a
+        className='mx-2 mt-1 italic text-blue-500 transition-colors hover:text-blue-700 active:text-blue-900'
+        href={`mailto:${email}?subject=Envío%20desde%20la%20página%20web`}
+      >{email}</a>
+    </div>
+  ))
+
   return (
-    <div className="overflow-hidden ">
-      <Head>
-        <title>Contacto | IIH</title>
-        <meta name="description" content="Contacto IIH" />
-        <link rel="icon" href="/favicon.ico" />
-      </Head>
-
-      <TitlePage title={'Contacto'} image={'/prueba.png'} />
-
+    <Content
+      title={pageData.title}
+      description={pageData.description}
+      image={pageData.image}
+    >
       <main
         className='container flex flex-col gap-10 p-10 mx-auto lg:flex-row dark:text-gray-100'>
         <section className='w-full h-auto'>
-          <h2 className='mb-4 text-3xl font-bold border-b-2 '>Contáctanos</h2>
-          <p className='text-justify'>Sus mensajes son muy importantes para nosotros. Envíe su mensaje y nos pondremos en contacto con usted.</p>
-          <div className='grid items-center justify-between w-full grid-cols-3 my-3 text-sm'>
-            <div className='text'>
-              <p className='flex items-end h-10 mx-2 border-b'>Ing. Ronny Parra, PhD</p>
-              <p className='mx-2 mt-1 italic'>rmparra@uce.edu.ec</p>
-            </div>
-            <div>
-              <p className='flex items-end h-10 mx-2 border-b'>Ing. Génesis Yánez</p>
-              <p className='mx-2 mt-1 italic'>gbyanez@uce.edu.ec</p>
-            </div>
-            <div >
-              <p className='flex items-end h-10 mx-2 border-b'>Instituto de Investigaciones Hidrocarburíferas</p>
-              <p className='mx-2 mt-1 italic'>iih@uce.edu.ec</p>
-            </div>
-          </div>
+          <h2 className='mb-4 text-3xl font-bold border-b-2'>{pageData.content.title}</h2>
+          <p className='text-justify'>{pageData.content.intro}</p>
 
           <FormContact />
         </section>
-        <section className='flex items-center w-full'>
-          <iframe className='w-full my-5 bg-gray-200 border-none h-96' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d1633.523216604791!2d-78.50632653609885!3d-0.1979361398090739!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59bce634c7bd1%3A0x5524fd4fb24b9237!2sInstituto%20de%20Investigaciones%20Hidrocarbur%C3%ADferas!5e0!3m2!1ses!2sec!4v1663768367878!5m2!1ses!2sec" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+        <section className='flex flex-col items-center w-full'>
+        <div className='grid items-center justify-between w-full grid-cols-3 my-3 text-sm'>
+            {contacts}
+          </div>
+          <PageMap />
         </section>
       </main>
-    </div>
+    </Content>
+
   )
 }
