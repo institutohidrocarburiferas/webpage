@@ -2,7 +2,7 @@ import Image from 'next/image'
 
 export function Footer ({
   svgColor = 'fill-white dark:fill-gray-900',
-  image = '/prueba.png'
+  image,
 }
 ) {
   const bgStyle = {
