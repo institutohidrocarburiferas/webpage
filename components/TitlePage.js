@@ -6,7 +6,7 @@ export function TitlePage ({ title, image }) {
     // backgroundSize: 'cover',
   }
 
-  return <header className='relative h-48 mt-24 overflow-hidden'>
+  return <header className='relative h-48 overflow-hidden'>
     {/* Background image */}
     <section
       style={bgStyle}

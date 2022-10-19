@@ -1,0 +1,58 @@
+.container{
+  display: none;
+  position: fixed;
+  top: 0;
+  width: auto;
+  height: 100%;
+  padding: 7rem 0.5rem 0;
+  background: rgb(252,211,77);
+  background: linear-gradient(129deg, rgba(252,211,77,1) 0%, rgba(255,255,255,1) 45%);
+  border-right: rgba(0,0,0,0.5) 1px solid;
+  z-index: 5;
+
+}
+
+.container:hover  p {
+  display: block;
+}
+
+.item{
+  display: flex;
+  align-items: center;
+  gap: 0.75rem;
+  cursor: pointer;
+  border-radius: 5px;
+  padding: 0.5rem;
+}
+
+.item:hover{
+  background-color: rgba(0,0,0,0.1);
+}
+
+.item > p{
+  display: none;
+  font-size: 1rem;
+  font-weight: 500;
+}
+
+.item > svg{
+  width: 30px;
+  height: 30px;
+}
+
+
+
+
+@media (min-width: 768px) {
+  .container {
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+  }
+
+  .container:nth-child(1){
+    padding: 1.5rem 0 0 0;
+    background-color: red;
+  }
+}
+
