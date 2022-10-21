@@ -35,8 +35,8 @@ export const items = [
   </svg>
   },
   {
-    label: 'Programa',
-    url: '#programa',
+    label: 'Agenda',
+    url: '#agenda',
     image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-calendar-time" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
     <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
     <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
@@ -80,16 +80,16 @@ export const items = [
   </svg>
 
   },
-  {
-    label: 'Registro-Formulario',
-    url: '#registro',
-    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-file-search" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
-    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-    <path d="M14 3v4a1 1 0 0 0 1 1h4" />
-    <path d="M12 21h-5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v4.5" />
-    <circle cx="16.5" cy="17.5" r="2.5" />
-    <line x1="18.5" y1="19.5" x2="21" y2="22" />
-  </svg>
+  // {
+  //   label: 'Registro-Formulario',
+  //   url: '#registro',
+  //   image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-file-search" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
+  //   <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  //   <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+  //   <path d="M12 21h-5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v4.5" />
+  //   <circle cx="16.5" cy="17.5" r="2.5" />
+  //   <line x1="18.5" y1="19.5" x2="21" y2="22" />
+  // </svg>
 
-  },
+  // },
 ]

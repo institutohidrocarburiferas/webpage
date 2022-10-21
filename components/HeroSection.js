@@ -7,12 +7,13 @@ const useStyles = createStyles((theme) => ({
     backgroundPosition: 'center',
     backgroundImage:
       'linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80)',
-    paddingTop: theme.spacing.xl * 8,
+    paddingTop: theme.spacing.xl * 4,
     paddingBottom: theme.spacing.xl * 4,
     paddingRight: theme.spacing.xl * 2,
-    paddingLeft: theme.spacing.xl * 2,
-
-    height: '100vh'
+    paddingLeft: theme.spacing.xl * 4,
+    height: '87vh',
+    display: 'grid',
+    placeContent: 'center',
   },
 
   inner: {
@@ -45,7 +46,7 @@ const useStyles = createStyles((theme) => ({
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     fontWeight: 900,
     lineHeight: 1.05,
-    maxWidth: 500,
+    maxWidth: 1000,
     fontSize: 48,
 
     [theme.fn.smallerThan('md')]: {
@@ -68,7 +69,7 @@ const useStyles = createStyles((theme) => ({
   },
 }))
 
-export function HeroSection ({ title, text }) {
+export function HeroSection ({ title, text, image, children }) {
   const { classes } = useStyles()
   return (
     <div className={classes.root}>
@@ -90,6 +91,7 @@ export function HeroSection ({ title, text }) {
             </Text>
           </div>
         </div>
+        {children}
       </Container>
     </div>
   )

@@ -1,7 +1,13 @@
-import { Content } from '@components/Content'
+import { Footer } from '@components/Footer'
+import { HeroSection } from '@components/HeroSection'
 import { Separator } from '@components/Separator'
 import { Sidebar } from '@components/Sidebar'
 import { items } from '@constants/eventItems'
+import Head from 'next/head'
+import { useEffect, useState } from 'react'
+import { getRemainTime } from '@utils/countdown'
+
+const eventDay = '2022-11-23T09:00:00.000Z'
 
 const pageData = {
   title: 'Evento',
@@ -9,32 +15,198 @@ const pageData = {
   image: '/prueba.png',
 }
 
+const heroContent = {
+  title: 'FORO INTERNACIONAL DE PROSPECTIVA ENERGÉTICA EN EL ECUADOR',
+  image: '/prueba.png',
+  text: 'miércoles 23 de noviembre del 2022'
+}
+
 export default function Evento () {
+  const [date, setDate] = useState(getRemainTime(eventDay))
+  useEffect(function () {
+    setInterval(() => setDate(getRemainTime(eventDay), 1000))
+  }, [date])
+  console.log(date)
   return (
     <>
-    <Content
-      title={pageData.title}
-      description={pageData.description}
-      image={pageData.image}
-    >
-    <Sidebar items={items}/>
+      <Head>
+        <title>{pageData.title}</title>
+        <meta name="description" content={pageData.description} />
+      </Head>
+      <Sidebar items={items} />
       <main>
-        <Separator id="por-que-perspectiva" />
-        <div className='w-screen h-40 mx-24'>porque-perspectiva</div>
-        <Separator id="ejes-tematicos" />
-        <div className='w-screen h-40 mx-24'>ejes-tematicos</div>
-        <Separator id="programa" />
-        <div className='w-screen h-40 mx-24'>programa</div>
-        <Separator id="patrocinadores" />
-        <div className='w-screen h-40 mx-24'>patrocinadores</div>
-        <Separator id="que-busca-el-evento" />
-        <div className='w-screen h-40 mx-24'>que-busca-el-evento</div>
-        <Separator id="ponentes" />
-        <div className='w-screen h-40 mx-24'>ponentes</div>
-        <Separator id="registro" />
-        <div className='w-screen h-40 mx-24'>registro</div>
+        <HeroSection
+          text={heroContent.text}
+          title={heroContent.title}
+        >
+          {/* Registro y cuenta regresiva */}
+          <section className='flex flex-col gap-8'>
+            <div className='w-full flex justify-center'>
+              <a className='flex justify-center w-32 px-4 py-2 rounded hover:scale-105 text-2xl font-semibold bg-gradient-to-tr hover:from-amber-400 scroll-smooth hover:to-white from-amber-500 to-white' href="#registro">
+                Registro
+              </a>
+            </div>
+            <div className='w-full h-32 bg-gray-700 text-white flex justify-center items-center text-5xl font-bold tracking-wider'>
+              {date.remainMonths}:{date.remainDays}:{date.remainHours}:{date.remainMinutes}:{date.remainSeconds}
+            </div>
+          </section>
+        </HeroSection>
+        <div className='grid grid-cols-1 place-items-center mx-auto px-24 container'>
+          {/* ¿Por qué prospectiva ? */}
+          <Separator id="por-que-perspectiva" />
+          <section
+            className="flex flex-col lg:flex-row-reverse lg:container gap-5 items-center"
+          >
+            <section className='flex flex-col gap-7 text-xl text-justify lg:w-1/2'>
+              <h2
+                className='text-start text-4xl font-bold'
+              >¿Por qué prospectiva?</h2>
+              <p className=''>
+                El éxito en la construcción de escenarios, se basa en el entendimiento de la dinámica de consumo de las sociedades y en la capacidad de identificar la disponibilidad de recursos para proveer energía bajo principios de sostenibilidad y seguridad. Es necesario además la comprensión profunda de aspectos cruciales en la relación de los sistemas socioeconómicos y los ecosistemas; tales como: peak oil, limitaciones biofísicas, transición y descarbonización de las economías y sistemas de gobernanza, incluidas las formas de abordar nuestros patrones de producción y consumo.
+
+              </p>
+              <p className=''>
+
+                Es por esto que, desde el Instituto de Investigaciones Hidrocarburíferas de la Universidad Central del Ecuador estamos fomentando la realización de un Foro Internacional de Prospectiva Energética en el Ecuador con el propósito de vincular a instituciones de gobierno, empresas, academia y sociedad civil para la discusión de la necesidad de la construcción de escenarios energéticos nacionales deseables en base a metodologías innovadoras, experiencias internacionales y contemplando la realidad y autodeterminación en el desarrollo del Ecuador.
+              </p>
+
+            </section>
+
+            <section className='w-1/2'>
+              <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-recharging" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M7.038 4.5a9 9 0 0 0 -2.495 2.47" />
+                <path d="M3.186 10.209a9 9 0 0 0 0 3.508" />
+                <path d="M4.5 16.962a9 9 0 0 0 2.47 2.495" />
+                <path d="M10.209 20.814a9 9 0 0 0 3.5 0" />
+                <path d="M16.962 19.5a9 9 0 0 0 2.495 -2.47" />
+                <path d="M20.814 13.791a9 9 0 0 0 0 -3.508" />
+                <path d="M19.5 7.038a9 9 0 0 0 -2.47 -2.495" />
+                <path d="M13.791 3.186a9 9 0 0 0 -3.508 -.02" />
+                <path d="M12 8l-2 4h4l-2 4" />
+                <path d="M12 21a9 9 0 0 0 0 -18" />
+              </svg>
+            </section>
+          </section>
+
+          {/* Ejes temáticos */}
+          <Separator id="ejes-tematicos" />
+          <section
+            className="flex flex-col lg:flex-row lg:container gap-5 items-center"
+          >
+            <section className='flex flex-col gap-7 text-xl lg:w-1/2'>
+              <h2
+                className='text-4xl font-bold'
+              >Ejes temáticos</h2>
+              <p>Los ejes temáticos que se tratarán en el seminario son los siguientes:</p>
+              <ul className='list-disc pl-7 flex flex-col gap-3'>
+                <li>Visión global de los sistemas energéticos</li>
+                <li>Mercado de precios de los energéticos</li>
+                <li>Panorama regional de las energías renovables a mediano y largo plazo</li>
+                <li>Eficiencia energética y los escenarios prospectivos.</li>
+                <li>Visión a largo plazo del Ecuador</li>
+                <li>Experiencias internacionales-prospectiva energética</li>
+                <li>Estudios prospectivos desde los centros de Investigación</li>
+              </ul>
+
+            </section>
+
+            <section className='w-1/2 '>
+              <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-bulb" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#facc15" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" />
+                <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" />
+                <line x1="9.7" y1="17" x2="14.3" y2="17" />
+              </svg>
+            </section>
+          </section>
+
+          {/* Agenda */}
+          <Separator id="agenda" />
+          <div className='w-full h-40 px-24'>programa</div>
+
+          {/* Patrocinadores */}
+          <Separator id="patrocinadores" />
+          <section
+            className="flex flex-col lg:container gap-5 items-center"
+          >
+            <h2
+              className='text-4xl font-bold'
+            >Instituciones Participantes y Patrocinadores</h2>
+            <section className='flex flex-wrap justify-center gap-5'>
+
+              <div className='w-40 h-40 bg-black '></div>
+              <div className='w-40 h-40 bg-black '></div>
+              <div className='w-40 h-40 bg-black '></div>
+              <div className='w-40 h-40 bg-black '></div>
+              <div className='w-40 h-40 bg-black '></div>
+              <div className='w-40 h-40 bg-black '></div>
+              <div className='w-40 h-40 bg-black '></div>
+            </section>
+          </section>
+
+          {/* ¿Qué busca el evento? */}
+          <Separator id="que-busca-el-evento" />
+          <section
+            className="flex flex-col lg:flex-row lg:container gap-5 items-center"
+          >
+            <section className='flex flex-col  gap-7 text-xl text-justify lg:w-1/2'>
+              <h2
+                className='text-start text-4xl font-bold'
+              >¿Qué busca el evento?</h2>
+              <p className=''>
+                Generar un espacio de discusión entre instituciones de gobierno, empresas, academia y sociedad civil, sobre la necesidad de realizar estudios prospectivos que vinculen el aprovechamiento de los recursos energéticos y con ello fortalecer la planificación energética del Ecuador con fines de seguridad y soberanía
+
+              </p>
+              <ul className='list-disc pl-7 flex flex-col gap-3'>
+                <li>Entender sobre los problemas y retos que atañe a los sistemas energéticos a nivel global, regional y local, con fines de seguridad y soberanía</li>
+                <li>Conocer sobre varias herramientas y modelos que permiten desarrollar escenarios de prospectiva energética para el fortalecimiento de las políticas públicas</li>
+                <li>Identificar los beneficios de incorporar la transformación del mercado hacia equipos energéticamente eficientes a través de escenarios prospectivos.</li>
+                <li>Conocer sobre experiencias internacionales, investigaciones y trabajos que pueden servir para el fortalecimiento de la planificación energética al mediano y largo plazo del sistema energético del Ecuador</li>
+              </ul>
+
+            </section>
+
+            <section className='w-1/2'>
+            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-map-search" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#065f46" fill="none" strokeLinecap="round" strokeLinejoin="round">
+  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+  <path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v10" />
+  <path d="M9 4v13" />
+  <path d="M15 7v5" />
+  <circle cx="16.5" cy="17.5" r="2.5" />
+  <path d="M18.5 19.5l2.5 2.5" />
+</svg>
+            </section>
+          </section>
+
+          {/* Ponentes */}
+          <Separator id="ponentes" />
+          <section
+            className="flex flex-col lg:container gap-5 items-center"
+          >
+            <h2
+              className='text-4xl font-bold'
+            >Ponentes</h2>
+            <section className='flex flex-wrap justify-center gap-5'>
+
+              <div className='w-40 h-40 bg-black '></div>
+              <div className='w-40 h-40 bg-black '></div>
+              <div className='w-40 h-40 bg-black '></div>
+              <div className='w-40 h-40 bg-black '></div>
+              <div className='w-40 h-40 bg-black '></div>
+              <div className='w-40 h-40 bg-black '></div>
+              <div className='w-40 h-40 bg-black '></div>
+            </section>
+          </section>
+
+          {/* Registro */}
+          {/* <Separator id="registro" />
+          <div className='w-full h-40 px-24'>registro</div> */}
+        </div>
+
       </main>
-    </Content>
+      <Footer image={pageData.image} />
+
     </>
   )
 }
