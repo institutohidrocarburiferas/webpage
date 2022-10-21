@@ -4,6 +4,7 @@ import { Footer } from '@components/Footer'
 import { getPostsData } from '@utils/posts'
 import path from 'node:path'
 import Head from 'next/head'
+import Link from 'next/link'
 // import { TitlePage } from '@components/TitlePage'
 
 const pageData = {
@@ -31,6 +32,14 @@ export default function Home ({ allPostsData }) {
         title={heroContent.title}
         text={heroContent.text}
       />
+      <HeroSection title={'FORO INTERNACIONAL DE PROSPECTIVA ENERGÉTICA EN EL ECUADOR'} text={'miércoles 23 de noviembre del 2022'}>
+      <Link href="/evento">
+          <a className='bg-white p-5 rounded  hover:scale-105 block w-44 font-bold'>
+              Revisar el evento
+          </a>
+        </Link>
+      </HeroSection>
+
       <div className='container mx-auto dark:text-gray-100'>
         {/* Recent notices section */}
         <section className='flex flex-col gap-5 p-5 my-12'>
