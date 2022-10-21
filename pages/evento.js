@@ -48,10 +48,6 @@ const patrocinations = [
     image: '/externalLinks/oladeorg-logo.jpg',
   },
   {
-    title: 'Mckensey logo',
-    image: '/evento/mckinsey.png',
-  },
-  {
     title: 'Fundación Bariloche logo',
     image: '/evento/fundacion-bariloche.jpg',
   },
@@ -78,18 +74,18 @@ const patrocinations = [
 ]
 
 const programItems = [
-  { time: '09H00 - 09H15', label: 'Inauguración y Palabras de Bienvenida', expositor: 'Andres Andres Guano Guano', institution: 'Rector (Vicerrector de Investigación) / Ministro de Energía y Minas/Invitado', },
-  { time: '09H15 - 10H00', label: 'Seguridad y sostenibilidad de los sistemas futuros de energía (fósil y electricidad)', expositor: 'Andres Andres Guano Guano', institution: 'Agencia Internacional de Energía (IEA)', },
-  { time: '10H00 - 10H45', label: 'Visualización y retos de la transacción energética en ALC a mediano y largo plazo (uso de herramientas de prospectiva de OLADE)', expositor: 'Andres Andres Guano Guano', institution: 'OLADE_Alfonso Blanco', },
+  { time: '09H00 - 09H15', label: 'Inauguración y Palabras de Bienvenida', expositor: 'Nombre no definido', institution: 'Rector (Vicerrector de Investigación) / Ministro de Energía y Minas/Invitado', },
+  { time: '09H15 - 10H00', label: 'Seguridad y sostenibilidad de los sistemas futuros de energía (fósil y electricidad)', expositor: 'Nombre no definido', institution: 'Agencia Internacional de Energía (IEA)', },
+  { time: '10H00 - 10H45', label: 'Visualización y retos de la transacción energética en ALC a mediano y largo plazo (uso de herramientas de prospectiva de OLADE)', expositor: 'Nombre no definido', institution: 'OLADE_Alfonso Blanco', },
   { time: '10H45 - 11H15', label: 'Coffee Break', expositor: null, institution: null, },
-  { time: '11H15 - 12H00', label: 'Futuro de los mercados de precios de los energéticos', expositor: 'Andres Andres Guano Guano', institution: 'MCKINSEY (Oficina Quito/Ecuador)', },
-  { time: '12H00 - 12H45', label: 'Visión a largo plazo del sistema energético (oferta y demanda de combustibles y electricidad) con la transformación del mercado hacia equipos energéticamente eficientes. Casos de estudio.', expositor: 'Andres Andres Guano Guano', institution: 'Fundación Bariloche – Instituto de Metrología de Alemania (PTB)', },
+  { time: '11H15 - 12H00', label: 'Futuro de los mercados de precios de los energéticos', expositor: 'Nombre no definido', institution: 'MCKINSEY (Oficina Quito/Ecuador)', },
+  { time: '12H00 - 12H45', label: 'Visión a largo plazo del sistema energético (oferta y demanda de combustibles y electricidad) con la transformación del mercado hacia equipos energéticamente eficientes. Casos de estudio.', expositor: 'Nombre no definido', institution: 'Fundación Bariloche – Instituto de Metrología de Alemania (PTB)', },
   { time: '12H45 - 14H00', label: 'Almuerzo', expositor: null, institution: null, },
-  { time: '14H00 - 14H45', label: 'Modelo Prospectivo Energético de México', expositor: 'Andres Andres Guano Guano', institution: 'Conacyt - México /UNAM-Instituto de Metrología de Alemania (PTB)', },
-  { time: '14H45 - 15H30', label: 'Prospectiva energética del Ecuador al 2035 MuSIASEM', expositor: 'Andres Andres Guano Guano', institution: 'Instituto de Investigaciones Hidrocarburíferas - UCE', },
-  { time: '15H30 - 16H15', label: 'Estudio prospectivo en el transporte para el caso del Ecuador', expositor: 'Andres Andres Guano Guano', institution: 'Escuela Politécnica Nacional', },
-  { time: '16H15 - 17H00', label: 'Tasas de retorno de energía en el sistema ecuatoriano', expositor: 'Andres Andres Guano Guano', institution: 'Ingeniería Química - UCE', },
-  { time: '17H00 - 18H00', label: 'Resumen y Cierre', expositor: 'Andres Andres Guano Guano', institution: 'UCE FIGEMPA/Autoridad invitada', },
+  { time: '14H00 - 14H45', label: 'Modelo Prospectivo Energético de México', expositor: 'Nombre no definido', institution: 'Conacyt - México /UNAM-Instituto de Metrología de Alemania (PTB)', },
+  { time: '14H45 - 15H30', label: 'Prospectiva energética del Ecuador al 2035 MuSIASEM', expositor: 'Nombre no definido', institution: 'Instituto de Investigaciones Hidrocarburíferas - UCE', },
+  { time: '15H30 - 16H15', label: 'Estudio prospectivo en el transporte para el caso del Ecuador', expositor: 'Nombre no definido', institution: 'Escuela Politécnica Nacional', },
+  { time: '16H15 - 17H00', label: 'Tasas de retorno de energía en el sistema ecuatoriano', expositor: 'Nombre no definido', institution: 'Ingeniería Química - UCE', },
+  { time: '17H00 - 18H00', label: 'Resumen y Cierre', expositor: 'Nombre no definido', institution: 'UCE FIGEMPA/Autoridad invitada', },
 ]
 
 function ProgramItem ({ time, label, expositor, institution }) {
@@ -115,6 +111,7 @@ export default function Evento () {
       <Sidebar items={items} />
       <main>
         <HeroSection
+
           text={heroContent.text}
           title={heroContent.title}
         >
@@ -139,6 +136,7 @@ export default function Evento () {
             </div>
           </section>
         </HeroSection>
+
         <div className='grid grid-cols-1 place-items-center mx-auto px-12 md:px-20 xl:px-24 container'>
           {/* ¿Por qué prospectiva ? */}
           <Separator id="por-que-perspectiva" />
