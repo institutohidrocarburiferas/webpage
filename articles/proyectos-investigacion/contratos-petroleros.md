@@ -1,7 +1,7 @@
 ---
 title: 'Contratos petroleros'
 date: "2020-01-01"
-image: "/proyectos-investigacion/contratos-petroleros.jpeg"
+image: "/proyectos-investigacion/contratos-petroleros.jpg"
 ---
 
 El IIH está desarrollando un estudio retrospectivo sobre la dinámica de renta petrolera obtenida por el Estado ecuatoriano en los contratos petroleros (upstream) bajo la modalidad de prestación de servicios, implementados a partir de la reforma a la ley de Hidrocarburos,2010.
