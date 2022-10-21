@@ -21,6 +21,37 @@ const heroContent = {
   text: 'miércoles 23 de noviembre del 2022'
 }
 
+function CountdownTime ({ time, label }) {
+  return <div className='w-24 lg:w-32 flex flex-col items-center gap-3'>
+    <div>{time}</div>
+    <p className='text-lg md:text-xl'>{label}</p>
+  </div>
+}
+
+const programItems = [
+  { time: '09H00 - 09H15', label: 'Inauguración y Palabras de Bienvenida', expositor: 'Andres Andres Guano Guano', institution: 'Rector (Vicerrector de Investigación) / Ministro de Energía y Minas/Invitado', },
+  { time: '09H15 - 10H00', label: 'Seguridad y sostenibilidad de los sistemas futuros de energía (fósil y electricidad)', expositor: 'Andres Andres Guano Guano', institution: 'Agencia Internacional de Energía (IEA)', },
+  { time: '10H00 - 10H45', label: 'Visualización y retos de la transacción energética en ALC a mediano y largo plazo (uso de herramientas de prospectiva de OLADE)', expositor: 'Andres Andres Guano Guano', institution: 'OLADE_Alfonso Blanco', },
+  { time: '10H45 - 11H15', label: 'Coffee Break', expositor: null, institution: null, },
+  { time: '11H15 - 12H00', label: 'Futuro de los mercados de precios de los energéticos', expositor: 'Andres Andres Guano Guano', institution: 'MCKINSEY (Oficina Quito/Ecuador)', },
+  { time: '12H00 - 12H45', label: 'Visión a largo plazo del sistema energético (oferta y demanda de combustibles y electricidad) con la transformación del mercado hacia equipos energéticamente eficientes. Casos de estudio.', expositor: 'Andres Andres Guano Guano', institution: 'Fundación Bariloche – Instituto de Metrología de Alemania (PTB)', },
+  { time: '12H45 - 14H00', label: 'Almuerzo', expositor: null, institution: null, },
+  { time: '14H00 - 14H45', label: 'Modelo Prospectivo Energético de México', expositor: 'Andres Andres Guano Guano', institution: 'Secretaría de energía México- SENER/UNAM-Instituto de Metrología de Alemania (PTB)', },
+  { time: '14H45 - 15H30', label: 'Prospectiva energética del Ecuador al 2035 MuSIASEM', expositor: 'Andres Andres Guano Guano', institution: 'Instituto de Investigaciones Hidrocarburíferas - UCE', },
+  { time: '15H30 - 16H15', label: 'Estudio prospectivo en el transporte para el caso del Ecuador', expositor: 'Andres Andres Guano Guano', institution: 'Escuela Politécnica Nacional', },
+  { time: '16H15 - 17H00', label: 'Tasas de retorno de energía en el sistema ecuatoriano', expositor: 'Andres Andres Guano Guano', institution: 'Ingeniería Química - UCE', },
+  { time: '17H00 - 18H00', label: 'Resumen y Cierre', expositor: 'Andres Andres Guano Guano', institution: 'UCE FIGEMPA/Autoridad invitada', },
+]
+
+function ProgramItem ({ time, label, expositor, institution }) {
+  return <div className='flex flex-col gap-1'>
+    <time className='text-2xl'>{time}</time>
+    <h3 className='text-3xl font-bold'>{label}</h3>
+    <p className='text-xl font-bold'>{expositor}</p>
+    <p className='text-md'>{institution}</p>
+  </div>
+}
+
 export default function Evento () {
   const [date, setDate] = useState(getRemainTime(eventDay))
   useEffect(function () {
@@ -46,12 +77,20 @@ export default function Evento () {
                 Registro
               </a>
             </div>
-            <div className='w-full h-32 bg-gray-700 text-white flex justify-center items-center text-5xl font-bold tracking-wider'>
-              {date.remainMonths}:{date.remainDays}:{date.remainHours}:{date.remainMinutes}:{date.remainSeconds}
+            <div className='w-full h-32 text-white flex justify-center items-center text-5xl font-bold tracking-wider'>
+              <CountdownTime time={date.remainMonths} label="meses" />
+              <div>:</div>
+              <CountdownTime time={date.remainDays} label="días" />
+              <div>:</div>
+              <CountdownTime time={date.remainHours} label="horas" />
+              <div>:</div>
+              <CountdownTime time={date.remainMinutes} label="minutos" />
+              <div>:</div>
+              <CountdownTime time={date.remainSeconds} label="segundos" />
             </div>
           </section>
         </HeroSection>
-        <div className='grid grid-cols-1 place-items-center mx-auto px-24 container'>
+        <div className='grid grid-cols-1 place-items-center mx-auto xl:px-24 container'>
           {/* ¿Por qué prospectiva ? */}
           <Separator id="por-que-perspectiva" />
           <section
@@ -123,7 +162,11 @@ export default function Evento () {
 
           {/* Agenda */}
           <Separator id="agenda" />
-          <div className='w-full h-40 px-24'>programa</div>
+          <div className='w-full grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-10'>
+            {programItems.map(({ time, label, expositor, institution }) => (
+              <ProgramItem key={label} time={time} label={label} expositor={expositor} institution={institution} />
+            ))}
+          </div>
 
           {/* Patrocinadores */}
           <Separator id="patrocinadores" />
@@ -168,14 +211,14 @@ export default function Evento () {
             </section>
 
             <section className='w-1/2'>
-            <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-map-search" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#065f46" fill="none" strokeLinecap="round" strokeLinejoin="round">
-  <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-  <path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v10" />
-  <path d="M9 4v13" />
-  <path d="M15 7v5" />
-  <circle cx="16.5" cy="17.5" r="2.5" />
-  <path d="M18.5 19.5l2.5 2.5" />
-</svg>
+              <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-map-search" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#065f46" fill="none" strokeLinecap="round" strokeLinejoin="round">
+                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+                <path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v10" />
+                <path d="M9 4v13" />
+                <path d="M15 7v5" />
+                <circle cx="16.5" cy="17.5" r="2.5" />
+                <path d="M18.5 19.5l2.5 2.5" />
+              </svg>
             </section>
           </section>
 

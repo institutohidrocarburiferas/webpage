@@ -14,6 +14,11 @@ const useStyles = createStyles((theme) => ({
     height: '87vh',
     display: 'grid',
     placeContent: 'center',
+
+    [theme.fn.smallerThan('md')]: {
+      flexDirection: 'column',
+      paddingLeft: theme.spacing.xl * 2,
+    },
   },
 
   inner: {
