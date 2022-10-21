@@ -6,6 +6,8 @@ import { items } from '@constants/eventItems'
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import { getRemainTime } from '@utils/countdown'
+import { PageMap } from '@components/PageMap'
+import { Participants } from '@components/Participants'
 
 const eventDay = '2022-11-23T09:00:00.000Z'
 
@@ -28,6 +30,53 @@ function CountdownTime ({ time, label }) {
   </div>
 }
 
+const patrocinations = [
+  {
+    title: 'Conacyt logo',
+    image: '/evento/conacyt.svg',
+  },
+  {
+    title: 'Ministerio de Energía y Minas logo',
+    image: '/evento/ministerio-energia-minas.png',
+  },
+  {
+    title: 'Agencia Internacional de Energía logo',
+    image: '/externalLinks/international-energy-agency-logo.png',
+  },
+  {
+    title: 'Olade logo',
+    image: '/externalLinks/oladeorg-logo.jpg',
+  },
+  {
+    title: 'Mckensey logo',
+    image: '/evento/mckinsey.png',
+  },
+  {
+    title: 'Fundación Bariloche logo',
+    image: '/evento/fundacion-bariloche.jpg',
+  },
+  {
+    title: 'Instituto de Metrología de Alemania (PTB)',
+    image: '/evento/instituto-metrologia-alemania.jpg',
+  },
+  {
+    title: 'Universidad Central del Ecuador logo',
+    image: '/UCE-logo.png',
+  },
+  {
+    title: 'Escuela Politécnica Nacional logo',
+    image: '/evento/epn.png',
+  },
+  {
+    title: 'Facultad de Ingeniería Química - UCE logo',
+    image: '/evento/ing-quimica-uce.jpeg',
+  },
+  {
+    title: 'Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental',
+    image: '/evento/figempa.png',
+  },
+]
+
 const programItems = [
   { time: '09H00 - 09H15', label: 'Inauguración y Palabras de Bienvenida', expositor: 'Andres Andres Guano Guano', institution: 'Rector (Vicerrector de Investigación) / Ministro de Energía y Minas/Invitado', },
   { time: '09H15 - 10H00', label: 'Seguridad y sostenibilidad de los sistemas futuros de energía (fósil y electricidad)', expositor: 'Andres Andres Guano Guano', institution: 'Agencia Internacional de Energía (IEA)', },
@@ -36,7 +85,7 @@ const programItems = [
   { time: '11H15 - 12H00', label: 'Futuro de los mercados de precios de los energéticos', expositor: 'Andres Andres Guano Guano', institution: 'MCKINSEY (Oficina Quito/Ecuador)', },
   { time: '12H00 - 12H45', label: 'Visión a largo plazo del sistema energético (oferta y demanda de combustibles y electricidad) con la transformación del mercado hacia equipos energéticamente eficientes. Casos de estudio.', expositor: 'Andres Andres Guano Guano', institution: 'Fundación Bariloche – Instituto de Metrología de Alemania (PTB)', },
   { time: '12H45 - 14H00', label: 'Almuerzo', expositor: null, institution: null, },
-  { time: '14H00 - 14H45', label: 'Modelo Prospectivo Energético de México', expositor: 'Andres Andres Guano Guano', institution: 'Secretaría de energía México- SENER/UNAM-Instituto de Metrología de Alemania (PTB)', },
+  { time: '14H00 - 14H45', label: 'Modelo Prospectivo Energético de México', expositor: 'Andres Andres Guano Guano', institution: 'Conacyt - México /UNAM-Instituto de Metrología de Alemania (PTB)', },
   { time: '14H45 - 15H30', label: 'Prospectiva energética del Ecuador al 2035 MuSIASEM', expositor: 'Andres Andres Guano Guano', institution: 'Instituto de Investigaciones Hidrocarburíferas - UCE', },
   { time: '15H30 - 16H15', label: 'Estudio prospectivo en el transporte para el caso del Ecuador', expositor: 'Andres Andres Guano Guano', institution: 'Escuela Politécnica Nacional', },
   { time: '16H15 - 17H00', label: 'Tasas de retorno de energía en el sistema ecuatoriano', expositor: 'Andres Andres Guano Guano', institution: 'Ingeniería Química - UCE', },
@@ -57,7 +106,6 @@ export default function Evento () {
   useEffect(function () {
     setInterval(() => setDate(getRemainTime(eventDay), 1000))
   }, [date])
-  console.log(date)
   return (
     <>
       <Head>
@@ -73,7 +121,8 @@ export default function Evento () {
           {/* Registro y cuenta regresiva */}
           <section className='flex flex-col gap-8'>
             <div className='w-full flex justify-center'>
-              <a className='flex justify-center w-32 px-4 py-2 rounded hover:scale-105 text-2xl font-semibold bg-gradient-to-tr hover:from-amber-400 scroll-smooth hover:to-white from-amber-500 to-white' href="#registro">
+              <a className='flex justify-center w-32 px-4 py-2 rounded hover:scale-105 text-2xl font-semibold bg-gradient-to-tr hover:from-amber-400 scroll-smooth hover:to-white from-amber-500 to-white' href="https://forms.gle/c55zGtRRenVvKpGKA" target="_blank" rel="noreferrer"
+              >
                 Registro
               </a>
             </div>
@@ -90,7 +139,7 @@ export default function Evento () {
             </div>
           </section>
         </HeroSection>
-        <div className='grid grid-cols-1 place-items-center mx-auto xl:px-24 container'>
+        <div className='grid grid-cols-1 place-items-center mx-auto px-12 md:px-20 xl:px-24 container'>
           {/* ¿Por qué prospectiva ? */}
           <Separator id="por-que-perspectiva" />
           <section
@@ -177,14 +226,9 @@ export default function Evento () {
               className='text-4xl font-bold'
             >Instituciones Participantes y Patrocinadores</h2>
             <section className='flex flex-wrap justify-center gap-5'>
-
-              <div className='w-40 h-40 bg-black '></div>
-              <div className='w-40 h-40 bg-black '></div>
-              <div className='w-40 h-40 bg-black '></div>
-              <div className='w-40 h-40 bg-black '></div>
-              <div className='w-40 h-40 bg-black '></div>
-              <div className='w-40 h-40 bg-black '></div>
-              <div className='w-40 h-40 bg-black '></div>
+              {patrocinations.map(({ title, image }) => (
+                <Participants title={title} image={image} key={title} />
+              ))}
             </section>
           </section>
 
@@ -242,9 +286,12 @@ export default function Evento () {
             </section>
           </section>
 
-          {/* Registro */}
-          {/* <Separator id="registro" />
-          <div className='w-full h-40 px-24'>registro</div> */}
+          {/* Mapa */}
+          <Separator id="ubicacion" />
+          <h2
+            className='text-start text-4xl font-bold'
+          >Ubicación del evento</h2>
+          <PageMap />
         </div>
 
       </main>

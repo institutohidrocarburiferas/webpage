@@ -1,4 +1,4 @@
-import { ExternalLink } from '@components/ExternalLink'
+import { Participants } from '@components/Participants'
 import { Content } from '@components/Content'
 import { Posts } from '@components/Posts'
 import { Slider } from '@components/Slider'
@@ -16,7 +16,7 @@ const pageData = {
 
 export default function Proyectos ({ allPostsData }) {
   const links = extenalLinks.map(({ title, image, url }) => (
-    <ExternalLink
+    <Participants
       key={title}
       title={title}
       image={image}
