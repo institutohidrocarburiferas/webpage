@@ -3,7 +3,7 @@ import { Publications } from '@components/Publications'
 import Head from 'next/head'
 import { publications } from '@constants/publications'
 import { extenalLinks } from '@constants/extenalLinks'
-import { ExternalLink } from '@components/ExternalLink'
+import { Participants } from '@components/Participants'
 
 export default function Publicaciones () {
   return (
@@ -21,7 +21,7 @@ export default function Publicaciones () {
         <section className='flex flex-row flex-wrap justify-center gap-10 lg:flex-col-lime-500'>
           {
             extenalLinks.map(({ title, image, url }) => (
-              <ExternalLink
+              <Participants
                 key={title}
                 title={title}
                 image={image}
