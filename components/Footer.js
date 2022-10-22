@@ -26,30 +26,33 @@ export function Footer ({
 
     {/* Footer container */}
     <div
-      className="flex flex-col items-center h-auto gap-8 px-12 pt-32 pb-5 font-semibold text-white md:pt-12 md:flex-row bg-black/60"
+      className="flex justify-center w-full h-auto px-5 pt-12 pb-5 font-semibold text-white md:pt-12 bg-black/60"
     >
+      <div className='flex flex-col container justify-between gap-8 md:flex-row'>
+        <section className='flex flex-col text-sm'>
+          <span>Universidad Central del Ecuador</span>
+          <span>Ingreso por las Calles Jerónimo Leyton y Gilberto Gatto Sobral </span>
+          <span>Facultad de Ingeniería en Geología, Petróleos, Minas y Ambiental - FIGEMPA </span>
+          <span>Segundo piso, Área Posgrado </span>
+          <span>Quito - Ecuador </span>
+        </section>
+
+        {/* Middle section
+      <section className='text-3xl md:text-xl lg:text-3xl'>
+      </section> */}
+
+        {/* Right section */}
+        <section className='flex flex-col items-center justify-center gap-5 place-content-center'>
+          <Image
+            width={100}
+            height={100}
+            src="/UCE-logo.png"
+            alt="Universidad Central del Ecuador Logo"
+          />
+        </section>
+      </div>
       {/* Left section */}
-      <section className='text-3xl md:text-xl lg:text-3xl md:w-1/4'>
-      </section>
 
-      {/* Middle section */}
-      <section className='flex flex-col text-sm md:w-1/2 '>
-        <span>Universidad Central del Ecuador</span>
-        <span>Ingreso por las Calles Jerónimo Leyton y Gilberto Gatto Sobral </span>
-        <span>Facultad de Ingeniería en Geología, Petróleos, Minas y Ambiental - FIGEMPA </span>
-        <span>Segundo piso, Área Posgrado </span>
-        <span>Quito - Ecuador </span>
-      </section>
-
-      {/* Right section */}
-      <section className='flex flex-col items-center justify-center gap-5 md:w-1/4 place-content-center'>
-        <Image
-          width={100}
-          height={100}
-          src="/UCE-logo.png"
-          alt="Universidad Central del Ecuador Logo"
-        />
-      </section>
     </div>
   </footer>
 }
