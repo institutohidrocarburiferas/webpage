@@ -1,33 +1,28 @@
 import { createStyles, Container, Title, Text } from '@mantine/core'
 
-const useStyles = createStyles((theme) => ({
+const useStyles = (image, height, justifyContent) => createStyles((theme) => ({
   root: {
     backgroundColor: '#11284b',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
     backgroundImage:
-      'linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), url(https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80)',
-    paddingTop: theme.spacing.xl * 4,
-    paddingBottom: theme.spacing.xl * 4,
-    paddingRight: theme.spacing.xl * 2,
-    paddingLeft: theme.spacing.xl * 4,
-    height: '87vh',
+      `linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), url(${image})`,
+    width: '100%',
+    height,
+    maxHeight: 1000,
     display: 'grid',
-    placeContent: 'center',
-
-    [theme.fn.smallerThan('md')]: {
-      flexDirection: 'column',
-      paddingLeft: theme.spacing.xl * 2,
+    justifyContent,
+    alignContent: 'center',
+    paddingLeft: theme.spacing.xl * 3,
+    paddingRight: theme.spacing.xl * 3,
+    [theme.fn.smallerThan('sm')]: {
+      paddingLeft: 25,
     },
   },
 
   inner: {
-    display: 'flex',
-    justifyContent: 'space-between',
+    width: '100%',
 
-    [theme.fn.smallerThan('md')]: {
-      flexDirection: 'column',
-    },
   },
 
   image: {
@@ -37,9 +32,11 @@ const useStyles = createStyles((theme) => ({
   },
 
   content: {
-    paddingTop: theme.spacing.xl * 2,
-    paddingBottom: theme.spacing.xl * 2,
-    marginRight: theme.spacing.xl * 3,
+    // paddingTop: theme.spacing.xl * 2,
+    // paddingBottom: theme.spacing.xl * 2,
+    // marginRight: theme.spacing.xl * 3,
+    paddingBottom: theme.spacing.xl * 3,
+    width: '100%',
 
     [theme.fn.smallerThan('md')]: {
       marginRight: 0,
@@ -51,7 +48,7 @@ const useStyles = createStyles((theme) => ({
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     fontWeight: 900,
     lineHeight: 1.05,
-    maxWidth: 1000,
+    maxWidth: 700,
     fontSize: 48,
 
     [theme.fn.smallerThan('md')]: {
@@ -70,12 +67,21 @@ const useStyles = createStyles((theme) => ({
 
     [theme.fn.smallerThan('md')]: {
       maxWidth: '100%',
+      fontSize: theme.fontSizes.lg,
     },
   },
 }))
 
-export function HeroSection ({ title, text, image, children }) {
-  const { classes } = useStyles()
+export function HeroSection ({
+  title,
+  text,
+  image,
+  height = '100vh',
+  justifyContent = 'start',
+  children,
+}) {
+  const { classes } = useStyles(image, height, justifyContent)()
+
   return (
     <div className={classes.root}>
       <Container size="lg">
@@ -92,7 +98,7 @@ export function HeroSection ({ title, text, image, children }) {
               </Text>
             </Title>
             <Text className={classes.description} mt={30}>
-                {text}
+              {text}
             </Text>
           </div>
         </div>

@@ -6,7 +6,6 @@ import { items } from '@constants/eventItems'
 import Head from 'next/head'
 import { useEffect, useState } from 'react'
 import { getRemainTime } from '@utils/countdown'
-import { PageMap } from '@components/PageMap'
 import { Participants } from '@components/Participants'
 
 const eventDay = '2022-11-23T09:00:00.000Z'
@@ -19,7 +18,8 @@ const pageData = {
 
 const heroContent = {
   title: 'FORO INTERNACIONAL DE PROSPECTIVA ENERGÉTICA EN EL ECUADOR',
-  image: '/prueba.png',
+  height: '87vh',
+  image: '"https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80"',
   text: 'miércoles 23 de noviembre del 2022'
 }
 
@@ -89,9 +89,9 @@ const programItems = [
 ]
 
 function ProgramItem ({ time, label, expositor, institution }) {
-  return <div className='flex flex-col gap-1'>
-    <time className='text-2xl'>{time}</time>
-    <h3 className='text-3xl font-bold'>{label}</h3>
+  return <div className='flex flex-col gap-1 border-b-2 pb-5'>
+    <time className='text-2xl text-amber-400'>{time}</time>
+    <h3 className='text-3xl text-white font-bold'>{label}</h3>
     <p className='text-xl font-bold'>{expositor}</p>
     <p className='text-md'>{institution}</p>
   </div>
@@ -111,9 +111,11 @@ export default function Evento () {
       <Sidebar items={items} />
       <main>
         <HeroSection
-
           text={heroContent.text}
           title={heroContent.title}
+          image={heroContent.image}
+          height={heroContent.height}
+          justifyContent="center"
         >
           {/* Registro y cuenta regresiva */}
           <section className='flex flex-col gap-8'>
@@ -137,15 +139,16 @@ export default function Evento () {
           </section>
         </HeroSection>
 
-        <div className='grid grid-cols-1 place-items-center mx-auto px-12 md:px-20 xl:px-24 container'>
+        <div
+          className='grid grid-cols-1 w-full justify-items-center'>
           {/* ¿Por qué prospectiva ? */}
           <Separator id="por-que-perspectiva" />
           <section
-            className="flex flex-col lg:flex-row-reverse lg:container gap-5 items-center"
+            className="p-5 flex flex-col lg:flex-row-reverse lg:container md:pl-24 gap-5 items-center"
           >
             <section className='flex flex-col gap-7 text-xl text-justify lg:w-1/2'>
               <h2
-                className='text-start text-4xl font-bold'
+                className='lg:text-start w-full text-center text-4xl font-bold'
               >¿Por qué prospectiva?</h2>
               <p className=''>
                 El éxito en la construcción de escenarios, se basa en el entendimiento de la dinámica de consumo de las sociedades y en la capacidad de identificar la disponibilidad de recursos para proveer energía bajo principios de sostenibilidad y seguridad. Es necesario además la comprensión profunda de aspectos cruciales en la relación de los sistemas socioeconómicos y los ecosistemas; tales como: peak oil, limitaciones biofísicas, transición y descarbonización de las economías y sistemas de gobernanza, incluidas las formas de abordar nuestros patrones de producción y consumo.
@@ -178,9 +181,9 @@ export default function Evento () {
           {/* Ejes temáticos */}
           <Separator id="ejes-tematicos" />
           <section
-            className="flex flex-col lg:flex-row lg:container gap-5 items-center"
+            className="flex flex-col p-5 lg:flex-row md:pl-12 lg:pl-24 lg:container gap-5 items-center"
           >
-            <section className='flex flex-col gap-7 text-xl lg:w-1/2'>
+            <section className='flex flex-col p-5 gap-7 text-xl lg:w-1/2'>
               <h2
                 className='text-4xl font-bold'
               >Ejes temáticos</h2>
@@ -209,19 +212,34 @@ export default function Evento () {
 
           {/* Agenda */}
           <Separator id="agenda" />
-          <div className='w-full grid grid-cols-1 lg:grid-cols-2 lg:items-center gap-10'>
-            {programItems.map(({ time, label, expositor, institution }) => (
-              <ProgramItem key={label} time={time} label={label} expositor={expositor} institution={institution} />
-            ))}
-          </div>
+          <section
+            style={{
+              backgroundColor: '#11284b',
+              backgroundSize: 'cover',
+              backgroundPosition: 'center',
+              backgroundImage:
+                'linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), url(/bgEvent.svg)',
+            }}
+            className='w-full text-gray-300 flex flex-col items-center'>
+            <h2
+              className='text-start py-5 px-20 text-4xl font-bold border-b-2'
+            >Agenda</h2>
+            <div
+              className='grid p-5 md:pl-24 container items-center grid-cols-1 lg:grid-cols-2  gap-10'>
+              {programItems.map(({ time, label, expositor, institution }) => (
+                <ProgramItem key={label} time={time} label={label} expositor={expositor} institution={institution} />
+              ))}
+            </div>
+
+          </section>
 
           {/* Patrocinadores */}
           <Separator id="patrocinadores" />
           <section
-            className="flex flex-col lg:container gap-5 items-center"
+            className="flex flex-col lg:container justify-center p-5 md:pl-12 gap-5 items-center"
           >
             <h2
-              className='text-4xl font-bold'
+              className='text-4xl w-full text-center font-bold'
             >Instituciones Participantes y Patrocinadores</h2>
             <section className='flex flex-wrap justify-center gap-5'>
               {patrocinations.map(({ title, image }) => (
@@ -235,9 +253,9 @@ export default function Evento () {
           <section
             className="flex flex-col lg:flex-row lg:container gap-5 items-center"
           >
-            <section className='flex flex-col  gap-7 text-xl text-justify lg:w-1/2'>
+            <section className='flex flex-col p-5 md:pl-24 gap-7 text-xl text-justify lg:w-1/2'>
               <h2
-                className='text-start text-4xl font-bold'
+                className='text-center text-4xl font-bold'
               >¿Qué busca el evento?</h2>
               <p className=''>
                 Generar un espacio de discusión entre instituciones de gobierno, empresas, academia y sociedad civil, sobre la necesidad de realizar estudios prospectivos que vinculen el aprovechamiento de los recursos energéticos y con ello fortalecer la planificación energética del Ecuador con fines de seguridad y soberanía
@@ -267,7 +285,7 @@ export default function Evento () {
           {/* Ponentes */}
           <Separator id="ponentes" />
           <section
-            className="flex flex-col lg:container gap-5 items-center"
+            className="flex flex-col lg:container gap-5 p-5 md:pl-24 items-center"
           >
             <h2
               className='text-4xl font-bold'
@@ -286,10 +304,14 @@ export default function Evento () {
 
           {/* Mapa */}
           <Separator id="ubicacion" />
-          <h2
+          <section
+            className="flex flex-col lg:container gap-5 p-5 md:pl-24 items-center"
+          >
+            <h2
             className='text-start text-4xl font-bold'
           >Ubicación del evento</h2>
-          <PageMap />
+          <iframe className='w-full my-5 bg-gray-200 border-none h-96' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d701.1969549441504!2d-78.50565731357777!3d-0.1988105932917797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a46e4cd72f7%3A0x1a520161ab60d7c5!2sComprehensive%20Information%20Center!5e0!3m2!1sen!2sec!4v1666476170800!5m2!1sen!2sec" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+          </section>
         </div>
 
       </main>
