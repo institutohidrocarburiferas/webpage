@@ -26,7 +26,7 @@ export function Footer ({
 
     {/* Footer container */}
     <div
-      className="flex justify-center w-full h-auto px-5 pt-12 pb-5 font-semibold text-white md:pt-12 bg-black/60"
+      className="flex justify-center w-full h-auto px-5 md:px-24 pt-12 pb-5 font-semibold text-white md:pt-12 bg-black/60"
     >
       <div className='flex flex-col container justify-between gap-8 md:flex-row'>
         <section className='flex flex-col text-sm'>
