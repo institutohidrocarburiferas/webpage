@@ -1,7 +1,7 @@
 import { Participants } from '@components/Participants'
 import { Content } from '@components/Content'
 import { Posts } from '@components/Posts'
-import { Slider } from '@components/Slider'
+// import { Slider } from '@components/Slider'
 import path from 'node:path'
 import { getPostsData } from '@utils/posts'
 import { externalLinks } from '@constants/externalLinks'
@@ -22,20 +22,20 @@ export default function Proyectos ({ allPostsData }) {
       description={pageData.description}
     >
       <main>
-        <section className='flex flex-col gap-5 p-5'>
+        {/* <section className='flex flex-col gap-5 p-5'>
           <Slider
             data={allPostsData}
             urlPath={pageData.mainURL}
           />
-        </section>
+        </section> */}
         <section className='container flex flex-col p-10 mx-auto justify-evenly lg:flex-row dark:text-gray-100'>
           <Posts
             items={allPostsData}
             title={pageData.postsTitle}
             urlPath={pageData.mainURL}
           />
-          <Participants data={externalLinks} />
         </section>
+          <Participants data={externalLinks} />
       </main>
     </Content>
   )
