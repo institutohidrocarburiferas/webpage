@@ -8,6 +8,7 @@ module.exports = {
     extend: {
       animation: {
         fadeIn: 'fadeIn 0.3s ease forwards',
+        fadeSlowIn: 'fadeIn 1s ease forwards',
         fadeOut: 'fadeOut 0.3s ease'
       },
       keyframes: {
