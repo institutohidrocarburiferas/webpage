@@ -1,8 +1,9 @@
 ---
-title: 'Proyecto Senior 2021'
+title: 'Estudio del consumo de electricidad en el sector residencial ecuatoriano '
 date: "2020-01-01"
-image: "/prueba.png"
+image: "/proyectos-investigacion/estudio-consumo-electricidad.svg"
 ---
+**Estudio de la política tarifaria de electricidad para la categoría residencial del Ecuador a partir de las tipologías de hogares y la inclusión de variables geográficas, económicas y técnicas.**
 
 El IIH está desarrollando el proyecto “Estudio de la política tarifaria de electricidad para la categoría residencial del Ecuador a partir de las tipologías de hogares y la inclusión de variables geográficas, económicas y técnicas”. Este proyecto fue ganador del concurso senior 2021 con un financiamiento US$ 24550 dólares.
 

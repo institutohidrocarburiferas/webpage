@@ -1,7 +1,7 @@
 ---
 title: 'Sistema de Monitoreo del Bioindicadores ANZU'
 date: "2020-01-01"
-image: "/prueba.png"
+image: "/proyectos-investigacion/sistema-de-monitoreo-de-bioindicadores-ANZU.svg"
 ---
 
 El “Sistema de Monitoreo de Bioindicadores ANZU” es un sistema de monitoreo basado en la ciencia los datos que utiliza las técnicas de teledetección, información de drones y parámetros químicos -biológicos que permite identificar cambios en los ecosistemas y utilizar bioindicadores específicos para monitorear el impacto ecosistémico en la realidad de la Amazonía ecuatoriana.

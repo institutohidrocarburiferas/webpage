@@ -28,7 +28,7 @@ export default function Proyectos ({ allPostsData }) {
             urlPath={pageData.mainURL}
           />
         </section> */}
-        <section className='container flex flex-col p-10 mx-auto justify-evenly lg:flex-row dark:text-gray-100'>
+        <section className='container flex flex-col px-10 mx-auto justify-evenly lg:flex-row dark:text-gray-100'>
           <Posts
             items={allPostsData}
             title={pageData.postsTitle}
