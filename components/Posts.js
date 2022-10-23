@@ -4,13 +4,12 @@ import Date from '@components/Date'
 
 function Card ({ title, image, url, date }) {
   return <Link href={url} >
-    <a className='flex items-center w-full h-auto justify-around p-5 mx-auto border-b-2 cursor-pointer md:hover:bg-gradient-to-tl md:hover:to-blue-100 md:hover:from-white group'>
+    <a className='flex items-center w-full h-auto justify-around gap-5 py-5 md:p-5 mx-auto border-b-2 cursor-pointer md:hover:bg-gradient-to-tl md:hover:to-blue-100 md:hover:from-white group'>
       <div
-        className='grid w-20 h-20 place-content-center group:hover:scale-105'>
+        className='grid w-24 h-24 place-content-center group:hover:scale-105 rounded'>
         <Image
-        className='image'
-          width={180}
-          height={180}
+          width={200}
+          height={200}
           src={image}
           alt={title}
         />
@@ -21,12 +20,6 @@ function Card ({ title, image, url, date }) {
         </h3>
         <Date dateString={date} />
       </div>
-      <style jsx>{`
-
-        .img > svg{
-          fill: red;
-        }
-        `}</style>
     </a>
   </Link>
 }
