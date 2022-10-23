@@ -1,10 +1,12 @@
 import { HeroSection } from '@components/HeroSection'
 import { Slider } from '@components/Slider'
 import { Footer } from '@components/Footer'
+import { colaboradores } from '@constants/colaboradores-externos'
 import { getPostsData } from '@utils/posts'
 import path from 'node:path'
 import Head from 'next/head'
 import Link from 'next/link'
+import { Participants } from '@components/Participants'
 // import { TitlePage } from '@components/TitlePage'
 
 const pageData = {
@@ -61,6 +63,8 @@ export default function Home ({ allPostsData }) {
             urlPath={pageData.sliderURL}
           />
         </section>
+        <Participants title="Colaboradores externos" data={colaboradores} />
+
       </div>
     </main>
     <Footer image={pageData.image} />

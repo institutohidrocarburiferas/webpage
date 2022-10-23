@@ -37,7 +37,7 @@ const patrocinations = [
   },
   {
     title: 'Ministerio de Energía y Minas logo',
-    image: '/evento/ministerio-energia-minas.png',
+    image: '/evento/ministerio-energia-minas.jpg',
   },
   {
     title: 'Agencia Internacional de Energía logo',
@@ -235,18 +235,7 @@ export default function Evento () {
 
           {/* Patrocinadores */}
           <Separator id="patrocinadores" />
-          <section
-            className="flex flex-col lg:container justify-center p-5 md:pl-12 gap-5 items-center"
-          >
-            <h2
-              className='text-4xl w-full text-center font-bold'
-            >Instituciones Participantes y Patrocinadores</h2>
-            <section className='flex flex-wrap justify-center gap-5'>
-              {patrocinations.map(({ title, image }) => (
-                <Participants title={title} image={image} key={title} />
-              ))}
-            </section>
-          </section>
+          <Participants title="Instituciones Participantes y Patrocinadores" data={patrocinations} />
 
           {/* ¿Qué busca el evento? */}
           <Separator id="que-busca-el-evento" />

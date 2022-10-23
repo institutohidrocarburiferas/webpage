@@ -4,7 +4,7 @@ import { Posts } from '@components/Posts'
 import { Slider } from '@components/Slider'
 import path from 'node:path'
 import { getPostsData } from '@utils/posts'
-import { extenalLinks } from '@constants/extenalLinks'
+import { externalLinks } from '@constants/externalLinks'
 
 const pageData = {
   title: 'Proyectos de investigación',
@@ -15,15 +15,6 @@ const pageData = {
 }
 
 export default function Proyectos ({ allPostsData }) {
-  const links = extenalLinks.map(({ title, image, url }) => (
-    <Participants
-      key={title}
-      title={title}
-      image={image}
-      url={url}
-    />
-  ))
-
   return (
     <Content
       title={pageData.title}
@@ -43,9 +34,7 @@ export default function Proyectos ({ allPostsData }) {
             title={pageData.postsTitle}
             urlPath={pageData.mainURL}
           />
-          <section className='flex flex-row flex-wrap justify-center gap-10 lg:flex-col-lime-500'>
-            {links}
-          </section>
+          <Participants data={externalLinks} />
         </section>
       </main>
     </Content>

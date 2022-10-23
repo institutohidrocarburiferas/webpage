@@ -1,4 +1,4 @@
-export const extenalLinks = [
+export const externalLinks = [
   {
     title: 'Logo de Agencia Internacional de Energía',
     image: '/externalLinks/international-energy-agency-logo.png',
