@@ -126,8 +126,6 @@ export default function Evento () {
               </a>
             </div>
             <div className='w-full h-32 text-white flex justify-center items-center text-5xl font-bold tracking-wider'>
-              <CountdownTime time={date.remainMonths} label="meses" />
-              <div>:</div>
               <CountdownTime time={date.remainDays} label="días" />
               <div>:</div>
               <CountdownTime time={date.remainHours} label="horas" />
