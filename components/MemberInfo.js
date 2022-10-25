@@ -3,7 +3,7 @@ import Image from 'next/image'
 export default function MemberInfo ({ name, image, title, description }) {
   return (
     <section className="flex flex-col items-center justify-center w-full h-auto gap-5 px-10">
-      <header className='flex flex-col items-center gap-5'>
+      <header className='flex flex-col items-center w-full gap-5'>
         <h2 className="font-bold">{name}</h2>
         <Image
           width={200}
@@ -12,7 +12,7 @@ export default function MemberInfo ({ name, image, title, description }) {
           src={image}
           alt={name}
         />
-        <p className='pb-2 leading-normal tracking-wide text-center lg:w-4/5'>
+        <p className='w-full pb-2 leading-normal tracking-wide text-center lg:w-4/5'>
           {title}
         </p>
       </header>
