@@ -93,7 +93,7 @@ export function Navbar () {
 
                             <li
                               key={name}
-                              className="py-1 text-sm font-semibold text-gray-700 md:bg-white dark:text-gray-200 dark:md:bg-gray-700"
+                              className="py-1 w-40 text-sm font-semibold text-gray-700 md:bg-white dark:text-gray-200 dark:md:bg-gray-700"
                             >
                               <Link href={url}>
                                 <a

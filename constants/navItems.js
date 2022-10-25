@@ -3,16 +3,12 @@ export const navItems = [
     name: '¿Quiénes somos?',
     subItems: [
       {
-        name: 'Resumen',
+        name: 'El Instituto',
         url: '/resumen',
       },
       {
         name: 'Integrantes',
         url: '/integrantes',
-      },
-      {
-        name: 'Líneas de investigación',
-        url: '/lineas-investigacion',
       },
     ]
   },
