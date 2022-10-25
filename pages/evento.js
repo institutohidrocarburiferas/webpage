@@ -23,45 +23,57 @@ const heroContent = {
 
 const patrocinations = [
   {
-    title: 'Conacyt logo',
+    title: 'Logo de Conacyt',
     image: '/evento/conacyt.svg',
   },
   {
-    title: 'Ministerio de Energía y Minas logo',
-    image: '/evento/ministerio-energia-minas.jpg',
-  },
-  {
-    title: 'Agencia Internacional de Energía logo',
+    title: 'Logo de la Agencia Internacional de Energía',
     image: '/externalLinks/international-energy-agency-logo.png',
   },
   {
-    title: 'Olade logo',
+    title: 'Logo de Olade',
     image: '/externalLinks/oladeorg-logo.jpg',
   },
   {
-    title: 'Fundación Bariloche logo',
+    title: 'Logo de la Fundación Bariloche',
     image: '/evento/fundacion-bariloche.jpg',
   },
   {
-    title: 'Instituto de Metrología de Alemania (PTB)',
+    title: 'Logo del Instituto de Metrología de Alemania (PTB)',
     image: '/evento/instituto-metrologia-alemania.jpg',
   },
   {
-    title: 'Universidad Central del Ecuador logo',
-    image: '/UCE-logo.png',
-  },
-  {
-    title: 'Escuela Politécnica Nacional logo',
+    title: 'Logo de la Escuela Politécnica Nacional',
     image: '/evento/epn.png',
   },
   {
-    title: 'Facultad de Ingeniería Química - UCE logo',
+    title: 'Logo de la Facultad de Ingeniería Química - UCE',
     image: '/evento/ing-quimica-uce.jpeg',
   },
   {
-    title: 'Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental',
+    title: 'Logo de la Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental',
     image: '/evento/figempa.png',
   },
+  {
+    title: 'Logo de SERTECPET',
+    image: '/evento/sertecpet.png',
+  },
+  {
+    title: 'Logo de Halliburton',
+    image: '/evento/halliburton.jpg',
+  },
+]
+
+const organizadores = [
+  {
+    title: 'Logo de la Universidad Central',
+    image: '/UCE-logo.png',
+  },
+  {
+    title: 'Logo del Ministerio de Energía y Minas',
+    image: '/evento/ministerio-energia-minas.jpg',
+  },
+
 ]
 
 const programItems = [
@@ -104,12 +116,15 @@ export default function Evento () {
           height={heroContent.height}
           justifyContent="center"
         >
+          <section className='text-gray-400'>
+            <span>Presencial - Cupos limitados</span>
+          </section>
           {/* Registro y cuenta regresiva */}
-          <section className='flex flex-col gap-8'>
+          <section className='flex flex-col gap-8 mt-14'>
             <div className='flex justify-center w-full'>
-              <a className='flex justify-center w-32 px-4 py-2 text-2xl font-semibold rounded hover:scale-105 bg-gradient-to-tr hover:from-amber-400 scroll-smooth hover:to-white from-amber-500 to-white' href="https://forms.gle/c55zGtRRenVvKpGKA" target="_blank" rel="noreferrer"
+              <a className='flex justify-center w-auto px-4 py-2 text-2xl font-semibold rounded hover:scale-105 bg-gradient-to-tr hover:from-amber-400 scroll-smooth hover:to-white from-amber-500 to-white' href="https://forms.gle/c55zGtRRenVvKpGKA" target="_blank" rel="noreferrer"
               >
-                Registro
+                Regístrate
               </a>
             </div>
             <Countdown eventDate={pageData.eventDay} />
@@ -129,12 +144,11 @@ export default function Evento () {
                 className='w-full text-4xl font-bold text-center lg:text-start'
               >¿Por qué prospectiva?</h2>
               <p className=''>
-                El éxito en la construcción de escenarios, se basa en el entendimiento de la dinámica de consumo de las sociedades y en la capacidad de identificar la disponibilidad de recursos para proveer energía bajo principios de sostenibilidad y seguridad. Es necesario además la comprensión profunda de aspectos cruciales en la relación de los sistemas socioeconómicos y los ecosistemas; tales como: peak oil, limitaciones biofísicas, transición y descarbonización de las economías y sistemas de gobernanza, incluidas las formas de abordar nuestros patrones de producción y consumo.
+                Los cambios en la dinámica de consumo de las sociedades y en la capacidad de identificar la disponibilidad de recursos para la provisión de energía, además de la comprensión profunda de aspectos como: peak oil, limitaciones biofísicas, transición y descarbonización de las economías y sistemas de gobernanza, incluidas las formas de abordar nuestros patrones de producción y consumo,  son principios necesarios de entenderlos para que los países construyan políticas que garanticen la sostenibilidad y seguridad de la energía en un horizonte de mediano y largo plazo.
 
               </p>
               <p className=''>
-
-                Es por esto que, desde el Instituto de Investigaciones Hidrocarburíferas de la Universidad Central del Ecuador estamos fomentando la realización de un Foro Internacional de Prospectiva Energética en el Ecuador con el propósito de vincular a instituciones de gobierno, empresas, academia y sociedad civil para la discusión de la necesidad de la construcción de escenarios energéticos nacionales deseables en base a metodologías innovadoras, experiencias internacionales y contemplando la realidad y autodeterminación en el desarrollo del Ecuador.
+                Es por esto que, desde el Instituto de Investigaciones Hidrocarburíferas de la Universidad Central del Ecuador estamos fomentando la realización de un Foro Internacional de Prospectiva Energética en el Ecuador con el propósito de topar los puntos críticos de los sistemas energéticos y de vincular a instituciones de gobierno, empresas, academia y sociedad civil para la discusión de la necesidad en la construcción de escenarios energéticos nacionales deseables en base a metodologías innovadoras, experiencias internacionales y contemplando la realidad y autodeterminación en el desarrollo del Ecuador.
               </p>
 
             </section>
@@ -166,13 +180,13 @@ export default function Evento () {
                 className='text-4xl font-bold'
               >Ejes temáticos</h2>
               <p>Los ejes temáticos que se tratarán en el seminario son los siguientes:</p>
-              <ul className='flex flex-col gap-3 list-disc pl-7'>
-                <li>Visión global de los sistemas energéticos</li>
-                <li>Mercado de precios de los energéticos</li>
-                <li>Panorama regional de las energías renovables a mediano y largo plazo</li>
-                <li>Eficiencia energética y los escenarios prospectivos.</li>
+              <ul className='flex flex-col gap-3 font-semibold list-disc pl-7'>
+                <li>Seguridad y sostenibilidad de los sistemas futuros de energía</li>
+                <li>Visualización y retos de la transacción energética en ALC</li>
+                <li>Futuro de los mercados de commodities energéticos</li>
+                <li>Eficiencia energética y los escenarios prospectivos</li>
                 <li>Visión a largo plazo del Ecuador</li>
-                <li>Experiencias internacionales-prospectiva energética</li>
+                <li>Experiencias internacionales sobre la construcción de escenarios energéticos</li>
                 <li>Estudios prospectivos desde los centros de Investigación</li>
               </ul>
 
@@ -203,13 +217,17 @@ export default function Evento () {
               className='px-20 py-5 text-4xl font-bold border-b-2 text-start'
             >Agenda</h2>
             <div
-              className='container grid items-center grid-cols-1 gap-10 p-5 md:pl-24 lg:grid-cols-2'>
+              className='container grid items-stretch grid-cols-1 gap-10 p-5 md:pl-24 lg:grid-cols-2'>
               {programItems.map(({ time, label, expositor, institution }) => (
                 <ProgramItem key={label} time={time} label={label} expositor={expositor} institution={institution} />
               ))}
             </div>
 
           </section>
+
+          {/* Organizadores */}
+          <Separator id="organizadores" />
+          <Participants title="Organizadores" data={organizadores} />
 
           {/* Patrocinadores */}
           <Separator id="patrocinadores" />
@@ -268,6 +286,9 @@ export default function Evento () {
               <div className='w-40 h-40 bg-black '></div>
             </section>
           </section>
+
+          {/* Registro */}
+          <Separator id="registro" />
 
           {/* Mapa */}
           <Separator id="ubicacion" />
