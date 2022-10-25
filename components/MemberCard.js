@@ -1,22 +1,22 @@
 import Image from 'next/image'
 
-export function MemberCard ({ name, image, openModal }) {
+export function MemberCard ({ name, image, role, openModal }) {
   return (
     <section
       onClick={openModal}
-      className="relative w-64 h-64 bg-gray-200 rounded-md cursor-pointer md:hover:scale-105">
+      className="w-64 h-76 bg-gray-200 rounded-md cursor-pointer border md:hover:scale-105 flex flex-col">
 
       <Image
-        className='object-cover object-top rounded-md'
+        className='object-cover object-top rounded-t-md'
         src={image}
         width={350}
         height={350}
         alt={name}
       />
-
-      <h3 className='absolute bottom-0 grid w-full h-16 text-lg font-bold text-white bg-black/50 rounded-b-md place-content-center'>
-        {name}
-      </h3>
+      <section className='grid w-full h-20 font-semibold text-center text-white bg-black/70 rounded-b-md place-content-center'>
+        <span className='text-lg'>{name}</span>
+        <span className='text-md text-gray-200'>{role}</span>
+      </section>
     </section>
   )
 }

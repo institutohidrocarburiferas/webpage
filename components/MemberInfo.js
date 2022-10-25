@@ -16,9 +16,14 @@ export default function MemberInfo ({ name, image, title, description }) {
           {title}
         </p>
       </header>
-      <p className='py-5 leading-loose tracking-wide text-justify border-t-2 lg:text-lg lg:w-4/5 '>
-        {description}
-      </p>
+      <section className='py-5 border-t-2 lg:w-4/5 flex flex-col gap-5'>
+        {description.map((el, i) => (
+
+          <p key={i} className='leading-loose tracking-wide text-justify  lg:text-lg  '>
+            {el}
+          </p>
+        ))}
+      </section>
     </section>
   )
 }
