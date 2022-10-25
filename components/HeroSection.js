@@ -7,14 +7,13 @@ const useStyles = (image, height, justifyContent) => createStyles((theme) => ({
     backgroundPosition: 'center',
     backgroundImage:
       `linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), url(${image})`,
-    width: '100%',
+    width: '100vw',
     height,
     maxHeight: 1000,
     display: 'grid',
     justifyContent,
     alignContent: 'center',
-    paddingLeft: theme.spacing.xl * 3,
-    paddingRight: theme.spacing.xl * 3,
+    padding: theme.spacing.xl * 3,
     [theme.fn.smallerThan('sm')]: {
       paddingLeft: 25,
     },
@@ -35,7 +34,6 @@ const useStyles = (image, height, justifyContent) => createStyles((theme) => ({
     // paddingTop: theme.spacing.xl * 2,
     // paddingBottom: theme.spacing.xl * 2,
     // marginRight: theme.spacing.xl * 3,
-    paddingBottom: theme.spacing.xl * 3,
     width: '100%',
 
     [theme.fn.smallerThan('md')]: {
@@ -48,7 +46,6 @@ const useStyles = (image, height, justifyContent) => createStyles((theme) => ({
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     fontWeight: 900,
     lineHeight: 1.05,
-    maxWidth: 700,
     fontSize: 48,
 
     [theme.fn.smallerThan('md')]: {
@@ -63,12 +60,13 @@ const useStyles = (image, height, justifyContent) => createStyles((theme) => ({
     opacity: 0.75,
     maxWidth: 1000,
     textAlign: 'justify',
-    fontSize: theme.fontSizes.xl,
+    fontSize: theme.fontSizes.xl * 1.15,
 
     [theme.fn.smallerThan('md')]: {
       maxWidth: '100%',
       fontSize: theme.fontSizes.lg,
     },
+
   },
 }))
 
@@ -89,6 +87,7 @@ export function HeroSection ({
           <div className={classes.content}>
             <Title className={classes.title}>
               <Text
+                className='animate-fade'
                 component="span"
                 inherit
                 variant="gradient"
@@ -97,12 +96,15 @@ export function HeroSection ({
                 {title}
               </Text>
             </Title>
-            <Text className={classes.description} mt={30}>
+            <Text className={`${classes.description} animate-fade`} mt={30}>
               {text}
             </Text>
           </div>
         </div>
+        <div className='w-full animate-fade'>
+
         {children}
+        </div>
       </Container>
     </div>
   )

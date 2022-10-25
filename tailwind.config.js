@@ -9,7 +9,10 @@ module.exports = {
       animation: {
         fadeIn: 'fadeIn 0.3s ease forwards',
         fadeSlowIn: 'fadeIn 1s ease forwards',
-        fadeOut: 'fadeOut 0.3s ease'
+        fadeOut: 'fadeOut 0.3s ease',
+        fade: 'fade 3s ease forwards',
+        leftEntry: 'leftEntry 0.75s ease forwards',
+
       },
       keyframes: {
         fadeIn: {
@@ -19,7 +22,15 @@ module.exports = {
         fadeOut: {
           '0%': { transform: 'scale(1);' },
           '100%': { transform: 'scale(0);' }
-        }
+        },
+        fade: {
+          '0%': { opacity: '0;' },
+          '100%': { opacity: '1;' }
+        },
+        leftEntry: {
+          '0%': { transform: 'translateX(-500px);' },
+          '100%': { transform: 'translateX(0px);' }
+        },
       }
     },
   },

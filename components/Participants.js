@@ -1,8 +1,9 @@
 function Participant ({ title, image, url }) {
-  return <a href={url} target="_blank" className='grid bg-white hover:scale-105 p-4 place-content-center' rel="noreferrer">
+  console.log(url)
+  return <a href={url} target="_blank" className='grid p-4 bg-white hover:scale-105 place-content-center' rel="noreferrer">
     <picture>
       <img
-        className='h-28 max-w-xs aspect-auto'
+        className='max-w-xs h-28 aspect-auto'
         src={image}
         alt={title}
         loading="lazy"
@@ -12,17 +13,17 @@ function Participant ({ title, image, url }) {
 }
 
 export function Participants ({ title, data }) {
-  const participants = data.map(({ label, image }) => (
-    <Participant key={label} title={label} image={image} />
+  const participants = data.map(({ label, image, url }) => (
+    <Participant key={label} title={label} image={image} url={url} />
   ))
   return (
     <section
-    className="flex flex-col lg:container justify-center  p-5 md:pl-12 gap-5 items-center"
+    className="flex flex-col items-center justify-center gap-5 p-5 lg:container md:pl-12"
     >
     <h2
-      className='text-4xl w-full text-center font-bold'
+      className='w-full text-4xl font-bold text-center'
     >{title}</h2>
-    <section className='flex flex-wrap justify-center items-center gap-5'>
+    <section className='flex flex-wrap items-center justify-center gap-5'>
       {participants}
     </section>
     </section>
