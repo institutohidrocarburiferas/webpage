@@ -1,6 +1,6 @@
 ---
 title: 'Presentación del poster “Understanding The Future Metabolism of Ecuador’s Energy System Using MuSIASEM”  '
-date: "2020-01-01"
+date: "2022-03-14"
 image: "/noticias/poster-samo.png"
 ---
 

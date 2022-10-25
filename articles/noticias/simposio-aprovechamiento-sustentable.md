@@ -1,6 +1,6 @@
 ---
 title: 'El Instituto de Investigaciones Hidrocarburíferas participa en el primer Simposio "Aprovechamiento sustentable de recursos naturales y energéticos"'
-date: "2020-01-01"
+date: "2021-12-08"
 image: "/noticias/simposio-aprovechamiento-sustentable.jpeg"
 ---
 

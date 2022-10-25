@@ -1,6 +1,6 @@
 ---
 title: "Postulación al Grand Challenge de Minería Artesanal y Pequeña Minería en la Amazonía 2021"
-date: "2020-01-01"
+date: "2021-11-16"
 image: "/noticias/postulacion-grand-challenge-mineria.jpg"
 ---
 

@@ -1,6 +1,6 @@
 ---
 title: "Perspectivas del Sector Energético del Ecuador"
-date: "2020-01-01"
+date: "2022-07-27"
 image: "/noticias/perspectivas-sector-energetico.jpeg"
 ---
 
