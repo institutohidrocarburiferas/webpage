@@ -1,19 +1,17 @@
+import { Countdown } from '@components/Countdown'
 import { Footer } from '@components/Footer'
 import { HeroSection } from '@components/HeroSection'
+import { Participants } from '@components/Participants'
 import { Separator } from '@components/Separator'
 import { Sidebar } from '@components/Sidebar'
 import { items } from '@constants/eventItems'
 import Head from 'next/head'
-import { useEffect, useState } from 'react'
-import { getRemainTime } from '@utils/countdown'
-import { Participants } from '@components/Participants'
-
-const eventDay = '2022-11-23T09:00:00.000Z'
 
 const pageData = {
   title: 'Evento',
   description: 'Evento',
   image: '/prueba.png',
+  eventDay: '2022-11-23T09:00:00.000Z',
 }
 
 const heroContent = {
@@ -21,13 +19,6 @@ const heroContent = {
   height: '87vh',
   image: '"https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80"',
   text: 'miércoles 23 de noviembre del 2022'
-}
-
-function CountdownTime ({ time, label }) {
-  return <div className='w-24 lg:w-32 flex flex-col items-center gap-3'>
-    <div>{time}</div>
-    <p className='text-lg md:text-xl'>{label}</p>
-  </div>
 }
 
 const patrocinations = [
@@ -89,19 +80,15 @@ const programItems = [
 ]
 
 function ProgramItem ({ time, label, expositor, institution }) {
-  return <div className='flex flex-col gap-1 border-b-2 pb-5'>
+  return <div className='flex flex-col gap-1 pb-5 border-b-2'>
     <time className='text-2xl text-amber-400'>{time}</time>
-    <h3 className='text-3xl text-white font-bold'>{label}</h3>
+    <h3 className='text-3xl font-bold text-white'>{label}</h3>
     <p className='text-xl font-bold'>{expositor}</p>
     <p className='text-md'>{institution}</p>
   </div>
 }
 
 export default function Evento () {
-  const [date, setDate] = useState(getRemainTime(eventDay))
-  useEffect(function () {
-    setInterval(() => setDate(getRemainTime(eventDay), 1000))
-  }, [date])
   return (
     <>
       <Head>
@@ -119,34 +106,27 @@ export default function Evento () {
         >
           {/* Registro y cuenta regresiva */}
           <section className='flex flex-col gap-8'>
-            <div className='w-full flex justify-center'>
-              <a className='flex justify-center w-32 px-4 py-2 rounded hover:scale-105 text-2xl font-semibold bg-gradient-to-tr hover:from-amber-400 scroll-smooth hover:to-white from-amber-500 to-white' href="https://forms.gle/c55zGtRRenVvKpGKA" target="_blank" rel="noreferrer"
+            <div className='flex justify-center w-full'>
+              <a className='flex justify-center w-32 px-4 py-2 text-2xl font-semibold rounded hover:scale-105 bg-gradient-to-tr hover:from-amber-400 scroll-smooth hover:to-white from-amber-500 to-white' href="https://forms.gle/c55zGtRRenVvKpGKA" target="_blank" rel="noreferrer"
               >
                 Registro
               </a>
             </div>
-            <div className='w-full h-32 text-white flex justify-center items-center text-5xl font-bold tracking-wider'>
-              <CountdownTime time={date.remainDays} label="días" />
-              <div>:</div>
-              <CountdownTime time={date.remainHours} label="horas" />
-              <div>:</div>
-              <CountdownTime time={date.remainMinutes} label="minutos" />
-              <div>:</div>
-              <CountdownTime time={date.remainSeconds} label="segundos" />
-            </div>
+            <Countdown eventDate={pageData.eventDay} />
           </section>
+
         </HeroSection>
 
         <div
-          className='grid grid-cols-1 w-full justify-items-center'>
+          className='grid w-full grid-cols-1 justify-items-center'>
           {/* ¿Por qué prospectiva ? */}
           <Separator id="por-que-perspectiva" />
           <section
-            className="p-5 flex flex-col lg:flex-row-reverse lg:container md:pl-24 gap-5 items-center"
+            className="flex flex-col items-center gap-5 p-5 lg:flex-row-reverse lg:container md:pl-24"
           >
-            <section className='flex flex-col gap-7 text-xl text-justify lg:w-1/2'>
+            <section className='flex flex-col text-xl text-justify gap-7 lg:w-1/2'>
               <h2
-                className='lg:text-start w-full text-center text-4xl font-bold'
+                className='w-full text-4xl font-bold text-center lg:text-start'
               >¿Por qué prospectiva?</h2>
               <p className=''>
                 El éxito en la construcción de escenarios, se basa en el entendimiento de la dinámica de consumo de las sociedades y en la capacidad de identificar la disponibilidad de recursos para proveer energía bajo principios de sostenibilidad y seguridad. Es necesario además la comprensión profunda de aspectos cruciales en la relación de los sistemas socioeconómicos y los ecosistemas; tales como: peak oil, limitaciones biofísicas, transición y descarbonización de las economías y sistemas de gobernanza, incluidas las formas de abordar nuestros patrones de producción y consumo.
@@ -179,14 +159,14 @@ export default function Evento () {
           {/* Ejes temáticos */}
           <Separator id="ejes-tematicos" />
           <section
-            className="flex flex-col p-5 lg:flex-row md:pl-12 lg:pl-24 lg:container gap-5 items-center"
+            className="flex flex-col items-center gap-5 p-5 lg:flex-row md:pl-12 lg:pl-24 lg:container"
           >
-            <section className='flex flex-col p-5 gap-7 text-xl lg:w-1/2'>
+            <section className='flex flex-col p-5 text-xl gap-7 lg:w-1/2'>
               <h2
                 className='text-4xl font-bold'
               >Ejes temáticos</h2>
               <p>Los ejes temáticos que se tratarán en el seminario son los siguientes:</p>
-              <ul className='list-disc pl-7 flex flex-col gap-3'>
+              <ul className='flex flex-col gap-3 list-disc pl-7'>
                 <li>Visión global de los sistemas energéticos</li>
                 <li>Mercado de precios de los energéticos</li>
                 <li>Panorama regional de las energías renovables a mediano y largo plazo</li>
@@ -218,12 +198,12 @@ export default function Evento () {
               backgroundImage:
                 'linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), url(/bgEvent.svg)',
             }}
-            className='w-full text-gray-300 flex flex-col items-center'>
+            className='flex flex-col items-center w-full text-gray-300'>
             <h2
-              className='text-start py-5 px-20 text-4xl font-bold border-b-2'
+              className='px-20 py-5 text-4xl font-bold border-b-2 text-start'
             >Agenda</h2>
             <div
-              className='grid p-5 md:pl-24 container items-center grid-cols-1 lg:grid-cols-2  gap-10'>
+              className='container grid items-center grid-cols-1 gap-10 p-5 md:pl-24 lg:grid-cols-2'>
               {programItems.map(({ time, label, expositor, institution }) => (
                 <ProgramItem key={label} time={time} label={label} expositor={expositor} institution={institution} />
               ))}
@@ -238,17 +218,17 @@ export default function Evento () {
           {/* ¿Qué busca el evento? */}
           <Separator id="que-busca-el-evento" />
           <section
-            className="flex flex-col lg:flex-row lg:container gap-5 items-center"
+            className="flex flex-col items-center gap-5 lg:flex-row lg:container"
           >
-            <section className='flex flex-col p-5 md:pl-24 gap-7 text-xl text-justify lg:w-1/2'>
+            <section className='flex flex-col p-5 text-xl text-justify md:pl-24 gap-7 lg:w-1/2'>
               <h2
-                className='text-center text-4xl font-bold'
+                className='text-4xl font-bold text-center'
               >¿Qué busca el evento?</h2>
               <p className=''>
                 Generar un espacio de discusión entre instituciones de gobierno, empresas, academia y sociedad civil, sobre la necesidad de realizar estudios prospectivos que vinculen el aprovechamiento de los recursos energéticos y con ello fortalecer la planificación energética del Ecuador con fines de seguridad y soberanía
 
               </p>
-              <ul className='list-disc pl-7 flex flex-col gap-3'>
+              <ul className='flex flex-col gap-3 list-disc pl-7'>
                 <li>Entender sobre los problemas y retos que atañe a los sistemas energéticos a nivel global, regional y local, con fines de seguridad y soberanía</li>
                 <li>Conocer sobre varias herramientas y modelos que permiten desarrollar escenarios de prospectiva energética para el fortalecimiento de las políticas públicas</li>
                 <li>Identificar los beneficios de incorporar la transformación del mercado hacia equipos energéticamente eficientes a través de escenarios prospectivos.</li>
@@ -272,7 +252,7 @@ export default function Evento () {
           {/* Ponentes */}
           <Separator id="ponentes" />
           <section
-            className="flex flex-col lg:container gap-5 p-5 md:pl-24 items-center"
+            className="flex flex-col items-center gap-5 p-5 lg:container md:pl-24"
           >
             <h2
               className='text-4xl font-bold'
@@ -292,12 +272,12 @@ export default function Evento () {
           {/* Mapa */}
           <Separator id="ubicacion" />
           <section
-            className="flex flex-col lg:container gap-5 p-5 md:pl-24 items-center"
+            className="flex flex-col items-center gap-5 p-5 lg:container md:pl-24"
           >
             <h2
-            className='text-start text-4xl font-bold'
-          >Ubicación del evento</h2>
-          <iframe className='w-full my-5 bg-gray-200 border-none h-96' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d701.1969549441504!2d-78.50565731357777!3d-0.1988105932917797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a46e4cd72f7%3A0x1a520161ab60d7c5!2sComprehensive%20Information%20Center!5e0!3m2!1sen!2sec!4v1666476170800!5m2!1sen!2sec" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+              className='text-4xl font-bold text-start'
+            >Ubicación del evento</h2>
+            <iframe className='w-full my-5 bg-gray-200 border-none h-96' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d701.1969549441504!2d-78.50565731357777!3d-0.1988105932917797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a46e4cd72f7%3A0x1a520161ab60d7c5!2sComprehensive%20Information%20Center!5e0!3m2!1sen!2sec!4v1666476170800!5m2!1sen!2sec" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </section>
         </div>
 
