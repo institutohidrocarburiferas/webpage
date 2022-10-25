@@ -43,4 +43,10 @@ export const members = [
     title: 'Integración de procesos hidrocaburíferos y energéticos con ciencia de datos y desarrollo de algoritmos en lenguaje de programación Python y R para análisis de la información.',
     description: 'Es Ingeniero de Implementación Digital de activos en la empresa Schlumberger, fue profesor de las carreras de Desarrollo de Software y Redes y Telecomunicaciones, donde se desempeñó como líder de investigación y director de vinculación con la sociedad en el Instituto Tecnológico Superior Quito Metropolitano. En la Universidad IEXE – México obtuvo el grado de Máster en Tecnologías de la Información y Comunicación. En Ecuador obtuvo una Ingeniera de Petróleo en la Universidad Central del Ecuador. Es Investigador independiente y participe de proyectos ambientales, económicos, hidrocarburíferos, geotérmicos, de digitalización y automatización. Con su experiencia ha desarrollado cursos de formación y aprendizaje basado en proyectos del lenguaje de programación Python dictado a estudiantes universitarios, jóvenes profesionales y profesionales senior para su actualización de conocimientos.'
   },
+  {
+    name: 'Edgar Benítez Herrera ',
+    image: '/integrantes/Edgar-Benitez-Herrera.png',
+    title: null,
+    description: 'Economista por la Universidad Central del Ecuador (UCE). Me he desempeñado como consultor e investigador en temas de Economía Popular y Solidaria en el Institutito Superior de Investigaciones y Postgrado (ISIP-UCE) y en el Instituto de Altos Estudios Nacionales (IAEN). Coautor del libro Investigar la economía popular y solidaria: metodologías, métodos, técnicas y su aplicación en casos ecuatorianos. Forma parte del grupo de investigación de Economía Social y Solidara de la Universidad Central del Ecuador y parte del grupo de investigación del Colegio de Economistas de Pichincha. Actualmente me desempeño como Consultor de Proyecto en la DGRV de Ecuador- Honduras, en el área de Finanzas Sostenibles y Finanzas Verdes enfocadas para el sector financiero Cooperativista.'
+  },
 ]

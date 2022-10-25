@@ -25,9 +25,9 @@ export default function Integrantes () {
       description={pageContent.description}
       image={pageContent.image}
     >
-      <main className='container mx-auto dark:text-gray-100'>
-        <section className='relative'>
-          <div className='flex flex-col flex-wrap items-center justify-center gap-10 pt-10 pb-40 pl-4 pr-8 md:flex-row '>
+      <main className='w-full'>
+        <section className='container relative mx-auto dark:text-gray-100'>
+          <div className='flex flex-wrap justify-center gap-10 pt-10 pb-40 md:flex-row '>
             {memberSection}
           </div>
         </section>
