@@ -5,12 +5,25 @@
   margin: 1rem 0;
   font-size: clamp(1rem, 0.5rem + 1.5vw, 1.25rem);
 }
-.content > p{
+
+.content h2 {
+  font-size: 1.5rem;
+  font-weight: 700;
+  margin: 1.25rem 0 0 0;
+}
+
+.content h3 {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 1rem 0 0 0;
+}
+
+.content p{
   line-height: 1.5;
   text-align: justify;
 }
 
-.content > ul{
+.content ul{
   padding: 0 2rem;
 }
 

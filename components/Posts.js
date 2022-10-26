@@ -25,11 +25,11 @@ function Card ({ title, image, url, date }) {
 }
 
 export function Posts ({ items, title, urlPath }) {
-  const posts = items.map(({ id, date, title, image }) => (
+  const posts = items.map(({ id, date, title, image, icon }) => (
     <Card
       key={title}
       title={title}
-      image={image}
+      image={icon}
       date={date}
       url={`${urlPath}/${id}`}
     />
