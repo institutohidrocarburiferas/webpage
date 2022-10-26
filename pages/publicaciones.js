@@ -1,6 +1,6 @@
 import { Publications } from '@components/Publications'
 import { publications } from '@constants/publications'
-import { externalLinks } from '@constants/externalLinks'
+import { revistas } from '@constants/externalLinks'
 import { Participants } from '@components/Participants'
 import { Content } from '@components/Content'
 
@@ -32,7 +32,7 @@ export default function Publicaciones () {
             items={sortedPublications}
             />
         </section>
-        <Participants data={externalLinks} />
+        <Participants data={revistas} />
 
       </main>
 
