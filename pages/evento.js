@@ -289,6 +289,27 @@ export default function Evento () {
 
           {/* Registro */}
           <Separator id="registro" />
+          <HeroSection
+          title={`REGÍSTRATE EN EL ${heroContent.title}`}
+          text={heroContent.text}
+          image={heroContent.image}
+          height="70vh"
+          justifyContent="center"
+        >
+          <section className='text-gray-400'>
+            <span>Presencial - Cupos limitados</span>
+          </section>
+          {/* Registro y cuenta regresiva */}
+          <section className='flex flex-col gap-8 mt-14'>
+            <div className='flex justify-center w-full'>
+              <a className='flex justify-center w-auto px-4 py-2 text-3xl font-semibold rounded hover:scale-105 bg-gradient-to-tr hover:from-amber-400 scroll-smooth hover:to-white from-amber-500 to-white' href="https://forms.gle/c55zGtRRenVvKpGKA" target="_blank" rel="noreferrer"
+              >
+                Regístrate
+              </a>
+            </div>
+          </section>
+
+        </HeroSection>
 
           {/* Mapa */}
           <Separator id="ubicacion" />

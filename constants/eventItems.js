@@ -93,7 +93,7 @@ export const items = [
 
   },
   {
-    label: 'Registro-Formulario',
+    label: 'Regístrate',
     url: '#registro',
     image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-file-search" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
