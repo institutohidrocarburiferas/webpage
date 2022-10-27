@@ -77,6 +77,16 @@ export const investigadores = [
     description: ['Es profesor/investigador de la carrera de Ingeniería Ambiental de la FIGEMPA-Universidad Central del Ecuador. Biólogo con maestría en Biologia Molecular y Fermentaciones, Diploma de Estudios Avanzado en Microbiología y PhD en Microbiología y Parasitología por la Universidad Complutense de Madrid, España. Ha sido profesor investigador de la Escuela Superior Politecnica del Chimborazo (Ecuador) y de la Universidad de los Andes (Venezuela). Profesor invitado de la Universidad de la Salle (Colombia). Investigador en el area de la Microbiología y Biotecnología, acreditado como investigador Agregado II en el RNI-SENESCYT (Ecuador), investigador senior en el CONCYTEC (Perú) e investigador PPI Nivel B del FONACIT (Venezuela). Miembro del Comité Científico de la Universidad Central del Ecuador. Director del grupo de investigaciones en Microbiología y Biotecnología Aplicada de la FIGEMPA-UCE. Ha dirigido más de 100 tesis de doctorado, maestría y grado. Autor y coautor de más de 80 publicaciones académicas y de más de 300 ponencias en eventos nacionales e internacionales. Director de 30 proyectos de investigación científica nacionales e internacionales en el area de la Microbiología y Biotecnología. Miembro del comité editorial de la revista FIGEMPA. Evaluador de proyectos de investigación científica de DI-UCE, IIV-ESPOCH, DI-UNACH, DI-UTA, DI-UC, CEDIA, REDU, OIE, COLCIENCIA, CDCHT-ULA.']
   },
   {
+    name: 'Teresa Palacios Cabrera ',
+    image: '/integrantes/Teresa-Palacios-Cabrera.png',
+    role: 'Docente Investigador',
+    title: null,
+    description: [
+      'Directora de la Carrera de Ingeniería Ambiental de la Facultad de Geología, Minas, Petróleos y Ambiental desde el 2019 hasta la actualidad. Docente a tiempo completo e investigadora de la Universidad Central del Ecuador desde 2014. Candidata a Doctora de la Universidad de Alicante (España), su investigación se centra en el abandono de las zonas agrícolas tradicionales y su impacto en la respuesta hidrológica de una cuenca mediterránea bajo condiciones climáticas semiáridas. Caso de estudio la cuenca vertiente al embalse del río Guadalest, sur este de España.',
+
+      'Desde el año 2003 hasta el 2012, trabajó en el Ministerio del Ambiente en la Subsecretaría de Calidad Ambiental y la Subsecretaría de Cambio Climático, en esta última en calidad de Coordinadora de la Autoridad Nacional para proyectos de un mecanismo de desarrollo limpio, punto focal por el Ecuador al Panel Intergubernamental de Expertos sobre Cambio Climático. Anteriormente trabajó en calidad de consultora ambiental y en la construcción del inventario de emisiones de gases de efecto invernadero en el sector residuos. Ingeniera Química de la Universidad Central del Ecuador, cuenta con una maestría en Gestión y Auditorías Ambientales con énfasis en el manejo integral del agua de la Universidad de Catalunya de España y la Universidad Central del Ecuador. Autora de varios artículos y documentos científicos sobre diversas problemáticas ambientales, en especial de cambio climático y recursos hídricos. Sus investigaciones se enfocan en el tema de cambio de uso de suelo, modelación hidrológica y cambio climático.']
+  },
+  {
     name: 'Byron Medina-Torres',
     image: '/integrantes/Byron-Medina-Torres.png',
     role: 'Docente Investigador',
