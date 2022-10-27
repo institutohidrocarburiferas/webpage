@@ -32,7 +32,7 @@ export default function Publicaciones () {
             items={sortedPublications}
             />
         </section>
-        <Participants data={revistas} />
+        <Participants title="Los resultados de las investigaciones del IIH se publican en:" data={revistas} />
 
       </main>
 

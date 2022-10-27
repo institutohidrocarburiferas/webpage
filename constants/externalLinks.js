@@ -17,9 +17,9 @@ export const revistas = [
     url: 'https://www.fsu.edu/'
   },
   {
-    title: 'Logo de la revista ELSEVIER',
-    image: `${path}/elsevier-non-solus.png`,
-    url: 'https://www.sciencedirect.com/'
+    title: 'Logo de la revista Science of the Total environment',
+    image: `${path}/science-total-environment.png`,
+    url: 'https://www.sciencedirect.com/journal/science-of-the-total-environment'
   },
 ]
 
