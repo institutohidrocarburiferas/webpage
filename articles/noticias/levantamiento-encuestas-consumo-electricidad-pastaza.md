@@ -1,7 +1,7 @@
 ---
-title: "Levantamiento de encuestas sobre consumos de electricidad en los hogares del cantón Pastaza"
-date: "2022-08-04"
+title: "Investigadores del IIH y la FIGEMPA, levantaron 1200 encuestas en los hogares del Cantón Pastaza para determinar los patrones de consumo de electricidad"
+date: "2022-08-03"
 image: "/noticias/levantamiento-encuestas-consumo-electricidad-pastaza.jpeg"
 ---
 
-En el marco de las actividades del Estudio de consumo de electricidad del sector residencial ecuatoriano, se realizó el levantamiento de información primaria mediante encuestas sobre el consumo de energía eléctrica en el cantón Pastaza. El propósito de esta actividad fue obtener información de un cantón predefinido para conocer el comportamiento de consumo eléctrico de los diferentes tipos de hogares del cantón. 
+Del 01 al 3 de septiembre de 2022, investigadores del IIH y de la Facultad de Geología, Minas, Petróleos y Ambiental tienen presencia en territorio, levantando 1200 encuestas en los hogares del cantón Pastaza para determinar los patrones de consumo de electricidad por tipología de hogar. Esta actividad es parte de un proyecto de investigación que tienen alcance nacional cuyo fin discutir la política tarifaria de electricidad en el sector residencial.
