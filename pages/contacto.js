@@ -23,7 +23,7 @@ const pageData = {
     },
     {
       name: 'Instituto de Investigaciones Hidrocarburíferas',
-      role: 'IIH',
+      role: null,
       email: 'iih@uce.edu.ec',
     }
   ]
@@ -32,8 +32,8 @@ const pageData = {
 export default function Contacto () {
   const contacts = pageData.contacts.map(({ name, role, email }) => (
     <div key={name}>
-      <p className='flex items-end h-10 mx-2 border-b'>{name}</p>
-      <p className='mx-2 mt-1 font-bold'>{role}</p>
+      <p className='flex items-end h-10 mx-2 text-xl font-bold border-b'>{name}</p>
+      <p className='mx-2 mt-1'>{role}</p>
       <a
         className='mx-2 mt-1 italic text-blue-500 transition-colors hover:text-blue-700 active:text-blue-900'
         href={`mailto:${email}?subject=Envío%20desde%20la%20página%20web`}
@@ -56,7 +56,7 @@ export default function Contacto () {
           <FormContact />
         </section>
         <section className='flex flex-col items-center w-full'>
-        <div className='grid items-center justify-between w-full grid-cols-3 my-3 text-sm'>
+        <div className='flex flex-wrap items-center justify-center w-full my-3 text-sm gap-x-16'>
             {contacts}
           </div>
           <PageMap />
