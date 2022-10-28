@@ -6,23 +6,24 @@ import Link from 'next/link'
 
 const useStyles = createStyles((theme, _params, getRef) => ({
   card: {
-    height: 440,
+    height: 240,
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
     alignItems: 'flex-start',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
+    padding: 50,
+    border: 'solid 1px rgba(0,0,0,0.5)'
   },
 
   title: {
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
-    fontWeight: 900,
-    color: theme.white,
-    lineHeight: 1.2,
-    fontSize: 32,
+    fontWeight: 400,
+    color: theme.black,
+    lineHeight: 1,
+    fontSize: 20,
     marginTop: theme.spacing.xs,
-    textShadow: '2px 2px 2px black'
+    textAlign: 'justify',
   },
 
   category: {
@@ -71,13 +72,10 @@ function Card ({ id, title, image, date, urlPath }) {
           sx={{ backgroundImage: `url(${image})` }}
           className={classes.card}
         >
-          <div>
-
-            <Title order={3} className={classes.title}>
-              {title}
-            </Title>
-          </div>
         </Paper>
+        <Title order={3} className={classes.title}>
+          {title}
+        </Title>
       </a>
     </Link>
 

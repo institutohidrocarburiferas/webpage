@@ -1,6 +1,6 @@
 ---
 title: "Investigadores del IIH y la FIGEMPA, levantaron 1200 encuestas en los hogares del Cantón Pastaza para determinar los patrones de consumo de electricidad"
-date: "2022-08-03"
+date: "2022-09-03"
 image: "/noticias/levantamiento-encuestas-consumo-electricidad-pastaza.jpeg"
 ---
 

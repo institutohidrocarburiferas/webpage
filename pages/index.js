@@ -10,6 +10,7 @@ import { Participants } from '@components/Participants'
 import { Separator } from '@components/Separator'
 import Image from 'next/image'
 import { Countdown } from '@components/Countdown'
+// import { TitlePage } from '@components/TitlePage'
 
 const eventDay = '2022-11-23T09:00:00.000Z'
 
@@ -96,7 +97,7 @@ export default function Home ({ allPostsData }) {
 
       <div className='container mx-auto dark:text-gray-100'>
         {/* Recent notices section */}
-        <section className='flex flex-col gap-5 p-5 my-12'>
+        <section className='flex flex-col gap-5 px-24 py-5 my-12'>
           <h2 className='px-2 py-1 mx-auto text-4xl font-bold border-b-2 sm:px-20 md:px-40'>
             Noticias recientes
           </h2>

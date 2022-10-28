@@ -1,10 +1,10 @@
-import { Participants } from '@components/Participants'
+// import { Participants } from '@components/Participants'
 import { Content } from '@components/Content'
 import { Posts } from '@components/Posts'
 // import { Slider } from '@components/Slider'
 import path from 'node:path'
 import { getPostsData } from '@utils/posts'
-import { externalLinks } from '@constants/externalLinks'
+// import { externalLinks } from '@constants/externalLinks'
 
 const pageData = {
   title: 'Proyectos de investigación',
@@ -35,7 +35,7 @@ export default function Proyectos ({ allPostsData }) {
             urlPath={pageData.mainURL}
           />
         </section>
-          <Participants data={externalLinks} />
+          {/* <Participants data={externalLinks} /> */}
       </main>
     </Content>
   )
