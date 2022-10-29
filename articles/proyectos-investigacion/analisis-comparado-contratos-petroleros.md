@@ -1,6 +1,5 @@
 ---
 title: 'Análisis comparado de los contratos en el upstream petrolero del Ecuador con fines de política pública'
-date: "2020-01-01"
 image: "/proyectos-investigacion/analisis-comparado-contratos-petroleros.jpg"
 icon: "/proyectos-investigacion/analisis-comparado-contratos-petroleros.svg"
 ---

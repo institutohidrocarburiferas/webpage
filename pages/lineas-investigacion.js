@@ -56,7 +56,7 @@ export default function LineasInvestigacion () {
       description={pageContent.description}
       image={pageContent.image}
     >
-      <main className='w-screen dark:text-gray-100'>
+      <main className='w-screen'>
         {sections}
       </main>
     </Content>

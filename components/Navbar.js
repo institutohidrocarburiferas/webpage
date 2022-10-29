@@ -15,9 +15,9 @@ export function Navbar () {
       : setCollapse('hidden')
   }
 
-  return <nav className="fixed top-0 z-10 w-full bg-white shadow dark:bg-gray-900 shadow-gray-400">
+  return <nav className="bg-white dark:bg-gray-900 fixed top-0 z-10 w-full h-24 shadow  shadow-gray-400">
     <div
-      className="container px-2.5 flex flex-wrap items-center  justify-between w-full mx-auto  z-10 lg:flex-nowrap">
+      className="container bg-white dark:bg-gray-900 px-2.5 flex flex-wrap items-center  justify-between w-full mx-auto  z-10 lg:flex-nowrap">
       {/* Logo */}
       <Link href="/" >
         <a
@@ -63,24 +63,24 @@ export function Navbar () {
 
           {
             navItems.map(({ name, url, subItems }) => {
-              const styleCurrentPage = 'pointer-events-none text-amber-600 dark:text-amber-500'
+              const styleCurrentPage = 'pointer-events-none text-amber-500 dark:text-amber-500'
 
               return (<li
-                className="text-gray-700 group"
+                className="group"
                 key={name}>
 
                 {
                   (subItems === undefined)
                     ? <Link href={url} >
                       <a
-                        className={`${pathname === url && `${styleCurrentPage} md:border-amber-600`} rounded transition-colors delay-75 md:border-b-2 md:rounded-none border-transparent hover:md:border-amber-700 block py-2 pl-3 pr-4 font-bold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-amber-700  md:py-2 md:px-0 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-amber-700 dark:hover:md:border-amber-700 md:dark:hover:bg-transparent`}
+                        className={`${pathname === url && `${styleCurrentPage} md:border-amber-600`} rounded transition-colors delay-75 md:border-b-2 md:rounded-none border-transparent hover:md:border-amber-700 block py-2 pl-3 pr-4 font-bold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-amber-700  md:py-2 md:px-0 dark:hover:bg-gray-700 dark:hover:text-amber-700 dark:hover:md:border-amber-700 md:dark:hover:bg-transparent`}
                         onClick={() => setCollapse('hidden')}
                       >
                         {name}
                       </a>
                     </Link>
                     : <div
-                      className={`${subItems.some(({ url }) => url === pathname) && 'md:border-amber-600 md:border-b-2'} block py-2 pl-3 pr-4 text-gray-700 border rounded  md:hover:bg-transparent md:rounded-none md:border-0 md:hover:text-amber-700 dark:md:hover:text-gray-200 md:px-0 md:py-2 dark:text-gray-300 dark:hover:bg-gray-700 dark:hover:text-gray-200 md:dark:hover:bg-transparent dark:border-gray-600`}
+                      className={`${subItems.some(({ url }) => url === pathname) && 'md:border-amber-600 md:border-b-2'} block py-2 pl-3 pr-4 border rounded  md:hover:bg-transparent md:rounded-none md:border-0 md:hover:text-amber-700 md:px-0 md:py-2  dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-600`}
                     >
                       <span className={`${subItems.some(({ url }) => url === pathname) && 'text-amber-600 dark:text-amber-500'} font-bold md:cursor-pointer `}>
                         {name}
@@ -93,11 +93,11 @@ export function Navbar () {
 
                             <li
                               key={name}
-                              className="py-1 w-40 text-sm font-semibold text-gray-700 md:bg-white dark:text-gray-200 dark:md:bg-gray-700"
+                              className="py-1 w-full lg:w-44 text-sm font-semibold text-gray-700 md:bg-white dark:md:bg-gray-700"
                             >
                               <Link href={url}>
                                 <a
-                                  className={`${pathname === url && styleCurrentPage} block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:hover:text-white`}
+                                  className={`${pathname === url && styleCurrentPage} block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-white`}
                                   onClick={() => setCollapse('hidden')}
                                 >
                                   {name}

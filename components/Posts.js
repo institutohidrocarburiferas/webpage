@@ -1,6 +1,6 @@
 import Image from 'next/image'
 import Link from 'next/link'
-import Date from '@components/Date'
+// import Date from '@components/Date'
 
 function Card ({ title, image, url, date }) {
   return <Link href={url} >
@@ -18,7 +18,7 @@ function Card ({ title, image, url, date }) {
         <h3 className='text-lg md:text-2xl font-semibold'>
           {title}
         </h3>
-        <Date dateString={date} />
+        {/* <Date dateString={date} /> */}
       </div>
     </a>
   </Link>
@@ -30,7 +30,7 @@ export function Posts ({ items, title, urlPath }) {
       key={title}
       title={title}
       image={icon}
-      date={date}
+      // date={date}
       url={`${urlPath}/${id}`}
     />
   ))

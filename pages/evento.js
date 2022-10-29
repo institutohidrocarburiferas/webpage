@@ -2,6 +2,7 @@ import { Countdown } from '@components/Countdown'
 import { Footer } from '@components/Footer'
 import { HeroSection } from '@components/HeroSection'
 import { Participants } from '@components/Participants'
+import { RegisterButton } from '@components/RegisterButton'
 import { Separator } from '@components/Separator'
 import { Sidebar } from '@components/Sidebar'
 import { items } from '@constants/eventItems'
@@ -11,7 +12,7 @@ const pageData = {
   title: 'Evento',
   description: 'Evento',
   image: '/prueba.png',
-  eventDay: '2022-11-23T09:00:00.000Z',
+  eventDay: new Date(2022, 10, 23, 8, 30),
 }
 
 const heroContent = {
@@ -120,12 +121,9 @@ export default function Evento () {
             <span>Presencial - Cupos limitados</span>
           </section>
           {/* Registro y cuenta regresiva */}
-          <section className='flex flex-col gap-8 mt-14'>
+          <section className='flex flex-col gap-5 mt-5'>
             <div className='flex justify-center w-full'>
-              <a className='flex justify-center w-auto px-4 py-2 text-2xl font-semibold rounded hover:scale-105 bg-gradient-to-tr hover:from-amber-400 scroll-smooth hover:to-white from-amber-500 to-white' href="https://forms.gle/c55zGtRRenVvKpGKA" target="_blank" rel="noreferrer"
-              >
-                Regístrate
-              </a>
+              <RegisterButton />
             </div>
             <Countdown eventDate={pageData.eventDay} />
           </section>
@@ -290,26 +288,23 @@ export default function Evento () {
           {/* Registro */}
           <Separator id="registro" />
           <HeroSection
-          title={`REGÍSTRATE EN EL ${heroContent.title}`}
-          text={heroContent.text}
-          image={heroContent.image}
-          height="70vh"
-          justifyContent="center"
-        >
-          <section className='text-gray-400'>
-            <span>Presencial - Cupos limitados</span>
-          </section>
-          {/* Registro y cuenta regresiva */}
-          <section className='flex flex-col gap-8 mt-14'>
-            <div className='flex justify-center w-full'>
-              <a className='flex justify-center w-auto px-4 py-2 text-3xl font-semibold rounded hover:scale-105 bg-gradient-to-tr hover:from-amber-400 scroll-smooth hover:to-white from-amber-500 to-white' href="https://forms.gle/c55zGtRRenVvKpGKA" target="_blank" rel="noreferrer"
-              >
-                Regístrate
-              </a>
-            </div>
-          </section>
+            title={`REGÍSTRATE EN EL ${heroContent.title}`}
+            text={heroContent.text}
+            image={heroContent.image}
+            height="auto"
+            justifyContent="center"
+          >
+            <section className='text-gray-400'>
+              <span>Presencial - Cupos limitados</span>
+            </section>
+            {/* Registro y cuenta regresiva */}
+            <section className='flex flex-col gap-8 mt-14'>
+              <div className='flex justify-center w-full'>
+                <RegisterButton />
+              </div>
+            </section>
 
-        </HeroSection>
+          </HeroSection>
 
           {/* Mapa */}
           <Separator id="ubicacion" />

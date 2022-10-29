@@ -1,6 +1,5 @@
-export const getRemainTime = eventTime => {
+export const getRemainTime = event => {
   const now = new Date()
-  const event = new Date(eventTime)
   const remainTime = (event - now + 1000) / 1000
   const remainSeconds = ('0' + Math.floor(remainTime % 60)).slice(-2)
   const remainMinutes = ('0' + Math.floor((remainTime / 60) % 60)).slice(-2)

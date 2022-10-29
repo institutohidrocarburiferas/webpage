@@ -18,7 +18,7 @@ export default function Post ({ noticeData }) {
       description={noticeData.title}
       image={noticeData.image}
     >
-      <main className='w-screen dark:text-gray-100'>
+      <main className='w-screen'>
         <article className="max-w-md mx-auto mb-10 sm:max-w-lg md:max-w-2xl">
           <div className="text-gray-500">
             <Date dateString={noticeData.date} />

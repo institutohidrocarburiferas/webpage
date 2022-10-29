@@ -59,7 +59,7 @@ function Resumen () {
   ))
 
   return (
-    <div className='w-screen dark:text-gray-100'>
+    <div className='w-screen'>
       <article className="max-w-sm mx-auto my-10 sm:max-w-lg md:max-w-2xl" >
         {sections}
       </article>
@@ -86,7 +86,7 @@ function LineasInvestigacion () {
   ))
 
   return (
-    <div className='w-screen dark:text-gray-100 mb-10'>
+    <div className='w-screen mb-10'>
       <div className='flex flex-col md:flex-row flex-wrap items-center sm:items-start justify-center container mx-auto'>
         {sections}
       </div>

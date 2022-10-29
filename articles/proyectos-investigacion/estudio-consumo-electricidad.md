@@ -1,6 +1,5 @@
 ---
 title: 'Estudio de los patrones de consumo de electricidad en el sector residencial ecuatoriano'
-date: "2020-01-01"
 image: "/proyectos-investigacion/estudio-consumo-electricidad.jpeg"
 icon: "/proyectos-investigacion/estudio-consumo-electricidad.svg"
 ---

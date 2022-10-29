@@ -1,6 +1,5 @@
 ---
 title: 'Sistema de Monitoreo del Bioindicadores ANZU'
-date: "2020-01-01"
 image: "/proyectos-investigacion/sistema-de-monitoreo-de-bioindicadores-ANZU.jpg"
 icon: "/proyectos-investigacion/sistema-de-monitoreo-de-bioindicadores-ANZU.svg"
 ---

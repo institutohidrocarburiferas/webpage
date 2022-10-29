@@ -13,17 +13,17 @@ const useStyles = createStyles((theme, _params, getRef) => ({
     alignItems: 'flex-start',
     backgroundSize: 'cover',
     backgroundPosition: 'center',
-    padding: 50,
-    border: 'solid 1px rgba(0,0,0,0.5)'
+    border: 'solid 1px rgba(0,0,0,0.5)',
+    margin: 20,
   },
 
   title: {
     fontWeight: 400,
-    color: theme.black,
     lineHeight: 1,
     fontSize: 20,
     marginTop: theme.spacing.xs,
     textAlign: 'justify',
+    padding: '0 25px',
   },
 
   category: {
@@ -57,6 +57,7 @@ const useStyles = createStyles((theme, _params, getRef) => ({
       },
     },
   },
+
 }))
 
 function Card ({ id, title, image, date, urlPath }) {
@@ -95,8 +96,8 @@ export function Slider ({ data, urlPath, indicators = false }) {
     <Carousel
       classNames={classes}
       slideSize="50%"
-      breakpoints={[{ maxWidth: 'sm', slideSize: '100%', slideGap: 3 }]}
-      slideGap="md"
+      breakpoints={[{ maxWidth: 'sm', slideSize: '100%', slideGap: 30 }]}
+      slideGap='xl'
       align="start"
       plugins={[autoplay.current]}
       onMouseEnter={autoplay.current.stop}

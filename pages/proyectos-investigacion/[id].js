@@ -1,5 +1,5 @@
 import { Content } from '@components/Content'
-import Date from '@components/Date'
+// import Date from '@components/Date'
 import { Return } from '@components/Return'
 import { getAllPostIds, getPostData } from '@utils/posts'
 import path from 'node:path'
@@ -17,11 +17,11 @@ export default function Post ({ postData }) {
       image={postData.image}
       description={postData.title}
     >
-      <main className='w-screen dark:text-gray-100'>
+      <main className='w-screen'>
         <article className="max-w-md mx-auto mb-10 sm:max-w-lg md:max-w-2xl">
-          <div className="text-gray-500">
+          {/* <div className="text-gray-500">
             <Date dateString={postData.date} />
-          </div>
+          </div> */}
           <div className={styles.content} dangerouslySetInnerHTML={{ __html: postData.contentHtml }} />
           <Return text={pageData.returnText} url={pageData.mainURL} />
         </article>

@@ -1,6 +1,5 @@
 ---
 title: 'Capacidad de captura carbono del Bosque Protector Oglán Alto-Arajuno frente a la presión ambiental por el desarrollo del campo Oglán-Bloque10'
-date: "2020-01-01"
 image: "/proyectos-investigacion/capacidad-captura-carbono-oglan-bloque10.jpeg"
 icon: "/proyectos-investigacion/capacidad-captura-carbono-oglan-bloque10.svg"
 ---

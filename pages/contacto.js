@@ -48,7 +48,7 @@ export default function Contacto () {
       image={pageData.image}
     >
       <main
-        className='container flex flex-col gap-10 p-10 mx-auto lg:flex-row dark:text-gray-100'>
+        className='container flex flex-col gap-10 p-10 mx-auto lg:flex-row'>
         <section className='w-full h-auto'>
           <h2 className='mb-4 text-3xl font-bold border-b-2'>{pageData.content.title}</h2>
           <p className='text-justify'>{pageData.content.intro}</p>

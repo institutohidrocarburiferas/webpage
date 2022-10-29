@@ -26,7 +26,7 @@ export default function Publicaciones () {
       image={pageData.image}
     >
       <main>
-        <section className='container flex flex-col p-10 mx-auto justify-evenly lg:flex-row dark:text-gray-100'>
+        <section className='container flex flex-col p-10 mx-auto justify-evenly lg:flex-row'>
           <Publications
             title={pageData.postsTitle}
             items={sortedPublications}

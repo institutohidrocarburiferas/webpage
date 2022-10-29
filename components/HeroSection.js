@@ -1,111 +1,36 @@
-import { createStyles, Container, Title, Text } from '@mantine/core'
-
-const useStyles = (image, height, justifyContent) => createStyles((theme) => ({
-  root: {
-    backgroundColor: '#11284b',
-    backgroundSize: 'cover',
-    backgroundPosition: 'center',
-    backgroundImage:
-      `linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), url(${image})`,
-    width: '100vw',
-    height,
-    maxHeight: 1000,
-    display: 'grid',
-    justifyContent,
-    alignContent: 'center',
-    padding: theme.spacing.xl * 3,
-    [theme.fn.smallerThan('sm')]: {
-      paddingLeft: 25,
-    },
-  },
-
-  inner: {
-    width: '100%',
-
-  },
-
-  image: {
-    [theme.fn.smallerThan('md')]: {
-      display: 'none',
-    },
-  },
-
-  content: {
-    // paddingTop: theme.spacing.xl * 2,
-    // paddingBottom: theme.spacing.xl * 2,
-    // marginRight: theme.spacing.xl * 3,
-    width: '100%',
-
-    [theme.fn.smallerThan('md')]: {
-      marginRight: 0,
-    },
-  },
-
-  title: {
-    color: theme.white,
-    fontFamily: `Greycliff CF, ${theme.fontFamily}`,
-    fontWeight: 900,
-    lineHeight: 1.05,
-    fontSize: 48,
-
-    [theme.fn.smallerThan('md')]: {
-      maxWidth: '100%',
-      fontSize: 34,
-      lineHeight: 1.15,
-    },
-  },
-
-  description: {
-    color: theme.white,
-    opacity: 0.75,
-    maxWidth: 1000,
-    textAlign: 'justify',
-    fontSize: theme.fontSizes.xl * 1.15,
-
-    [theme.fn.smallerThan('md')]: {
-      maxWidth: '100%',
-      fontSize: theme.fontSizes.lg,
-    },
-
-  },
-}))
-
 export function HeroSection ({
   title,
   text,
   image,
   height = '100vh',
-  justifyContent = 'start',
+  justifyContent = 'center',
   children,
 }) {
-  const { classes } = useStyles(image, height, justifyContent)()
-
   return (
-    <div className={classes.root}>
-      <Container size="lg">
-        <div className={classes.inner}>
-          <div className={classes.content}>
-            <Title className={classes.title}>
-              <Text
-                className='animate-fade'
-                component="span"
-                inherit
-                variant="gradient"
-                gradient={{ from: 'pink', to: 'yellow' }}
-              >
-                {title}
-              </Text>
-            </Title>
-            <Text className={`${classes.description} animate-fade`} mt={30}>
-              {text}
-            </Text>
-          </div>
-        </div>
-        <div className='w-full animate-fade'>
-
+    <div
+      style={{
+        backgroundSize: 'cover',
+        backgroundPosition: 'center',
+        backgroundImage:
+          `linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), url(${image})`,
+        display: 'grid',
+        height,
+        justifyContent,
+        alignContent: 'center',
+        maxHeight: 1000,
+      }}
+      className="p-5 sm:px-16 md:py-12 md:pl-24">
+      <div className="container flex flex-col gap-5">
+        <h2>
+          <p className='bg-gradient-to-r text-transparent bg-clip-text font-extrabold inline-block text-4xl from-pink-500 to-yellow-400 sm:text-4xl md:text-5xl lg:text-6xl animate-fade'>{title}</p>
+        </h2>
+        <p style={{
+          fontSize: 'clamp(0.9rem, 0.75rem + 1vw, 1.5rem)'
+        }} className='text-gray-100 tracking-wider animate-fade leading-normal lg:text-justify'>{text}</p>
+      </div>
+      <div className='w-full animate-fade'>
         {children}
-        </div>
-      </Container>
+      </div>
     </div>
   )
 }
