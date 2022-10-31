@@ -25,20 +25,24 @@ const heroContent = {
   text: 'miércoles, 23 de noviembre del 2022'
 }
 
-function ProgramItem ({ time, label, expositor }) {
+function ProgramItem ({ time, label, expositor, institution }) {
   return <div className='flex flex-col gap-1 pb-5 border-b-2'>
     <time className='text-2xl text-amber-400'>{time}</time>
     <h3 className='text-3xl font-bold text-white'>{label}</h3>
     <p className='text-xl font-bold'>{expositor}</p>
+    <p className='text-md'>{institution}</p>
   </div>
 }
 
-function SpeakerCard ({ name, image, role, institute }) {
+function SpeakerCard ({ name, image, role, institute, objectFit = 'cover' }) {
   return (
     <section
       className="flex flex-col w-64 rounded-md h-76 md:hover:scale-105">
         <Image
-          className='object-cover object-top rounded-md'
+          styles={{
+            objectFit,
+          }}
+          className='object-top rounded-md'
           src={image}
           width={350}
           height={350}

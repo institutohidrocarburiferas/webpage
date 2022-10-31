@@ -60,7 +60,7 @@ export default function Home ({ allPostsData }) {
               width={206}
               height={112}
               className="object-contain aspect-auto"
-              src="/evento/ministerio-energia-minas.jpg"
+              src="/eventos/foro-internacional-prospectiva-energetica/ministerio-energia-minas.jpg"
               alt="Ministerio de Energía y Minas"
             />
             <Image
