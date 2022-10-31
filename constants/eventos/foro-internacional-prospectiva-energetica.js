@@ -282,6 +282,7 @@ export const speakers = [
   {
     name: 'Agencia Internacional de Energía',
     image: '/externalLinks/international-energy-agency-logo.png',
+    objectFit: 'contain',
   },
   {
     name: 'Ing. Alfonso Blanco, MSc',
@@ -318,6 +319,12 @@ export const speakers = [
     image: '/integrantes/Gonzalo-Chiriboga.png',
     role: 'Docente Investigador Facultad de Ingeniería Química',
     institute: 'Universidad Central del Ecuador'
+  },
+  {
+    name: 'Rafael Espinoza',
+    image: `${path}/speakers/Rafael-Espinoza.png`,
+    role: 'Partner at McKinsey & Company',
+    institute: null,
   },
 
 ]
