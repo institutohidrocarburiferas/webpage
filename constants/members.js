@@ -114,4 +114,29 @@ export const investigadores = [
     title: null,
     description: ['Economista por la Universidad Central del Ecuador (UCE). Me he desempeñado como consultor e investigador en temas de Economía Popular y Solidaria en el Institutito Superior de Investigaciones y Postgrado (ISIP-UCE) y en el Instituto de Altos Estudios Nacionales (IAEN). Coautor del libro Investigar la economía popular y solidaria: metodologías, métodos, técnicas y su aplicación en casos ecuatorianos. Forma parte del grupo de investigación de Economía Social y Solidara de la Universidad Central del Ecuador y parte del grupo de investigación del Colegio de Economistas de Pichincha. Actualmente me desempeño como Consultor de Proyecto en la DGRV de Ecuador- Honduras, en el área de Finanzas Sostenibles y Finanzas Verdes enfocadas para el sector financiero Cooperativista.',]
   },
+  {
+    name: 'Ing. Rodrigo López, MSc',
+    image: '/integrantes/Rodrigo-Lopez.png',
+    role: 'Docente Investigador',
+    title: null,
+    description: ['Ingeniero Ambiental con estudios de postgrado en cambio climático y Gobernanza Energética. Actualmente se desempeña como profesor en FIGEMPA y cuenta con algunas publicaciones sobre conflictos socio ambientales como derechos colectivos. ']
+  },
+  {
+    name: 'Ing. Gonzalo Chiriboga, PhD(c) ',
+    image: '/integrantes/Gonzalo-Chiriboga.png',
+    role: 'Docente Investigador',
+    title: null,
+    description: ['Ingeniero químico de la Universidad Central del Ecuador, master en sistemas energéticos por la Universidad de Melbourne y cursante de doctorado en gases de efecto invernadero en aguas continentales por la Universidad de Liège. Docente titular de termodinámica e ingeniería termodinámica en la Universidad Central y miembro del CO2 Group de la Unidad de Oceanografía Química de la Universidad de Liège. Investigador certificado en áreas de energía y cambio climático REG-INV-15-01312. Intereses investigativos enfocados al desarrollo de sistemas energéticos renovables, descarbonización y gases de efecto invernadero.']
+  },
+  {
+    name: 'Ing. Ghem Carvajal C., MSc ',
+    image: '/integrantes/Ghem-Carvajal-Chávez.png',
+    role: 'Docente Investigador',
+    title: null,
+    description: [
+      'Ingeniero Químico con formación de cuarto nivel en Ciencias Ambientales y formación en Estadística Aplicada y Diseño Experimental para la investigación científica. Docente de las cátedras de Estadística Aplicada y Balance de Materia y Energía en la Facultad de Ingeniería Química de la UCE. Director del Departamento de Petróleos, Energía y Contaminación de la Universidad Central del Ecuador.',
+
+      'Experto en estudios y auditorías ambientales y energéticas y en técnicas de prevención de la contaminación, particularmente en los sectores industrial y de manufactura. Experto de sistemas de gestión de calidad, seguridad y salud, ambiente y energía.  Experto en validación, y acreditación de laboratorios ambientales y de hidrocarburos.'
+    ]
+  },
 ]

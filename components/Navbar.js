@@ -15,7 +15,7 @@ export function Navbar () {
       : setCollapse('hidden')
   }
 
-  return <nav className="bg-white dark:bg-gray-900 fixed top-0 z-10 w-full h-24 shadow  shadow-gray-400">
+  return <nav className="fixed top-0 z-10 w-full h-24 bg-white shadow dark:bg-gray-900 shadow-gray-400">
     <div
       className="container bg-white dark:bg-gray-900 px-2.5 flex flex-wrap items-center  justify-between w-full mx-auto  z-10 lg:flex-nowrap">
       {/* Logo */}
@@ -58,7 +58,7 @@ export function Navbar () {
       </button>
       {/* Nav items  */}
       <div
-        className={`${collapse} w-full lg:block md:w-auto`}>
+        className={`${collapse} text-gray-700 w-full lg:block md:w-auto`}>
         <ul className="flex flex-col p-4 px-4 my-4 border border-gray-100 rounded-lg lg:my-0 xl:gap-5 md:px-0 bg-gray-50 md:flex-row md:space-x-4 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
 
           {
@@ -93,7 +93,7 @@ export function Navbar () {
 
                             <li
                               key={name}
-                              className="py-1 w-full lg:w-44 text-sm font-semibold text-gray-700 md:bg-white dark:md:bg-gray-700"
+                              className="w-full py-1 text-sm font-semibold text-gray-700 lg:w-44 md:bg-white dark:md:bg-gray-700"
                             >
                               <Link href={url}>
                                 <a

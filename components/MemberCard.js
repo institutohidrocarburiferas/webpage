@@ -4,7 +4,7 @@ export function MemberCard ({ name, image, role, openModal }) {
   return (
     <section
       onClick={openModal}
-      className="w-64 h-76 bg-gray-200 rounded-md cursor-pointer border md:hover:scale-105 flex flex-col">
+      className="flex flex-col bg-gray-200 border rounded-md cursor-pointer w-60 h-76 md:hover:scale-105">
 
       <Image
         className='object-cover object-top rounded-t-md'
@@ -13,9 +13,9 @@ export function MemberCard ({ name, image, role, openModal }) {
         height={350}
         alt={name}
       />
-      <section className='grid w-full h-20 font-semibold text-center text-white bg-black/70 rounded-b-md place-content-center'>
-        <span className='text-lg'>{name}</span>
-        <span className='text-md text-gray-200'>{role}</span>
+      <section className='grid w-full h-16 font-semibold text-center text-white bg-black/70 rounded-b-md place-content-center'>
+        <span className='text-md'>{name}</span>
+        <span className='text-sm text-gray-200'>{role}</span>
       </section>
     </section>
   )

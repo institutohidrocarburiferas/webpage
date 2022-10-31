@@ -12,7 +12,7 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { RegisterButton } from '@components/RegisterButton'
 
-const eventDay = new Date(2022, 10, 23, 8, 30)
+const eventDay = new Date(2022, 10, 23, 8)
 
 const pageData = {
   title: 'Instituto de Investigaciones Hidrocarburíferas',
@@ -55,28 +55,28 @@ export default function Home ({ allPostsData }) {
         </section>
         {/* Registro y cuenta regresiva */}
         <section className='flex flex-col w-full gap-8 mt-10'>
-          <div className='flex h-20 md:h-auto justify-center w-full lg:justify-start gap-10'>
+          <div className='flex justify-center w-full h-20 gap-10 md:h-auto lg:justify-start'>
             <Image
               width={206}
               height={112}
-              className="aspect-auto object-contain"
+              className="object-contain aspect-auto"
               src="/evento/ministerio-energia-minas.jpg"
               alt="Ministerio de Energía y Minas"
             />
             <Image
               width={112}
               height={112}
-              className="aspect-auto object-contain"
+              className="object-contain aspect-auto"
               src="/UCE-logo.png"
               alt="Universidad Central del Ecuador Logo"
             />
           </div>
 
           <div className='flex flex-col items-center w-full gap-5 lg:flex-row'>
-            <div className='flex items-stretch md:items-center w-full lg:items-stretch justify-evenly md:justify-center lg:justify-start md:gap-14'>
+            <div className='flex items-stretch w-full md:items-center lg:items-stretch justify-evenly md:justify-center lg:justify-start md:gap-14'>
               <RegisterButton />
               <Link href="/evento">
-                <a className='flex justify-center w-auto px-2 md:px-6 py-2 text-xs sm:text-xl font-semibold text-white bg-transparent hover:bg-black/50 border border-white rounded md:text-2xl lg:text-xl hover:scale-105'
+                <a className='flex justify-center w-auto px-2 py-2 text-xs font-semibold text-white bg-transparent border border-white rounded md:px-6 sm:text-xl hover:bg-black/50 md:text-2xl lg:text-xl hover:scale-105'
                 >
                   Información del evento
                 </a>
@@ -89,8 +89,8 @@ export default function Home ({ allPostsData }) {
 
       <div className='container mx-auto'>
         {/* Recent notices section */}
-        <section className='flex flex-col gap-5 p-5 md:px-12 py-5 my-12'>
-          <h2 className='p-2 mx-auto text-3xl md:text-4xl lg:text-5xl font-semibold border-b-2 sm:px-20 md:px-32 lg:px-40'>
+        <section className='flex flex-col gap-5 p-5 py-5 my-12 md:px-12'>
+          <h2 className='p-2 mx-auto text-3xl font-semibold border-b-2 md:text-4xl lg:text-5xl sm:px-20 md:px-32 lg:px-40'>
             Noticias recientes
           </h2>
           <Slider

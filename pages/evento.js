@@ -5,100 +5,52 @@ import { Participants } from '@components/Participants'
 import { RegisterButton } from '@components/RegisterButton'
 import { Separator } from '@components/Separator'
 import { Sidebar } from '@components/Sidebar'
-import { items } from '@constants/eventItems'
+import {
+  programItems, organizers, sideItems,
+  speakers, sponsors,
+} from '@constants/eventos/foro-internacional-prospectiva-energetica'
 import Head from 'next/head'
+import Image from 'next/image'
 
 const pageData = {
-  title: 'Evento',
-  description: 'Evento',
+  title: 'Foro Internacional de Prospectiva Energética en el Ecuador',
+  description: 'Foro Internacional de Prospectiva Energética en el Ecuador',
   image: '/prueba.png',
-  eventDay: new Date(2022, 10, 23, 8, 30),
+  eventDay: new Date(2022, 10, 23, 8),
 }
-
 const heroContent = {
   title: 'FORO INTERNACIONAL DE PROSPECTIVA ENERGÉTICA EN EL ECUADOR',
   height: '87vh',
   image: '"https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80"',
-  text: 'miércoles 23 de noviembre del 2022'
+  text: 'miércoles, 23 de noviembre del 2022'
 }
 
-const patrocinations = [
-  {
-    title: 'Logo de Conacyt',
-    image: '/evento/conacyt.svg',
-  },
-  {
-    title: 'Logo de la Agencia Internacional de Energía',
-    image: '/externalLinks/international-energy-agency-logo.png',
-  },
-  {
-    title: 'Logo de Olade',
-    image: '/externalLinks/oladeorg-logo.jpg',
-  },
-  {
-    title: 'Logo de la Fundación Bariloche',
-    image: '/evento/fundacion-bariloche.jpg',
-  },
-  {
-    title: 'Logo del Instituto de Metrología de Alemania (PTB)',
-    image: '/evento/instituto-metrologia-alemania.jpg',
-  },
-  {
-    title: 'Logo de la Escuela Politécnica Nacional',
-    image: '/evento/epn.png',
-  },
-  {
-    title: 'Logo de la Facultad de Ingeniería Química - UCE',
-    image: '/evento/ing-quimica-uce.jpeg',
-  },
-  {
-    title: 'Logo de la Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental',
-    image: '/evento/figempa.png',
-  },
-  {
-    title: 'Logo de SERTECPET',
-    image: '/evento/sertecpet.png',
-  },
-  {
-    title: 'Logo de Halliburton',
-    image: '/evento/halliburton.jpg',
-  },
-]
-
-const organizadores = [
-  {
-    title: 'Logo de la Universidad Central',
-    image: '/UCE-logo.png',
-  },
-  {
-    title: 'Logo del Ministerio de Energía y Minas',
-    image: '/evento/ministerio-energia-minas.jpg',
-  },
-
-]
-
-const programItems = [
-  { time: '09H00 - 09H15', label: 'Inauguración y Palabras de Bienvenida', expositor: 'Nombre no definido', institution: 'Rector (Vicerrector de Investigación) / Ministro de Energía y Minas/Invitado', },
-  { time: '09H15 - 10H00', label: 'Seguridad y sostenibilidad de los sistemas futuros de energía (fósil y electricidad)', expositor: 'Nombre no definido', institution: 'Agencia Internacional de Energía (IEA)', },
-  { time: '10H00 - 10H45', label: 'Visualización y retos de la transacción energética en ALC a mediano y largo plazo (uso de herramientas de prospectiva de OLADE)', expositor: 'Nombre no definido', institution: 'OLADE_Alfonso Blanco', },
-  { time: '10H45 - 11H15', label: 'Coffee Break', expositor: null, institution: null, },
-  { time: '11H15 - 12H00', label: 'Futuro de los mercados de precios de los energéticos', expositor: 'Nombre no definido', institution: 'MCKINSEY (Oficina Quito/Ecuador)', },
-  { time: '12H00 - 12H45', label: 'Visión a largo plazo del sistema energético (oferta y demanda de combustibles y electricidad) con la transformación del mercado hacia equipos energéticamente eficientes. Casos de estudio.', expositor: 'Nombre no definido', institution: 'Fundación Bariloche – Instituto de Metrología de Alemania (PTB)', },
-  { time: '12H45 - 14H00', label: 'Almuerzo', expositor: null, institution: null, },
-  { time: '14H00 - 14H45', label: 'Modelo Prospectivo Energético de México', expositor: 'Nombre no definido', institution: 'Conacyt - México /UNAM-Instituto de Metrología de Alemania (PTB)', },
-  { time: '14H45 - 15H30', label: 'Prospectiva energética del Ecuador al 2035 MuSIASEM', expositor: 'Nombre no definido', institution: 'Instituto de Investigaciones Hidrocarburíferas - UCE', },
-  { time: '15H30 - 16H15', label: 'Estudio prospectivo en el transporte para el caso del Ecuador', expositor: 'Nombre no definido', institution: 'Escuela Politécnica Nacional', },
-  { time: '16H15 - 17H00', label: 'Tasas de retorno de energía en el sistema ecuatoriano', expositor: 'Nombre no definido', institution: 'Ingeniería Química - UCE', },
-  { time: '17H00 - 18H00', label: 'Resumen y Cierre', expositor: 'Nombre no definido', institution: 'UCE FIGEMPA/Autoridad invitada', },
-]
-
-function ProgramItem ({ time, label, expositor, institution }) {
+function ProgramItem ({ time, label, expositor }) {
   return <div className='flex flex-col gap-1 pb-5 border-b-2'>
     <time className='text-2xl text-amber-400'>{time}</time>
     <h3 className='text-3xl font-bold text-white'>{label}</h3>
     <p className='text-xl font-bold'>{expositor}</p>
-    <p className='text-md'>{institution}</p>
   </div>
+}
+
+function SpeakerCard ({ name, image, role, institute }) {
+  return (
+    <section
+      className="flex flex-col w-64 rounded-md h-76 md:hover:scale-105">
+        <Image
+          className='object-cover object-top rounded-md'
+          src={image}
+          width={350}
+          height={350}
+          alt={name}
+        />
+      <section className='grid w-full gap-1 font-semibold text-center h-28 rounded-b-md place-content-center'>
+        <span className='text-lg'>{name}</span>
+        <span className='text-sm'>{role}</span>
+        <span className='text-xs'>{institute}</span>
+      </section>
+    </section>
+  )
 }
 
 export default function Evento () {
@@ -108,7 +60,7 @@ export default function Evento () {
         <title>{pageData.title}</title>
         <meta name="description" content={pageData.description} />
       </Head>
-      <Sidebar items={items} />
+      <Sidebar items={sideItems} />
       <main>
         <HeroSection
           text={heroContent.text}
@@ -225,11 +177,11 @@ export default function Evento () {
 
           {/* Organizadores */}
           <Separator id="organizadores" />
-          <Participants title="Organizadores" data={organizadores} />
+          <Participants title="Organizadores" data={organizers} />
 
           {/* Patrocinadores */}
           <Separator id="patrocinadores" />
-          <Participants title="Instituciones Participantes y Patrocinadores" data={patrocinations} />
+          <Participants title="Instituciones Participantes y Patrocinadores" data={sponsors} />
 
           {/* ¿Qué busca el evento? */}
           <Separator id="que-busca-el-evento" />
@@ -273,16 +225,17 @@ export default function Evento () {
             <h2
               className='text-4xl font-bold'
             >Ponentes</h2>
-            <section className='flex flex-wrap justify-center gap-5'>
-
-              <div className='w-40 h-40 bg-black '></div>
-              <div className='w-40 h-40 bg-black '></div>
-              <div className='w-40 h-40 bg-black '></div>
-              <div className='w-40 h-40 bg-black '></div>
-              <div className='w-40 h-40 bg-black '></div>
-              <div className='w-40 h-40 bg-black '></div>
-              <div className='w-40 h-40 bg-black '></div>
-            </section>
+            <div className='flex flex-wrap justify-center gap-10 md:flex-row '>
+              {speakers.map(({ name, image, role, institute }) => (
+                <SpeakerCard
+                  key={name}
+                  name={name}
+                  role={role}
+                  image={image}
+                  institute={institute}
+                />
+              ))}
+            </div>
           </section>
 
           {/* Registro */}
