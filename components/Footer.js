@@ -26,9 +26,9 @@ export function Footer ({
 
     {/* Footer container */}
     <div
-      className="flex justify-center w-full h-auto px-5 md:px-24 pt-12 pb-5 font-semibold text-white md:pt-12 bg-black/60"
+      className="flex justify-center w-full h-auto px-5 pt-16 pb-5 font-semibold text-white md:px-24 md:pt-12 bg-black/60"
     >
-      <div className='flex flex-col container justify-between gap-8 md:flex-row'>
+      <div className='container flex flex-col justify-between gap-8 md:flex-row'>
         <section className='flex flex-col text-sm'>
           <span>Universidad Central del Ecuador</span>
           <span>Ingreso por las Calles Jerónimo Leyton y Gilberto Gatto Sobral </span>
