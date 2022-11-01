@@ -12,7 +12,7 @@ const pageData = {
   },
   contacts: [
     {
-      name: 'Ing. Ronny Parra, PhD',
+      name: 'Ing. Rony Parra, PhD',
       role: 'Director del instituto',
       email: 'rmparra@uce.edu.ec',
     },

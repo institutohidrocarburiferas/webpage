@@ -21,6 +21,11 @@ export const revistas = [
     image: `${path}/science-total-environment.png`,
     url: 'https://www.sciencedirect.com/journal/science-of-the-total-environment'
   },
+  {
+    title: 'Logo de la revista Energy Policy',
+    image: `${path}/energy-policy.jpg`,
+    url: 'https://www.sciencedirect.com/journal/energy-policy'
+  },
 ]
 
 export const externalLinks = [

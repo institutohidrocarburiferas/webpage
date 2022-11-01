@@ -26,10 +26,10 @@ const heroContent = {
 }
 
 function ProgramItem ({ time, label, expositor, institution }) {
-  return <div className='flex flex-col gap-1 pb-5 border-b-2'>
+  return <div className='flex flex-col gap-2 pb-5 border-b-2'>
     <time className='text-2xl text-amber-400'>{time}</time>
-    <h3 className='text-3xl font-bold text-white'>{label}</h3>
-    <p className='text-xl font-bold'>{expositor}</p>
+    <h3 className='text-2xl font-semibold text-white text-justify'>{label}</h3>
+    <p className='text-xl font-semibold'>{expositor}</p>
     <p className='text-md'>{institution}</p>
   </div>
 }
@@ -171,7 +171,7 @@ export default function Evento () {
               className='px-20 py-5 text-4xl font-bold border-b-2 text-start'
             >Agenda</h2>
             <div
-              className='container grid items-stretch grid-cols-1 gap-10 p-5 md:pl-24 lg:grid-cols-2'>
+              className='container grid items-stretch grid-cols-1 gap-y-10 gap-x-20 p-5 md:pl-24 lg:grid-cols-2'>
               {programItems.map(({ time, label, expositor, institution }) => (
                 <ProgramItem key={label} time={time} label={label} expositor={expositor} institution={institution} />
               ))}

@@ -9,7 +9,6 @@ import { getPostsData } from '@utils/posts'
 import path from 'node:path'
 import Head from 'next/head'
 import Link from 'next/link'
-import Image from 'next/image'
 import { RegisterButton } from '@components/RegisterButton'
 
 const eventDay = new Date(2022, 10, 23, 8)
@@ -17,7 +16,7 @@ const eventDay = new Date(2022, 10, 23, 8)
 const pageData = {
   title: 'Instituto de Investigaciones Hidrocarburíferas',
   image: '/prueba.png',
-  description: 'Instituto de Investigaciones Hidrocarburíferas',
+  description: 'El Instituto de Investigaciones Hidrocarburíferas - IIH es un centro que desarrolla investigaciones hidrocarburíferas y de energía bajo la comprensión profunda de aspectos cruciales en la relación de los sistemas socioeconómicos y los ecosistemas.',
   sliderURL: '/noticias'
 }
 
@@ -55,21 +54,23 @@ export default function Home ({ allPostsData }) {
         </section>
         {/* Registro y cuenta regresiva */}
         <section className='flex flex-col w-full gap-8 mt-10'>
-          <div className='flex justify-center w-full h-20 gap-10 md:h-auto lg:justify-start'>
-            <Image
-              width={206}
-              height={112}
-              className="object-contain aspect-auto"
-              src="/eventos/foro-internacional-prospectiva-energetica/ministerio-energia-minas.jpg"
-              alt="Ministerio de Energía y Minas"
-            />
-            <Image
-              width={112}
-              height={112}
-              className="object-contain aspect-auto"
-              src="/UCE-logo.png"
-              alt="Universidad Central del Ecuador Logo"
-            />
+          <div className='flex justify-center w-full h-20 gap-10 md:h-auto items-center lg:justify-start'>
+            <picture>
+              <img
+                className='h-16 rounded md:h-24 aspect-auto'
+                src="/eventos/foro-internacional-prospectiva-energetica/ministerio-energia-minas.jpg"
+                alt="Ministerio de Energía y Minas"
+                loading="lazy"
+              />
+            </picture>
+            <picture>
+              <img
+                className='h-20 max-w-xs rounded md:h-28 aspect-auto'
+                src="/UCE-logo.png"
+                alt="Universidad Central del Ecuador Logo"
+                loading="lazy"
+              />
+            </picture>
           </div>
 
           <div className='flex flex-col items-center w-full gap-5 lg:flex-row'>

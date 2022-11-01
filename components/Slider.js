@@ -11,10 +11,11 @@ const useStyles = createStyles((theme, _params, getRef) => ({
     flexDirection: 'column',
     justifyContent: 'space-between',
     alignItems: 'flex-start',
-    backgroundSize: 'cover',
+    backgroundSize: 'contain',
     backgroundPosition: 'center',
-    border: 'solid 1px rgba(0,0,0,0.5)',
+    backgroundRepeat: 'no-repeat',
     margin: 20,
+    backgroundColor: 'transparent',
   },
 
   title: {
@@ -67,7 +68,6 @@ function Card ({ id, title, image, date, urlPath }) {
     <Link href={`${urlPath}/${id}`} >
       <a >
         <Paper
-          shadow="md"
           p="xl"
           radius="md"
           sx={{ backgroundImage: `url(${image})` }}

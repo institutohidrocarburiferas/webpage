@@ -163,10 +163,6 @@ export const sponsors = [
     image: `${path}/sponsors/renova-energia.webp`,
   },
   {
-    title: 'Logo de Conacyt',
-    image: `${path}/sponsors/conacyt.svg`,
-  },
-  {
     title: 'Logo de GEOIL company',
     image: `${path}/sponsors/geoil.png`,
   },
@@ -200,9 +196,9 @@ export const programItems = [
   },
   {
     time: '08H30 - 09H00',
-    label: 'Inauguración y Palabras de Bienvenida',
-    expositor: 'Dr. Fernando Sempértegui / Ing. Enit Carrion / Invitado',
-    institution: 'Rector Universidad Central del Ecuador / Viceministra de Electricidad y Energía Renovable / Rector FIGEMPA',
+    label: 'Acto de inauguración',
+    expositor: 'Principales autoridades',
+    institution: 'Invitados',
   },
   {
     time: '09H00 - 09H45',
@@ -239,8 +235,8 @@ export const programItems = [
   {
     time: '14H00 - 14H45',
     label: 'Modelo Prospectivo Energético de México',
-    expositor: 'Comisión Nacional para el Uso Eficiente de la Energía CONUEE-México',
-    institution: 'Instituto de Metrología de Alemania (PTB)',
+    expositor: 'Ing. Juan I. Navarrete, MSc',
+    institution: 'Comisión Nacional para el Uso Eficiente de la Energía CONUEE-México',
   },
   {
     time: '14H45 - 15H30',
@@ -273,8 +269,8 @@ export const programItems = [
   {
     time: '18H15 - 19H00',
     label: 'Resumen y Cierre',
-    expositor: 'Autoridad Invitada',
-    institution: 'UCE FIGEMPA',
+    expositor: 'Principales autoridades',
+    institution: 'Invitados',
   },
 ]
 
@@ -312,7 +308,7 @@ export const speakers = [
     name: 'Ing. Francisco Terneus, PhD(c) ',
     image: `${path}/speakers/Francisco-Terneus.png`,
     role: 'Docente titular Departamento de Ciencias de la Energía y Mecánica ',
-    institute: 'Universidad de las Fuerzas Armadas ESPE'
+    institute: 'Escuela Politécnica Nacional'
   },
   {
     name: 'Ing. Gonzalo Chiriboga, PhD(c) ',
