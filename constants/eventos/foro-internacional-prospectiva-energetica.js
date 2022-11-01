@@ -203,13 +203,13 @@ export const programItems = [
   {
     time: '09H00 - 09H45',
     label: 'Seguridad y sostenibilidad de los sistemas futuros de energía (fósil y electricidad)',
-    expositor: 'Agencia Internacional de Energía (IEA)',
+    expositor: 'Agencia Internacional de Energía (IEA) - por confirmar',
     institution: 'Ponencia Virtual Paris/Francia',
   },
   {
     time: '09H45 - 10H30',
     label: 'Visualización y retos de la transacción energética en ALC a mediano y largo plazo (uso de herramientas de prospectiva de OLADE)',
-    expositor: 'Ing. Alfonso Blanco',
+    expositor: 'Ing. Medardo Cadena, MSc',
     institution: 'Organización Latinoamericana de Energía (OLADE)',
   },
   {
@@ -242,7 +242,7 @@ export const programItems = [
     time: '14H45 - 15H30',
     label: 'Prospectiva energética del Ecuador al 2035 MuSIASEM',
     expositor: 'Ing. Rony Parra, Phd',
-    institution: 'Director Instituto de Investigaciones Hidrocarburíferas IIH FIGEMPA-Universidad Central del Ecuador',
+    institution: 'Director Instituto de Investigaciones Hidrocarburíferas IIH FIGEMPA - Universidad Central del Ecuador',
   },
   {
     time: '15H30 - 16H00',
@@ -261,13 +261,7 @@ export const programItems = [
     institution: 'Facultad de Ingeniería Química - Universidad Central del Ecuador',
   },
   {
-    time: '17H30 - 18H15',
-    label: null,
-    expositor: null,
-    institution: null,
-  },
-  {
-    time: '18H15 - 19H00',
+    time: '17H30 - 18H30',
     label: 'Resumen y Cierre',
     expositor: 'Principales autoridades',
     institution: 'Invitados',
@@ -279,11 +273,12 @@ export const speakers = [
     name: 'Agencia Internacional de Energía',
     image: '/externalLinks/international-energy-agency-logo.png',
     objectFit: 'contain',
+    role: 'Por confirmar'
   },
   {
-    name: 'Ing. Alfonso Blanco, MSc',
-    image: `${path}/speakers/Alfonso-Blanco.png`,
-    role: 'Secretario Ejecutivo',
+    name: 'Ing. Medardo Cadena, MSc',
+    image: `${path}/speakers/Medardo-Cadena.png`,
+    role: 'Director de Estudios, Proyectos e Información',
     institute: 'Organización Latinoamericana de Energía'
   },
   {
@@ -307,7 +302,7 @@ export const speakers = [
   {
     name: 'Ing. Francisco Terneus, PhD(c) ',
     image: `${path}/speakers/Francisco-Terneus.png`,
-    role: 'Docente titular Departamento de Ciencias de la Energía y Mecánica ',
+    role: 'Docente Facultad de Ciencias Administrativas',
     institute: 'Escuela Politécnica Nacional'
   },
   {
@@ -319,7 +314,7 @@ export const speakers = [
   {
     name: 'Rafael Espinoza',
     image: `${path}/speakers/Rafael-Espinoza.png`,
-    role: 'Partner at McKinsey & Company',
+    role: 'Socio Ecuador - McKinsey & Company',
     institute: null,
   },
 
