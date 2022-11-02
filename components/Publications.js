@@ -1,20 +1,13 @@
-import Image from 'next/image'
 import Date from '@components/Date'
 
 function Card ({ title, image, url, date, download }) {
   return (
     <a href={url} target="_blank" className='flex items-center justify-around w-full h-auto gap-5 py-5 mx-auto border-b-2 cursor-pointer md:p-5 md:hover:bg-gradient-to-tl md:hover:to-blue-100 md:hover:from-white group' rel="noreferrer">
-      <div
-        className='grid w-24 h-24 rounded place-content-center group:hover:scale-105'>
-        <Image
-          width={200}
-          height={200}
-          src={image}
-          alt={title}
-        />
-      </div>
+      <picture className='w-28 self-center' >
+        <img src={image} alt={title} loading="lazy" />
+      </picture>
       <div className='w-3/4'>
-        <h3 className='text-lg font-semibold md:text-2xl'>
+        <h3 className='text-lg font-semibold md:text-xl text-justify'>
           {title}
         </h3>
         <div className='flex items-center justify-between'>

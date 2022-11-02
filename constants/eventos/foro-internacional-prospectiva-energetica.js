@@ -124,7 +124,7 @@ export const sideItems = [
 export const sponsors = [
   {
     title: 'Logo de Olade',
-    image: '/externalLinks/oladeorg-logo.jpg',
+    image: '/externalLinks/revistas/oladeorg-logo.jpg',
   },
   {
     title: 'Logo de la Fundación Bariloche',

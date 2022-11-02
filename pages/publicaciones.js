@@ -19,6 +19,7 @@ export default function Publicaciones () {
       return -1
     }
   })
+
   return (
     <Content
       title={pageData.title}
@@ -30,12 +31,12 @@ export default function Publicaciones () {
           <Publications
             title={pageData.postsTitle}
             items={sortedPublications}
-            />
+          />
         </section>
-        <Participants data={revistas} />
-
+        <section className='w-full flex justify-center'>
+          <Participants data={revistas} />
+        </section>
       </main>
-
     </Content>
 
   )
