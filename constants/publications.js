@@ -41,6 +41,10 @@ export const publications = [
     download: `${publi}/comportamiento-margen-refinacion.pdf`,
     date: '2021-07-31',
   },
+
+]
+
+export const otherPublications = [
   {
     title: 'Valoración económica ambiental, producción de biomasa y carbono de un bosque nativo andino, frente a plantaciones forestales eucalyptus globulus y pinus patula, en la Provincia de Loja.',
     image: 'https://revistadigital.uce.edu.ec/public/journals/6/cover_issue_167_es_ES.jpg',

@@ -44,7 +44,7 @@ export function Publications ({ items, title }) {
     />
   ))
 
-  return <section className='flex flex-col w-full h-screen max-w-4xl pb-10 overflow-y-scroll'>
+  return <section className='flex flex-col w-full max-w-4xl'>
     {/* <h2 className='text-3xl font-bold border-b-2'>
       {title}
     </h2> */}

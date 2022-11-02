@@ -1,8 +1,9 @@
-import { Publications } from '@components/Publications'
-import { publications } from '@constants/publications'
-import { revistas } from '@constants/externalLinks'
-import { Participants } from '@components/Participants'
 import { Content } from '@components/Content'
+import { Participants } from '@components/Participants'
+import { Publications } from '@components/Publications'
+import { publications, otherPublications } from '@constants/publications'
+import { revistas } from '@constants/externalLinks'
+import { sortedByDate } from '@utils/sortedByDate'
 
 const pageData = {
   title: 'Publicaciones',
@@ -12,14 +13,13 @@ const pageData = {
 }
 
 export default function Publicaciones () {
-  const sortedPublications = publications.sort((a, b) => {
-    if (a.date < b.date) {
-      return 1
-    } else {
-      return -1
-    }
-  })
+  const sortedPublications = sortedByDate(publications)
+  const sortedOtherPublications = sortedByDate(otherPublications)
 
+  const allPublications = [
+    ...sortedPublications,
+    ...sortedOtherPublications
+  ]
   return (
     <Content
       title={pageData.title}
@@ -28,10 +28,9 @@ export default function Publicaciones () {
     >
       <main>
         <section className='container flex flex-col p-10 mx-auto justify-evenly lg:flex-row'>
-          <Publications
-            title={pageData.postsTitle}
-            items={sortedPublications}
-          />
+          <div className='h-screen overflow-y-scroll'>
+            <Publications items={allPublications} />
+          </div>
         </section>
         <section className='w-full flex justify-center'>
           <Participants data={revistas} />
