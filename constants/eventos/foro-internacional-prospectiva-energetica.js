@@ -54,12 +54,12 @@ export const sideItems = [
     label: 'Organizadores',
     url: '#organizadores',
     image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-briefcase" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
-    <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-    <rect x="3" y="7" width="18" height="13" rx="2" />
-    <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
-    <line x1="12" y1="12" x2="12" y2="12.01" />
-    <path d="M3 13a20 20 0 0 0 18 0" />
-  </svg>
+      <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+      <rect x="3" y="7" width="18" height="13" rx="2" />
+      <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
+      <line x1="12" y1="12" x2="12" y2="12.01" />
+      <path d="M3 13a20 20 0 0 0 18 0" />
+    </svg>
 
   },
   {
@@ -122,10 +122,6 @@ export const sideItems = [
 ]
 
 export const sponsors = [
-  {
-    title: 'Logo de la Agencia Internacional de Energía',
-    image: '/externalLinks/international-energy-agency-logo.png',
-  },
   {
     title: 'Logo de Olade',
     image: '/externalLinks/oladeorg-logo.jpg',
@@ -203,8 +199,6 @@ export const programItems = [
   {
     time: '09H00 - 09H45',
     label: 'Seguridad y sostenibilidad de los sistemas futuros de energía (fósil y electricidad)',
-    expositor: 'Agencia Internacional de Energía (IEA) - por confirmar',
-    institution: 'Ponencia Virtual Paris/Francia',
   },
   {
     time: '09H45 - 10H30',
@@ -262,19 +256,13 @@ export const programItems = [
   },
   {
     time: '17H30 - 18H30',
-    label: 'Resumen y Cierre',
+    label: 'Resumen y clausura',
     expositor: 'Principales autoridades',
     institution: 'Invitados',
   },
 ]
 
 export const speakers = [
-  {
-    name: 'Agencia Internacional de Energía',
-    image: '/externalLinks/international-energy-agency-logo.png',
-    objectFit: 'contain',
-    role: 'Por confirmar'
-  },
   {
     name: 'Ing. Medardo Cadena, MSc',
     image: `${path}/speakers/Medardo-Cadena.png`,

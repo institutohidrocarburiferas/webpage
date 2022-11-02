@@ -28,7 +28,7 @@ const heroContent = {
 function ProgramItem ({ time, label, expositor, institution }) {
   return <div className='flex flex-col gap-2 pb-5 border-b-2'>
     <time className='text-2xl text-amber-400'>{time}</time>
-    <h3 className='text-2xl font-semibold text-white text-justify'>{label}</h3>
+    <h3 className='text-2xl font-semibold text-justify text-white'>{label}</h3>
     <p className='text-xl font-semibold'>{expositor}</p>
     <p className='text-md'>{institution}</p>
   </div>
@@ -38,16 +38,16 @@ function SpeakerCard ({ name, image, role, institute, objectFit = 'cover' }) {
   return (
     <section
       className="flex flex-col w-64 rounded-md h-76 md:hover:scale-105">
-        <Image
-          styles={{
-            objectFit,
-          }}
-          className='object-top rounded-md'
-          src={image}
-          width={350}
-          height={350}
-          alt={name}
-        />
+      <Image
+        styles={{
+          objectFit,
+        }}
+        className='object-top rounded-md'
+        src={image}
+        width={350}
+        height={350}
+        alt={name}
+      />
       <section className='grid w-full gap-1 font-semibold text-center h-28 rounded-b-md place-content-center'>
         <span className='text-lg'>{name}</span>
         <span className='text-sm'>{role}</span>
@@ -171,7 +171,7 @@ export default function Evento () {
               className='px-20 py-5 text-4xl font-bold border-b-2 text-start'
             >Agenda</h2>
             <div
-              className='container grid items-stretch grid-cols-1 gap-y-10 gap-x-20 p-5 md:pl-24 lg:grid-cols-2'>
+              className='container grid items-stretch grid-cols-1 p-5 gap-y-10 gap-x-20 md:pl-24 lg:grid-cols-2'>
               {programItems.map(({ time, label, expositor, institution }) => (
                 <ProgramItem key={label} time={time} label={label} expositor={expositor} institution={institution} />
               ))}
@@ -230,6 +230,8 @@ export default function Evento () {
               className='text-4xl font-bold'
             >Ponentes</h2>
             <div className='flex flex-wrap justify-center gap-10 md:flex-row '>
+              {/* Patch */}
+              <section className="flex flex-col w-64 rounded-md h-76 md:hover:scale-105"></section>
               {speakers.map(({ name, image, role, institute }) => (
                 <SpeakerCard
                   key={name}
@@ -272,7 +274,7 @@ export default function Evento () {
               className='text-4xl font-bold text-start'
             >Ubicación del evento</h2>
 
-          <iframe className='w-full my-5 bg-gray-200 border-none h-96' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d513.6758499995218!2d-78.50606974455522!3d-0.19899527957450538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a46fc9a03a9%3A0xc052e4af4b47fe88!2sBiblioteca%20Central%20UCE!5e0!3m2!1sen!2sec!4v1667323605044!5m2!1sen!2sec" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <iframe className='w-full my-5 bg-gray-200 border-none h-96' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d513.6758499995218!2d-78.50606974455522!3d-0.19899527957450538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a46fc9a03a9%3A0xc052e4af4b47fe88!2sBiblioteca%20Central%20UCE!5e0!3m2!1sen!2sec!4v1667323605044!5m2!1sen!2sec" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
           </section>
         </div>
 
