@@ -17,7 +17,7 @@ export function TitlePage ({ title, image }) {
     style={{
       textShadow: '2px 2px 2px black'
     }}
-      className="grid h-full px-4 pt-10 pb-20 text-xl font-bold tracking-wider text-center text-white sm:text-3xl bg-black/40 place-content-center xl:px-40 lg:text-4xl lg:px-20"
+      className="grid px-4 pt-10 pb-20 text-xl font-semibold text-center text-white sm:text-3xl bg-black/40 place-content-center xl:px-20 lg:text-4xl"
     >
       {title}
     </h1>

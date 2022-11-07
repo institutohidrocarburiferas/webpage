@@ -17,7 +17,7 @@ export default function Post ({ postData }) {
       image={postData.image}
       description={postData.title}
     >
-      <main className='w-screen'>
+      <main className='w-screen p-5'>
         <article className="max-w-md mx-auto mb-10 sm:max-w-lg md:max-w-2xl">
           {/* <div className="text-gray-500">
             <Date dateString={postData.date} />
