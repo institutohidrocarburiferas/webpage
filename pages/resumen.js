@@ -1,7 +1,8 @@
-import { Content } from '@components/Content'
-import { Separator } from '@components/Separator'
-import { Text } from '@components/Text'
 import { useEffect, useRef } from 'react'
+import { Content } from '@components/Content'
+import { Subtitle } from '@components/Subtitle'
+import { Text } from '@components/Text'
+import Title from '@components/Title'
 
 const pageData = {
   title: 'El Instituto',
@@ -141,18 +142,17 @@ const lineasInvestigacion = {
 function Resumen () {
   const sections = generalidades.content.map(({ label, text }) => (
     <section key={label}>
-      <h2 className='mt-10 mb-4 text-3xl font-bold border-b-2'>
-        {label}
-      </h2>
+      <Subtitle>{label}</Subtitle>
       <Text>{text}</Text>
     </section>
   ))
 
   return (
-    <div className='w-screen'>
-      <article className="max-w-sm mx-auto my-10 sm:max-w-lg md:max-w-2xl" >
+    <div className='w-full p-5 mb-10'>
+      <Title>{generalidades.title}</Title>
+      <div className="flex flex-col max-w-5xl gap-10 mx-auto" >
         {sections}
-      </article>
+      </div>
     </div>
   )
 }
@@ -182,28 +182,28 @@ function LineasInvestigacion () {
 
   const sections = lineasInvestigacion.content.map(({ label, items, icon }) => (
     <article
-      className="w-96 mx-auto outline p-8 bg-amber-400"
+      className="w-full p-8 mx-auto sm:w-96 outline bg-amber-400"
       key={label}
     >
-      <picture className='m-auto p-2 w-20 h-20 block'>
+      <picture className='block w-20 h-20 p-2 m-auto'>
         {icon}
       </picture>
-
-      <h2 className='mb-4 text-2xl font-bold text-center'>{label}</h2>
+      <h3 className='mb-4 text-2xl font-bold text-center'>{label}</h3>
       {items.map(item => (
         <ul
           className='pl-5 leading-loose tracking-wide'
           key={item}
         >
-          <li className="lg:text-lg mt-2 list-disc">{item}</li>
+          <li className="mt-2 list-disc lg:text-lg">{item}</li>
         </ul>
       ))}
     </article>
   ))
 
   return (
-    <div className='w-screen outlinemb-10'>
-      <div ref={ref} className='flex flex-col md:flex-row opacity-0 flex-wrap items-center sm:items-stretch gap-5 justify-center container mx-auto'>
+    <div className='w-full mb-10'>
+      <Title>{lineasInvestigacion.title}</Title>
+      <div ref={ref} className='flex flex-col flex-wrap items-center justify-center w-full gap-5 p-3 mx-auto opacity-0 max-w-7xl md:flex-row sm:items-stretch'>
         {sections}
       </div>
     </div>
@@ -217,11 +217,10 @@ export default function ElInstituto () {
     image={pageData.image}
   >
     <main>
-      <h3 className='text-4xl text-center py-5 font-bold'>{generalidades.title}</h3>
+      {/* Generalidades */}
       <Resumen />
-      <h3 className='text-4xl text-center py-5 font-bold'>{lineasInvestigacion.title}</h3>
+      {/* Líneas de investigación */}
       <LineasInvestigacion />
-      <Separator />
     </main>
   </Content>
 }
