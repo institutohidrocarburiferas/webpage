@@ -17,7 +17,7 @@ export function Participants ({ title, data }) {
   ))
   return (
     <section
-      className="container flex flex-col flex-wrap items-center justify-center gap-5 p-5 md:pl-12"
+      className="container flex flex-col flex-wrap items-center justify-center gap-10 p-5 md:pl-12"
     >
       <h2
         className='w-full text-4xl font-bold text-center'

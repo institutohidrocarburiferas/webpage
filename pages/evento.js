@@ -141,7 +141,7 @@ export default function Evento () {
                 <li>Eficiencia energética y los escenarios prospectivos</li>
                 <li>Visión a largo plazo del Ecuador</li>
                 <li>Experiencias internacionales sobre la construcción de escenarios energéticos</li>
-                <li>Estudios prospectivos desde los centros de Investigación</li>
+                <li>Estudios prospectivos desde los centros de investigación</li>
               </ul>
 
             </section>

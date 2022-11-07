@@ -187,7 +187,7 @@ export const programItems = [
   {
     time: '08H00 - 08H30',
     label: 'Registro',
-    expositor: 'Auditorio Master del Centro de Formación Integral',
+    expositor: 'Auditorio Máster del Centro de Formación Integral',
     institution: 'Universidad Central del Ecuador',
   },
   {
