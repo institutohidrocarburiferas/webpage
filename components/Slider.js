@@ -14,8 +14,11 @@ const useStyles = createStyles((theme, _params, getRef) => ({
     backgroundSize: 'contain',
     backgroundPosition: 'center',
     backgroundRepeat: 'no-repeat',
-    margin: 20,
     backgroundColor: 'transparent',
+    // Media query with value from theme
+    [`@media (max-width: ${theme.breakpoints.xs}px)`]: {
+      height: 140,
+    },
   },
 
   title: {
@@ -25,6 +28,9 @@ const useStyles = createStyles((theme, _params, getRef) => ({
     marginTop: theme.spacing.xs,
     textAlign: 'justify',
     padding: '0 25px',
+    [`@media (max-width: ${theme.breakpoints.xs}px)`]: {
+      fontSize: 16,
+    },
   },
 
   category: {

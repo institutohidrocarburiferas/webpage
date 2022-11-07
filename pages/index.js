@@ -54,10 +54,10 @@ export default function Home ({ allPostsData }) {
         </section>
         {/* Registro y cuenta regresiva */}
         <section className='flex flex-col w-full gap-3 mt-5'>
-          <div className='flex justify-center w-full gap-10 items-center lg:justify-start'>
+          <div className='flex items-center justify-center w-full gap-10 lg:justify-start'>
             <picture>
               <img
-                className='h-16 sm:h-24 rounded lg:h-32 aspect-auto'
+                className='h-16 rounded sm:h-24 lg:h-32 aspect-auto'
                 src="/eventos/foro-internacional-prospectiva-energetica/ministerio-energia-minas.jpg"
                 alt="Ministerio de Energía y Minas"
                 loading="lazy"
@@ -65,7 +65,7 @@ export default function Home ({ allPostsData }) {
             </picture>
             <picture>
               <img
-                className='h-16 sm:h-24 rounded lg:h-32 aspect-auto'
+                className='h-16 rounded sm:h-24 lg:h-32 aspect-auto'
                 src="/UCE-logo.png"
                 alt="Universidad Central del Ecuador Logo"
                 loading="lazy"
@@ -90,7 +90,7 @@ export default function Home ({ allPostsData }) {
 
       <div className='container mx-auto'>
         {/* Recent notices section */}
-        <section className='flex flex-col gap-5 p-5 py-5 my-12 md:px-12'>
+        <section className='flex flex-col gap-5 p-5 py-5 my-4 md:my-12 md:px-12'>
           <h2 className='p-2 mx-auto text-3xl font-semibold border-b-2 md:text-4xl lg:text-5xl sm:px-20 md:px-32 lg:px-40'>
             Noticias recientes
           </h2>
