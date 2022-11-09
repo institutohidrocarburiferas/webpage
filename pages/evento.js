@@ -37,19 +37,20 @@ function ProgramItem ({ time, label, expositor, institution }) {
 function SpeakerCard ({ name, image, role, institute, objectFit = 'cover' }) {
   return (
     <section
-      className="flex flex-col w-64 rounded-md h-76 md:hover:scale-105">
+      className="flex flex-col gap-5 rounded-md w-60 md:hover:scale-105">
       <Image
         styles={{
           objectFit,
         }}
         className='object-top rounded-md'
         src={image}
-        width={350}
-        height={350}
+        width={300}
+        height={300}
         alt={name}
       />
-      <section className='grid w-full gap-1 font-semibold text-center h-28 rounded-b-md place-content-center'>
-        <span className='text-lg'>{name}</span>
+      <section className='grid w-full gap-1 font-semibold text-center justify-content-start rounded-b-md'>
+
+        <span className='font-bold text-md'>{name}</span>
         <span className='text-sm'>{role}</span>
         <span className='text-xs'>{institute}</span>
       </section>
@@ -138,8 +139,8 @@ export default function Evento () {
                 <li>Seguridad y sostenibilidad de los sistemas futuros de energía</li>
                 <li>Visualización y retos de la transacción energética en ALC</li>
                 <li>Futuro de los mercados de commodities energéticos</li>
-                <li>Eficiencia energética y los escenarios prospectivos</li>
-                <li>Visión a largo plazo del Ecuador</li>
+                <li>Eficiencia energética y construcción de escenarios prospectivos</li>
+                <li>Visión a largo plazo del sistema energético del Ecuador</li>
                 <li>Experiencias internacionales sobre la construcción de escenarios energéticos</li>
                 <li>Estudios prospectivos desde los centros de investigación</li>
               </ul>
@@ -230,8 +231,6 @@ export default function Evento () {
               className='text-4xl font-bold'
             >Ponentes</h2>
             <div className='flex flex-wrap justify-center gap-10 md:flex-row '>
-              {/* Patch */}
-              <section className="flex flex-col w-64 rounded-md h-76 md:hover:scale-105"></section>
               {speakers.map(({ name, image, role, institute }) => (
                 <SpeakerCard
                   key={name}

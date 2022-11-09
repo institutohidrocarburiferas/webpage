@@ -143,7 +143,11 @@ export const sponsors = [
     image: `${path}/sponsors/ing-quimica-uce.jpeg`,
   },
   {
-    title: 'Logo de la Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental',
+    title: 'Logo de la Universidad de Minería de San Petersburgo',
+    image: `${path}/sponsors/u-san-petersburgo.svg`,
+  },
+  {
+    title: 'Logo de la ',
     image: `${path}/sponsors/figempa.png`,
   },
   {
@@ -187,82 +191,93 @@ export const programItems = [
   {
     time: '08H00 - 08H30',
     label: 'Registro',
-    expositor: 'Auditorio Máster del Centro de Formación Integral',
+    expositor: 'Auditorio Máster del Centro de Información Integral',
     institution: 'Universidad Central del Ecuador',
   },
   {
     time: '08H30 - 09H00',
-    label: 'Acto de inauguración',
-    expositor: 'Principales autoridades',
-    institution: 'Invitados',
+    label: 'Inauguración y palabras de bienvenida',
+    expositor: 'Autoridades',
   },
   {
-    time: '09H00 - 09H45',
-    label: 'Seguridad y sostenibilidad de los sistemas futuros de energía (fósil y electricidad)',
+    time: '09H00 - 09H40',
+    label: 'Seguridad y sostenibilidad de los sistemas futuros de energía (fósil y electricidad) - Ponencia virtual',
+    institution: 'Universidad de Minería de San Petersburgo',
   },
   {
-    time: '09H45 - 10H30',
+    time: '09H40 - 10H20',
+    label: 'Visión a largo plazo del sistema energético de Ecuador',
+    expositor: 'Ing. Enith Carrión, MSc',
+    institution: 'Viceministra de Electricidad y Energía Renovable - Ministerio de Energía y Minas',
+  },
+  {
+    time: '10H20 - 11H00',
     label: 'Visualización y retos de la transacción energética en ALC a mediano y largo plazo (uso de herramientas de prospectiva de OLADE)',
     expositor: 'Ing. Medardo Cadena, MSc',
-    institution: 'Organización Latinoamericana de Energía (OLADE)',
+    institution: 'Director de Estudios, Proyectos e Información - Organización Latinoamericana de Energía (OLADE)',
   },
   {
-    time: '10H30 - 11H00',
-    label: 'Coffee Break',
+    time: '11H00 - 11H30',
+    label: 'COFFEE BREAK',
   },
   {
-    time: '11H00 - 11H45',
-    label: 'Futuro de los mercados de precios de los energéticos',
+    time: '11H30 - 12H10',
+    label: 'Futuro de los mercados de precios de los commodities energéticos',
     expositor: 'Rafael Espinoza',
-    institution: 'Partner at McKinsey & Company',
+    institution: 'Socio - Ecuador McKinsey',
   },
   {
-    time: '11H45 - 12H30',
-    label: 'Visión a largo plazo del sistema energético (oferta y demanda de combustibles y electricidad) con la transformación del mercado hacia equipos energéticamente eficientes. Casos de estudio.',
-    expositor: 'Ing. Ignacio Sagardoy',
-    institution: 'Fundación Bariloche (Argentina) – Instituto de Metrología de Alemania (PTB)',
-  },
-  {
-    time: '12H30 - 14H00',
-    label: 'Almuerzo',
-  },
-  {
-    time: '14H00 - 14H45',
-    label: 'Modelo Prospectivo Energético de México',
-    expositor: 'Ing. Juan I. Navarrete, MSc',
-    institution: 'Comisión Nacional para el Uso Eficiente de la Energía CONUEE-México',
-  },
-  {
-    time: '14H45 - 15H30',
-    label: 'Prospectiva energética del Ecuador al 2035 MuSIASEM',
+    time: '12H10 - 12H50',
+    label: 'Prospectiva energética para el Ecuador con MuSIASEM o Multi-Scale Integrated Analysis and Ecosystem Metabolism',
     expositor: 'Ing. Rony Parra, Phd',
-    institution: 'Director Instituto de Investigaciones Hidrocarburíferas IIH FIGEMPA - Universidad Central del Ecuador',
+    institution: 'Director Instituto de Investigaciones Hidrocarburíferas IIH - Universidad Central del Ecuador',
   },
   {
-    time: '15H30 - 16H00',
-    label: 'Coffee break',
+    time: '12H50 - 14H30',
+    label: 'ALMUERZO',
   },
   {
-    time: '16H00 - 16H45',
-    label: 'Estudio prospectivo en el transporte para el caso del Ecuador',
-    expositor: 'Ing, Francisco Terneus PhD(c)',
+    time: '14H30 - 15H10',
+    label: 'Visión a largo plazo del sistema energético (oferta y demanda de combustibles y electricidad) con la transformación del mercado hacia equipos energéticamente eficientes.',
+    expositor: 'Ing. Ignacio Sagardoy, MSc',
+    institution: 'Fundación Bariloche (Argentina)',
+  },
+  {
+    time: '15H10 - 15H50',
+    label: 'Estudio de prospectiva en el sector transporte de Ecuador',
+    expositor: 'Ing, Francisco Terneus, PhD(c)',
     institution: 'Facultad de Ciencias Administrativas - Escuela Politécnica Nacional',
   },
   {
-    time: '16H45 - 17H30',
-    label: 'Tasas de retorno de energía en el sistema ecuatoriano',
-    expositor: 'Ing, Gonzalo Chiriboga, PhD(c)',
+    time: '15H50 - 16H20',
+    label: 'COFFEE BREAK',
+  },
+  {
+    time: '16H20 - 17H00',
+    label: 'Modelo de prospectiva energética para México',
+    expositor: 'Ing. Juan I. Navarrete, MSc',
+    institution: 'Director de Políticas y Programas - Comisión Nacional para el Uso Eficiente de la Energía (CONUEE-SENER)',
+  },
+  {
+    time: '17H00 - 17H40',
+    label: 'Tasas biofísicas de retorno energético en el uso de biocombustibles para el Ecuador',
+    expositor: 'Ing. Ghem Carvajal, MSc',
     institution: 'Facultad de Ingeniería Química - Universidad Central del Ecuador',
   },
   {
-    time: '17H30 - 18H30',
-    label: 'Resumen y clausura',
-    expositor: 'Principales autoridades',
-    institution: 'Invitados',
+    time: '17H40 - 18H30',
+    label: 'Resumen y Cierre',
+    expositor: 'Autoridades',
   },
 ]
 
 export const speakers = [
+  {
+    name: 'Ing. Enith Carrión, MSc',
+    image: `${path}/speakers/Enith-Carrion.png`,
+    role: 'Viceministra de Electricidad y Energía Renovable',
+    institute: 'Ministerio de Energía y Minas'
+  },
   {
     name: 'Ing. Medardo Cadena, MSc',
     image: `${path}/speakers/Medardo-Cadena.png`,
@@ -295,14 +310,14 @@ export const speakers = [
   },
   {
     name: 'Ing. Gonzalo Chiriboga, PhD(c) ',
-    image: '/integrantes/Gonzalo-Chiriboga.png',
-    role: 'Docente Investigador Facultad de Ingeniería Química',
+    image: `${path}/speakers/Ghem-Carvajal.png`,
+    role: 'Facultad de Ingeniería Química',
     institute: 'Universidad Central del Ecuador'
   },
   {
     name: 'Rafael Espinoza',
     image: `${path}/speakers/Rafael-Espinoza.png`,
-    role: 'Socio Ecuador - McKinsey & Company',
+    role: 'Socio Ecuador McKinsey',
     institute: null,
   },
 
