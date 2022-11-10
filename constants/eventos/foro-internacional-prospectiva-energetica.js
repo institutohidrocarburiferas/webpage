@@ -197,7 +197,7 @@ export const programItems = [
   {
     time: '08H30 - 09H00',
     label: 'Inauguración y palabras de bienvenida',
-    expositor: 'Autoridades',
+    expositor: 'Autoridades: Ministerio de Energía y Minas - Universidad Central del Ecuador',
   },
   {
     time: '09H00 - 09H40',
@@ -229,7 +229,7 @@ export const programItems = [
   {
     time: '12H10 - 12H50',
     label: 'Prospectiva energética para el Ecuador con MuSIASEM o Multi-Scale Integrated Analysis and Ecosystem Metabolism',
-    expositor: 'Ing. Rony Parra, Phd',
+    expositor: 'Ing. Rony Parra, PhD',
     institution: 'Director Instituto de Investigaciones Hidrocarburíferas IIH - Universidad Central del Ecuador',
   },
   {
@@ -320,5 +320,10 @@ export const speakers = [
     role: 'Socio Ecuador McKinsey',
     institute: null,
   },
-
+  {
+    name: 'Moderadora: Rebeca Illescas',
+    image: `${path}/speakers/Rebeca-Illescas.png`,
+    role: 'Consultora en Energía y Desarrollo',
+    institute: null,
+  },
 ]
