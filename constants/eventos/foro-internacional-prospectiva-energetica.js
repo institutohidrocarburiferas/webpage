@@ -224,7 +224,7 @@ export const programItems = [
     time: '11H30 - 12H10',
     label: 'Futuro de los mercados de precios de los commodities energéticos',
     expositor: 'Rafael Espinoza',
-    institution: 'Socio - Ecuador McKinsey',
+    institution: 'Socio - McKinsey & Company',
   },
   {
     time: '12H10 - 12H50',
@@ -317,8 +317,8 @@ export const speakers = [
   {
     name: 'Rafael Espinoza',
     image: `${path}/speakers/Rafael-Espinoza.png`,
-    role: 'Socio Ecuador McKinsey',
-    institute: null,
+    role: 'Socio',
+    institute: 'McKinsey & Company',
   },
   {
     name: 'Moderadora: Rebeca Illescas',
