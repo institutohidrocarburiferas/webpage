@@ -3,5 +3,5 @@ import { es } from 'date-fns/locale'
 
 export default function Date ({ dateString }) {
   const date = parseISO(dateString)
-  return <time dateTime={dateString}>{format(date, 'LLLL d, yyyy', { locale: es })}</time>
+  return <time className="text-sm md:text-lg" dateTime={dateString}>{format(date, 'LLLL d, yyyy', { locale: es })}</time>
 }

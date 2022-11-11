@@ -27,7 +27,7 @@ export default function Publicaciones () {
       image={pageData.image}
     >
       <main>
-        <section className='container flex flex-col p-10 mx-auto justify-evenly lg:flex-row'>
+        <section className='container flex flex-col p-2 md:p-10 mx-auto justify-evenly lg:flex-row'>
           <div className='h-screen overflow-y-scroll'>
             <Publications items={allPublications} />
           </div>
