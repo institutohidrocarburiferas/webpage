@@ -310,7 +310,7 @@ export const speakers = [
   },
   {
     name: 'Ing. Gonzalo Chiriboga, PhD(c) ',
-    image: `${path}/speakers/Ghem-Carvajal.png`,
+    image: '/integrantes/Ghem-Carvajal.png',
     role: 'Facultad de Ingeniería Química',
     institute: 'Universidad Central del Ecuador'
   },

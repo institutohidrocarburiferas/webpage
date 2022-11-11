@@ -230,7 +230,8 @@ export default function Evento () {
             <h2
               className='text-4xl font-bold'
             >Ponentes</h2>
-            <div className='flex flex-wrap justify-center gap-10 md:flex-row '>
+            {/* <div className='flex flex-wrap justify-center gap-10 md:flex-row '> */}
+            <div className="grid grid-cols-1 md:grid-cols-2 md:gap-10 gap-5 lg:grid-cols-3 lg:gap-x-20">
               {speakers.map(({ name, image, role, institute }) => (
                 <SpeakerCard
                   key={name}

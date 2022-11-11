@@ -130,7 +130,7 @@ export const investigadores = [
   },
   {
     name: 'Ing. Ghem Carvajal C., MSc ',
-    image: '/integrantes/Ghem-Carvajal-Chávez.png',
+    image: '/integrantes/Ghem-Carvajal.png',
     role: 'Docente Investigador',
     title: null,
     description: [

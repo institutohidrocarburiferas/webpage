@@ -2,6 +2,7 @@ import { Content } from '@components/Content'
 import { MemberCard } from '@components/MemberCard'
 import { openMemberModal } from '@utils/openMemberModal'
 import { equipo, investigadores } from '@constants/members'
+import Title from '@components/Title'
 
 const pageContent = {
   title: 'Integrantes',
@@ -30,10 +31,8 @@ function Section ({ data, title }) {
     />
   ))
   return <section className='flex flex-col items-center gap-5 pb-16'>
-    <h2 className='text-4xl font-bold border-b-2 py-5 px-20'>
-      {title}
-    </h2>
-    <div className='flex flex-wrap justify-center gap-10   md:flex-row '>
+    <Title>{title}</Title>
+    <div className='flex flex-wrap justify-center gap-3 sm:gap-6 lg:gap-10 md:flex-row'>
       {content}
     </div>
   </section>
