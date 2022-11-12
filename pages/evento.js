@@ -137,7 +137,7 @@ export default function Evento () {
               <p>Los ejes temáticos que se tratarán en el seminario son los siguientes:</p>
               <ul className='flex flex-col gap-3 font-semibold list-disc pl-7'>
                 <li>Seguridad y sostenibilidad de los sistemas futuros de energía</li>
-                <li>Visualización y retos de la transacción energética en ALC</li>
+                <li>Visualización y retos de la transición energética en ALC</li>
                 <li>Futuro de los mercados de commodities energéticos</li>
                 <li>Eficiencia energética y construcción de escenarios prospectivos</li>
                 <li>Visión a largo plazo del sistema energético del Ecuador</li>
