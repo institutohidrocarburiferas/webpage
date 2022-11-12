@@ -4,7 +4,7 @@ export const sideItems = [
   {
     label: 'Inicio',
     url: '#content',
-    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-home-2" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
+    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-home-2" viewBox="0 0 24 24" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <polyline points="5 12 3 12 12 3 21 12 19 12" />
       <path d="M5 12v7a2 2 0 0 0 2 2h10a2 2 0 0 0 2 -2v-7" />
@@ -15,7 +15,7 @@ export const sideItems = [
   {
     label: '¿Por qué prospectiva?',
     url: '#por-que-perspectiva',
-    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-question-mark" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
+    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-question-mark" viewBox="0 0 24 24" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
       <line x1="12" y1="19" x2="12" y2="19.01" />
@@ -25,7 +25,7 @@ export const sideItems = [
   {
     label: 'Ejes temáticos',
     url: '#ejes-tematicos',
-    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-presentation-analytics" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
+    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-presentation-analytics" viewBox="0 0 24 24" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M9 12v-4" />
       <path d="M15 12v-2" />
@@ -39,7 +39,7 @@ export const sideItems = [
   {
     label: 'Agenda',
     url: '#agenda',
-    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-calendar-time" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
+    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-calendar-time" viewBox="0 0 24 24" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M11.795 21h-6.795a2 2 0 0 1 -2 -2v-12a2 2 0 0 1 2 -2h12a2 2 0 0 1 2 2v4" />
       <circle cx="18" cy="18" r="4" />
@@ -53,7 +53,7 @@ export const sideItems = [
   {
     label: 'Organizadores',
     url: '#organizadores',
-    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-briefcase" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
+    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-briefcase" viewBox="0 0 24 24" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <rect x="3" y="7" width="18" height="13" rx="2" />
       <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
@@ -65,7 +65,7 @@ export const sideItems = [
   {
     label: 'Patrocinadores',
     url: '#patrocinadores',
-    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-ticket" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
+    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-ticket" viewBox="0 0 24 24" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <line x1="15" y1="5" x2="15" y2="7" />
       <line x1="15" y1="11" x2="15" y2="13" />
@@ -76,7 +76,7 @@ export const sideItems = [
   {
     label: '¿Qué busca el evento?',
     url: '#que-busca-el-evento',
-    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
+    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-link" viewBox="0 0 24 24" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
       <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
@@ -86,7 +86,7 @@ export const sideItems = [
   {
     label: 'Ponentes',
     url: '#ponentes',
-    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-speakerphone" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
+    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-speakerphone" viewBox="0 0 24 24" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M18 8a3 3 0 0 1 0 6" />
       <path d="M10 8v11a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-5" />
@@ -97,7 +97,7 @@ export const sideItems = [
   {
     label: 'Regístrate',
     url: '#registro',
-    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-file-search" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
+    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-file-search" viewBox="0 0 24 24" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <path d="M14 3v4a1 1 0 0 0 1 1h4" />
       <path d="M12 21h-5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v4.5" />
@@ -109,7 +109,7 @@ export const sideItems = [
   {
     label: 'Lugar del evento',
     url: '#ubicacion',
-    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-map-2" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#2c3e50" fill="none" strokeLinecap="round" strokeLinejoin="round">
+    image: <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-map-2" viewBox="0 0 24 24" strokeWidth="1.5" fill="none" strokeLinecap="round" strokeLinejoin="round">
       <path stroke="none" d="M0 0h24v24H0z" fill="none" />
       <line x1="18" y1="6" x2="18" y2="6.01" />
       <path d="M18 13l-3.5 -5a4 4 0 1 1 7 0l-3.5 5" />
