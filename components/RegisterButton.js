@@ -13,6 +13,6 @@ export function RegisterButton () {
   className='flex text-black justify-center items-center w-1/2 px-2 py-2 text-xs sm:text-lg md:text-2xl font-semibold rounded  bg-gradient-to-tr scroll-smooth  from-amber-500 to-white'
   rel="noreferrer"
 >
-  Regístrate a partir del día viernes 18
+Regístrate a partir del 18 de noviembre
 </p>
 }

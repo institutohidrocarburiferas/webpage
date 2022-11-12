@@ -212,7 +212,7 @@ export const programItems = [
   },
   {
     time: '10H20 - 11H00',
-    label: 'Visualización y retos de la transacción energética en ALC a mediano y largo plazo (uso de herramientas de prospectiva de OLADE)',
+    label: 'Visualización y retos de la transición energética en ALC a mediano y largo plazo (uso de herramientas de prospectiva de OLADE)',
     expositor: 'Ing. Medardo Cadena, MSc',
     institution: 'Director de Estudios, Proyectos e Información - Organización Latinoamericana de Energía (OLADE)',
   },
