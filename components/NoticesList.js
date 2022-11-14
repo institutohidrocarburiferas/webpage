@@ -20,13 +20,14 @@ const useStyles = createStyles((theme) => ({
   title: {
     fontFamily: `Greycliff CF, ${theme.fontFamily}`,
     fontWeight: 400,
+    textAlign: 'justify',
     color: theme.white,
     lineHeight: 1,
     fontSize: 32,
     marginTop: theme.spacing.xs,
-    textShadow: '2px 2px 2px black',
+    textShadow: '2px 2px 0 black',
     [theme.fn.smallerThan('xs')]: {
-      fontSize: 24,
+      fontSize: 20,
     },
   },
 }))

@@ -19,7 +19,7 @@ export default function Noticias ({ allNotices }) {
       description={pageData.description}
       image={pageData.image}
     >
-      <main className='w-full'>
+      <main className='w-full p-3'>
         {/* Slider Section */}
         {/* <section className='flex flex-col gap-5 p-5'>
           <Slider
