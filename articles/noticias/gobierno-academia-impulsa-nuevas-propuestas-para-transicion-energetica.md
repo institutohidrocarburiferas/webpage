@@ -1,7 +1,7 @@
 ---
 title: "Gobierno Nacional en coordinación con la Academia impulsa nuevas propuestas para la transición energética a nivel nacional"
 date: "2022-11-14"
-image: "/noticias/gobierno-academia-impulsan-nuevas-propuestas-para-transición-energética.jpeg"
+image: "/noticias/gobierno-academia-impulsan-nuevas-propuestas-para-transicion-energetica.jpeg"
 ---
 
 <legend>En el marco de las discusiones globales de la COP27, representantes del Gobierno ecuatoriano, académicos y aliados, impulsan el primer Foro de Prospectiva Energética para proponer soluciones frente a, la crisis climática.</legend>
