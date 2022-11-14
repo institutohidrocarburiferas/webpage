@@ -5,7 +5,7 @@ import Link from 'next/link'
 function Card ({ title, image, url, date }) {
   console.log({ image })
   return <Link href={url} >
-    <a className='flex flex-col items-center w-full h-auto gap-5 py-5 mx-auto border-b-2 cursor-pointer md:flex-row md:justify-around md:p-5 md:hover:bg-gradient-to-tl md:hover:to-blue-100 md:hover:from-transparent md:hover:text-black'>
+    <a className='flex flex-col items-center w-full h-auto gap-5 py-5 mx-auto border-b-2 cursor-pointer sm:flex-row md:justify-around md:p-5 md:hover:bg-gradient-to-tl md:hover:to-blue-100 md:hover:from-transparent md:hover:text-black'>
       <picture
         className='grid w-24 h-24 p-3 text-white rounded dark:bg-gray-100 place-content-center'>
         <Image
@@ -16,7 +16,7 @@ function Card ({ title, image, url, date }) {
         />
       </picture>
       <div className='w-full text-justify md:w-3/4'>
-        <h3 className='text-lg font-semibold md:text-2xl'>
+        <h3 className='text-lg font-semibold sm:text-xl md:text-2xl'>
           {title}
         </h3>
         {/* <Date dateString={date} /> */}
