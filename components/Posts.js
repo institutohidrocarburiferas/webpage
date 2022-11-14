@@ -3,19 +3,20 @@ import Link from 'next/link'
 // import Date from '@components/Date'
 
 function Card ({ title, image, url, date }) {
+  console.log({ image })
   return <Link href={url} >
-    <a className='flex items-center w-full h-auto justify-around gap-5 py-5 md:p-5 mx-auto border-b-2 cursor-pointer md:hover:bg-gradient-to-tl md:hover:to-blue-100 md:hover:from-white group'>
-      <div
-        className='grid w-24 h-24 place-content-center group:hover:scale-105 rounded'>
+    <a className='flex flex-col items-center w-full h-auto gap-5 py-5 mx-auto border-b-2 cursor-pointer md:flex-row md:justify-around md:p-5 md:hover:bg-gradient-to-tl md:hover:to-blue-100 md:hover:from-transparent md:hover:text-black'>
+      <picture
+        className='grid w-24 h-24 p-3 text-white rounded dark:bg-gray-100 place-content-center'>
         <Image
           width={200}
           height={200}
           src={image}
           alt={title}
         />
-      </div>
-      <div className='w-3/4'>
-        <h3 className='text-lg md:text-2xl font-semibold'>
+      </picture>
+      <div className='w-full text-justify md:w-3/4'>
+        <h3 className='text-lg font-semibold md:text-2xl'>
           {title}
         </h3>
         {/* <Date dateString={date} /> */}
