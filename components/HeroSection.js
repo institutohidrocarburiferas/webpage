@@ -48,9 +48,9 @@ export function HeroSection ({
         maxHeight: 1000,
       }}
       className="p-5 sm:px-16 md:py-12 md:pl-24">
-      <div ref={containerRef} className="container opacity-0 flex flex-col gap-5">
+      <div ref={containerRef} className="container flex flex-col gap-5 opacity-0">
         <h2>
-          <p className='inline-block text-4xl font-extrabold text-transparent bg-gradient-to-r bg-clip-text from-amber-400 via-orange-500 to-orange-500 sm:text-4xl md:text-5xl lg:text-6xl'>{title}</p>
+          <p className='inline-block text-3xl font-extrabold text-transparent bg-gradient-to-r bg-clip-text from-amber-400 via-orange-500 to-orange-500 sm:text-4xl md:text-5xl lg:text-6xl'>{title}</p>
         </h2>
         <p style={{
           fontSize: 'clamp(0.9rem, 0.75rem + 1vw, 1.5rem)'

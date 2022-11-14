@@ -1,3 +1,5 @@
+import Title from './Title'
+
 function Participant ({ title, image, url }) {
   return <a href={url} target="_blank" className='grid bg-white rounded hover:scale-105 place-content-center' rel="noreferrer">
     <picture>
@@ -17,12 +19,10 @@ export function Participants ({ title, data }) {
   ))
   return (
     <section
-      className="container flex flex-col flex-wrap items-center justify-center gap-10 p-5 md:pl-12"
+      className="container flex flex-col flex-wrap items-center justify-center gap-3 p-5 md:pl-12"
     >
-      <h2
-        className='w-full text-4xl font-bold text-center'
-      >{title}</h2>
-      <section className='flex flex-wrap items-center justify-center gap-10'>
+      <Title>{title}</Title>
+      <section className='flex flex-wrap items-center justify-center gap-5 md:gap-10'>
         {participants}
       </section>
     </section>
