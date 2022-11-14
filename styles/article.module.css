@@ -47,3 +47,9 @@
   width: 100%;
   aspect-ratio: 16/9;
 }
+
+.content legend{
+  font-size: small;
+  text-align: center;
+  font-style: italic;
+}
