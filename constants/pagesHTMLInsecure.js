@@ -1,4 +1,4 @@
 export const allowPages = [
   'sistema-de-monitoreo-de-bioindicadores-ANZU',
-  'gobierno-academia-impulsa-nuevas-propuestas-para-transicion-energetica'
+  'academicos-y-gobierno-impulsan-nuevas-propuestas-para-transicion-energetica'
 ]
