@@ -1,12 +1,12 @@
 ---
-title: "Gobierno Nacional en coordinación con la Academia impulsa nuevas propuestas para la transición energética a nivel nacional"
+title: "Gobierno Nacional en coordinación con la Academia impulsan nuevas propuestas para la transición energética a nivel nacional"
 date: "2022-11-14"
 image: "/noticias/gobierno-academia-impulsan-nuevas-propuestas-para-transicion-energetica.jpeg"
 ---
 
 <legend>En el marco de las discusiones globales de la COP27, representantes del Gobierno ecuatoriano, académicos y aliados, impulsan el primer Foro de Prospectiva Energética para proponer soluciones frente a, la crisis climática.</legend>
 
-La Universidad Central del Ecuador (UCE) en coordinación el Ministerio de Energía y Minas (MEM),  llevarán a cabo el primer Foro Internacional de Prospectiva Energética en el país, el 23 de noviembre del 2022 en la ciudad de Quito. Este encuentro regional que contará con la participación de representantes de la comunidad científica, líderes gubernamentales y directivos de Organismos Internacionales, tendrá el objetivo de proporcionar un espacio de diálogo sobre la necesidad de construir escenarios energéticos nacionales deseables con base en metodologías innovadoras y experiencias internacionales, contemplando la realidad y autodeterminación en el desarrollo sostenible del país.
+La Universidad Central del Ecuador (UCE) en coordinación con el Ministerio de Energía y Minas (MEM),  llevarán a cabo el primer Foro Internacional de Prospectiva Energética en el país, el 23 de noviembre del 2022 en la ciudad de Quito. Este encuentro regional que contará con la participación de representantes de la comunidad científica, líderes gubernamentales y directivos de Organismos Internacionales, tendrá el objetivo de proporcionar un espacio de diálogo sobre la necesidad de construir escenarios energéticos nacionales deseables con base en metodologías innovadoras y experiencias internacionales, contemplando la realidad y autodeterminación en el desarrollo sostenible del país.
 
 El evento, que está liderado desde la academia por el Instituto de Investigaciones Hidrocarburíferas (IIH) de la UCE, contará con nueve ponencias magistrales, entre las cuales se encontraran expertos de la Organización Latinoamericana de Energía (OLADE), investigadores de la Fundación Bariloche, Escuela Politécnica Nacional y directivos de la Comisión Nacional para el Uso Eficiente de la Energía de México (CONUEE) y del socio de McKinsey & Company; organizaciones líderes a nivel regional e internacional en propuestas innovadoras sobre prospectiva energética.
 
