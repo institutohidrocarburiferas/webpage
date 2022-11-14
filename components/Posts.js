@@ -3,7 +3,6 @@ import Link from 'next/link'
 // import Date from '@components/Date'
 
 function Card ({ title, image, url, date }) {
-  console.log({ image })
   return <Link href={url} >
     <a className='flex flex-col items-center w-full h-auto gap-5 py-5 mx-auto border-b-2 cursor-pointer sm:flex-row md:justify-around md:p-5 md:hover:bg-gradient-to-tl md:hover:to-blue-100 md:hover:from-transparent md:hover:text-black'>
       <picture
