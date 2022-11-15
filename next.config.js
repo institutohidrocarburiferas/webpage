@@ -4,6 +4,10 @@ const nextConfig = {
   swcMinify: true,
   eslint: {
     ignoreDuringBuilds: true,
+  },
+  i18n: {
+    locales: ['es', 'en'],
+    defaultLocale: 'es',
   }
 }
 
