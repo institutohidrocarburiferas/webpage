@@ -68,6 +68,7 @@ export default function Evento () {
       </Head>
       <Sidebar items={sideItems} />
       <main>
+        <Separator id="content" />
         <HeroSection
           text={heroContent.text}
           title={heroContent.title}
