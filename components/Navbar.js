@@ -15,7 +15,7 @@ export function Navbar () {
       : setCollapse('hidden')
   }
 
-  return <nav className={`${pathname === '/evento' ? 'fixed' : 'sticky'} top-0 z-10 w-full h-24 bg-white shadow dark:bg-gray-900 shadow-gray-400`}>
+  return <nav className={`${pathname === '/evento' ? 'fixed' : 'fixed'} top-0 z-10 w-full h-24 bg-white shadow dark:bg-gray-900 shadow-gray-400`}>
     <div
       className="container bg-white dark:bg-gray-900 px-2.5 flex flex-wrap items-center  justify-between w-full mx-auto  z-10 lg:flex-nowrap">
       {/* Logo */}
