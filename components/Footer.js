@@ -1,10 +1,12 @@
 import Image from 'next/image'
+import { useTranslation } from 'next-i18next'
 
 export function Footer ({
   svgColor = 'fill-white dark:fill-gray-900',
   image,
 }
 ) {
+  const { t } = useTranslation(['Footer'])
   const bgStyle = {
     backgroundImage: `url(${image})`,
     backgroundPosition: 'right bottom',
@@ -30,11 +32,11 @@ export function Footer ({
     >
       <div className='container flex flex-col justify-between gap-8 md:flex-row'>
         <section className='flex flex-col text-sm'>
-          <span>Universidad Central del Ecuador</span>
-          <span>Ingreso por las Calles Jerónimo Leyton y Gilberto Gatto Sobral </span>
-          <span>Facultad de Ingeniería en Geología, Petróleos, Minas y Ambiental - FIGEMPA </span>
-          <span>Segundo piso, Área Posgrado </span>
-          <span>Quito - Ecuador </span>
+          <span>{t('university')}</span>
+          <span>{t('address')}</span>
+          <span>{t('faculty')}</span>
+          <span>{t('place')}</span>
+          <span>Quito - Ecuador</span>
         </section>
 
         {/* Middle section

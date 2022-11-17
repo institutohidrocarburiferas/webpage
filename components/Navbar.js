@@ -3,11 +3,12 @@ import Link from 'next/link'
 import Image from 'next/image'
 import { useRouter } from 'next/router'
 import { navItems } from '@constants/navItems'
+import cn from 'classnames'
 
 export function Navbar () {
   const [collapse, setCollapse] = useState('hidden')
 
-  const { pathname } = useRouter()
+  const { pathname, locale } = useRouter()
 
   const handleCollapse = () => {
     collapse === 'hidden'
@@ -15,7 +16,10 @@ export function Navbar () {
       : setCollapse('hidden')
   }
 
-  return <nav className={`${pathname === '/evento' ? 'fixed' : 'fixed'} top-0 z-10 w-full h-24 bg-white shadow dark:bg-gray-900 shadow-gray-400`}>
+  return <nav className={cn('w-full h-24 bg-white shadow dark:bg-gray-900 shadow-gray-400 top-0 z-10',
+    { fixed: pathname === '/evento' },
+    { sticky: pathname !== '/evento' }
+  )}>
     <div
       className="container bg-white dark:bg-gray-900 px-2.5 flex flex-wrap items-center  justify-between w-full mx-auto  z-10 lg:flex-nowrap">
       {/* Logo */}
@@ -28,7 +32,7 @@ export function Navbar () {
             width={325}
             height={90}
             src="/logoiih.png"
-            alt="Instituto de Investigaciones Logo"
+            alt="Logo del Instituto de Investigaciones"
           />
         </a>
       </Link>
@@ -58,11 +62,11 @@ export function Navbar () {
       </button>
       {/* Nav items  */}
       <div
-        className={`${collapse} w-full lg:block md:w-auto`}>
+        className={cn(collapse, 'w-full lg:block md:w-auto')}>
         <ul className="flex flex-col p-4 px-4 my-4 border border-gray-100 rounded-lg lg:my-0 xl:gap-5 md:px-0 bg-gray-50 md:flex-row md:space-x-4 md:mt-0 md:border-0 md:bg-white dark:bg-gray-800 md:dark:bg-gray-900 dark:border-gray-700">
 
           {
-            navItems.map(({ name, url, subItems }) => {
+            navItems.map(({ name, nameEn, url, subItems }) => {
               const styleCurrentPage = 'pointer-events-none text-amber-600 dark:text-amber-600'
 
               return (<li
@@ -73,23 +77,34 @@ export function Navbar () {
                   (subItems === undefined)
                     ? <Link href={url} >
                       <a
-                        className={`${pathname === url && `${styleCurrentPage} md:border-amber-600`} rounded transition-colors delay-75 md:border-b-2 md:rounded-none border-transparent hover:md:border-amber-600 block py-2 pl-3 pr-4 font-semibold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-amber-700  md:py-2 md:px-0 dark:hover:bg-gray-700 dark:hover:text-amber-600 dark:hover:md:border-amber-600 md:dark:hover:bg-transparent`}
+                        className={cn(
+                          'rounded transition-colors delay-75 md:border-b-2 md:rounded-none border-transparent hover:md:border-amber-600 block py-2 pl-3 pr-4 font-semibold hover:bg-gray-100 md:hover:bg-transparent md:hover:text-amber-700  md:py-2 md:px-0 dark:hover:bg-gray-700 dark:hover:text-amber-600 dark:hover:md:border-amber-600 md:dark:hover:bg-transparent',
+                          { [styleCurrentPage]: pathname === url },
+                          { 'md:border-amber-600': pathname === url }
+
+                        )}
                         onClick={() => setCollapse('hidden')}
                       >
-                        {name}
+                        {locale === 'es' ? name : nameEn}
                       </a>
                     </Link>
                     : <div
-                      className={`${subItems.some(({ url }) => url === pathname) && 'md:border-amber-600 md:border-b-2'} block py-2 pl-3 pr-4 border rounded  md:hover:bg-transparent md:rounded-none md:border-0 md:hover:text-amber-600 md:px-0 md:py-2  dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-600`}
+                      className={cn('block py-2 pl-3 pr-4 border rounded  md:hover:bg-transparent md:rounded-none md:border-0 md:hover:text-amber-600 md:px-0 md:py-2  dark:hover:bg-gray-700 md:dark:hover:bg-transparent dark:border-gray-600',
+                        { 'md:border-amber-600 md:border-b-2': subItems.some(({ url }) => url === pathname) }
+                      )}
                     >
-                      <span className={`${subItems.some(({ url }) => url === pathname) && 'text-amber-600 dark:text-amber-600'} font-semibold md:cursor-pointer `}>
-                        {name}
+                      <span className={cn('font-semibold md:cursor-pointer',
+                        { 'text-amber-600 dark:text-amber-600': subItems.some(({ url }) => url === pathname) }
+                      )}
+                      >
+                        {locale === 'es' ? name : nameEn}
                       </span>
                       <ul
-                        className={`${subItems.some(({ url }) => url === pathname) && styleCurrentPage} block rounded-md md:pointer-events-none md:border md:block md:transition-opacity md:delay-300 group-hover:md:delay-75 md:opacity-0 md:absolute group-hover:opacity-100 group-hover:pointer-events-auto group-hover:transition-opacity dark:hover:bg-gray-700 dark:bg-gray-700 dark:border-gray-600`}
+                        className={cn(' block rounded-md md:pointer-events-none md:border md:block md:transition-opacity md:delay-300 group-hover:md:delay-75 md:opacity-0 md:absolute group-hover:opacity-100 group-hover:pointer-events-auto group-hover:transition-opacity dark:hover:bg-gray-700 dark:bg-gray-700 dark:border-gray-600',
+                          { [styleCurrentPage]: subItems.some(({ url }) => url === pathname) })}
                       >
                         {
-                          subItems.map(({ name, url }) => (
+                          subItems.map(({ name, nameEn, url }) => (
 
                             <li
                               key={name}
@@ -97,10 +112,11 @@ export function Navbar () {
                             >
                               <Link href={url}>
                                 <a
-                                  className={`${pathname === url && styleCurrentPage} block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-white`}
+                                  className={cn('block px-4 py-2 hover:bg-gray-100 dark:hover:bg-gray-800 dark:text-white',
+                                    { [styleCurrentPage]: pathname === url })}
                                   onClick={() => setCollapse('hidden')}
                                 >
-                                  {name}
+                                  {locale === 'es' ? name : nameEn}
                                 </a>
                               </Link>
                             </li>

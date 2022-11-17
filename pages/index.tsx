@@ -3,13 +3,16 @@ import { HeroSection } from '@components/HeroSection'
 import { Participants } from '@components/Participants'
 import { Separator } from '@components/Separator'
 import { Slider } from '@components/Slider'
+import { RegisterButton } from '@components/RegisterButton'
 import { Footer } from '@components/Footer'
 import { colaboradores } from '@constants/colaboradores-externos'
 import { getPostsData } from '@utils/posts'
 import path from 'node:path'
 import Head from 'next/head'
 import Link from 'next/link'
-import { RegisterButton } from '@components/RegisterButton'
+import { GetStaticProps } from 'next'
+import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
+import { useTranslation } from 'next-i18next'
 
 const eventDay = new Date(2022, 10, 23, 8)
 
@@ -20,14 +23,15 @@ const pageData = {
   sliderURL: '/noticias'
 }
 
-const heroContent = {
-  title: 'Nosotros',
-  image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80',
-  height: '77vh',
-  text: 'El Instituto de Investigaciones Hidrocarburíferas - IIH es un centro que desarrolla investigaciones hidrocarburíferas y de energía bajo la comprensión profunda de aspectos cruciales en la relación de los sistemas socioeconómicos y los ecosistemas; tales como: peak oil, limitaciones biofísicas, transición y descarbonización de las economías y sistemas de gobernanza, incluidas las formas de abordar nuestros patrones de producción y consumo. Finalmente contribuye al debate de sostenibilidad más allá de la ilusión de una disponibilidad energética ilimitada y una solución tecnológica.'
-}
-
 export default function Home ({ allPostsData }) {
+  const { t } = useTranslation(['Home'])
+  const heroContent = {
+    title: t('HeroTitle'),
+    image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80',
+    height: '77vh',
+    text: t('HeroText')
+  }
+
   return <>
     <Head>
       <title>{pageData.title}</title>
@@ -43,14 +47,14 @@ export default function Home ({ allPostsData }) {
 
       <Separator />
       <HeroSection
-        title={'FORO INTERNACIONAL DE PROSPECTIVA ENERGÉTICA EN EL ECUADOR'}
-        text={'miércoles, 23 de noviembre de 2022'}
+        title={t('EventTitle')}
+        text={t('EventDate')}
         image='https://images.unsplash.com/photo-1491914045721-6f2dd87cf09d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
         height='auto'
         justifyContent="center"
       >
         <section className='text-gray-400'>
-          <span>Presencial - Cupos limitados</span>
+          <span>{t('EventCaption')}</span>
         </section>
         {/* Registro y cuenta regresiva */}
         <section className='flex flex-col w-full gap-3 mt-5'>
@@ -59,7 +63,7 @@ export default function Home ({ allPostsData }) {
               <img
                 className='h-16 rounded sm:h-24 lg:h-32 aspect-auto'
                 src="/eventos/foro-internacional-prospectiva-energetica/ministerio-energia-minas.jpg"
-                alt="Ministerio de Energía y Minas"
+                alt="Logo del Ministerio de Energía y Minas"
                 loading="lazy"
               />
             </picture>
@@ -67,7 +71,7 @@ export default function Home ({ allPostsData }) {
               <img
                 className='h-16 rounded sm:h-24 lg:h-32 aspect-auto'
                 src="/UCE-logo.png"
-                alt="Universidad Central del Ecuador Logo"
+                alt="Logo de la Universidad Central del Ecuador"
                 loading="lazy"
               />
             </picture>
@@ -79,7 +83,7 @@ export default function Home ({ allPostsData }) {
               <Link href="/evento">
                 <a className='flex justify-center w-auto px-2 py-2 text-xs font-semibold text-white bg-transparent border border-white rounded md:px-6 sm:text-xl hover:bg-black/50 md:text-2xl lg:text-xl hover:scale-105'
                 >
-                  Información del evento
+                  {t('EventInfoText')}
                 </a>
               </Link>
             </div>
@@ -92,26 +96,27 @@ export default function Home ({ allPostsData }) {
         {/* Recent notices section */}
         <section className='flex flex-col gap-5 p-5 py-5 my-4 md:my-12 md:px-12'>
           <h2 className='p-2 mx-auto text-3xl font-semibold border-b-2 md:text-4xl lg:text-5xl sm:px-20 md:px-32 lg:px-40'>
-            Noticias recientes
+            {t('RecentNewsTitle')}
           </h2>
           <Slider
             data={allPostsData}
             urlPath={pageData.sliderURL}
           />
         </section>
-        <Participants title="Colaboración con otros centros de investigación" data={colaboradores} />
+        <Participants title={t('ColaborationTitle')} data={colaboradores} />
       </div>
     </main>
     <Footer image={pageData.image} />
   </>
 }
 
-export async function getStaticProps () {
+export const getStaticProps: GetStaticProps = async ({ locale }) => {
   const dataDirectory = path.join(process.cwd(), 'articles', pageData.sliderURL)
   const allPostsData = getPostsData(dataDirectory)
+  const i18nConf = await serverSideTranslations(locale!)
   return {
     props: {
-      allPostsData
+      allPostsData, ...i18nConf
     }
   }
 }
