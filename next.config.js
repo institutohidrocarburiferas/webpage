@@ -1,3 +1,6 @@
+// @ts-check
+const { i18n } = require('./next-i18next.config')
+
 /** @type {import('next').NextConfig} */
 const nextConfig = {
   reactStrictMode: true,
@@ -5,10 +8,7 @@ const nextConfig = {
   eslint: {
     ignoreDuringBuilds: true,
   },
-  i18n: {
-    locales: ['es', 'en'],
-    defaultLocale: 'es',
-  }
+  i18n
 }
 
 module.exports = nextConfig

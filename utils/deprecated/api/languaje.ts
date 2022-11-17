@@ -7,7 +7,8 @@ const DEFAULT_LOCALE = 'es'
 const PREFERRED_LOCALE_COOKIE = 'NEXT_LOCALE'
 
 const languaje: NextApiHandler = (req, res) => {
-  console.log(req.url)
+  console.log(req.cookies, req.query)
+
   if (req.method === 'GET') {
     const preferredLocale = req.cookies[PREFERRED_LOCALE_COOKIE] || ''
 
@@ -32,7 +33,7 @@ const languaje: NextApiHandler = (req, res) => {
     return res.end()
   }
 
-  // Not other supported method
+  // // Not other supported method
   res.status(405).end()
 }
 
