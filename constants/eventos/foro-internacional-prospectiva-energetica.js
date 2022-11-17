@@ -159,6 +159,10 @@ export const sponsors = [
     image: `${path}/sponsors/halliburton.jpg`,
   },
   {
+    title: 'Logo de Best Energy Services S.A',
+    image: `${path}/sponsors/best-energy.jpeg`,
+  },
+  {
     title: 'Logo de RENOVA Energia',
     image: `${path}/sponsors/renova-energia.webp`,
   },
@@ -174,6 +178,7 @@ export const sponsors = [
     title: 'Logo de la Comisión Nacional para el Uso Eficiente de la Energía',
     image: `${path}/sponsors/conuee.jpg`,
   },
+
 ]
 
 export const organizers = [
