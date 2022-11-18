@@ -1,8 +1,13 @@
-import { Content } from '@components/Content'
-import { NoticesList } from '@components/NoticesList'
-// import { Slider } from '@components/Slider'
+import type {PostsData} from '@utils/posts'
+
 import path from 'node:path'
-import { getPostsData } from '@utils/posts'
+
+import {GetStaticProps, NextPage} from 'next'
+import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
+
+import {Content} from '@components/Content'
+import {NoticesList} from '@components/NoticesList'
+import {getPostsData} from '@utils/posts'
 
 const pageData = {
   title: 'Noticias',
@@ -12,26 +17,23 @@ const pageData = {
   contentTitle: 'Noticias recientes',
 }
 
-export default function Noticias ({ allNotices }) {
+interface Props {
+  allNotices: PostsData[]
+}
+
+export const Page: NextPage<Props> = ({allNotices}) => {
   return (
     <Content
-      title={pageData.title}
       description={pageData.description}
       image={pageData.image}
+      title={pageData.title}
     >
       <main className='w-full p-3'>
-        {/* Slider Section */}
-        {/* <section className='flex flex-col gap-5 p-5'>
-          <Slider
-            data={allNotices}
-            urlPath={pageData.mainURL}
-          />
-        </section> */}
-        {/* Notices Section */}
         <section className='relative'>
           <div className='flex flex-col flex-wrap items-center justify-center gap-10 md:flex-row'>
             <NoticesList
               items={allNotices}
+              title={null}
               urlPath={pageData.mainURL}
             />
           </div>
@@ -41,12 +43,16 @@ export default function Noticias ({ allNotices }) {
   )
 }
 
-export async function getStaticProps () {
-  const dataDirectory = path.join(process.cwd(), 'articles', pageData.mainURL)
+export const getStaticProps: GetStaticProps = async ({locale}) => {
+  const dataDirectory = path.join(process.cwd(), 'articles', pageData.mainURL, locale!)
   const allNotices = getPostsData(dataDirectory)
+  const i18nConf = await serverSideTranslations(locale!)
+
   return {
     props: {
-      allNotices
+      allNotices, ...i18nConf,
     }
   }
 }
+
+export default Page

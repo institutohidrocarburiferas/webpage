@@ -1,5 +1,14 @@
+export interface Publications {
+    title: string,
+    image: string,
+    url: string,
+    download: string,
+    date: string,
+}
+
 const publi = '/publicaciones'
 const revistas = '/externalLinks/revistas'
+
 const images = {
   con_ciencia: `${revistas}/con-ciencia.jpg`,
   energy_policy: `${revistas}/energy-policy.jpg`,
@@ -12,7 +21,7 @@ const images = {
   olade: `${revistas}/oladeorg-logo.jpg`,
 }
 
-export const publications = [
+export const publications: Publications[] = [
   {
     title: 'Construcción de Escenarios Energéticos para la Extracción de petróleo en el Bloque 43 de la Amazonía Ecuatoriana (pág 58 -71)',
     image: images.olade,

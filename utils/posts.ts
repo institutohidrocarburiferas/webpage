@@ -1,15 +1,28 @@
 import fs from 'node:fs'
 import path from 'node:path'
+
 import matter from 'gray-matter'
-import { unified } from 'unified'
+import {unified} from 'unified'
 import remarkParse from 'remark-parse'
 import remarkRehype from 'remark-rehype'
 import rehypeRaw from 'rehype-raw'
 import rehypeSanitize from 'rehype-sanitize'
 import rehypeStringify from 'rehype-stringify'
-import { allowPages } from '@constants/pagesHTMLInsecure'
 
-export function getPostsData (dataDirectory) {
+import {allowPages} from '@constants/pagesHTMLInsecure'
+
+export interface PostsData {
+  id: string,
+  title: string,
+  date: string,
+  image: string
+}
+
+export interface PostData extends PostsData {
+  contentHtml: string,
+}
+
+export function getPostsData (dataDirectory: string) : PostsData[] {
   // Get file names under /posts
   const fileNames = fs.readdirSync(dataDirectory)
   const allPostsData = fileNames.map(fileName => {
@@ -27,8 +40,9 @@ export function getPostsData (dataDirectory) {
     return {
       id,
       ...matterResult.data
-    }
+    } as PostsData
   })
+
   // Sort posts by date
   return allPostsData.sort((a, b) => {
     if (a.date < b.date) {
@@ -39,8 +53,9 @@ export function getPostsData (dataDirectory) {
   })
 }
 
-export function getAllPostIds (dataDirectory) {
+export function getAllPostIds (dataDirectory: string) {
   const fileNames = fs.readdirSync(dataDirectory)
+
   return fileNames.map(fileName => {
     return {
       params: {
@@ -50,7 +65,7 @@ export function getAllPostIds (dataDirectory) {
   })
 }
 
-export async function getPostData (id, dataDirectory) {
+export async function getPostData (id: string, dataDirectory: string) {
   const fullPath = path.join(dataDirectory, `${id}.md`)
   const fileContents = fs.readFileSync(fullPath, 'utf8')
 
@@ -63,14 +78,14 @@ export async function getPostData (id, dataDirectory) {
   if (allowPages.includes(id)) {
     processedContent = await unified()
       .use(remarkParse)
-      .use(remarkRehype, { allowDangerousHtml: true })
+      .use(remarkRehype, {allowDangerousHtml: true})
       .use(rehypeRaw)
       .use(rehypeStringify)
       .process(matterResult.content)
   } else {
     processedContent = await unified()
       .use(remarkParse)
-      .use(remarkRehype, { allowDangerousHtml: true })
+      .use(remarkRehype, {allowDangerousHtml: true})
       .use(rehypeRaw)
       .use(rehypeSanitize) // allow HTML insecure
       .use(rehypeStringify)

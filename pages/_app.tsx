@@ -1,13 +1,16 @@
-import { Navbar } from '@components/Navbar'
-// import { TopArea } from '@components/TopArea'
-import { Visitors } from '@components/Visitors'
-import { appWithTranslation } from 'next-i18next'
-import '../styles/globals.css'
-import type { AppProps } from 'next/app'
+import type {AppProps} from 'next/app'
 
-function MyApp ({ Component, pageProps }: AppProps) {
+import {appWithTranslation} from 'next-i18next'
+
+import {Navbar} from '@components/Navbar'
+import {TopArea} from '@components/Layout/TopArea'
+import {Visitors} from '@components/Visitors'
+
+import '../styles/globals.css'
+
+function MyApp ({Component, pageProps}: AppProps) {
   return <>
-      {/* <TopArea /> */}
+      <TopArea />
       <Navbar />
       <Component { ...pageProps } />
       <Visitors />

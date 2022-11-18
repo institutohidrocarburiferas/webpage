@@ -1,8 +1,12 @@
-import { Content } from '@components/Content'
-import { FormContact } from '@components/FormContact'
-import { PageMap } from '@components/PageMap'
-import { Subtitle } from '@components/Subtitle'
-import { Text } from '@components/Text'
+import type {GetStaticProps, NextPage} from 'next'
+
+import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
+
+import {Content} from '@components/Content'
+import {FormContact} from '@components/FormContact'
+import {PageMap} from '@components/PageMap'
+import {Subtitle} from '@components/Subtitle'
+import {Text} from '@components/Text'
 
 const pageData = {
   title: 'Contacto',
@@ -31,8 +35,8 @@ const pageData = {
   ]
 }
 
-export default function Contacto () {
-  const contacts = pageData.contacts.map(({ name, role, email }) => (
+const Page: NextPage = () => {
+  const contacts = pageData.contacts.map(({name, role, email}) => (
     <div key={name} className="w-full md:w-auto">
       <p className='flex items-end mx-2 font-bold border-b text-md md:text-xl'>{name}</p>
       <p className='mx-2 mt-1 text-xs md:text-sm'>{role}</p>
@@ -45,9 +49,9 @@ export default function Contacto () {
 
   return (
     <Content
-      title={pageData.title}
       description={pageData.description}
       image={pageData.image}
+      title={pageData.title}
     >
       <main
         className='container flex flex-col gap-10 p-3 mx-auto md:p-10 lg:flex-row'>
@@ -67,3 +71,15 @@ export default function Contacto () {
 
   )
 }
+
+export const getStaticProps: GetStaticProps = async ({locale}) => {
+  const i18nConf = await serverSideTranslations(locale!)
+
+  return {
+    props: {
+      ...i18nConf,
+    }
+  }
+}
+
+export default Page

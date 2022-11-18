@@ -1,22 +1,23 @@
 import Title from './Title'
 
-function Participant ({ title, image, url }) {
-  return <a href={url} target="_blank" className='grid bg-white rounded hover:scale-105 place-content-center' rel="noreferrer">
+function Participant ({title, image, url}) {
+  return <a className='grid bg-white rounded hover:scale-105 place-content-center' href={url} rel="noreferrer" target="_blank">
     <picture>
       <img
-        className='h-20 rounded md:h-28 aspect-auto'
-        src={image}
         alt={title}
+        className='h-20 rounded md:h-28 aspect-auto'
         loading="lazy"
+        src={image}
       />
     </picture>
   </a>
 }
 
-export function Participants ({ title, data }) {
-  const participants = data.map(({ label, image, url }) => (
-    <Participant key={label} title={label} image={image} url={url} />
+export function Participants ({title, data}) {
+  const participants = data.map(({label, image, url}) => (
+    <Participant key={label} image={image} title={label} url={url} />
   ))
+
   return (
     <section
       className="container flex flex-col flex-wrap items-center justify-center gap-3 p-5 md:pl-12"

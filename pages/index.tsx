@@ -1,18 +1,21 @@
-import { Countdown } from '@components/Countdown'
-import { HeroSection } from '@components/HeroSection'
-import { Participants } from '@components/Participants'
-import { Separator } from '@components/Separator'
-import { Slider } from '@components/Slider'
-import { RegisterButton } from '@components/RegisterButton'
-import { Footer } from '@components/Footer'
-import { colaboradores } from '@constants/colaboradores-externos'
-import { getPostsData } from '@utils/posts'
+import type {GetStaticProps, NextPage} from 'next'
+
 import path from 'node:path'
+
 import Head from 'next/head'
 import Link from 'next/link'
-import { GetStaticProps } from 'next'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useTranslation } from 'next-i18next'
+import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
+import {useTranslation} from 'next-i18next'
+
+import {Countdown} from '@components/Countdown'
+import {HeroSection} from '@components/HeroSection'
+import {Participants} from '@components/Participants'
+import {Separator} from '@components/Separator'
+import {Slider} from '@components/Slider'
+import {RegisterButton} from '@components/RegisterButton'
+import {Footer} from '@components/Footer'
+import {colaboradores} from '@constants/colaboradores-externos'
+import {getPostsData, PostsData} from '@utils/posts'
 
 const eventDay = new Date(2022, 10, 23, 8)
 
@@ -23,8 +26,12 @@ const pageData = {
   sliderURL: '/noticias'
 }
 
-export default function Home ({ allPostsData }) {
-  const { t } = useTranslation(['Home'])
+interface Props {
+  allPostsData: PostsData[]
+}
+
+const Home: NextPage<Props> = ({allPostsData}) => {
+  const {t} = useTranslation(['Home'])
   const heroContent = {
     title: t('HeroTitle'),
     image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80',
@@ -35,23 +42,23 @@ export default function Home ({ allPostsData }) {
   return <>
     <Head>
       <title>{pageData.title}</title>
-      <meta name="description" content={pageData.description} />
+      <meta content={pageData.description} name="description" />
     </Head>
     <main>
       <HeroSection
-        title={heroContent.title}
-        image={heroContent.image}
         height={heroContent.height}
+        image={heroContent.image}
         text={heroContent.text}
+        title={heroContent.title}
       />
 
-      <Separator />
+      <Separator id={null} />
       <HeroSection
-        title={t('EventTitle')}
-        text={t('EventDate')}
-        image='https://images.unsplash.com/photo-1491914045721-6f2dd87cf09d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
         height='auto'
+        image='https://images.unsplash.com/photo-1491914045721-6f2dd87cf09d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
         justifyContent="center"
+        text={t('EventDate')}
+        title={t('EventTitle')}
       >
         <section className='text-gray-400'>
           <span>{t('EventCaption')}</span>
@@ -61,18 +68,18 @@ export default function Home ({ allPostsData }) {
           <div className='flex items-center justify-center w-full gap-10 lg:justify-start'>
             <picture>
               <img
-                className='h-16 rounded sm:h-24 lg:h-32 aspect-auto'
-                src="/eventos/foro-internacional-prospectiva-energetica/ministerio-energia-minas.jpg"
                 alt="Logo del Ministerio de Energía y Minas"
+                className='h-16 rounded sm:h-24 lg:h-32 aspect-auto'
                 loading="lazy"
+                src="/eventos/foro-internacional-prospectiva-energetica/ministerio-energia-minas.jpg"
               />
             </picture>
             <picture>
               <img
-                className='h-16 rounded sm:h-24 lg:h-32 aspect-auto'
-                src="/UCE-logo.png"
                 alt="Logo de la Universidad Central del Ecuador"
+                className='h-16 rounded sm:h-24 lg:h-32 aspect-auto'
                 loading="lazy"
+                src="/UCE-logo.png"
               />
             </picture>
           </div>
@@ -103,20 +110,23 @@ export default function Home ({ allPostsData }) {
             urlPath={pageData.sliderURL}
           />
         </section>
-        <Participants title={t('ColaborationTitle')} data={colaboradores} />
+        <Participants data={colaboradores} title={t('ColaborationTitle')} />
       </div>
     </main>
     <Footer image={pageData.image} />
   </>
 }
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
-  const dataDirectory = path.join(process.cwd(), 'articles', pageData.sliderURL)
+export const getStaticProps: GetStaticProps = async ({locale}) => {
+  const dataDirectory = path.join(process.cwd(), 'articles', pageData.sliderURL, locale!)
   const allPostsData = getPostsData(dataDirectory)
   const i18nConf = await serverSideTranslations(locale!)
+
   return {
     props: {
       allPostsData, ...i18nConf
     }
   }
 }
+
+export default Home

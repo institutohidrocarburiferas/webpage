@@ -16,20 +16,20 @@ module.exports = {
       },
       keyframes: {
         fadeIn: {
-          '0%': { transform: 'scale(0);' },
-          '100%': { transform: 'scale(1);' }
+          '0%': {transform: 'scale(0);'},
+          '100%': {transform: 'scale(1);'}
         },
         fadeOut: {
-          '0%': { transform: 'scale(1);' },
-          '100%': { transform: 'scale(0);' }
+          '0%': {transform: 'scale(1);'},
+          '100%': {transform: 'scale(0);'}
         },
         fade: {
-          '0%': { opacity: '0;' },
-          '100%': { opacity: '1;' }
+          '0%': {opacity: '0;'},
+          '100%': {opacity: '1;'}
         },
         leftEntry: {
-          '0%': { transform: 'translateX(-500px);' },
-          '100%': { transform: 'translateX(0px);' }
+          '0%': {transform: 'translateX(-500px);'},
+          '100%': {transform: 'translateX(0px);'}
         },
       }
     },

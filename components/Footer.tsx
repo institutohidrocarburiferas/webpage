@@ -1,12 +1,17 @@
 import Image from 'next/image'
-import { useTranslation } from 'next-i18next'
+import {useTranslation} from 'next-i18next'
 
-export function Footer ({
+interface Props {
+  svgColor?: string
+  image: string
+}
+
+export const Footer: React.FC<Props> = ({
   svgColor = 'fill-white dark:fill-gray-900',
   image,
 }
-) {
-  const { t } = useTranslation(['Footer'])
+) => {
+  const {t} = useTranslation(['Footer'])
   const bgStyle = {
     backgroundImage: `url(${image})`,
     backgroundPosition: 'right bottom',
@@ -16,15 +21,15 @@ export function Footer ({
 
   return <footer className="relative">
     {/* SVG top image */}
-    <svg className="absolute bg-transparent" xmlns="http://www.w3.org/2000/svg" width="100%" height="80px" viewBox="0 0 1280 140" preserveAspectRatio="none">
+    <svg className="absolute bg-transparent" height="80px" preserveAspectRatio="none" viewBox="0 0 1280 140" width="100%" xmlns="http://www.w3.org/2000/svg">
       <g className={svgColor}><path d="M978.81 122.25L0 0h1280l-262.1 116.26a73.29 73.29 0 0 1-39.09 5.99z" fillOpacity=".5" /><path d="M983.19 95.23L0 0h1280l-266 91.52a72.58 72.58 0 0 1-30.81 3.71z" /></g>
     </svg>
 
     {/* Background image */}
     <div
-      style={bgStyle}
       className='absolute w-full h-full -z-10'
-    ></div>
+      style={bgStyle}
+    />
 
     {/* Footer container */}
     <div
@@ -39,22 +44,16 @@ export function Footer ({
           <span>Quito - Ecuador</span>
         </section>
 
-        {/* Middle section
-      <section className='text-3xl md:text-xl lg:text-3xl'>
-      </section> */}
-
-        {/* Right section */}
+        {/* Logo Section */}
         <section className='flex flex-col items-center justify-center gap-5 place-content-center'>
           <Image
-            width={100}
+            alt="Universidad Central del Ecuador Logo"
             height={100}
             src="/UCE-logo.png"
-            alt="Universidad Central del Ecuador Logo"
+            width={100}
           />
         </section>
       </div>
-      {/* Left section */}
-
     </div>
   </footer>
 }

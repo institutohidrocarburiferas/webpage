@@ -3,7 +3,13 @@ const path = {
   revistas: '/externalLinks/revistas'
 }
 
-export const revistas = [
+export interface Revista {
+  title: string
+  image: string
+  url: string
+}
+
+export const revistas: Revista[] = [
   {
     title: 'Logo de Revista FIGEMPA',
     image: `${path.revistas}/revista-figempa-logo.png`,

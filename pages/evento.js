@@ -1,18 +1,20 @@
-import { Countdown } from '@components/Countdown'
-import { Footer } from '@components/Footer'
-import { HeroSection } from '@components/HeroSection'
-import { Participants } from '@components/Participants'
-import { RegisterButton } from '@components/RegisterButton'
-import { Separator } from '@components/Separator'
-import { Sidebar } from '@components/Sidebar'
-import { Text } from '@components/Text'
+import Head from 'next/head'
+import Image from 'next/image'
+import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
+
+import {Countdown} from '@components/Countdown'
+import {Footer} from '@components/Footer'
+import {HeroSection} from '@components/HeroSection'
+import {Participants} from '@components/Participants'
+import {RegisterButton} from '@components/RegisterButton'
+import {Separator} from '@components/Separator'
+import {Sidebar} from '@components/Sidebar'
+import {Text} from '@components/Text'
 import Title from '@components/Title'
 import {
   programItems, organizers, sideItems,
   speakers, sponsors,
 } from '@constants/eventos/foro-internacional-prospectiva-energetica'
-import Head from 'next/head'
-import Image from 'next/image'
 
 const pageData = {
   title: 'Foro Internacional de Prospectiva Energética en el Ecuador',
@@ -27,7 +29,7 @@ const heroContent = {
   text: 'miércoles, 23 de noviembre del 2022'
 }
 
-function ProgramItem ({ time, label, expositor, institution }) {
+function ProgramItem ({time, label, expositor, institution}) {
   return <div className='flex flex-col gap-2 pb-5 border-b-2'>
     <time className='text-xl font-semibold md:text-2xl text-amber-400'>{time}</time>
     <h3 className='text-xl font-semibold text-justify text-white md:text-2xl'>{label}</h3>
@@ -36,19 +38,19 @@ function ProgramItem ({ time, label, expositor, institution }) {
   </div>
 }
 
-function SpeakerCard ({ name, image, role, institute, objectFit = 'cover' }) {
+function SpeakerCard ({name, image, role, institute, objectFit = 'cover'}) {
   return (
     <section
       className="flex flex-col w-48 gap-5 rounded-md md:w-60 md:hover:scale-105">
       <Image
+        alt={name}
+        className='object-top rounded-md'
+        height={300}
+        src={image}
         styles={{
           objectFit,
         }}
-        className='object-top rounded-md'
-        src={image}
         width={300}
-        height={300}
-        alt={name}
       />
       <section className='grid w-full gap-1 font-semibold text-center justify-content-start rounded-b-md'>
         <span className='text-sm font-bold md:text-md'>{name}</span>
@@ -64,17 +66,17 @@ export default function Evento () {
     <>
       <Head>
         <title>{pageData.title}</title>
-        <meta name="description" content={pageData.description} />
+        <meta content={pageData.description} name="description" />
       </Head>
       <Sidebar items={sideItems} />
       <main>
-        <div id="content"></div>
+        <Separator id="content"/>
         <HeroSection
+          height={heroContent.height}
+          image={heroContent.image}
+          justifyContent="center"
           text={heroContent.text}
           title={heroContent.title}
-          image={heroContent.image}
-          height={heroContent.height}
-          justifyContent="center"
         >
           <section className='text-gray-400'>
             <span>Presencial - Cupos limitados</span>
@@ -107,8 +109,8 @@ export default function Evento () {
               </Text>
             </section>
             <section className='w-2/3 md:w-1/2'>
-              <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-recharging" viewBox="0 0 24 24" strokeWidth="1.5" stroke="blue" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <svg className="icon icon-tabler icon-tabler-recharging" fill="none" stroke="blue" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none" stroke="none" />
                 <path d="M7.038 4.5a9 9 0 0 0 -2.495 2.47" />
                 <path d="M3.186 10.209a9 9 0 0 0 0 3.508" />
                 <path d="M4.5 16.962a9 9 0 0 0 2.47 2.495" />
@@ -145,11 +147,11 @@ export default function Evento () {
             </section>
 
             <section className='w-2/3 md:w-1/2'>
-              <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-bulb" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#facc15" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <svg className="icon icon-tabler icon-tabler-bulb" fill="none" stroke="#facc15" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none" stroke="none" />
                 <path d="M3 12h1m8 -9v1m8 8h1m-15.4 -6.4l.7 .7m12.1 -.7l-.7 .7" />
                 <path d="M9 16a5 5 0 1 1 6 0a3.5 3.5 0 0 0 -1 3a2 2 0 0 1 -4 0a3.5 3.5 0 0 0 -1 -3" />
-                <line x1="9.7" y1="17" x2="14.3" y2="17" />
+                <line x1="9.7" x2="14.3" y1="17" y2="17" />
               </svg>
             </section>
           </section>
@@ -157,19 +159,19 @@ export default function Evento () {
           {/* Agenda */}
           <Separator id="agenda" />
           <section
+            className='flex flex-col items-center w-full text-gray-300'
             style={{
               backgroundColor: '#11284b',
               backgroundSize: 'cover',
               backgroundPosition: 'center',
               backgroundImage:
                 'linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), url(/bgEvent.svg)',
-            }}
-            className='flex flex-col items-center w-full text-gray-300'>
+            }}>
             <Title>Agenda</Title>
             <div
               className='container grid items-stretch grid-cols-1 p-5 gap-y-10 gap-x-20 md:pl-24 lg:grid-cols-2'>
-              {programItems.map(({ time, label, expositor, institution }) => (
-                <ProgramItem key={time} time={time} label={label} expositor={expositor} institution={institution} />
+              {programItems.map(({time, label, expositor, institution}) => (
+                <ProgramItem key={time} expositor={expositor} institution={institution} label={label} time={time} />
               ))}
             </div>
 
@@ -177,11 +179,11 @@ export default function Evento () {
 
           {/* Organizadores */}
           <Separator id="organizadores" />
-          <Participants title="Organizadores" data={organizers} />
+          <Participants data={organizers} title="Organizadores" />
 
           {/* Patrocinadores */}
           <Separator id="patrocinadores" />
-          <Participants title="Instituciones Participantes y Patrocinadores" data={sponsors} />
+          <Participants data={sponsors} title="Instituciones Participantes y Patrocinadores" />
 
           {/* ¿Qué busca el evento? */}
           <Separator id="que-busca-el-evento" />
@@ -202,8 +204,8 @@ export default function Evento () {
             </section>
 
             <section className='w-2/3 md:w-1/2'>
-              <svg xmlns="http://www.w3.org/2000/svg" className="icon icon-tabler icon-tabler-map-search" viewBox="0 0 24 24" strokeWidth="1.5" stroke="#065f46" fill="none" strokeLinecap="round" strokeLinejoin="round">
-                <path stroke="none" d="M0 0h24v24H0z" fill="none" />
+              <svg className="icon icon-tabler icon-tabler-map-search" fill="none" stroke="#065f46" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+                <path d="M0 0h24v24H0z" fill="none" stroke="none" />
                 <path d="M11 18l-2 -1l-6 3v-13l6 -3l6 3l6 -3v10" />
                 <path d="M9 4v13" />
                 <path d="M15 7v5" />
@@ -221,13 +223,13 @@ export default function Evento () {
             <Title>Ponentes</Title>
             {/* <div className='flex flex-wrap justify-center gap-10 md:flex-row '> */}
             <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-x-20">
-              {speakers.map(({ name, image, role, institute }) => (
+              {speakers.map(({name, image, role, institute}) => (
                 <SpeakerCard
                   key={name}
-                  name={name}
-                  role={role}
                   image={image}
                   institute={institute}
+                  name={name}
+                  role={role}
                 />
               ))}
             </div>
@@ -236,11 +238,11 @@ export default function Evento () {
           {/* Registro */}
           <Separator id="registro" />
           <HeroSection
-            title={`REGÍSTRATE EN EL ${heroContent.title}`}
-            text={heroContent.text}
-            image={heroContent.image}
             height="auto"
+            image={heroContent.image}
             justifyContent="center"
+            text={heroContent.text}
+            title={`REGÍSTRATE EN EL ${heroContent.title}`}
           >
             <section className='text-gray-400'>
               <span>Presencial - Cupos limitados</span>
@@ -260,11 +262,21 @@ export default function Evento () {
             className="flex flex-col items-center px-5 lg:container md:pl-24"
           >
             <Title>Ubicación del evento</Title>
-            <iframe className='w-full my-5 bg-gray-200 border-none h-96' src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d513.6758499995218!2d-78.50606974455522!3d-0.19899527957450538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a46fc9a03a9%3A0xc052e4af4b47fe88!2sBiblioteca%20Central%20UCE!5e0!3m2!1sen!2sec!4v1667323605044!5m2!1sen!2sec" allowfullscreen="" loading="lazy" referrerPolicy="no-referrer-when-downgrade"></iframe>
+            <iframe allowfullscreen="" className='w-full my-5 bg-gray-200 border-none h-96' loading="lazy" referrerPolicy="no-referrer-when-downgrade" src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d513.6758499995218!2d-78.50606974455522!3d-0.19899527957450538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a46fc9a03a9%3A0xc052e4af4b47fe88!2sBiblioteca%20Central%20UCE!5e0!3m2!1sen!2sec!4v1667323605044!5m2!1sen!2sec" />
           </section>
         </div>
       </main>
       <Footer image={pageData.image} />
     </>
   )
+}
+
+export const getStaticProps = async ({locale}) => {
+  const i18nConf = await serverSideTranslations(locale)
+
+  return {
+    props: {
+      ...i18nConf
+    }
+  }
 }
