@@ -4,17 +4,15 @@ import path from 'node:path'
 
 import {GetStaticProps, NextPage} from 'next'
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
+import {useTranslation} from 'next-i18next'
 
 import {Content} from '@components/Content'
 import {NoticesList} from '@components/NoticesList'
 import {getPostsData} from '@utils/posts'
 
 const pageData = {
-  title: 'Noticias',
-  description: 'Noticias IHH',
   image: '/prueba.png',
   mainURL: '/noticias',
-  contentTitle: 'Noticias recientes',
 }
 
 interface Props {
@@ -22,11 +20,13 @@ interface Props {
 }
 
 export const Page: NextPage<Props> = ({allNotices}) => {
+  const {t} = useTranslation(['NewsPage'])
+
   return (
     <Content
-      description={pageData.description}
+      description={t('pageDescription')}
       image={pageData.image}
-      title={pageData.title}
+      title={t('pageTitle')}
     >
       <main className='w-full p-3'>
         <section className='relative'>
