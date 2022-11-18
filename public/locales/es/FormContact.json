@@ -1,0 +1,7 @@
+{
+  "fullName": "Nombre completo",
+  "fullNamePlaceholder":"Ingrese su nombre completo",
+  "userMessage": "Mensaje",
+  "userMessagePlaceholder": "Ingrese su mensaje",
+  "sendButton": "Enviar"
+}

@@ -1,6 +1,7 @@
 import type {GetStaticProps, NextPage} from 'next'
 
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
+import {useTranslation} from 'next-i18next'
 
 import {Content} from '@components/Content'
 import {FormContact} from '@components/FormContact'
@@ -8,34 +9,36 @@ import {PageMap} from '@components/PageMap'
 import {Subtitle} from '@components/Subtitle'
 import {Text} from '@components/Text'
 
-const pageData = {
-  title: 'Contacto',
-  description: 'Contacto IIH',
-  image: '/prueba.png',
-  content: {
-    title: 'Contáctenos',
-    intro: 'Sus mensajes son muy importantes para nosotros. Envíe su mensaje y nos pondremos en contacto con usted.',
-  },
-  contacts: [
-    {
-      name: 'Ing. Rony Parra, PhD',
-      role: 'Director del instituto',
-      email: 'rmparra@uce.edu.ec',
-    },
-    {
-      name: 'Ing. Génesis Yánez',
-      role: 'Técnica de investigación',
-      email: 'gbyanez@uce.edu.ec',
-    },
-    {
-      name: 'Instituto de Investigaciones Hidrocarburíferas',
-      role: null,
-      email: 'iih@uce.edu.ec',
-    }
-  ]
-}
-
 const Page: NextPage = () => {
+  const {t} = useTranslation(['ContactPage'])
+
+  const pageData = {
+    title: t('pageTitle'),
+    description: t('pageDescription'),
+    image: '/prueba.png',
+    content: {
+      title: t('contactTitle'),
+      intro: t('contactIntro'),
+    },
+    contacts: [
+      {
+        name: 'Ing. Rony Parra, PhD',
+        role: t('directorRole'),
+        email: 'rmparra@uce.edu.ec',
+      },
+      {
+        name: 'Ing. Génesis Yánez',
+        role: t('researchTechniqueRole'),
+        email: 'gbyanez@uce.edu.ec',
+      },
+      {
+        name: t('institute'),
+        role: null,
+        email: 'iih@uce.edu.ec',
+      }
+    ]
+  }
+
   const contacts = pageData.contacts.map(({name, role, email}) => (
     <div key={name} className="w-full md:w-auto">
       <p className='flex items-end mx-2 font-bold border-b text-md md:text-xl'>{name}</p>
@@ -68,7 +71,6 @@ const Page: NextPage = () => {
         </section>
       </main>
     </Content>
-
   )
 }
 
