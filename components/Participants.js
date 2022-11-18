@@ -15,7 +15,7 @@ function Participant ({title, image, url}) {
 
 export function Participants ({title, data}) {
   const participants = data.map(({label, image, url}) => (
-    <Participant key={label} image={image} title={label} url={url} />
+    <Participant key={url} image={image} title={label} url={url} />
   ))
 
   return (
