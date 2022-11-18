@@ -1,9 +1,9 @@
 ---
-title: "Perspectivas del Sector Energético del Ecuador"
+title: "Perspectives of the Ecuadorian Energy Sector"
 date: "2022-07-27"
 image: "/noticias/perspectivas-sector-energetico.jpeg"
 ---
 
-El IIH desarrolló un estudio retrospectivo sobre la dinámica de renta petrolera obtenida por el Estado ecuatoriano en los contratos petroleros (upstream) bajo la modalidad de *prestación de servicios*, implementados a partir de la reforma a la ley de Hidrocarburos,2010.
+The IIH developed a retrospective study on the dynamics of oil income obtained by the Ecuadorian State in oil contracts (upstream) under the *service provision* modality, implemented after the reform of the Hydrocarbons Law, 2010.
 
-Parte de los resultados de esta investigación fueron presentados en el foro sobre “Perspectivas del Sector Energético del Ecuador”, desarrollado el 11 de agosto de 2022 en donde estuvieron representantes de las instituciones públicas, privadas, gremios y académicos referente al sector hidrocarburífero del Ecuador.
+Part of the results of this research were presented in the forum on "Perspectives of the Ecuadorian Energy Sector", held on August 11, 2022, where representatives of public and private institutions, unions and academics regarding the Ecuadorian hydrocarbon sector were present.

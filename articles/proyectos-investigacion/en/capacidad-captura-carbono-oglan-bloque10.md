@@ -1,9 +1,9 @@
 ---
-title: 'Capacidad de captura carbono del Bosque Protector Oglán Alto-Arajuno frente a la presión ambiental por el desarrollo del campo Oglán-Bloque10'
+title: 'Carbon capture capacity of the Oglán Alto-Arajuno Protected Forest in the face of environmental pressure from the development of the Oglán-Bloque10 field'
 image: "/proyectos-investigacion/capacidad-captura-carbono-oglan-bloque10.jpeg"
 icon: "/proyectos-investigacion/capacidad-captura-carbono-oglan-bloque10.svg"
 ---
 
-El proyecto propone analizar la capacidad de captura de CO<sub>2</sub> del Bosque Protector Oglán Alto-Arajuno como una alternativa de conservación a la presión ecosistémica de la extracción petrolera del campo Oglán-Bloque 10, bajo una metodológica que conecta la demanda de flujo de un proceso o sistema producto de la tecnosfera (extracción petrolera) y la viabilidad del ecosistema para abastecerlo en base a la capacidad de sumidero (Captura de Carbono).
+The project proposes to analyze the CO<sub>2</sub> capture capacity of the Oglán Alto-Arajuno Protected Forest as a conservation alternative to the ecosystem pressure of oil extraction from the Oglán-Bloque 10 field, under a methodology that connects the flow demand of a process or system produced by the technosphere (oil extraction) and the viability of the ecosystem to supply it based on the sink capacity (Carbon Capture).
 
-Está basada en principios teóricos de sostenibilidad y en el entendimiento de las limitaciones biofísicas del entorno, además de los insumos desarrollados bajo en *Multi-Scale Integrated Analysis of Societal and Ecosystem Metabolism MuSIASEM*. La realización del proyecto de investigación permitirá conocer el potencial de sumidero para captura de CO<sub>2</sub> del bosque protector Oglán Alto, además permitirá conocer la demanda y presión biofísica de la extracción petrolera en eventuales escenarios de incremento de la frontera petrolera del Campo Oglán.
+It is based on theoretical principles of sustainability and on the understanding of the biophysical limitations of the environment, in addition to the inputs developed under *Multi-Scale Integrated Analysis of Societal and Ecosystem Metabolism MuSIASEM*. Carrying out the research project will allow us to know the sink potential for CO<sub>2</sub> capture of the Oglán Alto protective forest, and will also allow us to know the demand and biophysical pressure of oil extraction in eventual scenarios of an increase in the border Oglán Field oil company.

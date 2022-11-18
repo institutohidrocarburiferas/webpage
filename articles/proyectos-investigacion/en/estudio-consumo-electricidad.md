@@ -1,12 +1,12 @@
 ---
-title: 'Estudio de los patrones de consumo de electricidad en el sector residencial ecuatoriano'
+title: 'Study of electricity consumption patterns in the Ecuadorian residential sector'
 image: "/proyectos-investigacion/estudio-consumo-electricidad.jpeg"
 icon: "/proyectos-investigacion/estudio-consumo-electricidad.svg"
 ---
-**Estudio de la política tarifaria de electricidad para la categoría residencial del Ecuador a partir de las tipologías de hogares y la inclusión de variables geográficas, económicas y técnicas.**
+**Study of the electricity tariff policy for the residential category of Ecuador based on the typologies of households and the inclusion of geographical, economic and technical variables.**
 
-El IIH está desarrollando el proyecto “Estudio de la política tarifaria de electricidad para la categoría residencial del Ecuador a partir de las tipologías de hogares y la inclusión de variables geográficas, económicas y técnicas”. Este proyecto fue ganador del concurso senior 2021 con un financiamiento US$ 24550 dólares.
+The IIH is developing the project "Study of the electricity tariff policy for the residential category of Ecuador based on the typologies of households and the inclusion of geographical, economic and technical variables". This project was the winner of the 2021 senior contest with US$24,550 in financing.
 
-El Objetivo es entender la dinámica de los patrones de consumo de electricidad de los 4,5 millones de hogares del Ecuador a partir de tipologías de hogares, basados en la aplicación de metodologías de complejidad-sistemas jerárquicos con la definición de variables demográficas, biofísicas, geográficas y socioeconómicas, para finalmente discutir la política tarifaria en los diferentes niveles y escalas del sistema residencial del Ecuador.
+The objective is to understand the dynamics of electricity consumption patterns of the 4.5 million households in Ecuador based on household typologies, based on the application of complexity methodologies-hierarchical systems with the definition of demographic, biophysical, geographical and socioeconomic, to finally discuss the rate policy at different levels and scales of the residential system of Ecuador.
 
-![Tipos de hogares con consumo mayor a 200 KWH](/proyectos-investigacion/estudio-consumo-electricidad-grafica-01.png)
+![Types of households with consumption greater than 200 KWH](/proyectos-investigacion/estudio-consumo-electricidad-grafica-01.png)

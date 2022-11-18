@@ -1,7 +1,7 @@
 ---
-title: "Reunión con la Secretaría Técnica Amazónica"
+title: "Meeting with the Amazon Technical Secretariat"
 date: "2022-08-23"
 image: "/noticias/reunion-con-secretaria-tecnica-amazonica.jpg"
 ---
 
-En el mes de agosto, el Instituto de Investigaciones Hidrocarburíferas mantuvo una reunión con reunión con la MSc. Silvia Santi, Secretaria Técnica de la Circunscripción Territorial Especial Amazónica, en la cuidad de Quito. La reunión se trató de los proyectos que el IIH está desarrollando en la región Amazónica y la posibilidad de financiamiento para extender el alcance de los mismos.
+In the month of August, the Hydrocarbons Research Institute held a meeting with the MSc. Silvia Santi, Technical Secretary of the Amazonian Special Territorial Circumscription, in the city of Quito. The meeting discussed the projects that the IIH is developing in the Amazon region and the possibility of financing to extend their scope.

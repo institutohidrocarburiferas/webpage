@@ -1,11 +1,12 @@
 ---
-title: 'Análisis comparado de los contratos en el upstream petrolero del Ecuador con fines de política pública'
+title: 'Comparative analysis of contracts in the oil upstream of Ecuador for public policy purposes'
 image: "/proyectos-investigacion/analisis-comparado-contratos-petroleros.jpg"
 icon: "/proyectos-investigacion/analisis-comparado-contratos-petroleros.svg"
 ---
 
-El IIH está desarrollando un estudio retrospectivo sobre la dinámica de renta petrolera obtenida por el Estado ecuatoriano en los contratos petroleros *(upstream)* bajo la modalidad de prestación de servicios, implementados a partir de la reforma a la ley de Hidrocarburos,2010.
+The IIH is developing a retrospective study on the dynamics of oil income obtained by the Ecuadorian State in oil contracts *(upstream)* under the modality of provision of services, implemented from the reform to the Hydrocarbons Law, 2010.
 
-El objetivo del IIH con este proyecto es transparentar la metodología para mirar cifras sobre el aporte (renta) de la extracción petrolera al Estado bajo el modelo de prestación de servicios en los diferentes campos petroleros del Ecuador que se lo realiza por empresas privadas. Entre los resultados preliminares se muestran que La renta obtenida por el Estado entre 2010-2021 fue de aproximadamente US$ 15,2 mil millones correspondiente al 80% del total de la renta en la extracción petrolera en 14 bloques/campos bajo la modalidad de prestación de servicios.
 
-![Modelo económico por campo/contrato (prestación de servicios)](/proyectos-investigacion/analisis-comparado-contratos-petroleros-modelo-economico.png)
+The objective of the IIH with this project is to make transparent the methodology to look at figures on the contribution (income) of oil extraction to the State under the model of provision of services in the different oil fields of Ecuador that is carried out by private companies. Among the preliminary results, it is shown that the income obtained by the State between 2010-2021 was approximately US$ 15.2 billion, corresponding to 80% of the total income from oil extraction in 14 blocks/fields under the provision modality. of services.
+
+![Economic model by field/contract (provision of services)](/proyectos-investigacion/analisis-comparado-contratos-petroleros-modelo-economico.png)

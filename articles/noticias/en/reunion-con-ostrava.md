@@ -1,9 +1,9 @@
 ---
-title: "Reunión con Technical University of Ostrava"
+title: "Meeting with Technical University of Ostrava"
 date: "2022-05-17"
 image: "/noticias/reunion-con-ostrava.jpg"
 ---
 
-En el mes de mayo, dos representantes de la Universidad Técnica de Ostrava visitaron las facultades de ingeniería de la Universidad Central del Ecuador para socializar temas de cooperación y oportunidades de intercambio de estudiantes.
+In May, two representatives of the Technical University of Ostrava visited the engineering faculties of the Central University of Ecuador to discuss cooperation issues and student exchange opportunities.
 
-Durante su visita, se mantuvo una reunión con el Instituto de Investigaciones Hidrocarburíferas para dar a conocer el trabajo de investigación del instituto, sus líneas de investigación y proyectos de cooperación futuros. Además, se dialogó sobre tener contacto con los centros de investigación de la Universidad Técnica de Ostrava enfocados al campo de la energía y medio ambiente.
+During his visit, a meeting was held with the Hydrocarbons Research Institute to publicize the institute's research work, its lines of research and future cooperation projects. In addition, there was a discussion about having contact with the research centers of the Technical University of Ostrava focused on the field of energy and environment.

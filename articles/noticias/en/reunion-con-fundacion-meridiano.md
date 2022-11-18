@@ -1,7 +1,7 @@
 ---
-title: "Reunión con Fundación Meridiano de Argentina para tratar temas referentes a los retos de la integración energética a nivel regional"
+title: "Meeting with the Meridiano Foundation of Argentina to discuss issues related to the challenges of energy integration at the regional level"
 date: "2022-07-25"
 image: "/noticias/reunion-con-fundacion-meridiano.png"
 ---
 
-El director del IIH fue invitado a participar en un conversatorio de manera virtual con la Fundación Meridiano de Argentina para tratar temas sobre los retos que se presentan en los países de América Latina para llegar a una integración energética regional con miras a la sostenibilidad y complementariedad.
+The director of the IIH was invited to participate in a virtual conversation with the Meridiano Foundation of Argentina to discuss issues about the challenges that arise in Latin American countries to achieve regional energy integration with a view to sustainability and complementarity.

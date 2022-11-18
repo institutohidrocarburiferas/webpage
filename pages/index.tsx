@@ -13,7 +13,7 @@ import {Participants} from '@components/Participants'
 import {Separator} from '@components/Separator'
 import {Slider} from '@components/Slider'
 import {RegisterButton} from '@components/RegisterButton'
-import {Footer} from '@components/Footer'
+import {Footer} from '@components/Layout/Footer'
 import {colaboradores} from '@constants/colaboradores-externos'
 import {getPostsData, PostsData} from '@utils/posts'
 

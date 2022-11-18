@@ -1,6 +1,6 @@
 import Head from 'next/head'
 
-import {Footer} from './Footer'
+import {Footer} from './Layout/Footer'
 import {TitlePage} from './TitlePage'
 
 interface Props{

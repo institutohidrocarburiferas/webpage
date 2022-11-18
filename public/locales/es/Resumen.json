@@ -1,0 +1,23 @@
+{
+  "pageTitle": "El Instituto",
+  "pageDescription": "El Instituto IHH",
+  "ResumenTitle": "Generalidades",
+  "ResumenMission": "Misión",
+  "ResumenMissionText": "El Instituto de Investigaciones Hidrocarburíferas de la Universidad Central del Ecuador, es un centro multidisciplinario para la generación de conocimiento, investigación y transferencia de tecnología contribuyendo al desarrollo sostenible de los sectores de geociencias, hidrocarburos y energía a nivel nacional e Internacional.",
+  "ResumenVision": "Visión",
+  "ResumenVisionText": "Al 2024, ser la Institución de referencia nacional en la generación de conocimiento e investigación en los sectores de geociencias, hidrocarburos y energía, contribuyendo al debate de las políticas públicas y en la prestación de servicios.",
+  "LineasInvestigacionTitle": "Líneas de investigación",
+  "hidrocarburos": "Hidrocarburos",
+  "hidrocarburosItem1": "Desarrollo biotecnológico aplicado a la industria",
+  "hidrocarburosItem2": "Simulación y modelamiento matemático",
+  "hidrocarburosItem3": "Uso de tecnologías de la información y comunicación",
+  "hidrocarburosItem4": "Producción de petróleo pesado",
+  "sostenibilidad": "Sostenibilidad",
+  "sostenibilidadItem1": "Gestión sostenible de recursos naturales",
+  "sostenibilidadItem2": "Economía y sociedad",
+  "sostenibilidadItem3": "Complejidad-energía-sostenibilidad",
+  "energia": "Energía",
+  "energiaItem1": "Energía, ambiente y cambio climático",
+  "energiaItem2": "Relaciones economía, ambiente y sociedad",
+  "energiaItem3": "Transición energética"
+}

@@ -1,7 +1,7 @@
 ---
-title: 'El Instituto de Investigaciones Hidrocarburíferas participa en el primer Simposio "Aprovechamiento sustentable de recursos naturales y energéticos"'
+title: 'The Hydrocarbons Research Institute participates in the first Symposium "Aprovechamiento sustentable de recursos naturales y energéticos"'
 date: "2021-12-08"
 image: "/noticias/simposio-aprovechamiento-sustentable.jpeg"
 ---
 
-El Director del IIH, PhD. Rony Parra, participó en el panel TRANSICIÓN ENERGÉTICA: GESTIÓN DEL AGUA durante el simposio “Aprovechamiento sustentable de recursos naturales y energéticos” organizado por la FIGEMPA y Western University de Ontario, Canadá.
+IIH Director, PhD. Rony Parra, participated in the panel TRANSICIÓN ENERGÉTICA: GESTIÓN DEL AGUA during the symposium “Aprovechamiento sustentable de recursos naturales y energéticos” organized by FIGEMPA and Western University of Ontario, Canada.
