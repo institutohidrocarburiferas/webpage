@@ -151,6 +151,10 @@ export const sponsors = [
     image: `${path}/sponsors/figempa.png`,
   },
   {
+    title: 'Logo de Ingeniería en Petróleos de Universidad Central del Ecuador',
+    image: `${path}/sponsors/petroleos-uce.png`,
+  },
+  {
     title: 'Logo de SERTECPET',
     image: `${path}/sponsors/sertecpet.png`,
   },
