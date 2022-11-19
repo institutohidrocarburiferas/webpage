@@ -1,28 +1,23 @@
 import type {GetStaticProps, NextPage} from 'next'
-import type {Equipo} from '@constants/members'
 
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 
 import {Content} from '@components/Content'
 import {MemberCard} from '@components/MemberCard'
 import {openMemberModal} from '@utils/openMemberModal'
-import {equipo, investigadores} from '@constants/members'
 import Title from '@components/Title'
 
-const pageContent = {
-  title: 'Integrantes',
-  description: 'Integrantes IIH',
-  image: '/prueba.png',
-  sections: [
-    {
-      label: 'Equipo de Trabajo',
-      content: equipo,
-    },
-    {
-      label: 'Investigadores asociados',
-      content: investigadores,
-    },
-  ]
+export interface Equipo {
+  name: string
+  image: string,
+  role: string,
+  title: string | JSX.Element | null,
+  description: string[]
+}
+
+interface PropsPage {
+  equipo: Equipo[]
+  investigadores: Equipo[]
 }
 
 interface PropsSection {
@@ -49,7 +44,23 @@ const Section: React.FC<PropsSection> = ({data, title}) => {
   </section>
 }
 
-const Page: NextPage = () => {
+const Page: NextPage<PropsPage> = ({equipo, investigadores}) => {
+  const pageContent = {
+    title: 'Integrantes',
+    description: 'Integrantes IIH',
+    image: '/prueba.png',
+    sections: [
+      {
+        label: 'Equipo de Trabajo',
+        content: equipo,
+      },
+      {
+        label: 'Investigadores asociados',
+        content: investigadores,
+      },
+    ]
+  }
+
   const sections = pageContent.sections.map(({label, content}) => (
     <Section key={label} data={content} title={label} />
   ))
@@ -70,11 +81,18 @@ const Page: NextPage = () => {
 }
 
 export const getStaticProps: GetStaticProps = async ({locale}) => {
+  const response = await fetch(`https:www.iih-uce.org/api/members/${locale}`)
+  const {equipo, investigadores} = await response.json()
+
+  console.log({investigadores})
+
   const i18nConf = await serverSideTranslations(locale!)
 
   return {
     props: {
-      ...i18nConf
+      equipo,
+      investigadores,
+      ...i18nConf,
     }
   }
 }
