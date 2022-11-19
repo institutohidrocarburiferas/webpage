@@ -1,24 +1,15 @@
 import type {GetStaticProps, NextPage} from 'next'
+import type {Equipo} from '@constants/members'
 
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
+import {useRouter} from 'next/router'
+import {useTranslation} from 'next-i18next'
 
+import {equipo, investigadores, team, researchers} from '@constants/members'
 import {Content} from '@components/Content'
 import {MemberCard} from '@components/MemberCard'
 import {openMemberModal} from '@utils/openMemberModal'
 import Title from '@components/Title'
-
-export interface Equipo {
-  name: string
-  image: string,
-  role: string,
-  title: string | JSX.Element | null,
-  description: string[]
-}
-
-interface PropsPage {
-  equipo: Equipo[]
-  investigadores: Equipo[]
-}
 
 interface PropsSection {
   data: Equipo[]
@@ -44,23 +35,25 @@ const Section: React.FC<PropsSection> = ({data, title}) => {
   </section>
 }
 
-const Page: NextPage<PropsPage> = ({equipo, investigadores}) => {
+const Page: NextPage = () => {
+  const {locale} = useRouter()
+  const {t} = useTranslation(['IntegrantesPage'])
+  const local = locale === 'es'
   const pageContent = {
-    title: 'Integrantes',
-    description: 'Integrantes IIH',
+    title: t('titlePage'),
+    description: t('descriptionPage'),
     image: '/prueba.png',
     sections: [
       {
-        label: 'Equipo de Trabajo',
-        content: equipo,
+        label: t('teamTitle'),
+        content: local ? equipo : team,
       },
       {
-        label: 'Investigadores asociados',
-        content: investigadores,
+        label: t('associateResearchersTitle'),
+        content: local ? investigadores : researchers,
       },
     ]
   }
-
   const sections = pageContent.sections.map(({label, content}) => (
     <Section key={label} data={content} title={label} />
   ))
@@ -81,17 +74,10 @@ const Page: NextPage<PropsPage> = ({equipo, investigadores}) => {
 }
 
 export const getStaticProps: GetStaticProps = async ({locale}) => {
-  const response = await fetch(`https:www.iih-uce.org/api/members/${locale}`)
-  const {equipo, investigadores} = await response.json()
-
-  console.log({investigadores})
-
   const i18nConf = await serverSideTranslations(locale!)
 
   return {
     props: {
-      equipo,
-      investigadores,
       ...i18nConf,
     }
   }
