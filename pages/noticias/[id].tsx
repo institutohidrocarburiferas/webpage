@@ -4,6 +4,7 @@ import type {GetStaticPaths, GetStaticProps, NextPage} from 'next'
 import path from 'node:path'
 
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
+import {useRouter} from 'next/router'
 
 import {Content} from '@components/Content'
 import Date from '@components/Date'
@@ -13,8 +14,8 @@ import styles from '@styles/article.module.css'
 
 const pageData = {
   mainURL: '/noticias',
-  contentTitle: 'Noticias recientes',
-  returnText: 'Otras Noticias',
+  // contentTitle: 'Noticias recientes',
+
 }
 
 interface Props{
@@ -22,6 +23,9 @@ interface Props{
 }
 
 const Page: NextPage<Props> = ({noticeData}) => {
+  const {locale} = useRouter()
+  const returnText = locale === 'es' ? 'Otras Noticias' : 'Another News'
+
   return (
     <Content
       description={noticeData.title}
@@ -34,7 +38,7 @@ const Page: NextPage<Props> = ({noticeData}) => {
             <Date dateString={noticeData.date} />
           </div>
           <div dangerouslySetInnerHTML={{__html: noticeData.contentHtml}} className={styles.content} />
-          <Return text={pageData.returnText} url={pageData.mainURL} />
+          <Return text={returnText} url={pageData.mainURL} />
         </article>
       </main>
     </Content>

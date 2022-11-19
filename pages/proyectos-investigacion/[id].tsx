@@ -4,6 +4,7 @@ import type {GetStaticPaths, GetStaticProps, NextPage} from 'next'
 import path from 'node:path'
 
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
+import {useRouter} from 'next/router'
 
 import {Content} from '@components/Content'
 import {Return} from '@components/Return'
@@ -12,7 +13,6 @@ import styles from '@styles/article.module.css'
 
 const pageData = {
   mainURL: '/proyectos-investigacion',
-  returnText: 'Otros Proyectos de investigación',
 }
 
 interface Props {
@@ -20,6 +20,11 @@ interface Props {
 }
 
 export const Page: NextPage<Props> = ({postData}) => {
+  const {locale} = useRouter()
+  const returnText = locale === 'es'
+    ? 'Otros Proyectos de investigación'
+    : 'Another Research Projects'
+
   return (
     <Content
       description={postData.title}
@@ -32,7 +37,7 @@ export const Page: NextPage<Props> = ({postData}) => {
             <Date dateString={postData.date} />
           </div> */}
           <div dangerouslySetInnerHTML={{__html: postData.contentHtml}} className={styles.content} />
-          <Return text={pageData.returnText} url={pageData.mainURL} />
+          <Return text={returnText} url={pageData.mainURL} />
         </article>
       </main>
     </Content>
