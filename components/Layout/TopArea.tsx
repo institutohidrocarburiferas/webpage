@@ -30,7 +30,7 @@ export const TopArea: React.FC = () => {
     {/* Container */}
     <div className='container flex flex-row-reverse items-center h-full'>
       <section className='flex items-center gap-2 p-2 text-sm'>
-        <p>{locale === 'es' ? 'Idioma:' : 'Languaje:'}</p>
+        <p>{locale === 'es' ? 'Idioma:' : 'Language:'}</p>
         {languajes}
       </section>
     </div>
