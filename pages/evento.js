@@ -2,15 +2,15 @@ import Head from 'next/head'
 import Image from 'next/image'
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 
+import {Text} from '@components/UI/Text'
+import {Title} from '@components/UI/Title'
+import {Separator} from '@components/Layout/Separator'
 import {Footer} from '@components/Layout/Footer'
 import {Countdown} from '@components/Countdown'
 import {HeroSection} from '@components/HeroSection'
 import {Participants} from '@components/Participants'
 import {RegisterButton} from '@components/RegisterButton'
-import {Separator} from '@components/Separator'
 import {Sidebar} from '@components/Sidebar'
-import {Text} from '@components/Text'
-import Title from '@components/Title'
 import {
   programItems, organizers, sideItems,
   speakers, sponsors,

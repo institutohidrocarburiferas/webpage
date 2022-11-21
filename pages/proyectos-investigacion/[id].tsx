@@ -7,7 +7,7 @@ import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 import {useRouter} from 'next/router'
 
 import {Content} from '@components/Content'
-import {Return} from '@components/Return'
+import {Return} from '@components/UI/Return'
 import {getAllPostIds, getPostData} from '@utils/posts'
 import styles from '@styles/article.module.css'
 

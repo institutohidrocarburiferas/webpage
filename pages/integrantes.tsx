@@ -5,11 +5,11 @@ import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 import {useRouter} from 'next/router'
 import {useTranslation} from 'next-i18next'
 
+import {Title} from '@components/UI/Title'
 import {equipo, investigadores, team, researchers} from '@constants/members'
 import {Content} from '@components/Content'
 import {MemberCard} from '@components/MemberCard'
 import {openMemberModal} from '@utils/openMemberModal'
-import Title from '@components/Title'
 
 interface PropsSection {
   data: Equipo[]

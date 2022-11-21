@@ -3,11 +3,11 @@ import type {GetStaticProps, NextPage} from 'next'
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 import {useTranslation} from 'next-i18next'
 
-import {Content} from '@components/Content'
 import {FormContact} from '@components/FormContact'
+import {Text} from '@components/UI/Text'
+import {Content} from '@components/Content'
 import {PageMap} from '@components/PageMap'
-import {Subtitle} from '@components/Subtitle'
-import {Text} from '@components/Text'
+import {Subtitle} from '@components/UI/Subtitle'
 
 const Page: NextPage = () => {
   const {t} = useTranslation(['ContactPage'])

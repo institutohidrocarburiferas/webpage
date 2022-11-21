@@ -1,7 +1,7 @@
 import Head from 'next/head'
 
 import {Footer} from './Layout/Footer'
-import {TitlePage} from './TitlePage'
+import {TitlePage} from './Layout/TitlePage'
 
 interface Props{
   title: string

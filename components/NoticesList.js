@@ -1,5 +1,5 @@
 import Link from 'next/link'
-import Date from '@components/Date'
+import Date from '@components/UI/Date'
 import { createStyles, Paper, Title } from '@mantine/core'
 import { useEffect, useRef, useState } from 'react'
 

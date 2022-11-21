@@ -4,10 +4,10 @@ import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 import {useTranslation} from 'next-i18next'
 import Image from 'next/image'
 
+import {Text} from '@components/UI/Text'
+import {Title} from '@components/UI/Title'
 import {Content} from '@components/Content'
-import {Subtitle} from '@components/Subtitle'
-import {Text} from '@components/Text'
-import Title from '@components/Title'
+import {Subtitle} from '@components/UI/Subtitle'
 import {useIntersection} from '@utils/hooks/useIntersection'
 
 function Resumen () {

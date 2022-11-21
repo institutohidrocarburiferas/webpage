@@ -1,6 +1,11 @@
 import Link from 'next/link'
 
-export function Return ({ text, url }) {
+interface Props {
+  text: string
+  url: string
+}
+
+export const Return: React.FC<Props> = ({text, url}) => {
   return <Link
     href={url}
   >
