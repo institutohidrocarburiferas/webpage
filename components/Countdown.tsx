@@ -24,10 +24,12 @@ export const Countdown: React.FC<CountdownProps> = ({eventDate}) => {
   const {t} = useTranslation(['common'])
 
   useEffect(function () {
-    const interval = setInterval(() => setDate(getRemainTime(eventDate)), 1000)
+    if (date.remainDays !== '0' && date.remainHours !== '0' && date.remainMinutes !== '0' && date.remainSeconds !== '0') {
+      const interval = setInterval(() => setDate(getRemainTime(eventDate)), 1000)
 
-    return () => clearInterval(interval)
-  }, [eventDate])
+      return () => clearInterval(interval)
+    }
+  }, [eventDate, date])
 
   return <div className='flex items-center justify-center w-full h-auto text-2xl font-bold text-white md:h-32 md:text-4xl lg:text-6xl'>
     <CountdownTime label={t('days')} time={date.remainDays} />
