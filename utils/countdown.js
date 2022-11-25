@@ -4,11 +4,11 @@ export const getRemainTime = (event) => {
 
   if (remainTime < 0) {
     return {
-      remainSeconds: '0',
-      remainMinutes: '0',
-      remainHours: '0',
-      remainDays: '0',
-      remainMonths: '0',
+      remainSeconds: '00',
+      remainMinutes: '00',
+      remainHours: '00',
+      remainDays: '00',
+      remainMonths: '00',
     }
   }
 
