@@ -85,14 +85,15 @@ const Home: NextPage<Props> = ({allPostsData}) => {
           </div>
 
           <div className='flex flex-col items-center w-full gap-5 lg:flex-row'>
-            <div className='flex items-stretch w-full md:items-center lg:items-stretch justify-evenly md:justify-center lg:justify-start md:gap-14'>
-              <RegisterButton />
+            <div className='grid grid-cols-2 items-stretch w-full md:items-center lg:items-stretch justify-evenly md:justify-center lg:justify-start gap-5 md:gap-14'>
               <Link href="/evento">
-                <a className='flex justify-center w-auto px-2 py-2 text-xs font-semibold text-white bg-transparent border border-white rounded md:px-6 sm:text-xl hover:bg-black/50 md:text-2xl lg:text-xl hover:scale-105'
+                <a className='flex justify-center text-center items-center w-auto px-2 py-2 text-xs font-semibold text-white bg-transparent border border-white rounded md:px-6 sm:text-xl hover:bg-black/50 md:text-2xl lg:text-xl hover:scale-105'
                 >
                   {t('EventInfoText')}
                 </a>
               </Link>
+              <RegisterButton />
+
             </div>
             <Countdown eventDate={eventDay} />
           </div>

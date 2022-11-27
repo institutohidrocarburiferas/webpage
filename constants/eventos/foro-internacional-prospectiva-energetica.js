@@ -94,6 +94,18 @@ export const sideItems = [
     </svg>
 
   },
+  {
+    label: 'Descarga las ponencias',
+    url: '#expositions',
+    image: <svg className="icon icon-tabler icon-tabler-file-search" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+      <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+      <path d="M12 21h-5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v4.5" />
+      <circle cx="16.5" cy="17.5" r="2.5" />
+      <line x1="18.5" x2="21" y1="19.5" y2="22" />
+    </svg>
+
+  },
   // {
   //   label: 'Regístrate',
   //   url: '#registro',
@@ -334,5 +346,74 @@ export const speakers = [
     image: `${path}/speakers/Rebeca-Illescas.png`,
     role: 'Consultora en Energía y Desarrollo',
     institute: null,
+  },
+]
+
+const expos = '/eventos/foro-internacional-prospectiva-energetica/expositions'
+
+export const expositions = [
+  {
+    title: 'Seguridad y sostenibilidad de los sistemas futuros de energía (fósil y electricidad)',
+    image: `${path}/speakers/Nazarychev-Alexander-Nikolaevich.png`,
+    // url: '',
+    expositor: 'PhD. Nazarychev Alexander Nikolaevich',
+    role: 'Profesor del Departamento de Energía Eléctrica y Electromecánica - Universidad de Minería de San Petersburgo',
+    download: `${expos}/01_Презентация_Назарычев_АН_23.11.2022.pdf`,
+  },
+  // {
+  //   title: 'Visión a largo plazo del sistema energético de Ecuador',
+  //   image: `${path}/speakers/Enith-Carrion.png`,
+  //   // url: '',
+  //   expositor: 'Ing. Enith Carrión, MSc',
+  //   role: 'Viceministra de Electricidad y Energía Renovable - Ministerio de Energía y Minas',
+  //   download: '',
+  // },
+  {
+    title: 'Visualización y retos de la transición energética en ALC a mediano y largo plazo (uso de herramientas de prospectiva de OLADE)',
+    image: `${path}/speakers/Medardo-Cadena.png`,
+    // url: '',
+    expositor: 'Ing. Medardo Cadena, MSc',
+    role: 'Director de Estudios, Proyectos e Información - Organización Latinoamericana de Energía (OLADE)',
+    download: `${expos}/03U_Presentación_OLADE.pdf`,
+  },
+  {
+    title: 'Prospectiva energética para el Ecuador con MuSIASEM o Multi-Scale Integrated Analysis and Ecosystem Metabolism',
+    image: '/integrantes/Rony-Parra.png',
+    // url: '',
+    expositor: 'Ing. Rony Parra, PhD',
+    role: 'Director Instituto de Investigaciones Hidrocarburíferas IIH - Universidad Central del Ecuador',
+    download: `${expos}/05_PPT_IIH_23-11-2022.pdf`,
+  },
+  {
+    title: 'Visión a largo plazo del sistema energético (oferta y demanda de combustibles y electricidad) con la transformación del mercado hacia equipos energéticamente eficientes.',
+    image: `${path}/speakers/Ignacio-Sagradoy.png`,
+    // url: '',
+    expositor: 'Ing. Ignacio Sagardoy, MSc',
+    role: 'Investigador - Fundación Bariloche de Argentina',
+    download: `${expos}/06_2022_11_Presentacion_Ecuador.pdf`,
+  },
+  {
+    title: 'Estudio de prospectiva en el sector transporte de Ecuador',
+    image: `${path}/speakers/Francisco-Terneus.png`,
+    // url: '',
+    expositor: 'Ing, Francisco Terneus, PhD(c)',
+    role: 'Facultad de Ciencias Administrativas - Escuela Politécnica Nacional',
+    download: `${expos}/07_Foro_Prospectiva_Energetica_171122_1800.pdf`,
+  },
+  {
+    title: 'Modelo de prospectiva energética para México',
+    image: `${path}/speakers/Juan-I-Navarrete.png`,
+    // url: '',
+    expositor: 'Ing. Juan I. Navarrete, MSc',
+    role: 'Director de Políticas y Programas - Comisión Nacional para el Uso Eficiente de la Energía (CONUEE-SENER)',
+    download: `${expos}/08_ProspectivaMX_Ecuador.pdf`,
+  },
+  {
+    title: 'Tasas biofísicas de retorno energético en el uso de biocombustibles para el Ecuador',
+    image: '/integrantes/Ghem-Carvajal.png',
+    // url: '',
+    expositor: 'Ing. Ghem Carvajal, MSc',
+    role: 'Facultad de Ingeniería Química - Universidad Central del Ecuador',
+    download: `${expos}/09_tre_biocombustibles_nov22.pdf`,
   },
 ]
