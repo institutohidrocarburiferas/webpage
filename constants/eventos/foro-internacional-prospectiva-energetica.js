@@ -360,14 +360,14 @@ export const expositions = [
     role: 'Profesor del Departamento de Energía Eléctrica y Electromecánica - Universidad de Minería de San Petersburgo',
     download: `${expos}/01_Презентация_Назарычев_АН_23.11.2022.pdf`,
   },
-  // {
-  //   title: 'Visión a largo plazo del sistema energético de Ecuador',
-  //   image: `${path}/speakers/Enith-Carrion.png`,
-  //   // url: '',
-  //   expositor: 'Ing. Enith Carrión, MSc',
-  //   role: 'Viceministra de Electricidad y Energía Renovable - Ministerio de Energía y Minas',
-  //   download: '',
-  // },
+  {
+    title: 'Visión a largo plazo del sistema energético de Ecuador',
+    image: `${path}/speakers/Enith-Carrion.png`,
+    // url: '',
+    expositor: 'Ing. Enith Carrión, MSc',
+    role: 'Viceministra de Electricidad y Energía Renovable - Ministerio de Energía y Minas',
+    download: `${expos}/02_PRESENTACION_CONGRESO_UCENTRAL_23-11-2022.pdf`,
+  },
   {
     title: 'Visualización y retos de la transición energética en ALC a mediano y largo plazo (uso de herramientas de prospectiva de OLADE)',
     image: `${path}/speakers/Medardo-Cadena.png`,
