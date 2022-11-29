@@ -294,6 +294,12 @@ export const programItems = [
 
 export const speakers = [
   {
+    name: 'PhD. Nazarychev Alexander Nikolaevich',
+    image: `${path}/speakers/Nazarychev-Alexander-Nikolaevich.png`,
+    role: 'Profesor del Departamento de Energía Eléctrica y Electromecánica',
+    institute: 'Universidad de Minería de San Petersburgo'
+  },
+  {
     name: 'Ing. Enith Carrión, MSc',
     image: `${path}/speakers/Enith-Carrion.png`,
     role: 'Viceministra de Electricidad y Energía Renovable',

@@ -359,8 +359,8 @@ export default function Evento () {
           <Separator id="ponentes" />
           <section className="flex flex-col items-center gap-5 p-5 lg:container md:pl-24">
             <Title>Ponentes</Title>
-            {/* <div className='flex flex-wrap justify-center gap-10 md:flex-row '> */}
-            <div className="grid grid-cols-1 gap-5 md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-x-20">
+            <div className='flex flex-wrap justify-center gap-10 md:flex-row '>
+            {/* <div className="grid grid-cols-1 place-items-center gap-5 md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-x-20"> */}
               {speakers.map(({name, image, role, institute}) => (
                 <SpeakerCard
                   key={name}
