@@ -6,6 +6,9 @@ module.exports = {
   ],
   theme: {
     extend: {
+      colors: {
+        primary: '#bdaf49'
+      },
       animation: {
         fadeIn: 'fadeIn 0.3s ease forwards',
         fadeSlowIn: 'fadeIn 2s ease forwards',
