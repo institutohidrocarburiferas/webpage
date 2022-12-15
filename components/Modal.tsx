@@ -1,15 +1,21 @@
 import {useRef} from 'react'
 
-export default function Modal ({children, root}) {
+interface Props {
+  children: React.ReactNode
+  // Fix any type in root element from utils/openMemberModal
+  root: any
+}
+
+const Modal: React.FC<Props> = ({children, root}) => {
   const ref = useRef(null)
 
-  function callback (e) {
+  function callback (): void {
     ref.current.removeEventListener('animationend', callback)
     root.unmount()
     document.querySelector('#modal').remove()
   }
 
-  function handleClick () {
+  function handleClick (): void {
     ref.current.classList.add('animate-fadeOut')
     ref.current.addEventListener('animationend',
       callback,
@@ -35,3 +41,5 @@ export default function Modal ({children, root}) {
       </div>
     </div>)
 }
+
+export default Modal
