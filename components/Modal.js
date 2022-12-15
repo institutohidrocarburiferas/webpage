@@ -1,6 +1,6 @@
-import { useRef } from 'react'
+import {useRef} from 'react'
 
-export default function Modal ({ children, root }) {
+export default function Modal ({children, root}) {
   const ref = useRef(null)
 
   function callback (e) {
@@ -13,17 +13,17 @@ export default function Modal ({ children, root }) {
     ref.current.classList.add('animate-fadeOut')
     ref.current.addEventListener('animationend',
       callback,
-      { once: true }
+      {once: true}
     )
   }
 
   return (
-    <div ref={ref} className="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-screen text-black ">
+    <div ref={ref} className="fixed top-0 left-0 z-50 flex items-center justify-center w-full h-screen">
       <b
-        onClick={handleClick}
         className="absolute top-0 w-full h-full bg-black/30"
+        onClick={handleClick}
       />
-      <div className='container relative w-11/12 pt-10 overflow-scroll bg-white animate-fadeIn h-5/6 rounded-xl '>
+      <div className='container relative w-11/12 pt-10 overflow-scroll bg-white dark:bg-gray-900 animate-fadeIn h-5/6 rounded-xl '>
         <button
           className='fixed z-20 top-3 right-3 font-bold py-2.5 px-4 rounded-sm cursor-pointer text-gray-500'
           onClick={handleClick}
