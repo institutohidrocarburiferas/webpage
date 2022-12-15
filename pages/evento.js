@@ -69,13 +69,13 @@ function SpeakerCard ({name, image, role, institute, objectFit = 'cover'}) {
 
 function ExpositionCard ({title, image, expositor, role, download}) {
   return (
-    <div className="flex flex-col md:flex-row items-center justify-around w-full h-auto py-5 mx-auto border-b-2 md:gap-5 md:p-5 md:hover:bg-gradient-to-tl md:hover:to-blue-100 md:hover:from-transparent dark:hover:text-black">
+    <div className="flex flex-col items-center justify-around w-full h-auto py-5 mx-auto border-b-2 md:flex-row md:gap-5 md:p-5 md:hover:bg-gradient-to-tl md:hover:to-blue-100 md:hover:from-transparent dark:md:hover:text-black">
       <picture className="self-center w-36 md:w-32">
         <img alt={title} loading="lazy" src={image} />
       </picture>
-      <div className="md:w-3/4 p-2 flex justify-between flex-col w-full">
-        <h3 className="pb-5 font-semibold text-justify text-lg md:text-2xl">{title}</h3>
-        <div className="flex justify-between items-center gap-2 md:gap-10">
+      <div className="flex flex-col justify-between w-full p-2 md:w-3/4">
+        <h3 className="pb-5 text-lg font-semibold text-justify md:text-2xl">{title}</h3>
+        <div className="flex items-center justify-between gap-2 md:gap-10">
           <div className="flex flex-col">
             <span className="text-sm font-bold md:text-md">{expositor}</span>
             <span className="text-xs md:text-sm">{role}</span>
@@ -123,7 +123,7 @@ function Expositions ({items}) {
   ))
 
   return (
-    <section className="flex flex-col p-5 md:pl-16 w-full max-w-5xl">
+    <section className="flex flex-col w-full max-w-5xl p-5 md:pl-16">
       {/* <h2 className='text-3xl font-bold border-b-2'>
       {title}
     </h2> */}
@@ -360,7 +360,7 @@ export default function Evento () {
           <section className="flex flex-col items-center gap-5 p-5 lg:container md:pl-24">
             <Title>Ponentes</Title>
             <div className='flex flex-wrap justify-center gap-10 md:flex-row '>
-            {/* <div className="grid grid-cols-1 place-items-center gap-5 md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-x-20"> */}
+            {/* <div className="grid grid-cols-1 gap-5 place-items-center md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-x-20"> */}
               {speakers.map(({name, image, role, institute}) => (
                 <SpeakerCard
                   key={name}
