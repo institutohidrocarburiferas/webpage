@@ -1,8 +1,18 @@
 import styles from '@styles/components/Sidebar.module.css'
 
-export function Sidebar ({ items }) {
-  const sections = items.map(({ label, image, url }) => (
-    <a href={url} key={label} className={styles.item}>
+interface Item {
+  label: string
+  image: string
+  url: string
+}
+
+interface Props {
+  items: Item[]
+}
+
+export const Sidebar: React.FC<Props> = ({items}) => {
+  const sections = items.map(({label, image, url}) => (
+    <a key={label} className={styles.item} href={url}>
       <picture>
         {image}
       </picture>
