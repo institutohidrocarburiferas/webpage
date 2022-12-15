@@ -54,7 +54,8 @@ export const investigadores: Equipo[] = [
     name: 'Ing. Susana Arciniegas, PhD',
     image: '/integrantes/Susana-Arciniegas-Ortega.png',
     role: 'Docente Investigador',
-    title: <a href='https://orcid.org/0000-0002-0878-2612' rel="noreferrer" target="_blank">https://orcid.org/0000-0002-0878-2612</a>,
+    // https://orcid.org/0000-0002-0878-2612
+    title: <a href='https://geotecambiente5.wixsite.com/geotecambiente/miembros' rel="noreferrer" style={{color: 'blue'}}target="_blank">Grupo de Investigación</a>,
     description: [
       'Docente-Investigadora en la Carrera de Ingeniería Ambiental de la Facultad de Geología, Minas, Petróleo y Ambiental, Universidad Central del Ecuador. Así como, profesora en posgrado en Universidad Nacional de Loja, Universidad del Azuay, Universidad de Posgrado del Estado-IAEN.',
 
