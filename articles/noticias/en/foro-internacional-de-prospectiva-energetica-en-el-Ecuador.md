@@ -1,5 +1,5 @@
 ---
-title: "Foro Internacional de Prospectiva Energética en el Ecuador"
+title: "International Forum of Energy Prospective in Ecuador"
 date: "2022-12-15"
 image: "/noticias/foro-internacional-de-prospectiva-energetica-en-el-Ecuador.jpg"
 ---

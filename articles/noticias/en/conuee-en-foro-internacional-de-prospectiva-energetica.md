@@ -1,5 +1,5 @@
 ---
-title: "La CONUEE de México participó en el Foro internacional de Prospectiva Energética"
+title: "The CONUEE of Mexico participated in the International Forum of Energy Prospective"
 date: "2022-11-30"
 image: "/noticias/conuee-en-foro-internacional-de-prospectiva-energetica.jpg"
 ---

@@ -1,5 +1,5 @@
 ---
-title: "XVII Encuentro Anual de Minería "
+title: "XVII Annual Meeting of Mining"
 date: "2022-12-08"
 image: "/noticias/xvii-encuentro-anual-de-mineria.jpg"
 ---
