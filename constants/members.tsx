@@ -199,7 +199,7 @@ export const researchers: Equipo[] = [
     name: 'Ing. Susana Arciniegas, PhD',
     image: '/integrantes/Susana-Arciniegas-Ortega.png',
     role: 'Teaching researcher',
-    title: <a href='https://orcid.org/0000-0002-0878-2612' rel="noreferrer" target="_blank">https://orcid.org/0000-0002-0878-2612</a>,
+    title: <a href='https://geotecambiente5.wixsite.com/geotecambiente/miembros' rel="noreferrer" style={{color: 'blue'}}target="_blank">Investigation Group</a>,
     description: [
       'Professor-Researcher in the Environmental Engineering Career of the Faculty of Geology, Mines, Petroleum and Environment, Central University of Ecuador. As well as, she is a postgraduate professor at the National University of Loja, University of Azuay, State Postgraduate University-IAEN.',
 
