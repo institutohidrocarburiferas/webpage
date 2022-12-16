@@ -108,6 +108,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
           </h2>
           <Slider
             data={allPostsData}
+            slice={4}
             urlPath={pageData.sliderURL}
           />
         </section>

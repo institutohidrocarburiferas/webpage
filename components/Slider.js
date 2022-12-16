@@ -1,8 +1,9 @@
-import { useRef } from 'react'
+import {useRef} from 'react'
 import Autoplay from 'embla-carousel-autoplay'
-import { Carousel } from '@mantine/carousel'
-import { createStyles, Paper, Title } from '@mantine/core'
+import {Carousel} from '@mantine/carousel'
+import {createStyles, Paper, Title} from '@mantine/core'
 import Link from 'next/link'
+import cn from 'classnames'
 
 const useStyles = createStyles((theme, _params, getRef) => ({
   card: {
@@ -42,8 +43,8 @@ const useStyles = createStyles((theme, _params, getRef) => ({
 
   indicators: {
     button: {
-      backgroundColor: 'white'
-    }
+      backgroundColor: 'white',
+    },
   },
 
   controls: {
@@ -54,7 +55,7 @@ const useStyles = createStyles((theme, _params, getRef) => ({
     button: {
       fontSize: 25,
       backgroundColor: 'white',
-    }
+    },
   },
 
   root: {
@@ -64,35 +65,49 @@ const useStyles = createStyles((theme, _params, getRef) => ({
       },
     },
   },
-
 }))
 
-function Card ({ id, title, image, date, urlPath }) {
-  const { classes } = useStyles()
+function Card ({id, title, image, date, urlPath}) {
+  const {classes} = useStyles()
 
-  return (
-    <Link href={`${urlPath}/${id}`} >
-      <a >
+  if (typeof urlPath === 'undefined') {
+    return (
+      <>
         <Paper
+          className={cn(classes.card, 'h-40 md:h-80')}
           p="xl"
           radius="md"
-          sx={{ backgroundImage: `url(${image})` }}
+          sx={{backgroundImage: `url(${image})`, backgroundSize: 'cover'}}
+        />
+        <Title className={classes.title} order={3}>
+          {title}
+        </Title>
+      </>
+    )
+  }
+
+  return (
+    <Link href={`${urlPath}/${id}`}>
+      <a>
+        <Paper
           className={classes.card}
-        >
-        </Paper>
-        <Title order={3} className={classes.title}>
+          p="xl"
+          radius="md"
+          sx={{backgroundImage: `url(${image})`}}
+        />
+        <Title className={classes.title} order={3}>
           {title}
         </Title>
       </a>
     </Link>
-
   )
 }
 
-export function Slider ({ data, urlPath, indicators = false }) {
-  const { classes } = useStyles()
-  const autoplay = useRef(Autoplay({ delay: 3000 }))
-  const slides = data.slice(0, 4).map((item) => (
+export function Slider ({data, urlPath, indicators = false, slice}) {
+  const {classes} = useStyles()
+  const autoplay = useRef(Autoplay({delay: 3000}))
+
+  const slides = data.slice(0, slice).map((item) => (
     <Carousel.Slide key={item.title}>
       <Card {...item} urlPath={urlPath} />
     </Carousel.Slide>
@@ -100,18 +115,17 @@ export function Slider ({ data, urlPath, indicators = false }) {
 
   return (
     <Carousel
-      classNames={classes}
-      slideSize="50%"
-      breakpoints={[{ maxWidth: 'sm', slideSize: '100%', slideGap: 30 }]}
-      slideGap='xl'
-      align="start"
-      plugins={[autoplay.current]}
-      onMouseEnter={autoplay.current.stop}
-      onMouseLeave={autoplay.current.reset}
       loop
-      withIndicators={indicators}
+      align="start"
+      breakpoints={[{maxWidth: 'sm', slideSize: '100%', slideGap: 30}]}
+      classNames={classes}
+      plugins={[autoplay.current]}
+      slideGap="xl"
+      slideSize="50%"
       speed={4}
-    >
+      withIndicators={indicators}
+      onMouseEnter={autoplay.current.stop}
+      onMouseLeave={autoplay.current.reset}>
       {slides}
     </Carousel>
   )

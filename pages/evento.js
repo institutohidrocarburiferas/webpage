@@ -2,6 +2,7 @@ import Head from 'next/head'
 import Image from 'next/image'
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 
+import {Slider} from '@components/Slider'
 import {Text} from '@components/UI/Text'
 import {Title} from '@components/UI/Title'
 import {Separator} from '@components/Layout/Separator'
@@ -19,6 +20,7 @@ import {
   sponsors,
   expositions,
 } from '@constants/eventos/foro-internacional-prospectiva-energetica'
+import {getEventPhotos} from '@utils/getEventPhotos'
 
 const pageData = {
   title: 'Foro Internacional de Prospectiva Energética en el Ecuador',
@@ -132,7 +134,7 @@ function Expositions ({items}) {
   )
 }
 
-export default function Evento () {
+export default function Evento ({photos}) {
   return (
     <>
       <Head>
@@ -359,8 +361,8 @@ export default function Evento () {
           <Separator id="ponentes" />
           <section className="flex flex-col items-center gap-5 p-5 lg:container md:pl-24">
             <Title>Ponentes</Title>
-            <div className='flex flex-wrap justify-center gap-10 md:flex-row '>
-            {/* <div className="grid grid-cols-1 gap-5 place-items-center md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-x-20"> */}
+            <div className="flex flex-wrap justify-center gap-10 md:flex-row ">
+              {/* <div className="grid grid-cols-1 gap-5 place-items-center md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-x-20"> */}
               {speakers.map(({name, image, role, institute}) => (
                 <SpeakerCard
                   key={name}
@@ -400,6 +402,26 @@ export default function Evento () {
 
           </HeroSection> */}
 
+          <Separator id="photos" />
+
+          <div className="container mx-auto">
+            {/* Recent notices section */}
+            <Title>Fotos del evento</Title>
+
+            <section className="md:pl-16 p-2 max-w-5xl mx-auto">
+              <Slider data={photos} slice={photos.length} />
+            </section>
+          </div>
+
+          {/* <div className='container flex flex-wrap mx-auto md:ml-16 justify-center gap-20'>
+            {photos.map(({image}) => (
+              <picture key={image}>
+
+                <img alt={image.slice(0, -4)} className='h-72' src={image}/>
+              </picture>
+            ))}
+          </div> */}
+
           {/* Mapa */}
           <Separator id="ubicacion" />
           <section className="container flex flex-col items-center px-5 md:pl-24">
@@ -421,9 +443,11 @@ export default function Evento () {
 
 export const getStaticProps = async ({locale}) => {
   const i18nConf = await serverSideTranslations(locale)
+  const photos = await getEventPhotos()
 
   return {
     props: {
+      photos,
       ...i18nConf,
     },
   }
