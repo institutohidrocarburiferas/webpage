@@ -1,18 +1,42 @@
 import type {FormValues} from './types'
 
-import {MultiSelect} from '@mantine/core'
+import {createStyles, MultiSelect} from '@mantine/core'
 import {useForm} from '@mantine/form'
 
 interface Props {
   setValues: React.Dispatch<React.SetStateAction<FormValues>>
 }
 
+const useStyles = createStyles((theme) => ({
+  track: {
+    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.blue[1],
+  },
+  mark: {
+    width: 6,
+    height: 6,
+    borderRadius: 6,
+    transform: 'translateX(-3px) translateY(-2px)',
+    borderColor: theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.blue[1],
+  },
+  markFilled: {
+    borderColor: theme.colors.blue[6],
+  },
+  markLabel: {fontSize: theme.fontSizes.xs, marginBottom: 5, marginTop: 0},
+  thumb: {
+    height: 16,
+    width: 16,
+    backgroundColor: theme.white,
+    borderWidth: 1,
+    boxShadow: theme.shadows.sm,
+  },
+}))
+
 const validate = (value: string[]) => (value.length === 0 ? 'Escoja valores para calcular el consumo' : null)
 
 export const FormData: React.FC<Props> = ({setValues}) => {
   const form = useForm<FormValues>({
     initialValues: {
-      ciudad: [],
+      // ciudad: [],
       area: [],
       jefatura: [],
       salario: [],
@@ -21,27 +45,32 @@ export const FormData: React.FC<Props> = ({setValues}) => {
     },
     // functions will be used to validate values at corresponding key
     validate: {
-      ciudad: (value) => validate(value),
+      // ciudad: (value) => validate(value),
       area: (value) => validate(value),
       jefatura: (value) => validate(value),
       salario: (value) => validate(value),
       tipoHogar: (value) => validate(value),
-      infraestructura: (value) => validate(value),
+      // infraestructura: (value) => validate(value),
 
     },
   })
+  const {classes} = useStyles()
 
   return <form
     className="flex flex-col gap-5 mt-5"
+
     onSubmit={
       form.onSubmit((values: FormValues) => (
         setValues(values)
       ))
     }
   >
-    <MultiSelect
+    {/* <MultiSelect
       clearable
       required
+      classNames={{
+        label: 'text-red'
+      }}
       clearButtonLabel="Clear selection"
       data={['Pastaza']}
       label="Ciudad"
@@ -52,7 +81,7 @@ export const FormData: React.FC<Props> = ({setValues}) => {
       {...form.getInputProps('ciudad')}
     // defaultValue={['react', 'next']}
     // onChange={handleChange}
-    />
+    /> */}
     <MultiSelect
       clearable
       required
@@ -107,7 +136,6 @@ export const FormData: React.FC<Props> = ({setValues}) => {
     />
     <MultiSelect
       clearable
-      required
       clearButtonLabel="Clear selection"
       data={['Refrigerador', 'Licuadora', 'Microondas', 'Cocina de inducción', 'Lavadora de platos', 'Televisor a color', 'Tv LCD', 'PC Escritorio', 'Radio', 'Videojuegos', 'Aire Acondicionado', 'Ventilador', 'Ducha Eléctrica', 'Lavadora de ropa', 'Secadora de ropa', 'Focos', 'Laptop', 'Celular', 'Auto eléctrico', 'Motos eléctricas']}
       label="Escoge la infraestructura del consumo"
@@ -118,6 +146,6 @@ export const FormData: React.FC<Props> = ({setValues}) => {
       {...form.getInputProps('infraestructura')}
     // defaultValue={['react', 'next']}
     />
-    <button className='py-2 mt-2 text-normal tracking-wider border font-bold hover:text-white text-black transition-colors rounded-lg border-amber-700 hover:bg-amber-500 active:scale-95'>Calcular</button>
+    <button className='py-2 mt-2 font-bold tracking-wider text-black transition-colors border rounded-lg text-normal hover:text-white border-amber-700 hover:bg-amber-500 active:scale-95'>Calcular</button>
   </form>
 }

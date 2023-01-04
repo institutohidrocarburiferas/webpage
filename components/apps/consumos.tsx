@@ -1,4 +1,3 @@
-
 import type {FormValues} from './types'
 
 import {useState} from 'react'
@@ -9,98 +8,61 @@ import {Text} from '@components/UI/Text'
 
 import {BarPlot} from './BarPlot'
 import {FormData} from './FormData'
+import {getTotals, totalConsumo} from './totales'
+import {getPatrones} from './patrones'
 
 interface ResultProps {
   values: FormValues
 }
 
 const Resultados: React.FC<ResultProps> = ({values}) => {
-  const data = consumosPastaza.filter(consumo => (
-    values.ciudad.includes(consumo.Provincia) &&
+  const filteredValues = consumosPastaza.filter(consumo => (
+    // values.ciudad.includes(consumo.Provincia) &&
     values.area.includes(consumo['Área']) &&
     values.jefatura.includes(consumo.Jefatura) &&
     values.tipoHogar.includes('Tipo ' + String(consumo['Tipo de Hogar'])) &&
     values.salario.includes(consumo.Ingreso)
   ))
 
-  const results = data.reduce((obj, item) => {
-    if (item['Área'] === 'Rural') {
-      obj.Rural += item.Hogares * item['Consumo Electrodomésticos']
-    } else if (item['Área'] === 'Urbano') {
-      obj.Urbano += item.Hogares * item['Consumo Electrodomésticos']
-    }
+  const graphsPatrones = getPatrones({filteredValues, values})
 
-    if (item.Jefatura === 'Masculina') {
-      obj.Masculina += item.Hogares * item['Consumo Electrodomésticos']
-    } else if (item.Jefatura === 'Femenina') {
-      obj.Femenina += item.Hogares * item['Consumo Electrodomésticos']
-    }
-
-    return obj
-  }, {Urbano: 0, Rural: 0, Masculina: 0, Femenina: 0})
-
-  const tipos = data.reduce((obj, item) => {
-    obj['Tipo ' + String(item['Tipo de Hogar'])] += item.Hogares * item['Consumo Electrodomésticos']
-
-    return obj
-  }, Object.fromEntries(values.tipoHogar.map(el => [el, 0])))
-
-  const salarios = data.reduce((obj, item) => {
-    obj[item.Ingreso] += item.Hogares * item['Consumo Electrodomésticos']
-
-    return obj
-  }, Object.fromEntries(values.salario.map(el => [el, 0])))
-
-  const infraestructura = data.reduce((obj, item) => {
-    // el -> electrodoméstico
-    for (const el in obj) {
-      obj[el] += item.Hogares * item[`Consumo ${el}`]
-    }
-
-    return obj
-  },
-  Object.fromEntries(values.infraestructura.map(el => [el, 0]))
-  )
-
-  const totalConsumo = data.reduce((acum, item) => {
-    return acum + item.Hogares * item['Consumo Electrodomésticos']
-  }, 0)
+  const graphsTotals = getTotals({filteredValues, values})
 
   return <div className='mt-7'>
-    <section className='max-w-2xl mx-auto m-10'>
+    <section className='max-w-2xl m-10 mx-auto'>
       <Text>
         <div className='text-center'>
           <span className='font-bold'>Consumo Total:</span>{'  '}
-          <span>{totalConsumo.toFixed(2)} KWH/mes</span>
+          <span>{totalConsumo(filteredValues).toFixed(2)} KWH/mes</span>
         </div>
       </Text>
     </section>
     <section className='grid grid-cols-1 md:grid-cols-2'>
+      <div className='grid grid-cols-1'>
+        {/* Histograms of patrones */}
+      {graphsPatrones.map(({title, data, plot}) => (
+        <BarPlot key={title}
+          color={''}
+          plot={plot}
+          title={title}
+          x={Object.keys(data)}
+          y={Object.values(data)}
+        />
+      ))}
+      </div>
 
-      <BarPlot
-        title="Área del Consumo"
-        x={['Urbano', 'Rural']}
-        y={[results.Urbano, results.Rural]}
-      />
-      <BarPlot
-        title="Jefatura del Consumo"
-        x={['Masculina', 'Femenina']}
-        y={[results.Masculina, results.Femenina]}
-      />
-      <BarPlot
-        title="Tipos de Hogares del Consumo"
-        x={Object.keys(tipos)}
-        y={Object.values(tipos)} />
-      <BarPlot
-        title="Rango salarial del Consumo"
-        x={Object.keys(salarios)}
-        y={Object.values(salarios)}
-      />
-      <BarPlot
-        title="Infraestructura del Consumo"
-        x={Object.keys(infraestructura)}
-        y={Object.values(infraestructura)}
-      />
+      <div className='grid grid-cols-1'>
+        {/* Histograms of totals */}
+      {graphsTotals.map(({title, data, plot}) => (
+        <BarPlot key={title}
+          color='#65a30d'
+          plot={plot}
+          title={title}
+          x={Object.keys(data)}
+          y={Object.values(data)}
+        />
+      ))}
+      </div>
 
     </section>
   </div>
