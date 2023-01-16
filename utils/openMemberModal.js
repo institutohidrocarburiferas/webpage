@@ -1,5 +1,5 @@
-import { Suspense } from 'react'
-import { createRoot } from 'react-dom/client'
+import {Suspense} from 'react'
+import {createRoot} from 'react-dom/client'
 import dynamic from 'next/dynamic'
 
 export function openMemberModal (name, image, title, description) {
@@ -7,6 +7,7 @@ export function openMemberModal (name, image, title, description) {
   const MemberInfo = dynamic(() => import('@components/MemberInfo'))
 
   const modalDiv = document.createElement('div')
+
   modalDiv.id = 'modal'
   document.body.appendChild(modalDiv)
 
@@ -16,10 +17,10 @@ export function openMemberModal (name, image, title, description) {
     <Suspense fallback={<div>Loading ...</div>}>
       <Modal root={root}>
         <MemberInfo
-          name={name}
-          image={image}
-          title={title}
           description={description}
+          image={image}
+          name={name}
+          title={title}
         />
       </Modal>
     </Suspense>

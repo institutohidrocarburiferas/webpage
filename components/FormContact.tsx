@@ -7,7 +7,7 @@ export const FormContact: React.FC = () => {
 
   function handleSubmit (e: React.FormEvent) {
     e.preventDefault()
-    const {nombre, message} = Object.fromEntries(new FormData(form.current))
+    const {nombre, message} = Object.fromEntries(new FormData(form.current!))
 
     window.location.href = `mailto:iih@uce.edu.ec?subject=Envío%20desde%20la%20página%20web&body=Nombre%3A%20${nombre}%0AMensaje%3A%20${message}`
   }

@@ -5,7 +5,7 @@ import {MultiSelect} from '@mantine/core'
 import {useForm} from '@mantine/form'
 
 interface Props {
-  setValues: React.Dispatch<React.SetStateAction<FormValues>>
+  setValues: React.Dispatch<React.SetStateAction<FormValues | null>>
 }
 
 const validate = (value: string[]) => (value.length === 0 ? 'Escoja valores para calcular el consumo' : null)

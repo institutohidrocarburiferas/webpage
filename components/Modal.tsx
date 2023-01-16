@@ -2,22 +2,22 @@ import {useRef} from 'react'
 
 interface Props {
   children: React.ReactNode
-  // Fix any type in root element from utils/openMemberModal
+  // TODO: Fix any type in root element from utils/openMemberModal
   root: any
 }
 
 const Modal: React.FC<Props> = ({children, root}) => {
-  const ref = useRef(null)
+  const ref = useRef<HTMLDivElement>(null)
 
   function callback (): void {
-    ref.current.removeEventListener('animationend', callback)
+    ref.current?.removeEventListener('animationend', callback)
     root.unmount()
-    document.querySelector('#modal').remove()
+    document.querySelector('#modal')?.remove()
   }
 
   function handleClick (): void {
-    ref.current.classList.add('animate-fadeOut')
-    ref.current.addEventListener('animationend',
+    ref.current?.classList.add('animate-fadeOut')
+    ref.current?.addEventListener('animationend',
       callback,
       {once: true}
     )
