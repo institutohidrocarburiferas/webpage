@@ -31,7 +31,7 @@ const Modal: React.FC<Props> = ({children, root}) => {
       />
       <div className='container relative w-11/12 pt-10 overflow-scroll bg-white dark:bg-gray-900 animate-fadeIn h-5/6 rounded-xl '>
         <button
-          className='fixed z-20 top-3 right-3 font-bold py-2.5 px-4 rounded-sm cursor-pointer text-gray-500'
+          className='fixed z-20 top-3 right-3 font-bold py-2.5 px-4 rounded-sm cursor-pointer text-xl text-gray-500 dark:text-gray-100 hover:text-red-500'
           onClick={handleClick}
         >X
         </button>
