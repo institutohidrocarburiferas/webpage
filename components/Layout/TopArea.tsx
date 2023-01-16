@@ -16,7 +16,7 @@ export const TopArea: React.FC = () => {
   const languajes = locales.map((local) => (
     <button
       key={local}
-      className={cn('px-2 py-1', {'border rounded bg-gray-50 dark:bg-gray-700': local === locale})}
+      className={cn('px-2 py-1 rounded', {'border bg-gray-50 dark:bg-gray-700': local === locale, 'hover:bg-gray-100 dark:hover:bg-gray-700': local !== locale})}
       onClick={() => push(
         pathname,
         asPath,
