@@ -1,9 +1,16 @@
+import cn from 'classnames'
+
 interface Props {
   title: string
   image: string
+  svgColor?: string
 }
 
-export const TitlePage: React.FC<Props> = ({title, image}) => {
+export const TitlePage: React.FC<Props> = ({
+  title,
+  image,
+  svgColor = 'fill-white dark:fill-gray-900'
+}) => {
   const bgStyle = {
     backgroundImage: `url(${image})`,
     backgroundPosition: 'top center',
@@ -26,6 +33,6 @@ export const TitlePage: React.FC<Props> = ({title, image}) => {
       {title}
     </h1>
     {/* Svg bottom image */}
-    <svg className="absolute bottom-0 fill-white dark:fill-gray-900" height="70px" preserveAspectRatio="none" viewBox="0 0 1280 140" width="100%" xmlns="http://www.w3.org/2000/svg"><g><path d="M0 47.44L170 0l626.48 94.89L1110 87.11l170-39.67V140H0V47.44z" fillOpacity=".5" /><path d="M0 90.72l140-28.28 315.52 24.14L796.48 65.8 1140 104.89l140-14.17V140H0V90.72z" /></g></svg>
+    <svg className={cn('absolute bottom-0', svgColor)}height="70px" preserveAspectRatio="none" viewBox="0 0 1280 140" width="100%" xmlns="http://www.w3.org/2000/svg"><g><path d="M0 47.44L170 0l626.48 94.89L1110 87.11l170-39.67V140H0V47.44z" fillOpacity=".5" /><path d="M0 90.72l140-28.28 315.52 24.14L796.48 65.8 1140 104.89l140-14.17V140H0V90.72z" /></g></svg>
   </header>
 }

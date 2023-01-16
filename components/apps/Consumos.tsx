@@ -31,7 +31,7 @@ const Resultados: React.FC<ResultProps> = ({values}) => {
   return <div className='mt-7'>
     <section className='max-w-2xl m-10 mx-auto'>
       <Text>
-        <div className='text-center'>
+        <div className='text-center text-black'>
           <span className='font-bold'>Consumo Total:</span>{'  '}
           <span>{totalConsumo(filteredValues).toFixed(2)} KWH/mes</span>
         </div>
@@ -72,7 +72,7 @@ export const Consumos: React.FC = () => {
   const [values, setValues] = useState<FormValues | null>(null)
 
   return <div>
-    <div className='max-w-2xl mx-auto'>
+    <div className='max-w-2xl mx-auto text-black'>
       <Subtitle>Ingrese los datos para calcular el consumo:</Subtitle>
       <FormData setValues={setValues} />
     </div>

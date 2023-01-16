@@ -7,19 +7,22 @@ interface Props {
   values: FormValues
 }
 
+// Nombre de la propiedad a calcular el patrón
+const CONSUMO = 'Consumo Planilla' // 'Consumo Electrodomésticos'
+
 export function getTotals ({filteredValues, values}: Props): Graphs[] {
   const results = filteredValues.reduce(
     (obj, item) => {
       if (item['Área'] === 'Rural') {
-        obj.Rural += item.Hogares * item['Consumo Electrodomésticos']
+        obj.Rural += item.Hogares * item[CONSUMO]
       } else if (item['Área'] === 'Urbano') {
-        obj.Urbano += item.Hogares * item['Consumo Electrodomésticos']
+        obj.Urbano += item.Hogares * item[CONSUMO]
       }
 
       if (item.Jefatura === 'Masculina') {
-        obj.Masculina += item.Hogares * item['Consumo Electrodomésticos']
+        obj.Masculina += item.Hogares * item[CONSUMO]
       } else if (item.Jefatura === 'Femenina') {
-        obj.Femenina += item.Hogares * item['Consumo Electrodomésticos']
+        obj.Femenina += item.Hogares * item[CONSUMO]
       }
 
       return obj
@@ -28,13 +31,13 @@ export function getTotals ({filteredValues, values}: Props): Graphs[] {
   )
 
   const tipos = filteredValues.reduce((obj, item) => {
-    obj['Tipo ' + String(item['Tipo de Hogar'])] += item.Hogares * item['Consumo Electrodomésticos']
+    obj['Tipo ' + String(item['Tipo de Hogar'])] += item.Hogares * item[CONSUMO]
 
     return obj
   }, Object.fromEntries(values.tipoHogar.map((el) => [el, 0])))
 
   const salarios = filteredValues.reduce((obj, item) => {
-    obj[item.Ingreso] += item.Hogares * item['Consumo Electrodomésticos']
+    obj[item.Ingreso] += item.Hogares * item[CONSUMO]
 
     return obj
   }, Object.fromEntries(values.salario.map((el) => [el, 0])))
@@ -79,7 +82,7 @@ export function getTotals ({filteredValues, values}: Props): Graphs[] {
 
 export function totalConsumo (filteredValues: Consumo[]) {
   const totalConsumo = filteredValues.reduce((acum, item) => {
-    return acum + item.Hogares * item['Consumo Electrodomésticos']
+    return acum + item.Hogares * item[CONSUMO]
   }, 0)
 
   return totalConsumo

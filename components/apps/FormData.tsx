@@ -1,37 +1,16 @@
 import type {FormValues} from './types'
 
-import {createStyles, MultiSelect} from '@mantine/core'
+import cn from 'classnames'
+import {MultiSelect} from '@mantine/core'
 import {useForm} from '@mantine/form'
 
 interface Props {
   setValues: React.Dispatch<React.SetStateAction<FormValues>>
 }
 
-const useStyles = createStyles((theme) => ({
-  track: {
-    backgroundColor: theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.blue[1],
-  },
-  mark: {
-    width: 6,
-    height: 6,
-    borderRadius: 6,
-    transform: 'translateX(-3px) translateY(-2px)',
-    borderColor: theme.colorScheme === 'dark' ? theme.colors.dark[3] : theme.colors.blue[1],
-  },
-  markFilled: {
-    borderColor: theme.colors.blue[6],
-  },
-  markLabel: {fontSize: theme.fontSizes.xs, marginBottom: 5, marginTop: 0},
-  thumb: {
-    height: 16,
-    width: 16,
-    backgroundColor: theme.white,
-    borderWidth: 1,
-    boxShadow: theme.shadows.sm,
-  },
-}))
-
 const validate = (value: string[]) => (value.length === 0 ? 'Escoja valores para calcular el consumo' : null)
+
+const dataInfraestructura = ['Refrigerador', 'Licuadora', 'Microondas', 'Cocina de inducción', 'Lavadora de platos', 'Televisor a color', 'Tv LCD', 'PC Escritorio', 'Radio', 'Videojuegos', 'Aire Acondicionado', 'Ventilador', 'Ducha Eléctrica', 'Lavadora de ropa', 'Secadora de ropa', 'Focos', 'Laptop', 'Celular', 'Auto eléctrico', 'Motos eléctricas']
 
 export const FormData: React.FC<Props> = ({setValues}) => {
   const form = useForm<FormValues>({
@@ -41,7 +20,7 @@ export const FormData: React.FC<Props> = ({setValues}) => {
       jefatura: [],
       salario: [],
       tipoHogar: [],
-      infraestructura: []
+      infraestructura: dataInfraestructura
     },
     // functions will be used to validate values at corresponding key
     validate: {
@@ -54,10 +33,9 @@ export const FormData: React.FC<Props> = ({setValues}) => {
 
     },
   })
-  const {classes} = useStyles()
 
   return <form
-    className="flex flex-col gap-5 mt-5"
+    className={cn('flex flex-col gap-5 mt-5')}
 
     onSubmit={
       form.onSubmit((values: FormValues) => (
@@ -137,14 +115,14 @@ export const FormData: React.FC<Props> = ({setValues}) => {
     <MultiSelect
       clearable
       clearButtonLabel="Clear selection"
-      data={['Refrigerador', 'Licuadora', 'Microondas', 'Cocina de inducción', 'Lavadora de platos', 'Televisor a color', 'Tv LCD', 'PC Escritorio', 'Radio', 'Videojuegos', 'Aire Acondicionado', 'Ventilador', 'Ducha Eléctrica', 'Lavadora de ropa', 'Secadora de ropa', 'Focos', 'Laptop', 'Celular', 'Auto eléctrico', 'Motos eléctricas']}
+      data={dataInfraestructura}
       label="Escoge la infraestructura del consumo"
       placeholder="Escoge los electrodomésticos del consumo ..."
       transition="pop-top-left"
       transitionDuration={150}
       transitionTimingFunction="ease"
       {...form.getInputProps('infraestructura')}
-    // defaultValue={['react', 'next']}
+      // defaultValue={['Refrigerador', 'Licuadora']}
     />
     <button className='py-2 mt-2 font-bold tracking-wider text-black transition-colors border rounded-lg text-normal hover:text-white border-amber-700 hover:bg-amber-500 active:scale-95'>Calcular</button>
   </form>

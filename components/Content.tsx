@@ -17,7 +17,11 @@ export const Content: React.FC<Props> = ({children, title, description, image, s
       <title>{title}</title>
       <meta content={description} name="description" />
     </Head>
-    <TitlePage image={image} title={title} />
+    <TitlePage
+      image={image}
+      svgColor={svgColor}
+      title={title}
+    />
     {children}
     <Footer image={image} svgColor={svgColor} />
   </>

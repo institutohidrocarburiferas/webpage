@@ -6,26 +6,29 @@ interface Props {
   values: FormValues
 }
 
+// Nombre de la propiedad a calcular el patrón
+const CONSUMO = 'Consumo Planilla' // 'Consumo Electrodomésticos'
+
 export function getPatrones ({filteredValues, values}: Props): Graphs[] {
   const results = filteredValues.reduce((obj, item) => {
     if (item['Área'] === 'Rural') {
       obj.Rural = obj.Rural
-        ? (obj.Rural + item['Consumo Electrodomésticos']) / 2
-        : item['Consumo Electrodomésticos']
+        ? (obj.Rural + item[CONSUMO]) / 2
+        : item[CONSUMO]
     } else if (item['Área'] === 'Urbano') {
       obj.Urbano = obj.Urbano
-        ? (obj.Urbano + item['Consumo Electrodomésticos']) / 2
-        : item['Consumo Electrodomésticos']
+        ? (obj.Urbano + item[CONSUMO]) / 2
+        : item[CONSUMO]
     }
 
     if (item.Jefatura === 'Masculina') {
       obj.Masculina = obj.Masculina
-        ? (obj.Masculina + item['Consumo Electrodomésticos']) / 2
-        : item['Consumo Electrodomésticos']
+        ? (obj.Masculina + item[CONSUMO]) / 2
+        : item[CONSUMO]
     } else if (item.Jefatura === 'Femenina') {
       obj.Femenina = obj.Femenina
-        ? (obj.Femenina + item['Consumo Electrodomésticos']) / 2
-        : item['Consumo Electrodomésticos']
+        ? (obj.Femenina + item[CONSUMO]) / 2
+        : item[CONSUMO]
     }
 
     return obj
@@ -37,16 +40,16 @@ export function getPatrones ({filteredValues, values}: Props): Graphs[] {
     const itemName = 'Tipo ' + String(item['Tipo de Hogar'])
 
     obj[itemName] = obj[itemName]
-      ? (obj[itemName] + item['Consumo Electrodomésticos']) / 2
-      : item['Consumo Electrodomésticos']
+      ? (obj[itemName] + item[CONSUMO]) / 2
+      : item[CONSUMO]
 
     return obj
   }, Object.fromEntries(values.tipoHogar.map(el => [el, null])))
 
   const salarios = filteredValues.reduce((obj, item) => {
     obj[item.Ingreso] = obj[item.Ingreso]
-      ? (obj[item.Ingreso] + item['Consumo Electrodomésticos']) / 2
-      : item['Consumo Electrodomésticos']
+      ? (obj[item.Ingreso] + item[CONSUMO]) / 2
+      : item[CONSUMO]
 
     return obj
   }, Object.fromEntries(values.salario.map(el => [el, null])))
