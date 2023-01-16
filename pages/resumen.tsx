@@ -83,7 +83,7 @@ function LineasInvestigacion () {
   const sections = lineasInvestigacion.content.map(({label, items, icon}) => (
     <article
       key={label}
-      className="w-full p-8 mx-auto sm:w-96 outline bg-amber-400"
+      className="w-full p-8 mx-auto sm:w-96 outline bg-amber-400 text-black"
     >
       <picture className='block w-20 h-20 p-2 m-auto'>
           <Image alt={label} height={100} src={icon} width={100} />
