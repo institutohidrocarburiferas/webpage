@@ -2,17 +2,29 @@ import type {FormValues} from './types'
 
 import {useState} from 'react'
 
-import {consumosPastaza} from '@constants/apps/consumos'
+import {consumosPastaza} from '@components/apps/consumos1/consumos'
 import {Subtitle} from '@components/UI/Subtitle'
 import {Text} from '@components/UI/Text'
 
-import {BarPlot} from './BarPlot'
 import {FormData} from './FormData'
 import {getTotals, totalConsumo} from './totales'
 import {getPatrones} from './patrones'
+import {BarPlot} from './BarPlot'
 
 interface ResultProps {
   values: FormValues
+}
+
+export const Consumos: React.FC = () => {
+  const [values, setValues] = useState<FormValues | null>(null)
+
+  return <div>
+    <div className='max-w-2xl mx-auto text-black'>
+      <Subtitle>Ingrese los datos para calcular el consumo:</Subtitle>
+      <FormData setValues={setValues} />
+    </div>
+    {values && <Resultados values={values} />}
+  </div>
 }
 
 const Resultados: React.FC<ResultProps> = ({values}) => {
@@ -65,17 +77,5 @@ const Resultados: React.FC<ResultProps> = ({values}) => {
       </div>
 
     </section>
-  </div>
-}
-
-export const Consumos: React.FC = () => {
-  const [values, setValues] = useState<FormValues | null>(null)
-
-  return <div>
-    <div className='max-w-2xl mx-auto text-black'>
-      <Subtitle>Ingrese los datos para calcular el consumo:</Subtitle>
-      <FormData setValues={setValues} />
-    </div>
-    {values && <Resultados values={values} />}
   </div>
 }

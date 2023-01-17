@@ -1,5 +1,5 @@
 // Totales
-import type {Consumo} from '@constants/apps/consumos'
+import type {Consumo} from '@components/apps/consumos1/consumos'
 import type {FormValues, Graphs} from './types'
 
 interface Props {

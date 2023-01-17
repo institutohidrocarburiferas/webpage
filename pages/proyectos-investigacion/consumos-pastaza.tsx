@@ -3,7 +3,7 @@ import type {GetStaticProps, NextPage} from 'next'
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 import {useTranslation} from 'next-i18next'
 
-import {Consumos} from '@components/apps/Consumos'
+import {Consumos} from '@components/apps/consumos2/Consumos'
 import {Content} from '@components/Content'
 
 const pageData = {
