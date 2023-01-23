@@ -16,16 +16,16 @@ const dataInfraestructura = ['Refrigerador', 'Licuadora', 'Microondas', 'Cocina 
 export const FormData: React.FC<Props> = ({setValues}) => {
   const form = useForm<FormValues>({
     initialValues: {
-      ciudad: '',
+      provincia: '',
       area: '',
       jefatura: '',
-      salario: '',
       tipoHogar: '',
+      salario: '',
       infraestructura: dataInfraestructura
     },
     // functions will be used to validate values at corresponding key
     validate: {
-      ciudad: (value) => validate(value),
+      provincia: (value) => validate(value),
       area: (value) => validate(value),
       jefatura: (value) => validate(value),
       salario: (value) => validate(value),
@@ -51,7 +51,7 @@ export const FormData: React.FC<Props> = ({setValues}) => {
       transition="pop-top-left"
       transitionDuration={150}
       transitionTimingFunction="ease"
-      {...form.getInputProps('ciudad')}
+      {...form.getInputProps('provincia')}
     />
     <Select
       required

@@ -11,7 +11,7 @@ export const Consumos: React.FC = () => {
   const [values, setValues] = useState<FormValues | null>(null)
 
   return <div>
-    <div className='max-w-2xl mx-auto text-black'>
+    <div className='max-w-2xl mx-auto my-5 text-black'>
       <Subtitle>Escoja el tipo de hogar para calcular el patrón de consumo:</Subtitle>
       <FormData setValues={setValues} />
     </div>

@@ -11,6 +11,9 @@ specifiers:
   '@mantine/hooks': 5.5.5
   '@mantine/next': 5.5.5
   '@mantine/prism': 5.5.5
+  '@tanstack/match-sorter-utils': 8.7.6
+  '@tanstack/react-table': 8.7.6
+  '@tanstack/table-core': 8.7.6
   '@types/cookie': 0.5.1
   '@types/node': 18.11.9
   '@types/react': 18.0.25
@@ -57,6 +60,9 @@ dependencies:
   '@mantine/hooks': 5.5.5_react@18.2.0
   '@mantine/next': 5.5.5_4hxywcmnt2wfwqfr6zatdxiv5i
   '@mantine/prism': 5.5.5_sboc75uudxrw5k7gcptvtad4eq
+  '@tanstack/match-sorter-utils': 8.7.6
+  '@tanstack/react-table': 8.7.6_biqbaboplfbrettd7655fr4n2y
+  '@tanstack/table-core': 8.7.6
   autoprefixer: 10.4.9_postcss@8.3.3
   classnames: 2.3.2
   cookie: 0.5.0
@@ -1056,6 +1062,30 @@ packages:
     resolution: {integrity: sha512-rEUrBSGIoSFuYxwBYtlUFMlE2CwGhmW+w9355/5oduSw8e5h2+Tj4UrAGNNgP9915++wj5vkQo0UuOBqOAq4nw==}
     dependencies:
       tslib: 2.4.1
+    dev: false
+
+  /@tanstack/match-sorter-utils/8.7.6:
+    resolution: {integrity: sha512-2AMpRiA6QivHOUiBpQAVxjiHAA68Ei23ZUMNaRJrN6omWiSFLoYrxGcT6BXtuzp0Jw4h6HZCmGGIM/gbwebO2A==}
+    engines: {node: '>=12'}
+    dependencies:
+      remove-accents: 0.4.2
+    dev: false
+
+  /@tanstack/react-table/8.7.6_biqbaboplfbrettd7655fr4n2y:
+    resolution: {integrity: sha512-/QijmMFeP7wDLBnr0MQ/5MlbXePbIL/1nOtkxBC9zvmBu4gDKJEDBqipUyM7Wc/iBpSd0IFyqBlvZvTPD9FYDA==}
+    engines: {node: '>=12'}
+    peerDependencies:
+      react: '>=16'
+      react-dom: '>=16'
+    dependencies:
+      '@tanstack/table-core': 8.7.6
+      react: 18.2.0
+      react-dom: 18.2.0_react@18.2.0
+    dev: false
+
+  /@tanstack/table-core/8.7.6:
+    resolution: {integrity: sha512-sqiNTMzB6cpyL8DFH6/VqW48SwiflLqxQqYpo2wNock7rdVGvlm0BLNI8vZUJbr1+fmmWmHwBvi5OMgZw8n1DA==}
+    engines: {node: '>=12'}
     dev: false
 
   /@turf/area/6.5.0:
@@ -5032,6 +5062,10 @@ packages:
       '@types/mdast': 3.0.10
       mdast-util-to-hast: 12.2.4
       unified: 10.1.2
+    dev: false
+
+  /remove-accents/0.4.2:
+    resolution: {integrity: sha512-7pXIJqJOq5tFgG1A2Zxti3Ht8jJF337m4sowbuHsW30ZnkQFnDzy9qBNhgzX8ZLW4+UBcXiiR7SwR6pokHsxiA==}
     dev: false
 
   /resolve-from/4.0.0:
