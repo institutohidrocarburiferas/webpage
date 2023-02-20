@@ -13,7 +13,7 @@ export interface Consumo {
   Provincia: Provincia
   Área: 'Rural' | 'Urbano'
   Jefatura: 'Femenina' | 'Masculina'
-  'Tipo de Hogar': 1 | 2 | 3 | 4 | 5 | 6 | 7 | 8 | 9 | 10 | 11 | 12 | 13 | 14 | 15 | 16
+  'Tipo de Hogar': '1' | '2' | '3' | '4' | '5' | '6' | '7' | '8' | '9' | '10' | '11' | '12' | '13' | '14' | '15' | '16'
   Ingreso: 'Menos de 400' | '400 a 800' | '800 a 1200' | '1200 a 2400' | 'Más de 2400'
   Hogares: number
   'Consumo Refrigerador': number

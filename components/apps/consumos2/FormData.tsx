@@ -13,6 +13,17 @@ const validate = (value: string[] | string) => (value.length === 0 ? 'Escoja un 
 
 const dataInfraestructura = ['Refrigerador', 'Licuadora', 'Microondas', 'Cocina de inducción', 'Lavadora de platos', 'Televisor a color', 'Tv LCD', 'PC Escritorio', 'Radio', 'Videojuegos', 'Aire Acondicionado', 'Ventilador', 'Ducha Eléctrica', 'Lavadora de ropa', 'Secadora de ropa', 'Focos', 'Laptop', 'Celular', 'Auto eléctrico', 'Motos eléctricas']
 
+const dataIntegrantes = Array(16).fill(0).map((el, i) => {
+  const persons = i + 1
+
+  if (persons === 1) return '1 persona'
+  else if (persons === 16) return 'Más de 16 personas'
+
+  return `${persons} personas`
+})
+
+// ['Tipo 1', 'Tipo 2', 'Tipo 3', 'Tipo 4', 'Tipo 5', 'Tipo 6', 'Tipo 7', 'Tipo 8', 'Tipo 9', 'Tipo 10', 'Tipo 11', 'Tipo 12', 'Tipo 13', 'Tipo 14', 'Tipo 15', 'Tipo 16']
+
 export const FormData: React.FC<Props> = ({setValues}) => {
   const form = useForm<FormValues>({
     initialValues: {
@@ -38,9 +49,15 @@ export const FormData: React.FC<Props> = ({setValues}) => {
     className={cn('flex flex-col gap-5 mt-5')}
 
     onSubmit={
-      form.onSubmit((values: FormValues) => (
-        setValues(values)
-      ))
+      form.onSubmit((values: FormValues) => {
+        const numberTipoHogar = Number(values.tipoHogar.slice(0, 2))
+        const newTipoHogar = isNaN(numberTipoHogar) ? '16' : String(numberTipoHogar)
+
+        setValues({
+          ...values,
+          tipoHogar: newTipoHogar
+        })
+      })
     }
   >
     <Select
@@ -66,7 +83,7 @@ export const FormData: React.FC<Props> = ({setValues}) => {
     <Select
       required
       data={['Masculina', 'Femenina']}
-      label="Jefatura"
+      label="Jefatura del hogar"
       placeholder="Escoge la jefatura del consumo..."
       transition="pop-top-left"
       transitionDuration={150}
@@ -75,8 +92,8 @@ export const FormData: React.FC<Props> = ({setValues}) => {
     />
     <Select
       required
-      data={['Tipo 1', 'Tipo 2', 'Tipo 3', 'Tipo 4', 'Tipo 5', 'Tipo 6', 'Tipo 7', 'Tipo 8', 'Tipo 9', 'Tipo 10', 'Tipo 11', 'Tipo 12', 'Tipo 13', 'Tipo 14', 'Tipo 15', 'Tipo 16']}
-      label="Tipo de hogar"
+      data={dataIntegrantes}
+      label="Integrantes del hogar"
       placeholder="Escoge el tipo de hogar del consumo..."
       transition="pop-top-left"
       transitionDuration={150}
@@ -86,7 +103,7 @@ export const FormData: React.FC<Props> = ({setValues}) => {
     <Select
       required
       data={['Menos de 400', '400 a 800', '800 a 1200', '1200 a 2400', 'Más de 2400']}
-      label="Rango salarial"
+      label="Ingresos por hogar"
       placeholder="Escoge el rango salarial del consumo..."
       transition="pop-top-left"
       transitionDuration={150}

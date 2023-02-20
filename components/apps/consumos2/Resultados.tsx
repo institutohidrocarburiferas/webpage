@@ -15,12 +15,12 @@ interface ResultProps {
 }
 
 export const Resultados: React.FC<ResultProps> = ({values}) => {
-  const filteredPattern: Consumo = consumos.filter(consumo => (
-    values.provincia.includes(consumo.Provincia) &&
-    values.area.includes(consumo['Área']) &&
-    values.jefatura.includes(consumo.Jefatura) &&
-    values.tipoHogar.includes('Tipo ' + String(consumo['Tipo de Hogar'])) &&
-    values.salario.includes(consumo.Ingreso)
+  const filteredPattern : Consumo = consumos.filter(consumo => (
+    values.provincia === consumo.Provincia &&
+    values.area === consumo['Área'] &&
+    values.jefatura === consumo.Jefatura &&
+    values.tipoHogar === String(consumo['Tipo de Hogar']) &&
+    values.salario === consumo.Ingreso
   ))[0]
 
   const {

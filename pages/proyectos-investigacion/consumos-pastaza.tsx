@@ -31,7 +31,7 @@ export const Page: NextPage = () => {
       title={t('pageTitle')}
     >
       <main className='w-full p-3 bg-white'>
-        <section className='max-w-2xl relative mx-auto'>
+        <section className='max-w-6xl relative mx-auto'>
           <div className='border-b px-5'>
             <button
               className={cn('px-5 py-2',
@@ -48,8 +48,10 @@ export const Page: NextPage = () => {
           </div>
 
           {/* Components */}
-          {(option === Options.consumos) && <Consumos />}
-          {(option === Options.tabla) && <Tabla />}
+          <div>
+            {(option === Options.consumos) && <Consumos />}
+            {(option === Options.tabla) && <Tabla />}
+          </div>
 
         </section>
       </main>
