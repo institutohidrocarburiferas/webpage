@@ -281,10 +281,10 @@ export const Tabla: React.FC = () => {
       </div>
       <div>{table.getPrePaginationRowModel().rows.length} Filas</div>
       <div>
-        <button onClick={() => rerender()}>Forzar Renderizado</button>
+        {/* <button onClick={() => rerender()}>Forzar Renderizado</button> */}
       </div>
       <div>
-        <button onClick={() => refreshData()}>Actualizar datos</button>
+        {/* <button onClick={() => refreshData()}>Actualizar datos</button> */}
       </div>
       {/* <pre>{JSON.stringify(table.getState(), null, 2)}</pre> */}
     </div>
