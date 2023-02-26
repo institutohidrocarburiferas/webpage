@@ -20,7 +20,7 @@ import {getPostsData, PostsData} from '@utils/posts'
 const eventDay = new Date(2022, 10, 23, 8)
 
 const pageData = {
-  title: t('Instituto de Investigaciones Hidrocarburíferas'),
+  title: 'Instituto de Investigaciones Hidrocarburíferas',
   image: '/background-footer.jpg',
   description: 'El Instituto de Investigaciones Hidrocarburíferas - IIH es un centro que desarrolla investigaciones hidrocarburíferas y de energía bajo la comprensión profunda de aspectos cruciales en la relación de los sistemas socioeconómicos y los ecosistemas.',
   sliderURL: '/noticias'
@@ -51,7 +51,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
         image={heroContent.image}
         text={heroContent.text}
         //title={heroContent.title}
-        title={pageData.title}
+        title={t(pageData.title)}
       />
 
       <Separator id={null} />
