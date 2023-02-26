@@ -1,7 +1,7 @@
 export const navItems = [
   {
     name: '¿Quiénes somos?',
-    nameEn: 'About us?',
+    nameEn: 'About us',
     subItems: [
       {
         name: 'El Instituto',
