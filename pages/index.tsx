@@ -33,7 +33,8 @@ interface Props {
 const Home: NextPage<Props> = ({allPostsData}) => {
   const {t} = useTranslation(['Home'])
   const heroContent = {
-    title: t('HeroTitle'),
+    //title: t('HeroTitle'),
+    title: t('PageData.title'),
     //image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80',
     image: '/background-main.jpg',
     height: '77vh',
@@ -50,8 +51,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
         height={heroContent.height}
         image={heroContent.image}
         text={heroContent.text}
-        //title={heroContent.title}
-        title={t(pageData.title)}
+        title={heroContent.title}
       />
 
       <Separator id={null} />
