@@ -11,7 +11,7 @@ import {NoticesList} from '@components/NoticesList'
 import {getPostsData} from '@utils/posts'
 
 const pageData = {
-  image: '/prueba.png',
+  image: '/background-footer.jpg',
   mainURL: '/noticias',
 }
 

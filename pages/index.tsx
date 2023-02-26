@@ -50,7 +50,8 @@ const Home: NextPage<Props> = ({allPostsData}) => {
         height={heroContent.height}
         image={heroContent.image}
         text={heroContent.text}
-        title={heroContent.title}
+        //title={heroContent.title}
+        title={pageData.title}
       />
 
       <Separator id={null} />
