@@ -54,27 +54,29 @@ export const Resultados: React.FC<ResultProps> = ({values}) => {
 
   return <div className='grid grid-cols-1 max-w-2xl mx-auto mt-7'>
     <div>
-      <Text><b>Patrón de Consumo: </b>{patronDeConsumo.toFixed(2)} KWH/mes</Text>
+      <Text><b>Patrón de consumo del tipo de hogar: </b>{patronDeConsumo.toFixed(2)} KWH/mes</Text>
     </div>
     <CircularPlot
-      labels={['Hogares del Patrón', 'Resto de Hogares']}
+      labels={['Hogares del tipo de hogar', 'Resto de Hogares']}
       showlegend={false}
-      title={'Hogares del Patrón de Consumo'}
+      title={'Participación del tipo de hogar'}
+      unit={'hogares'}
       values={[HOGARES, HOGARES_RESTANTES]}
     />
 
     <CircularPlot
-      labels={['Consumo de Hogares del Patrón', 'Consumo del Resto de Hogares']}
+      labels={['Consumo de electricidad en el tipo de hogar', 'Consumo de electricidad restante']}
       showlegend={false}
-      title={'Hogares del Patrón de Consumo'}
+      title={'Participación en el consumo de electricidad en el tipo de hogar'}
+      unit={'GWH/año'}
       values={[CONSUMO_PATRON, CONSUMO_RESTANTE]}
     />
 
     <BarPolarPlot
-      color={''}
+      color={null}
       r={Object.values(infraestructura)}
       theta={Object.keys(infraestructura)}
-      title={'Infraestructura de consumo'}
+      title={'Infraestructura de consumo en el tipo de hogar'}
     />
   </div>
 }
