@@ -149,7 +149,7 @@ export const Tabla: React.FC<any> = ({consumos}) => {
   return (
     <div className="p-2 ">
       <div className="h-2" />
-      <div className='grid overflow-x-scroll'>
+      <div className='grid overflow-x-scroll border p-2 rounded'>
         <table>
           <thead>
             {table.getHeaderGroups().map(headerGroup => (
