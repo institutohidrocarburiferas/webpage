@@ -1,6 +1,6 @@
-import type {Consumo} from './types'
+import type {Consumo} from '../../components/Consumos/types'
 
-import Pastaza from './db/pastaza.json'
+import Pastaza from './pastaza.json'
 
 type DataPorProvincia = Record<string, {hogares: number, consumo: number}>
 
@@ -17,6 +17,6 @@ function jsonToConsumo (json: unknown): Consumo[] {
   return Object.values(json)
 }
 
-export const consumos: Consumo[] = [
+export const consumosPastaza: Consumo[] = [
   ...jsonToConsumo(Pastaza)
 ]

@@ -48,11 +48,3 @@ export interface FormValues {
   tipoHogar: string
   infraestructura: string[]
 }
-
-export type Plot = 'bar' | 'barpolar'
-
-export interface Graphs {
-  title: string
-  data: Record<string, number>
-  plot: Plot
-}

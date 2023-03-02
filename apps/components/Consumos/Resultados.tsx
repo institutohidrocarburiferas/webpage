@@ -3,30 +3,28 @@ import type {FormValues, Consumo} from './types'
 // import {Text} from '@components/UI/Text'
 
 import {Text} from '@components/UI/Text'
-
-import {consumos, dataPorProvincia} from './db-consumos'
-// import {getTotals, totalConsumo} from './totales'
-// import {getPatrones} from './patrones'
-import {CircularPlot} from './Plots/CircularPlot'
-import {BarPolarPlot} from './Plots/BarPolarPlot'
+import {CircularPlot} from '@apps/components/Plots/CircularPlot'
+import {BarPolarPlot} from '@apps/components/Plots/BarPolarPlot'
 
 interface ResultProps {
-  values: FormValues
+  formValues: FormValues
+  consumos: Consumo[]
+  dataPorProvincia: any
 }
 
-export const Resultados: React.FC<ResultProps> = ({values}) => {
+export const Resultados: React.FC<ResultProps> = ({formValues, consumos, dataPorProvincia}) => {
   const filteredPattern : Consumo = consumos.filter(consumo => (
-    values.provincia === consumo.Provincia &&
-    values.area === consumo['Área'] &&
-    values.jefatura === consumo.Jefatura &&
-    values.tipoHogar === String(consumo['Tipo de Hogar']) &&
-    values.salario === consumo.Ingreso
+    formValues.provincia === consumo.Provincia &&
+    formValues.area === consumo['Área'] &&
+    formValues.jefatura === consumo.Jefatura &&
+    formValues.tipoHogar === String(consumo['Tipo de Hogar']) &&
+    formValues.salario === consumo.Ingreso
   ))[0]
 
   const {
     consumo: consumoPorProvincia,
     hogares: hogaresPorProvincia
-  } = dataPorProvincia[values.provincia]
+  } = dataPorProvincia[formValues.provincia]
 
   // Data para hogares
   const HOGARES = filteredPattern?.Hogares ?? 0
@@ -49,7 +47,7 @@ export const Resultados: React.FC<ResultProps> = ({values}) => {
 
     return obj
   },
-  Object.fromEntries(values.infraestructura.map(el => [el, null]))
+  Object.fromEntries(formValues.infraestructura.map(el => [el, null]))
   )
 
   return <div className='grid grid-cols-1 max-w-2xl mx-auto mt-7'>

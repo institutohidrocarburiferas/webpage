@@ -1,36 +1,47 @@
-import type {FormValues} from './types'
+import type {FormValues} from '@apps/components/Consumos/types'
 
 import cn from 'classnames'
-import {MultiSelect} from '@mantine/core'
+import {MultiSelect, Select} from '@mantine/core'
 import {useForm} from '@mantine/form'
 
 interface Props {
   setValues: React.Dispatch<React.SetStateAction<FormValues | null>>
 }
 
-const validate = (value: string[]) => (value.length === 0 ? 'Escoja valores para calcular el consumo' : null)
+// Function to validate in useForm/validate (line 27)
+const validate = (value: string[] | string) => (value.length === 0 ? 'Escoja un valor para calcular el consumo' : null)
 
 const dataInfraestructura = ['Refrigerador', 'Licuadora', 'Microondas', 'Cocina de inducción', 'Lavadora de platos', 'Televisor a color', 'Tv LCD', 'PC Escritorio', 'Radio', 'Videojuegos', 'Aire Acondicionado', 'Ventilador', 'Ducha Eléctrica', 'Lavadora de ropa', 'Secadora de ropa', 'Focos', 'Laptop', 'Celular', 'Auto eléctrico', 'Motos eléctricas']
+
+const dataIntegrantes = Array(16).fill(0).map((el, i) => {
+  const persons = i + 1
+
+  if (persons === 1) return '1 persona'
+  else if (persons === 16) return 'Más de 16 personas'
+
+  return `${persons} personas`
+})
+
+// ['Tipo 1', 'Tipo 2', 'Tipo 3', 'Tipo 4', 'Tipo 5', 'Tipo 6', 'Tipo 7', 'Tipo 8', 'Tipo 9', 'Tipo 10', 'Tipo 11', 'Tipo 12', 'Tipo 13', 'Tipo 14', 'Tipo 15', 'Tipo 16']
 
 export const FormData: React.FC<Props> = ({setValues}) => {
   const form = useForm<FormValues>({
     initialValues: {
-      // ciudad: [],
-      area: [],
-      jefatura: [],
-      salario: [],
-      tipoHogar: [],
+      provincia: '',
+      area: '',
+      jefatura: '',
+      tipoHogar: '',
+      salario: '',
       infraestructura: dataInfraestructura
     },
     // functions will be used to validate values at corresponding key
     validate: {
-      // ciudad: (value) => validate(value),
+      provincia: (value) => validate(value),
       area: (value) => validate(value),
       jefatura: (value) => validate(value),
       salario: (value) => validate(value),
       tipoHogar: (value) => validate(value),
       // infraestructura: (value) => validate(value),
-
     },
   })
 
@@ -38,32 +49,29 @@ export const FormData: React.FC<Props> = ({setValues}) => {
     className={cn('flex flex-col gap-5 mt-5')}
 
     onSubmit={
-      form.onSubmit((values: FormValues) => (
-        setValues(values)
-      ))
+      form.onSubmit((values: FormValues) => {
+        const numberTipoHogar = Number(values.tipoHogar.slice(0, 2))
+        const newTipoHogar = isNaN(numberTipoHogar) ? '16' : String(numberTipoHogar)
+
+        setValues({
+          ...values,
+          tipoHogar: newTipoHogar
+        })
+      })
     }
   >
-    {/* <MultiSelect
-      clearable
+    <Select
       required
-      classNames={{
-        label: 'text-red'
-      }}
-      clearButtonLabel="Clear selection"
       data={['Pastaza']}
-      label="Ciudad"
-      placeholder="Escoge la ciudad del consumo..."
+      label="Provincia"
+      placeholder="Escoge la provincia del consumo..."
       transition="pop-top-left"
       transitionDuration={150}
       transitionTimingFunction="ease"
-      {...form.getInputProps('ciudad')}
-    // defaultValue={['react', 'next']}
-    // onChange={handleChange}
-    /> */}
-    <MultiSelect
-      clearable
+      {...form.getInputProps('provincia')}
+    />
+    <Select
       required
-      clearButtonLabel="Clear selection"
       data={['Urbano', 'Rural']}
       label="Área"
       placeholder="Escoge el área del consumo..."
@@ -71,46 +79,36 @@ export const FormData: React.FC<Props> = ({setValues}) => {
       transitionDuration={150}
       transitionTimingFunction="ease"
       {...form.getInputProps('area')}
-    // defaultValue={['react', 'next']}
     />
-    <MultiSelect
-      clearable
+    <Select
       required
-      clearButtonLabel="Clear selection"
       data={['Masculina', 'Femenina']}
-      label="Jefatura"
+      label="Jefatura del hogar"
       placeholder="Escoge la jefatura del consumo..."
       transition="pop-top-left"
       transitionDuration={150}
       transitionTimingFunction="ease"
       {...form.getInputProps('jefatura')}
-    // defaultValue={['react', 'next']}
     />
-    <MultiSelect
-      clearable
+    <Select
       required
-      clearButtonLabel="Clear selection"
-      data={['Tipo 1', 'Tipo 2', 'Tipo 3', 'Tipo 4', 'Tipo 5', 'Tipo 6', 'Tipo 7', 'Tipo 8', 'Tipo 9', 'Tipo 10', 'Tipo 11', 'Tipo 12', 'Tipo 13', 'Tipo 14', 'Tipo 15', 'Tipo 16']}
-      label="Tipo de hogar"
+      data={dataIntegrantes}
+      label="Integrantes del hogar"
       placeholder="Escoge el tipo de hogar del consumo..."
       transition="pop-top-left"
       transitionDuration={150}
       transitionTimingFunction="ease"
       {...form.getInputProps('tipoHogar')}
-    // defaultValue={['react', 'next']}
     />
-    <MultiSelect
-      clearable
+    <Select
       required
-      clearButtonLabel="Clear selection"
       data={['Menos de 400', '400 a 800', '800 a 1200', '1200 a 2400', 'Más de 2400']}
-      label="Rango salarial"
+      label="Ingresos por hogar"
       placeholder="Escoge el rango salarial del consumo..."
       transition="pop-top-left"
       transitionDuration={150}
       transitionTimingFunction="ease"
       {...form.getInputProps('salario')}
-    // defaultValue={['react', 'next']}
     />
     <MultiSelect
       clearable
@@ -122,7 +120,6 @@ export const FormData: React.FC<Props> = ({setValues}) => {
       transitionDuration={150}
       transitionTimingFunction="ease"
       {...form.getInputProps('infraestructura')}
-      // defaultValue={['Refrigerador', 'Licuadora']}
     />
     <button className='py-2 mt-2 font-bold tracking-wider text-black transition-colors border rounded-lg text-normal hover:text-white border-amber-700 hover:bg-amber-500 active:scale-95'>Calcular</button>
   </form>
