@@ -16,6 +16,7 @@ import {Slider} from '@components/Slider'
 import {Footer} from '@components/Layout/Footer'
 import {colaboradores} from '@constants/colaboradores-externos'
 import {getPostsData, PostsData} from '@utils/posts'
+import {Visitors} from '@components/Visitors'
 
 const eventDay = new Date(2022, 10, 23, 8)
 
@@ -117,6 +118,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
       </div>
     </main>
     <Footer image={pageData.image} />
+    <Visitors />
   </>
 }
 
