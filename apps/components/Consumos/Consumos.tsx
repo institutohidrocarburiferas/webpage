@@ -1,4 +1,4 @@
-import type {FormValues} from './types'
+import type {FormValues} from '@apps/components/Consumos/types'
 
 import {useState} from 'react'
 
@@ -7,7 +7,12 @@ import {Subtitle} from '@components/UI/Subtitle'
 import {FormData} from './FormData'
 import {Resultados} from './Resultados'
 
-export const Consumos: React.FC = () => {
+interface Props {
+  consumos: any
+  dataPorProvincia: any
+}
+
+export const Consumos: React.FC<Props> = ({consumos, dataPorProvincia}) => {
   const [values, setValues] = useState<FormValues | null>(null)
 
   return <div>
@@ -15,6 +20,13 @@ export const Consumos: React.FC = () => {
       <Subtitle>Seleccione el tipo de hogar para calcular el patrón de consumo:</Subtitle>
       <FormData setValues={setValues} />
     </div>
-    {values && <Resultados values={values} />}
+    {values
+      ? <Resultados
+            consumos={consumos}
+            dataPorProvincia={dataPorProvincia}
+            formValues={values}
+          />
+      : null
+    }
   </div>
 }

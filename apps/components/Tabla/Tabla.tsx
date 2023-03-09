@@ -1,4 +1,4 @@
-import type {Consumo} from './types'
+import type {Consumo} from '../Consumos/types'
 
 import {
   Column,
@@ -21,8 +21,6 @@ import {
   rankItem,
 } from '@tanstack/match-sorter-utils'
 import {useEffect, useMemo, useReducer, useState} from 'react'
-
-import {consumos} from './db-consumos'
 
 // import {makeData, Consumo} from './makeData'
 
@@ -48,7 +46,7 @@ const fuzzyFilter: FilterFn<any> = (row, columnId, value, addMeta) => {
   return itemRank.passed
 }
 
-export const Tabla: React.FC = () => {
+export const Tabla: React.FC<any> = ({consumos}) => {
   const rerender = useReducer(() => ({}), {})[1]
 
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>(
@@ -151,7 +149,7 @@ export const Tabla: React.FC = () => {
   return (
     <div className="p-2 ">
       <div className="h-2" />
-      <div className='grid overflow-x-scroll'>
+      <div className='grid overflow-x-scroll border p-2 rounded'>
         <table>
           <thead>
             {table.getHeaderGroups().map(headerGroup => (
@@ -267,6 +265,7 @@ export const Tabla: React.FC = () => {
           />
         </span> */}
         <select
+          className='border px-2 rounded py-1'
           value={table.getState().pagination.pageSize}
           onChange={e => {
             table.setPageSize(Number(e.target.value))
