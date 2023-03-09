@@ -1,7 +1,7 @@
 ---
 title: "IIH participation in the Renewable Energy Workshop in Ecuador, organized by SPE Ecuador Section"
 date: "2023-03-09"
-image: "/noticias/taller-spe.png"
+image: "/noticias/taller-spe.jpg"
 ---
 
 The Director of the Instituto de Investigaciones Hidrocarburíferas participated in a round table on renewable energies for Ecuador as part of the event "Workshop Renewable Energy the future for Ecuador" organized by the SPE Ecuador Section on Wednesday, March 01, 2023, with which the SPE marks the beginning of its Renewable Energy Program.

@@ -1,7 +1,7 @@
 ---
 title: "Participación del IIH en el Taller de Energías Renovables en Ecuador, organizado por la SPE Ecuador Section"
 date: "2023-03-09"
-image: "/noticias/taller-spe.png"
+image: "/noticias/taller-spe.jpg"
 ---
 
 El Director del Instituto de Investigaciones Hidrocarburíferas participó en una mesa redonda sobre energías renovables para el Ecuador como parte del evento “Taller Energía Renovable el futuro para Ecuador” organizado por el SPE Ecuador Section el miércoles 01 de marzo de 2023, con el cual el SPE marca el inicio de su Programa de Energía Renovable. 
