@@ -9,6 +9,7 @@ import {useTranslation} from 'next-i18next'
 import {Content} from '@components/Content'
 import {Posts} from '@components/Posts'
 import {getPostsData} from '@utils/posts'
+import {appsOfProjects} from '@constants/appsOfProjects'
 
 const pageData = {
   image: '/prueba.png',
@@ -16,11 +17,13 @@ const pageData = {
 }
 
 interface Props {
-  allPostsData: PostsData[]
+  articlesOfProjects: PostsData[]
 }
 
-export const Page: NextPage<Props> = ({allPostsData}) => {
+export const Page: NextPage<Props> = ({articlesOfProjects}) => {
   const {t} = useTranslation(['ProjectsPage'])
+
+  const allProjects = [...appsOfProjects, ...articlesOfProjects,]
 
   return (
     <Content
@@ -31,10 +34,11 @@ export const Page: NextPage<Props> = ({allPostsData}) => {
       <main>
         <section className='container flex flex-col px-10 mx-auto justify-evenly lg:flex-row'>
           <Posts
-            items={allPostsData}
+            items={allProjects}
             title={null}
             urlPath={pageData.mainURL}
           />
+
         </section>
       </main>
     </Content>
@@ -43,12 +47,12 @@ export const Page: NextPage<Props> = ({allPostsData}) => {
 
 export const getStaticProps: GetStaticProps = async ({locale}) => {
   const dataDirectory = path.join(process.cwd(), 'articles', pageData.mainURL, locale!)
-  const allPostsData = getPostsData(dataDirectory)
+  const articlesOfProjects = getPostsData(dataDirectory)
   const i18nConf = await serverSideTranslations(locale!)
 
   return {
     props: {
-      allPostsData, ...i18nConf,
+      articlesOfProjects, ...i18nConf,
     }
   }
 }

@@ -15,7 +15,8 @@ export interface PostsData {
   id: string,
   title: string,
   date: string,
-  image: string
+  image: string,
+  icon: string,
 }
 
 export interface PostData extends PostsData {
