@@ -13,8 +13,8 @@ import {getAllPostIds, getPostData} from '@utils/posts'
 import styles from '@styles/article.module.css'
 
 const pageData = {
-  mainURL: '/noticias',
-  // contentTitle: 'Noticias recientes',
+  mainURL: '/eventos',
+  // contentTitle: 'Eventos recientes',
 
 }
 
@@ -24,7 +24,7 @@ interface Props{
 
 const Page: NextPage<Props> = ({noticeData}) => {
   const {locale} = useRouter()
-  const returnText = locale === 'es' ? 'Otras Noticias' : 'Other News'
+  const returnText = locale === 'es' ? 'Otros Eventos' : 'Other Events'
 
   return (
     <Content
