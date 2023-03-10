@@ -6,6 +6,8 @@ import {GetStaticProps, NextPage} from 'next'
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 import {useTranslation} from 'next-i18next'
 
+import Link from 'next/link'
+
 import {Content} from '@components/Content'
 import {NoticesList} from '@components/NoticesList'
 import {getPostsData} from '@utils/posts'
