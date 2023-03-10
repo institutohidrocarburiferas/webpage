@@ -6,6 +6,9 @@ import cn from 'classnames'
 
 import {navItems} from '@constants/navItems'
 
+// TODO: Arreglar esto para la página evento Perspectivas
+export const exception = '/evento'
+
 export function Navbar () {
   const [collapse, setCollapse] = useState('hidden')
 
@@ -18,8 +21,8 @@ export function Navbar () {
   }
 
   return <nav className={cn('w-full h-24 bg-white shadow dark:bg-gray-900 shadow-gray-400 top-0 z-10',
-    {fixed: pathname === '/evento'},
-    {sticky: pathname !== '/evento'}
+    {fixed: pathname === exception},
+    {sticky: pathname !== exception}
   )}>
     <div
       className="container bg-white dark:bg-gray-900 px-2.5 flex flex-wrap items-center  justify-between w-full mx-auto  z-10 lg:flex-nowrap">

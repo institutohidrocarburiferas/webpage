@@ -1,21 +1,22 @@
-import type { GetStaticProps, NextPage } from 'next'
+import type {GetStaticProps, NextPage} from 'next'
 
 import path from 'node:path'
 
 import Head from 'next/head'
 import Link from 'next/link'
-import { serverSideTranslations } from 'next-i18next/serverSideTranslations'
-import { useTranslation } from 'next-i18next'
+import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
+import {useTranslation} from 'next-i18next'
 
-import { Countdown } from '@components/Countdown'
-import { RegisterButton } from '@components/RegisterButton'
-import { HeroSection } from '@components/HeroSection'
-import { Participants } from '@components/Participants'
-import { Separator } from '@components/Layout/Separator'
-import { Slider } from '@components/Slider'
-import { Footer } from '@components/Layout/Footer'
-import { colaboradores } from '@constants/colaboradores-externos'
-import { getPostsData, PostsData } from '@utils/posts'
+import {exception} from '@components/Navbar'
+import {Countdown} from '@components/Countdown'
+import {RegisterButton} from '@components/RegisterButton'
+import {HeroSection} from '@components/HeroSection'
+import {Participants} from '@components/Participants'
+import {Separator} from '@components/Layout/Separator'
+import {Slider} from '@components/Slider'
+import {Footer} from '@components/Layout/Footer'
+import {colaboradores} from '@constants/colaboradores-externos'
+import {getPostsData, PostsData} from '@utils/posts'
 
 const eventDay = new Date(2022, 10, 23, 8)
 
@@ -30,11 +31,11 @@ interface Props {
   allPostsData: PostsData[]
 }
 
-const Home: NextPage<Props> = ({ allPostsData }) => {
-  const { t } = useTranslation(['Home'])
+const Home: NextPage<Props> = ({allPostsData}) => {
+  const {t} = useTranslation(['Home'])
   const heroContent = {
     title: t('HeroTitle'),
-    //image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80',
+    // image: 'https://images.unsplash.com/photo-1451187580459-43490279c0fa?ixlib=rb-1.2.1&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1080&q=80',
     image: '/background-main.jpg',
     height: '79vh',
     text: t('HeroText')
@@ -117,12 +118,13 @@ const Home: NextPage<Props> = ({ allPostsData }) => {
 
           <div className='flex flex-col items-center w-full gap-5 lg:flex-row'>
             <div className='grid grid-cols-2 items-stretch w-full md:items-center lg:items-stretch justify-evenly md:justify-center lg:justify-start gap-5 md:gap-14'>
-              <Link href="/eventos">
+              <Link href={exception}>
                 <a className='flex justify-center text-center items-center w-auto px-2 py-2 text-xs font-semibold text-white bg-transparent border border-white rounded md:px-6 sm:text-xl hover:bg-black/50 md:text-2xl lg:text-xl hover:scale-105'
                 >
                   {t('EventInfoText')}
                 </a>
               </Link>
+              {/* Nombre de componente deprecado */}
               <RegisterButton />
             </div>
             <Countdown eventDate={eventDay} />
@@ -149,7 +151,7 @@ const Home: NextPage<Props> = ({ allPostsData }) => {
   </>
 }
 
-export const getStaticProps: GetStaticProps = async ({ locale }) => {
+export const getStaticProps: GetStaticProps = async ({locale}) => {
   const dataDirectory = path.join(process.cwd(), 'articles', pageData.sliderURL, locale!)
   const allPostsData = getPostsData(dataDirectory)
   const i18nConf = await serverSideTranslations(locale!)

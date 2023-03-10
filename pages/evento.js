@@ -1,3 +1,7 @@
+/*
+  Importante: cambiar el nombre a la variable exception en @components/Navbar.js
+  para que se apliquen estilos a estos. (Si es posible arreglarlos)
+*/
 import Head from 'next/head'
 import Image from 'next/image'
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
