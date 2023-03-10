@@ -1,5 +1,5 @@
 ---
-title: "Seminario Internacional de Innovación y Retos Tecnológicos del Sector Energético en la Cuarta Revolución Industrial"
+title: "International Seminar on Innovation and Technological Challenges of the Energy Sector in the Fourth Industrial Revolution"
 date: "2019-12-02"
 image: "/eventos/seminario-internacional-cuarta-revolucion-industrial/afiche.jpg"
 ---
