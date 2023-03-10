@@ -38,11 +38,6 @@ export const Page: NextPage<Props> = ({allNotices}) => {
               title={null}
               urlPath={pageData.mainURL}
             />
-            <Link href="/eventos">
-              <a className='flex justify-center text-center items-center w-auto px-2 py-2 text-xs font-semibold text-white bg-transparent border border-white rounded md:px-6 sm:text-xl hover:bg-black/50 md:text-2xl lg:text-xl hover:scale-105'>
-                  {t('EventInfoText')}
-              </a>
-            </Link>
           </div>
         </section>
       </main>
