@@ -12,7 +12,7 @@ import {getPostsData} from '@utils/posts'
 
 const pageData = {
   image: '/background-footer.jpg',
-  mainURL: '/noticias',
+  mainURL: '/eventos',
 }
 
 interface Props {
