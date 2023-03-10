@@ -28,7 +28,7 @@ export const navItems = [
   {
     name: 'Eventos',
     nameEn: 'Events',
-    url: '/evento',
+    url: '/eventos',
   },
   {
     name: 'Noticias',

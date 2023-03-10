@@ -20,7 +20,7 @@ interface Props {
 }
 
 export const Page: NextPage<Props> = ({allNotices}) => {
-  const {t} = useTranslation(['NewsPage'])
+  const {t} = useTranslation(['EventsPage'])
 
   return (
     <Content
