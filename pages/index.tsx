@@ -59,7 +59,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
       <HeroSection
         height='70vh'
         image='/images/Home/seccion_pastaza.jpg'
-        justifyContent="center"
+        justifyContent="left"
         text={t('ConsumosPastazaSubtitle')}
         title={t('ConsumosPastazaTitle')}
       >
