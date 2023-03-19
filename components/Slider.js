@@ -88,17 +88,10 @@ function Card ({id, title, image, date, urlPath}) {
 
   return (
     <Link href={`${urlPath}/${id}`}>
-      <a>
-        <Paper
-          className={classes.card}
-          p="xl"
-          radius="md"
-          sx={{backgroundImage: `url(${image})`}}
-        />
-        <Title className={classes.title} order={3}>
-          {title}
-        </Title>
-      </a>
+      <Paper className={classes.card} p="xl" radius="md" sx={{backgroundImage: `url(${image})`}} />
+      <Title className={classes.title} order={3}>
+        {title}
+      </Title>
     </Link>
   )
 }

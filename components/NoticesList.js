@@ -1,7 +1,8 @@
 import Link from 'next/link'
+import {createStyles, Paper, Title} from '@mantine/core'
+import {useEffect, useRef, useState} from 'react'
+
 import Date from '@components/UI/Date'
-import { createStyles, Paper, Title } from '@mantine/core'
-import { useEffect, useRef, useState } from 'react'
 
 const useStyles = createStyles((theme) => ({
   card: {
@@ -32,21 +33,20 @@ const useStyles = createStyles((theme) => ({
   },
 }))
 
-function Card ({ title, image, date, url }) {
-  const { classes } = useStyles()
+function Card ({title, image, date, url}) {
+  const {classes} = useStyles()
 
   return (
-    <Link href={url} >
-      <a className='animate-fadeSlowIn'>
+    <Link className='animate-fadeSlowIn' href={url}>
         <Paper
-          shadow="md"
+          className={classes.card}
           p="xl"
           radius="md"
-          sx={{ backgroundImage: `linear-gradient(270deg, rgba(130, 201, 30, 0) 0%, #062343 100%), url(${image})` }}
-          className={classes.card}
+          shadow="md"
+          sx={{backgroundImage: `linear-gradient(270deg, rgba(130, 201, 30, 0) 0%, #062343 100%), url(${image})`}}
         >
           <div>
-            <Title order={3} className={classes.title}>
+            <Title className={classes.title} order={3}>
             <div className='text-blue-300'>
               {title}
 
@@ -57,21 +57,20 @@ function Card ({ title, image, date, url }) {
               </div>
           </div>
         </Paper>
-      </a>
     </Link>
 
   )
 }
 
-export function NoticesList ({ items, title, urlPath }) {
+export function NoticesList ({items, title, urlPath}) {
   const [posts, setPosts] = useState([items[0]])
   const observerRef = useRef(null)
-  const postsRendered = posts.map(({ id, date, title, image }) => (
+  const postsRendered = posts.map(({id, date, title, image}) => (
     <Card
       key={title}
-      title={title}
-      image={image}
       date={date}
+      image={image}
+      title={title}
       url={`${urlPath}/${id}`}
     />
   ))
@@ -79,6 +78,7 @@ export function NoticesList ({ items, title, urlPath }) {
   useEffect(function () {
     const onChange = (entries, observer) => {
       const el = entries[0]
+
       if (el.isIntersecting && posts.length < items.length) {
         setPosts(posts.concat(items[posts.length]))
         observer.disconnect()
@@ -101,6 +101,6 @@ export function NoticesList ({ items, title, urlPath }) {
     <div className='flex flex-col gap-4'>
       {postsRendered}
     </div>
-    <div ref={observerRef} className="mb-24" ></div>
+    <div ref={observerRef} className="mb-24" />
   </section>
 }

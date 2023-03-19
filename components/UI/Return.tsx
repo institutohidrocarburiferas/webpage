@@ -7,8 +7,9 @@ interface Props {
 
 export const Return: React.FC<Props> = ({text, url}) => {
   return <Link
+    className='block w-full text-blue-500 border-t-2 hover:text-blue-700'
     href={url}
   >
-    <a className='block w-full text-blue-500 border-t-2 hover:text-blue-700'>{text}</a>
+    {text}
   </Link>
 }

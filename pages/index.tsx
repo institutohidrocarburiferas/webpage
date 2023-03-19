@@ -65,17 +65,17 @@ const Home: NextPage<Props> = ({allPostsData}) => {
       >
         <section className='grid lg:grid-cols-2'>
           <div className='mt-10 grid grid-cols-2 items-stretch w-full md:items-center lg:items-stretch justify-evenly md:justify-center lg:justify-start gap-5 md:gap-14'>
-            <Link href="/proyectos-investigacion/consumos-pastaza">
-              <a className='flex max-w-sm items-center justify-center text-center py-1 w-auto px-2 text-xs font-semibold text-black rounded md:px-6 md:py-2 sm:text-lg md:text-xl hover:scale-105 bg-gradient-to-tr hover:from-amber-400 scroll-smooth hover:to-white from-amber-500 to-white'
-              >
-                {t('PastazaLinkPrimary')}
-              </a>
+            <Link
+              className='flex max-w-sm items-center justify-center text-center py-1 w-auto px-2 text-xs font-semibold text-black rounded md:px-6 md:py-2 sm:text-lg md:text-xl hover:scale-105 bg-gradient-to-tr hover:from-amber-400 scroll-smooth hover:to-white from-amber-500 to-white'
+              href="/proyectos-investigacion/consumos-pastaza"
+            >
+              {t('PastazaLinkPrimary')}
             </Link>
-            <Link href="/proyectos-investigacion/">
-              <a className='flex justify-center text-center items-center w-auto px-2 py-2 text-xs font-semibold text-white bg-transparent border border-white rounded md:px-6 sm:text-xl hover:bg-black/50 md:text-2xl lg:text-xl hover:scale-105'
-              >
-                {t('PastazaLinkSecondary')}
-              </a>
+            <Link
+              className='flex justify-center text-center items-center w-auto px-2 py-2 text-xs font-semibold text-white bg-transparent border border-white rounded md:px-6 sm:text-xl hover:bg-black/50 md:text-2xl lg:text-xl hover:scale-105'
+              href="/proyectos-investigacion/"
+            >
+              {t('PastazaLinkSecondary')}
             </Link>
 
           </div>
@@ -118,11 +118,8 @@ const Home: NextPage<Props> = ({allPostsData}) => {
 
           <div className='flex flex-col items-center w-full gap-5 lg:flex-row'>
             <div className='grid grid-cols-2 items-stretch w-full md:items-center lg:items-stretch justify-evenly md:justify-center lg:justify-start gap-5 md:gap-14'>
-              <Link href={exception}>
-                <a className='flex justify-center text-center items-center w-auto px-2 py-2 text-xs font-semibold text-white bg-transparent border border-white rounded md:px-6 sm:text-xl hover:bg-black/50 md:text-2xl lg:text-xl hover:scale-105'
-                >
+              <Link className='flex justify-center text-center items-center w-auto px-2 py-2 text-xs font-semibold text-white bg-transparent border border-white rounded md:px-6 sm:text-xl hover:bg-black/50 md:text-2xl lg:text-xl hover:scale-105' href={exception}>
                   {t('EventInfoText')}
-                </a>
               </Link>
               {/* Nombre de componente deprecado */}
               <RegisterButton />
