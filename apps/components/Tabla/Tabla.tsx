@@ -1,5 +1,3 @@
-import type {Consumo} from '../Consumos/types'
-
 import {
   Column,
   Table,
@@ -20,7 +18,7 @@ import {
   RankingInfo,
   rankItem,
 } from '@tanstack/match-sorter-utils'
-import {useEffect, useMemo, useReducer, useState} from 'react'
+import {useEffect, useMemo, useState} from 'react'
 
 // import {makeData, Consumo} from './makeData'
 
@@ -46,75 +44,40 @@ const fuzzyFilter: FilterFn<any> = (row, columnId, value, addMeta) => {
   return itemRank.passed
 }
 
-export const Tabla: React.FC<any> = ({consumos}) => {
-  const rerender = useReducer(() => ({}), {})[1]
+interface Props {
+  consumos: Record<string, number | string>[]
+  labels: {
+    label: string
+    title: string
+  }[]
+}
+
+export const Tabla: React.FC<any> = ({consumos, labels}: Props) => {
+  // const rerender = useReducer(() => ({}), {})[1]
 
   const [columnFilters, setColumnFilters] = useState<ColumnFiltersState>(
     []
   )
   const [globalFilter, setGlobalFilter] = useState('')
 
-  const columns = useMemo<ColumnDef<Consumo, any>[]>(
-    () => [
+  const columns = useMemo<ColumnDef<typeof consumos, any>[]>(
+    () => labels.map(({label, title}) => (
       {
-        accessorFn: row => row['Región'],
-        id: 'region',
-        cell: info => info.getValue(),
-        header: () => <span>Región</span>,
+        accessorFn: row => row[label],
+        id: label,
+        cell: info => typeof info.getValue() === 'number' ? info.getValue().toFixed(0) : info.getValue(),
+        header: () => <span>{title}</span>,
         footer: props => props.column.id,
-      },
-      {
-        accessorFn: row => row.Provincia,
-        id: 'provincia',
-        cell: info => info.getValue(),
-        header: () => <span>Provincia</span>,
-        footer: props => props.column.id,
-      },
-      {
-        accessorFn: row => row['Área'],
-        id: 'area',
-        cell: info => info.getValue(),
-        header: () => <span>Área</span>,
-        footer: props => props.column.id,
-      },
-      {
-        accessorFn: row => row.Jefatura,
-        id: 'jefatura',
-        cell: info => info.getValue(),
-        header: () => <span>Jefatura</span>,
-        footer: props => props.column.id,
-      },
-      {
-        accessorFn: row => row['Tipo de Hogar'],
-        id: 'tipoHogar',
-        cell: info => info.getValue(),
-        header: () => <span>Tipo de Hogar</span>,
-        footer: props => props.column.id,
-      },
-      {
-        accessorFn: row => row.Ingreso,
-        id: 'ingreso',
-        cell: info => info.getValue(),
-        header: () => <span>Rango salarial</span>,
-        footer: props => props.column.id,
-      },
-      {
-        accessorFn: row => row['Consumo Planilla'],
-        id: 'patron',
-        cell: info => info.getValue().toFixed(2),
-        header: () => <span>Patrón de Consumo</span>,
-        footer: props => props.column.id,
-      },
-
-    ]
+      }
+    ))
     , []
   )
 
-  const [data, setData] = useState<Consumo[]>(consumos)
-  const refreshData = () => setData(consumos)
+  // const [data] = useState<typeof consumos>(consumos)
+  // const refreshData = () => setData(consumos => consumos)
 
   const table = useReactTable({
-    data,
+    data: consumos,
     columns,
     filterFns: {
       fuzzy: fuzzyFilter,
@@ -144,7 +107,7 @@ export const Tabla: React.FC<any> = ({consumos}) => {
         table.setSorting([{id: 'fullName', desc: false}])
       }
     }
-  }, [table.getState().columnFilters[0]?.id])
+  }, [table.getState().columnFilters[0]?.id, table])
 
   return (
     <div className="p-2 ">
@@ -302,13 +265,14 @@ function Filter ({
     .flatRows[0]?.getValue(column.id)
 
   const columnFilterValue = column.getFilterValue()
+  const columnFacetedUniqueValues = column.getFacetedUniqueValues()
 
   const sortedUniqueValues = useMemo(
     () =>
       typeof firstValue === 'number'
         ? []
-        : Array.from(column.getFacetedUniqueValues().keys()).sort(),
-    [column.getFacetedUniqueValues()]
+        : Array.from(columnFacetedUniqueValues.keys()).sort(),
+    [columnFacetedUniqueValues, firstValue]
   )
 
   return typeof firstValue === 'number'
@@ -317,11 +281,11 @@ function Filter ({
       <div className="flex space-x-2">
         <DebouncedInput
           className="w-24 border shadow rounded"
-          max={Number(column.getFacetedMinMaxValues()?.[1] ?? '')}
-          min={Number(column.getFacetedMinMaxValues()?.[0] ?? '')}
+          max={Number(column.getFacetedMinMaxValues()?.[1] ?? '').toFixed(0)}
+          min={Number(column.getFacetedMinMaxValues()?.[0] ?? '').toFixed(0)}
           placeholder={`Min ${
             column.getFacetedMinMaxValues()?.[0]
-              ? `(${column.getFacetedMinMaxValues()?.[0]})`
+              ? `(${Number(column.getFacetedMinMaxValues()?.[0]).toFixed(0)})`
               : ''
           }`}
           type="number"
@@ -332,11 +296,11 @@ function Filter ({
         />
         <DebouncedInput
           className="w-24 border shadow rounded"
-          max={Number(column.getFacetedMinMaxValues()?.[1] ?? '')}
-          min={Number(column.getFacetedMinMaxValues()?.[0] ?? '')}
+          max={Number(column.getFacetedMinMaxValues()?.[1] ?? '').toFixed(0)}
+          min={Number(column.getFacetedMinMaxValues()?.[0] ?? '').toFixed(0)}
           placeholder={`Max ${
             column.getFacetedMinMaxValues()?.[1]
-              ? `(${column.getFacetedMinMaxValues()?.[1]})`
+              ? `(${Number(column.getFacetedMinMaxValues()?.[1]).toFixed(0)})`
               : ''
           }`}
           type="number"
@@ -392,7 +356,7 @@ function DebouncedInput ({
     }, debounce)
 
     return () => clearTimeout(timeout)
-  }, [value])
+  }, [value, debounce, onChange])
 
   return (
     <input {...props} value={value} onChange={e => setValue(e.target.value)} />

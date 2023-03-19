@@ -17,7 +17,18 @@ export function ConsumosPastaza () {
     },
     {
       title: 'Tabla',
-      Component: <Tabla consumos={consumosPastaza}/>
+      Component: <Tabla
+        consumos={consumosPastaza}
+        labels={[
+          {label: 'Región', title: 'Región'},
+          {label: 'Provincia', title: 'Provincia'},
+          {label: 'Área', title: 'Área'},
+          {label: 'Jefatura', title: 'Jefatura'},
+          {label: 'Tipo de Hogar', title: 'Integrantes'},
+          {label: 'Ingreso', title: 'Rango salarial'},
+          {label: 'Consumo Planilla', title: 'Patrón de Consumo'},
+        ]}
+      />
     },
 
   ]

@@ -94,7 +94,7 @@ export const FormData: React.FC<Props> = ({setValues}) => {
       required
       data={dataIntegrantes}
       label="Integrantes del hogar"
-      placeholder="Escoge el tipo de hogar del consumo..."
+      placeholder="Escoge la cantidad de integrantes en el hogar..."
       transition="pop-top-left"
       transitionDuration={150}
       transitionTimingFunction="ease"
