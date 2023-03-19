@@ -61,6 +61,7 @@ export const Tabla: React.FC<any> = ({consumos, labels}: Props) => {
   const [globalFilter, setGlobalFilter] = useState('')
 
   const columns = useMemo<ColumnDef<typeof consumos, any>[]>(
+    // Each column config
     () => labels.map(({label, title}) => (
       {
         accessorFn: row => row[label],
@@ -70,7 +71,7 @@ export const Tabla: React.FC<any> = ({consumos, labels}: Props) => {
         footer: props => props.column.id,
       }
     ))
-    , []
+    , [labels]
   )
 
   // const [data] = useState<typeof consumos>(consumos)
@@ -107,7 +108,7 @@ export const Tabla: React.FC<any> = ({consumos, labels}: Props) => {
         table.setSorting([{id: 'fullName', desc: false}])
       }
     }
-  }, [table.getState().columnFilters[0]?.id, table])
+  }, [table.getState().columnFilters[0]?.id])
 
   return (
     <div className="p-2 ">
@@ -265,14 +266,13 @@ function Filter ({
     .flatRows[0]?.getValue(column.id)
 
   const columnFilterValue = column.getFilterValue()
-  const columnFacetedUniqueValues = column.getFacetedUniqueValues()
 
   const sortedUniqueValues = useMemo(
     () =>
       typeof firstValue === 'number'
         ? []
-        : Array.from(columnFacetedUniqueValues.keys()).sort(),
-    [columnFacetedUniqueValues, firstValue]
+        : Array.from(column.getFacetedUniqueValues().keys()).sort(),
+    [column.getFacetedUniqueValues()]
   )
 
   return typeof firstValue === 'number'
@@ -356,7 +356,7 @@ function DebouncedInput ({
     }, debounce)
 
     return () => clearTimeout(timeout)
-  }, [value, debounce, onChange])
+  }, [value])
 
   return (
     <input {...props} value={value} onChange={e => setValue(e.target.value)} />
