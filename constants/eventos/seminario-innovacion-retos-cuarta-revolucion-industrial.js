@@ -151,7 +151,7 @@ export const sideItems = [
 export const sponsors = [
   {
     title: 'Logo del Ministerio de Energía y Minas',
-    image: '/eventos/foro-internacional-prospectiva-energetica/ministerio-energia-minas.jpg',
+    image: '/eventos/seminario-internacional-cuarta-revolucion-industrial/logominener.png',
   },
 ]
 
@@ -162,11 +162,11 @@ export const organizers = [
   },
   {
     title: 'Logo de la FIGEMPA',
-    image: '${path}/sponsors/figempa.png',
+    image: '/logofigempa.jpg',
   },
   {
     title: 'Logo de Ingeniería en Petróleos de Universidad Central del Ecuador',
-    image: '${path}/sponsors/petroleos-uce.png',
+    image: '/logoiih.png',
   },
 ]
 
