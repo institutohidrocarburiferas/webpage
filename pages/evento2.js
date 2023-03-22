@@ -30,14 +30,14 @@ const pageData = {
   title: 'Seminario Internacional de Innovación y Retos Tecnológicos del Sector Energético en la Cuarta Revolución Industrial',
   description: 'Seminario Internacional de Innovación y Retos Tecnológicos del Sector Energético en la Cuarta Revolución Industrial',
   image: '/prueba.png',
-  eventDay: new Date(2022, 10, 23, 8),
+  eventDay: new Date(2019, 11, 2, 8),
 }
 const heroContent = {
   title: 'Seminario Internacional de Innovación y Retos Tecnológicos del Sector Energético en la Cuarta Revolución Industrial',
   height: '87vh',
   image:
     '"https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80"',
-  text: 'miércoles, 23 de noviembre del 2022',
+  text: '2 y 3 de diciembre del 2019',
 }
 
 function ProgramItem ({time, label, expositor, institution}) {
@@ -158,12 +158,12 @@ export default function Evento ({photos}) {
             <span>Presencial - Cupos limitados</span>
           </section>
           {/* Registro y cuenta regresiva */}
-          <section className="flex flex-col gap-5 mt-5">
+          {/*<section className="flex flex-col gap-5 mt-5">
             <div className="flex justify-center w-full">
               <RegisterButton />
             </div>
             <Countdown eventDate={pageData.eventDay} />
-          </section>
+            </section>*/}
         </HeroSection>
 
         <div className="grid w-full grid-cols-1 justify-items-center">
@@ -294,41 +294,45 @@ export default function Evento ({photos}) {
           <Separator id="patrocinadores" />
           <Participants data={sponsors} title="Instituciones Participantes y Patrocinadores" />
 
-          {/* ¿Qué busca el evento? */}
+          {/* Objetivos */}
           <Separator id="que-busca-el-evento" />
           <section className="flex flex-col items-center gap-5 lg:flex-row lg:container">
             <section className="flex flex-col px-5 md:pl-24 lg:w-1/2">
-              <Title>¿Qué busca el evento?</Title>
+              <Title>Objetivos</Title>
               <Text>
-                Generar un espacio de discusión entre instituciones de gobierno, empresas, academia
-                y sociedad civil, sobre la necesidad de realizar estudios prospectivos que vinculen
-                el aprovechamiento de los recursos energéticos y con ello fortalecer la
-                planificación energética del Ecuador con fines de seguridad y soberanía.
+               Objetivo General
+              </Text>
+              <Text>  
+                Identificar las oportunidades de innovación y retos tecnológicos que trae consigo la
+                4ta. revolución industrial en el sector energético, a fin de construir una agenda de trabajo
+                entre actores del sector público, empresas privadas y la academia, abordando de manera oportuna
+                los desafíos del Ecuador en un contexto regional y global.
+              </Text>
+              <Text>
+               Objetivos Específicos
               </Text>
               <ul className="flex flex-col gap-3 list-disc pl-7">
                 <li>
                   <Text>
-                    Entender sobre los problemas y retos que atañe a los sistemas energéticos a
-                    nivel global, regional y local, con fines de seguridad y soberanía
+                    Ilustrar sobre los principios tecnológicos, económicos y políticos que trae consigo la
+                    4ta. revolución industrial.
                   </Text>
                 </li>
                 <li>
                   <Text>
-                    Conocer sobre varias herramientas y modelos que permiten desarrollar escenarios
-                    de prospectiva energética para el fortalecimiento de las políticas públicas
+                    Discutir sobre la gestión de los sistemas de energía en un contexto global, regional y nacional.
                   </Text>
                 </li>
                 <li>
                   <Text>
-                    Identificar los beneficios de incorporar la transformación del mercado hacia
-                    equipos energéticamente eficientes a través de escenarios prospectivos
+                    Conocer sobre los avances, requerimientos y oportunidades en investigación, desarrollo e innovación
+                    I+D+I del sector energético del Ecuador.
                   </Text>
                 </li>
                 <li>
                   <Text>
-                    Conocer sobre experiencias internacionales, investigaciones y trabajos que
-                    pueden servir para el fortalecimiento de la planificación energética al mediano
-                    y largo plazo del sistema energético del Ecuador
+                  Proponer una acción conjunta entre actores públicos, privado y academia para abordar los retos
+                  del sector energético en la 4ta. revolución industrial.
                   </Text>
                 </li>
               </ul>
@@ -354,13 +358,13 @@ export default function Evento ({photos}) {
             </section>
           </section>
 
-          {/* Ponentes */}
-          <Separator id="ponentes" />
+          {/* Ponentes */}          
+          {/* <Separator id="ponentes" />
           <section className="flex flex-col items-center gap-5 p-5 lg:container md:pl-24">
             <Title>Ponentes</Title>
             <div className="flex flex-wrap justify-center gap-10 md:flex-row ">
               {/* <div className="grid grid-cols-1 gap-5 place-items-center md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-x-20"> */}
-              {speakers.map(({name, image, role, institute}) => (
+          {/*    {speakers.map(({name, image, role, institute}) => (
                 <SpeakerCard
                   key={name}
                   image={image}
@@ -370,14 +374,15 @@ export default function Evento ({photos}) {
                 />
               ))}
             </div>
-          </section>
+          </section>*/}          
 
           {/* Exposiciones */}
+          {/*
           <Separator id="expositions" />
           <div className="mx-2">
             <Title>Ponencias presentadas en el foro</Title>
           </div>
-          <Expositions items={expositions} />
+              <Expositions items={expositions} /> */}
 
           {/* Registro */}
           {/* <Separator id="registro" />

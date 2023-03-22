@@ -75,8 +75,8 @@ export const sideItems = [
     </svg>
   },
   {
-    label: '¿Qué busca el evento?',
-    url: '#que-busca-el-evento',
+    label: 'Objetivos',
+    url: '#objetivos',
     image: <svg className="icon icon-tabler icon-tabler-link" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none" stroke="none" />
       <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
@@ -84,29 +84,30 @@ export const sideItems = [
     </svg>
 
   },
-  {
-    label: 'Ponentes',
-    url: '#ponentes',
-    image: <svg className="icon icon-tabler icon-tabler-speakerphone" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-      <path d="M18 8a3 3 0 0 1 0 6" />
-      <path d="M10 8v11a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-5" />
-      <path d="M12 8h0l4.524 -3.77a0.9 .9 0 0 1 1.476 .692v12.156a0.9 .9 0 0 1 -1.476 .692l-4.524 -3.77h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h8" />
-    </svg>
 
-  },
-  {
-    label: 'Descarga las ponencias',
-    url: '#expositions',
-    image: <svg className="icon icon-tabler icon-tabler-file-search" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-      <path d="M14 3v4a1 1 0 0 0 1 1h4" />
-      <path d="M12 21h-5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v4.5" />
-      <circle cx="16.5" cy="17.5" r="2.5" />
-      <line x1="18.5" x2="21" y1="19.5" y2="22" />
-    </svg>
+  // {
+  //   label: 'Ponentes',
+  //   url: '#ponentes',
+  //   image: <svg className="icon icon-tabler icon-tabler-speakerphone" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  //     <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+  //     <path d="M18 8a3 3 0 0 1 0 6" />
+  //     <path d="M10 8v11a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-5" />
+  //     <path d="M12 8h0l4.524 -3.77a0.9 .9 0 0 1 1.476 .692v12.156a0.9 .9 0 0 1 -1.476 .692l-4.524 -3.77h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h8" />
+  //   </svg>
 
-  },
+  // },
+  // {
+  //   label: 'Descarga las ponencias',
+  //   url: '#expositions',
+  //   image: <svg className="icon icon-tabler icon-tabler-file-search" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  //     <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+  //     <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+  //     <path d="M12 21h-5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v4.5" />
+  //     <circle cx="16.5" cy="17.5" r="2.5" />
+  //     <line x1="18.5" x2="21" y1="19.5" y2="22" />
+  //   </svg>
+
+  // },
   // {
   //   label: 'Regístrate',
   //   url: '#registro',
