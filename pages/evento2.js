@@ -192,6 +192,8 @@ export default function Evento ({photos}) {
               Gerente de SERTECPET, es el mercado el que impulsa la transformación digital de acuerdo a las necesidades
               y exigencias de consumidores, por ello, es importante, generar una cultura tecnológica en la sociedad. 
               </Text>
+              <p></p>
+              <h4><a href='https://uceedu-my.sharepoint.com/:v:/g/personal/gbyanez_uce_edu_ec/EYrhBfrjuBBIiKX14TYdtUkBkVEuiJ9NiKQgV2He_s3hWw?e=v3tl1n' target='_blank'>Video del evento</a></h4>
             </section>
             <section className="w-2/3 md:w-1/2">
               <svg
