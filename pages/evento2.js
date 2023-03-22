@@ -33,8 +33,8 @@ const pageData = {
   eventDay: new Date(2019, 11, 2, 8),
 }
 const heroContent = {
-  title: 'Seminario Internacional de Innovación y Retos Tecnológicos del Sector Energético en la Cuarta Revolución Industrial',
-  height: '87vh',
+  title: 'I Seminario Internacional de Innovación y Retos Tecnológicos del Sector Energético en la 4ta Revolución Industrial',
+  height: '50vh',
   image:
     '"https://images.unsplash.com/photo-1496568816309-51d7c20e3b21?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=1031&q=80"',
   text: '2 y 3 de diciembre del 2019',
@@ -292,7 +292,7 @@ export default function Evento ({photos}) {
 
           {/* Patrocinadores */}
           <Separator id="patrocinadores" />
-          <Participants data={sponsors} title="Instituciones Participantes y Patrocinadores" />
+          <Participants data={sponsors} title="Auspiciado por" />
 
           {/* Objetivos */}
           <Separator id="que-busca-el-evento" />

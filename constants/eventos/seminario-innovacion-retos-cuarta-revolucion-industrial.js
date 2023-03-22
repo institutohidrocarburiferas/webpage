@@ -162,17 +162,17 @@ export const organizers = [
   },
   {
     title: 'Logo de la FIGEMPA',
-    image: `${path}/sponsors/figempa.png`,
+    image: '${path}/sponsors/figempa.png',
   },
   {
     title: 'Logo de Ingeniería en Petróleos de Universidad Central del Ecuador',
-    image: `${path}/sponsors/petroleos-uce.png`,
+    image: '${path}/sponsors/petroleos-uce.png',
   },
 ]
 
 export const programItems = [
   {
-    time: '08H30 - 09H00',
+    time: 'Lunes 2 de diciembre, 08H30 - 09H00',
     label: 'Registro',
     expositor: 'Auditorio Máster del Centro de Información Integral',
     institution: 'Universidad Central del Ecuador',
@@ -261,7 +261,7 @@ export const programItems = [
     institution: 'Gerente General de EP Petroecuador',
   },
   {
-    time: '08H30 - 09H00',
+    time: 'Martes 3 de diciembre, 08H30 - 09H00',
     label: 'Registro de participantes',
   },
   {
