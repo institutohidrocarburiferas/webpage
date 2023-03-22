@@ -6,4 +6,4 @@ image: "/eventos/foro-internacional-prospectiva-energetica/foro-internacional-de
 
 El Instituto de Investigaciones Hidrocarburíferas de la Universidad Central del Ecuador en coordinación con el Ministerio de Energía y Minas desarrollaron el Foro Internacional de Prospectiva Energética en el Ecuador en el Centro de Información Integral de la UCE. El evento contó con ponentes nacionales e internacionales donde se expuso sobre el sector energético desde el gobierno, academia, a nivel regional y experiencias internacionales de México y Argentina.
 
-[Detalles](https://www.iih-uce.org/en/evento)
+[Más información](https://www.iih-uce.org/en/evento)
