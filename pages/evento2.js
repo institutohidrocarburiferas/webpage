@@ -171,25 +171,26 @@ export default function Evento ({photos}) {
           <Separator id="por-que-perspectiva" />
           <section className="flex flex-col items-center gap-5 p-5 lg:flex-row-reverse lg:container md:pl-24">
             <section className="flex flex-col lg:w-1/2">
-              <Title>¿Por qué prospectiva?</Title>
+              <Title>Descripción</Title>
               <Text>
-                Los cambios en la dinámica de consumo de las sociedades y en la capacidad de
-                identificar la disponibilidad de recursos para la provisión de energía, además de la
-                comprensión profunda de aspectos como: peak oil, limitaciones biofísicas, transición
-                y descarbonización de las economías y sistemas de gobernanza, incluidas las formas
-                de abordar nuestros patrones de producción y consumo, son principios necesarios de
-                entenderlos para que los países construyan políticas que garanticen la
-                sostenibilidad y seguridad de la energía en un horizonte de mediano y largo plazo.
+              El Instituto de Investigaciones Hidrocarburíferas IIH y la Facultad de Ingeniería en Geología,
+              Minas, Petróleos y Ambiental FIGEMPA realizaron el primer “Seminario Internacional de Innovación
+              y Retos Tecnológicos del Sector Energético en la Cuarta Revolución Industrial” en donde se debatieron
+              los principales temas que atañen a la dinámica e innovación tecnológica en la gestión de los recursos naturales.
+              El objetivo fue identificar las oportunidades de innovación y retos tecnológicos que trae consigo la 4ta
+              revolución industrial en el sector energético, a fin de construir una agenda de trabajo entre actores
+              del sector público, empresas privadas y la academia, abordando de manera oportuna los desafíos del Ecuador
+              en un contexto regional y global. 
               </Text>
               <Text>
-                Es por esto que, desde el Instituto de Investigaciones Hidrocarburíferas de la
-                Universidad Central del Ecuador estamos fomentando la realización de un Foro
-                Internacional de Prospectiva Energética en el Ecuador con el propósito de topar los
-                puntos críticos de los sistemas energéticos y de vincular a instituciones de
-                gobierno, empresas, academia y sociedad civil para la discusión de la necesidad en
-                la construcción de escenarios energéticos nacionales deseables en base a
-                metodologías innovadoras, experiencias internacionales y contemplando la realidad y
-                autodeterminación en el desarrollo del Ecuador.
+              El evento se realizó el 2 y 3 de diciembre de 2019 en donde se congregaron más de 300 expertos nacionales y
+              extranjeros, quienes expusieron y debatieron sobre el panorama del sector energético frente a la innovación.
+              Por ejemplo: Carlos Maynor de la Universidad Nacional Autónoma de México, puntualizó sobre el auge de la 
+              transición hacia la cuarta revolución industrial, donde es importante la propuesta de nuevas técnicas 
+              dirigidas al talento humano de las instituciones. Además, explicó sobre los elementos clave de la 
+              Industria 4.0 que son: tecnología, personas, organizaciones y entornos, mientras que Bernardo Traversari, 
+              Gerente de SERTECPET, es el mercado el que impulsa la transformación digital de acuerdo a las necesidades
+              y exigencias de consumidores, por ello, es importante, generar una cultura tecnológica en la sociedad. 
               </Text>
             </section>
             <section className="w-2/3 md:w-1/2">
@@ -222,30 +223,22 @@ export default function Evento ({photos}) {
           <section className="flex flex-col items-center gap-5 p-5 lg:flex-row md:pl-12 lg:pl-24 lg:container">
             <section className="flex flex-col lg:w-1/2">
               <Title>Ejes temáticos</Title>
-              <Text>Los ejes temáticos que se tratarán en el seminario son los siguientes:</Text>
+              <Text>Los ejes temáticos tratados son los siguientes:</Text>
               <ul className="font-semibold list-disc pl-7">
                 <li>
-                  <Text>Seguridad y sostenibilidad de los sistemas futuros de energía</Text>
+                  <Text>Cuarta Revolución Industrial</Text>
                 </li>
                 <li>
-                  <Text>Visualización y retos de la transición energética en ALC</Text>
+                  <Text>Visión del Sector Energético</Text>
                 </li>
                 <li>
-                  <Text>Futuro de los mercados de commodities energéticos</Text>
+                  <Text>Planificación, Políticas y Oportunidades de Financiamiento</Text>
                 </li>
                 <li>
-                  <Text>Eficiencia energética y construcción de escenarios prospectivos</Text>
+                  <Text>Investigación, Desarrollo e Innovación I+D+I </Text>
                 </li>
                 <li>
-                  <Text>Visión a largo plazo del sistema energético del Ecuador</Text>
-                </li>
-                <li>
-                  <Text>
-                    Experiencias internacionales sobre la construcción de escenarios energéticos
-                  </Text>
-                </li>
-                <li>
-                  <Text>Estudios prospectivos desde los centros de investigación</Text>
+                  <Text>Retos y Desafíos del sector Energético en la Revolución 4.0</Text>
                 </li>
               </ul>
             </section>

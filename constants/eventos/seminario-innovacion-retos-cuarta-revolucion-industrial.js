@@ -14,8 +14,8 @@ export const sideItems = [
 
   },
   {
-    label: '¿Por qué prospectiva?',
-    url: '#por-que-perspectiva',
+    label: 'Descripción',
+    url: '#descripcion',
     image: <svg className="icon icon-tabler icon-tabler-question-mark" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none" stroke="none" />
       <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
@@ -149,66 +149,9 @@ export const sideItems = [
 
 export const sponsors = [
   {
-    title: 'Logo de Olade',
-    image: '/externalLinks/revistas/oladeorg-logo.jpg',
+    title: 'Logo del Ministerio de Energía y Minas',
+    image: '/eventos/foro-internacional-prospectiva-energetica/ministerio-energia-minas.jpg',
   },
-  {
-    title: 'Logo de la Fundación Bariloche',
-    image: `${path}/sponsors/fundacion-bariloche.jpg`,
-  },
-  {
-    title: 'Logo del Instituto de Metrología de Alemania (PTB)',
-    image: `${path}/sponsors/instituto-metrologia-alemania.jpg`,
-  },
-  {
-    title: 'Logo de la Escuela Politécnica Nacional',
-    image: `${path}/sponsors/epn.png`,
-  },
-  {
-    title: 'Logo de la Facultad de Ingeniería Química - UCE',
-    image: `${path}/sponsors/ing-quimica-uce.jpeg`,
-  },
-  {
-    title: 'Logo de la Universidad de Minería de San Petersburgo',
-    image: `${path}/sponsors/u-san-petersburgo.svg`,
-  },
-  {
-    title: 'Logo de la ',
-    image: `${path}/sponsors/figempa.png`,
-  },
-  {
-    title: 'Logo de Ingeniería en Petróleos de Universidad Central del Ecuador',
-    image: `${path}/sponsors/petroleos-uce.png`,
-  },
-  {
-    title: 'Logo de SERTECPET',
-    image: `${path}/sponsors/sertecpet.png`,
-  },
-  {
-    title: 'Logo de Halliburton',
-    image: `${path}/sponsors/halliburton.jpg`,
-  },
-  {
-    title: 'Logo de Best Energy Services S.A',
-    image: `${path}/sponsors/best-energy.jpeg`,
-  },
-  {
-    title: 'Logo de RENOVA Energia',
-    image: `${path}/sponsors/renova-energia.webp`,
-  },
-  {
-    title: 'Logo de GEOIL company',
-    image: `${path}/sponsors/geoil.png`,
-  },
-  {
-    title: 'Logo de la Secretaría de Energía',
-    image: `${path}/sponsors/sener-secretaria-energia.png`,
-  },
-  {
-    title: 'Logo de la Comisión Nacional para el Uso Eficiente de la Energía',
-    image: `${path}/sponsors/conuee.jpg`,
-  },
-
 ]
 
 export const organizers = [
@@ -217,92 +160,151 @@ export const organizers = [
     image: '/UCE-logo.png',
   },
   {
-    title: 'Logo del Ministerio de Energía y Minas',
-    image: '/eventos/foro-internacional-prospectiva-energetica/ministerio-energia-minas.jpg',
+    title: 'Logo de la FIGEMPA',
+    image: `${path}/sponsors/figempa.png`,
+  },
+  {
+    title: 'Logo de Ingeniería en Petróleos de Universidad Central del Ecuador',
+    image: `${path}/sponsors/petroleos-uce.png`,
   },
 ]
 
 export const programItems = [
   {
-    time: '08H00 - 08H30',
+    time: '08H30 - 09H00',
     label: 'Registro',
     expositor: 'Auditorio Máster del Centro de Información Integral',
     institution: 'Universidad Central del Ecuador',
   },
   {
-    time: '08H30 - 09H00',
-    label: 'Inauguración y palabras de bienvenida',
-    expositor: 'Autoridades: Ministerio de Energía y Minas - Universidad Central del Ecuador',
+    time: '09H00 - 09H40',
+    label: 'Ceremonia de Inauguración',
+    expositor: 'Gustavo Pinto Arteaga',
+    institution: 'Decano de la Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental. Universidad Central del Ecuador.'
   },
   {
-    time: '09H00 - 09H40',
-    label: 'Seguridad y sostenibilidad de los sistemas futuros de energía (fósil y electricidad) - Ponencia virtual',
-    institution: 'Universidad de Minería de San Petersburgo',
+    expositor: 'José Augusto Briones',
+    institution: 'Ministro de Energía y Recursos Naturales No Renovables',
+  },
+  {
+    expositor: 'Fernando Sempértegui O.',
+    institution: 'Rector de la Universidad Central del Ecuador',
   },
   {
     time: '09H40 - 10H20',
-    label: 'Visión a largo plazo del sistema energético de Ecuador',
-    expositor: 'Ing. Enith Carrión, MSc',
-    institution: 'Viceministra de Electricidad y Energía Renovable - Ministerio de Energía y Minas',
+    label: 'Conferencia magistral. Tema: Transición hacia la cuarta revolución industrial',
+    expositor: 'Carlos Maynor',
+    institution: 'Universidad Nacional Autónoma de México',
   },
   {
     time: '10H20 - 11H00',
-    label: 'Visualización y retos de la transición energética en ALC a mediano y largo plazo (uso de herramientas de prospectiva de OLADE)',
-    expositor: 'Ing. Medardo Cadena, MSc',
-    institution: 'Director de Estudios, Proyectos e Información - Organización Latinoamericana de Energía (OLADE)',
+    label: 'Conferencia magistral. Tema: Perspectivas de la gestión energética en el contexto regional y global',
+    expositor: 'Alfonso Blanco',
+    institution: 'Uruguay. Secretario Ejecutivo de OLADE',
   },
   {
     time: '11H00 - 11H30',
-    label: 'COFFEE BREAK',
+    label: 'Receso',
   },
   {
-    time: '11H30 - 12H10',
-    label: 'Futuro de los mercados de precios de los commodities energéticos',
-    expositor: 'Rafael Espinoza',
-    institution: 'Socio - McKinsey & Company',
+    time: '11H30 - 13H00',
+    label: 'Sesión 1: Visión del sector energético hacia la transformación digital',
+    expositor: 'Javier Goyes',
+    institution: 'Director de Análisis de Información Estratégica de Hidrocarburos. Ministro de Energía y Recursos Naturales No Renovables',
   },
   {
-    time: '12H10 - 12H50',
-    label: 'Prospectiva energética para el Ecuador con MuSIASEM o Multi-Scale Integrated Analysis and Ecosystem Metabolism',
-    expositor: 'Ing. Rony Parra, PhD',
-    institution: 'Director Instituto de Investigaciones Hidrocarburíferas IIH - Universidad Central del Ecuador',
+    expositor: 'Fernando Benalcázar',
+    institution: 'Presidente Society Petroleum Enginners Ecuador Section ',
   },
   {
-    time: '12H50 - 14H30',
-    label: 'ALMUERZO',
+    expositor: 'Susan Velasco',
+    institution: 'Miembro del Grupo de Políticas Públicas Comparadas de la Asociación Latinoamericana de Ciencia Política ALACIP',
   },
   {
-    time: '14H30 - 15H10',
-    label: 'Visión a largo plazo del sistema energético (oferta y demanda de combustibles y electricidad) con la transformación del mercado hacia equipos energéticamente eficientes.',
-    expositor: 'Ing. Ignacio Sagardoy, MSc',
-    institution: 'Fundación Bariloche (Argentina)',
+    time: '13H00 - 14H00',
+    label: 'Almuerzo (Salón 2)',
   },
   {
-    time: '15H10 - 15H50',
-    label: 'Estudio de prospectiva en el sector transporte de Ecuador',
-    expositor: 'Ing, Francisco Terneus, PhD(c)',
-    institution: 'Facultad de Ciencias Administrativas - Escuela Politécnica Nacional',
+    time: '14H00 - 15H30',
+    label: 'Sesión 2: Investigación y Desarrollo',
+    expositor: 'Andrés Mantilla',
+    institution: 'Director Ejecutivo del Instituto Colombiano del Petróleo - ICP',
   },
   {
-    time: '15H50 - 16H20',
-    label: 'COFFEE BREAK',
+    expositor: 'Gina Maestre',
+    institution: 'Investigadora de Colciencias - Universidad Cooperativa de Colombia',
   },
   {
-    time: '16H20 - 17H00',
-    label: 'Modelo de prospectiva energética para México',
-    expositor: 'Ing. Juan I. Navarrete, MSc',
-    institution: 'Director de Políticas y Programas - Comisión Nacional para el Uso Eficiente de la Energía (CONUEE-SENER)',
+    expositor: 'Ronny Parra',
+    institution: 'Instituto de Investigaciones Hidrocarburíferas - Universidad Central del Ecuador',
   },
   {
-    time: '17H00 - 17H40',
-    label: 'Tasas biofísicas de retorno energético en el uso de biocombustibles para el Ecuador',
-    expositor: 'Ing. Ghem Carvajal, MSc',
-    institution: 'Facultad de Ingeniería Química - Universidad Central del Ecuador',
+    time: '15H30 - 16H00',
+    label: 'Receso',
   },
   {
-    time: '17H40 - 18H30',
-    label: 'Resumen y Cierre',
-    expositor: 'Autoridades',
+    time: '16H00 - 18H00',
+    label: 'Sesión 3: Innovación tecnológica',
+    expositor: 'Savio Lima',
+    institution: 'Gerente General de Halliburton - Ecuador',
+  },
+  {
+    expositor: 'CELEC EP',
+  },
+  {
+    expositor: 'Ramiro Páez',
+    institution: 'Gerente General de Repsol - Ecuador',
+  },
+  {
+    expositor: 'Pablo Flores',
+    institution: 'Gerente General de EP Petroecuador',
+  },
+  {
+    time: '08H30 - 09H00',
+    label: 'Registro de participantes',
+  },
+  {
+    time: '09H00 - 11H00',
+    label: 'Sesión 4: Retos y escenarios del sector energético',
+    expositor: 'Martín Cordovez',
+    institution: 'Director del Instituto de Investigación Geológico Energético - Ecuador',
+  },
+  {
+    expositor: 'Jefferson Jiménez',
+    institution: 'Agencia de Regulación y Control de Electricidad - Ecuador',
+  },
+  {
+    expositor: 'Bernardo Traversari',
+    institution: 'Gerente General de SERTECPEC - Ecuador',
+  },
+  {
+    expositor: 'Lenín Pozo',
+    institution: 'Gerente General de Petroamazonas EP',
+  },
+  {
+    time: '11H00 - 12H00',
+    label: 'Mesas de trabajo: Definición de una agenda común entre actores de instituciones públicas, empresas privadas y academia',
+    expositor: 'Instituciones públicas',
+  },
+  {
+    expositor: 'Empresas privadas',
+  },
+  {
+    expositor: 'Academia',
+  },
+  {
+    time: '12H00 - 13H00',
+    label: 'Ceremonia de clausura',
+    expositor: 'José Augusto Rosero',
+    institution: 'Director de Doctorados e Innovación de la Universidad Central del Ecuador',
+  },
+  {
+    expositor: 'Jackson Torres',
+    institution: 'Viceministro de Producción e Industrias',
+  },
+  {
+    expositor: 'María Mercedes Gavilánez',
+    institution: 'Vicerrectora de Investigación, Doctorados e Innovación de la Universidad Central del Ecuador',
   },
 ]
 
