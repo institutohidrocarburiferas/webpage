@@ -24,7 +24,7 @@ import {
   sponsors,
   expositions,
 } from '@constants/eventos/seminario-innovacion-retos-cuarta-revolucion-industrial'
-import {getEventPhotos} from '@utils/getEventPhotos'
+import {getEventPhotos} from '@utils/getEventPhotos2'
 
 const pageData = {
   title: 'Seminario Internacional de Innovación y Retos Tecnológicos del Sector Energético en la Cuarta Revolución Industrial',
