@@ -1,11 +1,11 @@
 import type {Consumo, DataPorProvincia} from '../types.d'
 
-import patronesDeConsumo from './patrones_de_consumo.json'
+import patronesDeConsumo from './patrones_de_consumo_2010.json'
 import hogaresPorProvincia from './hogares-por-provincia.json'
 
 // consumos (GWH / año) por provincia
 export const dataPorProvincia = {
-  ...hogaresPorProvincia
+  ...hogaresPorProvincia,
 } as const satisfies DataPorProvincia
 
 // Convert json to Consumo data

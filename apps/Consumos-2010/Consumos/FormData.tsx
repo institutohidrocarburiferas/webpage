@@ -13,16 +13,18 @@ interface Props {
 // Function to validate in useForm/validate (line 27)
 const validate = (value: string[] | string) => (value.length === 0 ? 'Escoja un valor para calcular el consumo' : null)
 
-const dataIntegrantes = Array(16).fill(0).map((_, i) => {
-  const persons = i + 1
+const maxIntegrantes = 15
 
-  if (persons === 1) return '1 persona'
-  else if (persons === 16) return 'Más de 16 personas'
+const dataIntegrantes = Array(maxIntegrantes).fill(0).map((_, i) => {
+  const personas = i + 1
 
-  return `${persons} personas`
+  if (personas === 1) return '1 persona'
+  // else if (personas === 16) return 'Más de 16 personas'
+
+  return `${personas} personas`
 })
 
-// ['Tipo 1', 'Tipo 2', 'Tipo 3', 'Tipo 4', 'Tipo 5', 'Tipo 6', 'Tipo 7', 'Tipo 8', 'Tipo 9', 'Tipo 10', 'Tipo 11', 'Tipo 12', 'Tipo 13', 'Tipo 14', 'Tipo 15', 'Tipo 16']
+// ['Tipo 1', 'Tipo 2', 'Tipo 3', 'Tipo 4', 'Tipo 5', 'Tipo 6', 'Tipo 7', 'Tipo 8', 'Tipo 9', 'Tipo 10', 'Tipo 11', 'Tipo 12', 'Tipo 13', 'Tipo 14', 'Tipo 15',]
 
 export const FormData: React.FC<Props> = ({setValues}) => {
   const form = useForm<FormValues>({
@@ -47,6 +49,7 @@ export const FormData: React.FC<Props> = ({setValues}) => {
     onSubmit={
       form.onSubmit((values: FormValues) => {
         const numberTipoHogar = Number(values.tipoHogar.slice(0, 2))
+        // valor '>15' = 16 personas
         const newTipoHogar = isNaN(numberTipoHogar) ? '16' : String(numberTipoHogar)
 
         setValues({

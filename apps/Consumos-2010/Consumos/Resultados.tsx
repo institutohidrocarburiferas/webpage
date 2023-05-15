@@ -27,14 +27,14 @@ export const Resultados: React.FC<ResultProps> = ({formValues, consumos, dataPor
   const HOGARES_RESTANTES = hogaresPorProvincia - HOGARES
 
   // Data para consumo
-  const patronDeConsumo = filteredPattern?.['Patrón de Consumo'] ?? 0
+  const patronDeConsumo = filteredPattern?.['Patrón'] ?? 0
   // Consumo = HOGARES * patronDeConsumo (KWH / mes) -> (GWH / año)
   let CONSUMO_PATRON = HOGARES * patronDeConsumo * 12 / 10 ** 6
 
   CONSUMO_PATRON = Number(CONSUMO_PATRON.toFixed(2))
 
   // TODO: Llenar la información del consumo general por provincia
-  const CONSUMO_RESTANTE = (consumoPorProvincia || 5) - CONSUMO_PATRON
+  const CONSUMO_RESTANTE = consumoPorProvincia - CONSUMO_PATRON
 
   return <div className='grid grid-cols-1 max-w-2xl mx-auto mt-7'>
     <div>

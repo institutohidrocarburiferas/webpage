@@ -1,1 +1,27 @@
-{"Azuay":{"hogares":155991,"consumo":0},"Bol\u00edvar":{"hogares":37784,"consumo":0},"Carchi":{"hogares":38727,"consumo":0},"Ca\u00f1ar":{"hogares":49737,"consumo":0},"Chimborazo":{"hogares":103443,"consumo":0},"Cotopaxi":{"hogares":82080,"consumo":0},"El Oro":{"hogares":133505,"consumo":0},"Esmeraldas":{"hogares":73639,"consumo":0},"Gal\u00e1pagos":{"hogares":5597,"consumo":0},"Guayas":{"hogares":648746,"consumo":0},"Imbabura":{"hogares":90258,"consumo":0},"Loja":{"hogares":93838,"consumo":0},"Los R\u00edos":{"hogares":118690,"consumo":0},"Manab\u00ed":{"hogares":191030,"consumo":0},"Morona Santiago":{"hogares":19483,"consumo":0},"Napo":{"hogares":14647,"consumo":0},"Orellana":{"hogares":16898,"consumo":0},"Pastaza":{"hogares":12676,"consumo":0},"Pichincha":{"hogares":642100,"consumo":0},"Santa Elena":{"hogares":54205,"consumo":0},"Santo Domingo De Los Ts\u00e1chilas":{"hogares":74309,"consumo":0},"Sucumb\u00edos":{"hogares":25460,"consumo":0},"Tungurahua":{"hogares":123481,"consumo":0},"Zamora Chinchipe":{"hogares":14536,"consumo":0},"Zona no delimitada":{"hogares":4711,"consumo":0}}
+{
+  "Azuay": {"hogares": 188331, "consumo": 295.6203885919},
+  "Bolívar": {"hogares": 47723, "consumo": 41.8567096087},
+  "Cañar": {"hogares": 58627, "consumo": 71.4790990787},
+  "Carchi": {"hogares": 44136, "consumo": 38.4171167575},
+  "Chimborazo": {"hogares": 125407, "consumo": 129.8898451835},
+  "Cotopaxi": {"hogares": 103137, "consumo": 113.7492312948},
+  "El Oro": {"hogares": 163290, "consumo": 218.1483187835},
+  "Esmeraldas": {"hogares": 129539, "consumo": 193.5131358519},
+  "Galápagos": {"hogares": 7236, "consumo": 9.4490247641},
+  "Guayas": {"hogares": 958965, "consumo": 1425.0177292078},
+  "Imbabura": {"hogares": 103009, "consumo": 113.5156500545},
+  "Loja": {"hogares": 116892, "consumo": 131.0161765615},
+  "Los Ríos": {"hogares": 201933, "consumo": 281.7092035635},
+  "Manabí": {"hogares": 343088, "consumo": 484.5010239063},
+  "Morona Santiago": {"hogares": 33352, "consumo": 43.3959378301},
+  "Napo": {"hogares": 22462, "consumo": 30.0922525051},
+  "Orellana": {"hogares": 31495, "consumo": 42.3776605803},
+  "Pastaza": {"hogares": 19818, "consumo": 28.0503593244},
+  "Pichincha": {"hogares": 727838, "consumo": 1099.6353091713},
+  "Santa Elena": {"hogares": 76194, "consumo": 104.6615615377},
+  "Santo Domingo De Los Tsáchilas": {"hogares": 95221, "consumo": 130.7634606253},
+  "Sucumbíos": {"hogares": 43056, "consumo": 55.6991601677},
+  "Tungurahua": {"hogares": 140536, "consumo": 168.1583635099},
+  "Zamora Chinchipe": {"hogares": 21371, "consumo": 25.1690787172},
+  "Zona no delimitada": {"hogares": 7892, "consumo": 8.746168909}
+}
