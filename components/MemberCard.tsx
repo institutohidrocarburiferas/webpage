@@ -14,7 +14,7 @@ export const MemberCard: React.FC<Props> = ({name, image, role, openModal}) => {
       onClick={openModal}>
       <Image
         alt={name}
-        className='object-cover object-top rounded-t-md'
+        className='object-cover object-top aspect-square rounded-t-md'
         height={350}
         src={image}
         width={350}
