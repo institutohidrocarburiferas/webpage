@@ -56,7 +56,7 @@ function SpeakerCard ({name, image, role, institute, objectFit = 'cover'}) {
     <section className="flex flex-col w-48 gap-5 rounded-md md:w-60 md:hover:scale-105">
       <Image
         alt={name}
-        className="object-top rounded-md"
+        className="object-top object-cover rounded-md aspect-[3/4]"
         height={300}
         src={image}
         styles={{
