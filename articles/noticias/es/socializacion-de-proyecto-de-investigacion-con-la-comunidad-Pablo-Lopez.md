@@ -1,7 +1,7 @@
 ---
 title: "Socialización de proyecto de investigación con la comunidad Pablo López"
 date: "2023-07-27"
-image: "/noticias/socializacion-de-proyecto-de-investigacion-con-la-comunidad-pablo-lopez.jpeg"
+image: "/noticias/socializacion-de-proyecto-de-investigacion-con-la-comunidad-pablo-lopez.jpg"
 ---
 
 El 10 de mayo se llevó acabo la socialización del proyecto de investigación científica “Capacidad de captura de carbono del Bosque Protector Oglán Alto-Arajuno frente a la presión ambiental por el desarrollo del campo Oglán-Bloque 10” con la comunidad Pablo López, en la sede de la Asociación de Comunidades Indígenas de Arajuno.  
