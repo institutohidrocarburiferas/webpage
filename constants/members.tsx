@@ -9,7 +9,7 @@ export interface Equipo {
 // Spanish Version
 export const equipo: Equipo[] = [
   {
-    name: 'Ing. Rony Parra, PhD',
+    name: 'Ing. Rony Parra, PhD.',
     image: '/integrantes/Rony-Parra.png',
     role: 'Director del Instituto',
     title: 'Estudio de la energía en sistemas complejos desde el análisis biofísico',
@@ -41,17 +41,17 @@ export const equipo: Equipo[] = [
     description: ['Es profesor de la Universidad Central del Ecuador, obtuvo un título de Ingeniero de Petróleos en la Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental de la Universidad Central del Ecuador y una Maestría en Salud y Seguridad Ocupacional con mención en Prevención de Riesgos Laborales de la Universidad Internacional SEK. Posee experiencia como Ingeniero de Operaciones en el área de perforación y reacondicionamiento de pozos; Técnico de Seguridad en programas de identificación, medición, evaluación y control de los riesgos laborales. Adicionalmente, se encuentra coordinando el programa de Maestría en Ingeniería de Petróleos con mención en Recuperación Mejorada.']
   },
   {
-    name: 'Ing. Christian Mejía E., PhD(c)',
+    name: 'Ing. Christian Mejía E., PhD.',
     image: '/integrantes/Christian-Mejia-Escobar.png',
     role: 'Docente Investigador',
     title: null,
-    description: ['Docente en las áreas de Software y Estadística de la Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental de la Universidad Central del Ecuador desde el 2013. Recibió el título de Ingeniero de Sistemas de Computación e Informática de la Escuela Politécnica Nacional (EPN), Quito, Ecuador, en 1999, y el título de Maestría en Ciencias de la Computación, del Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional (CINVESTAV), México D.F., México, en 2007. Actualmente cursa un doctorado en Informática de la Universidad de Alicante, España. Su investigación se centra en el uso de Deep Learning en tareas de visión por computadora. Autor y revisor de varios artículos científicos sobre Computación, Inteligencia Artificial, Redes Neuronales Artificiales, Machine Learning y Geoestadística aplicadas a problemas de Ciencias de la Tierra y aprovechamiento de recursos naturales.']
+    description: ['Docente en las áreas de Software y Estadística de la Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental de la Universidad Central del Ecuador desde el 2013. Recibió el título de Ingeniero de Sistemas de Computación e Informática de la Escuela Politécnica Nacional (EPN), Quito, Ecuador, en 1999, el título de Maestría en Ciencias de la Computación, del Centro de Investigación y de Estudios Avanzados del Instituto Politécnico Nacional (CINVESTAV), México D.F., México, en 2007, y en 2023 recibe el doctorado en Informática de la Universidad de Alicante, España. Su investigación se centra en el uso de Deep Learning en tareas de visión por computadora. Autor y revisor de varios artículos científicos sobre Computación, Inteligencia Artificial, Redes Neuronales Artificiales, Machine Learning y Geoestadística aplicadas a problemas de Ciencias de la Tierra y aprovechamiento de recursos naturales.']
   },
 ]
 
 export const investigadores: Equipo[] = [
   {
-    name: 'Ing. Susana Arciniegas, PhD',
+    name: 'Ing. Susana Arciniegas, PhD.',
     image: '/integrantes/Susana-Arciniegas-Ortega.png',
     role: 'Docente Investigador',
     // https://orcid.org/0000-0002-0878-2612
@@ -87,7 +87,7 @@ export const investigadores: Equipo[] = [
     description: ['Es profesor/investigador de la carrera de Ingeniería Ambiental de la FIGEMPA-Universidad Central del Ecuador. Biólogo con maestría en Biologia Molecular y Fermentaciones, Diploma de Estudios Avanzado en Microbiología y PhD en Microbiología y Parasitología por la Universidad Complutense de Madrid, España. Ha sido profesor investigador de la Escuela Superior Politecnica del Chimborazo (Ecuador) y de la Universidad de los Andes (Venezuela). Profesor invitado de la Universidad de la Salle (Colombia). Investigador en el area de la Microbiología y Biotecnología, acreditado como investigador Agregado II en el RNI-SENESCYT (Ecuador), investigador senior en el CONCYTEC (Perú) e investigador PPI Nivel B del FONACIT (Venezuela). Miembro del Comité Científico de la Universidad Central del Ecuador. Director del grupo de investigaciones en Microbiología y Biotecnología Aplicada de la FIGEMPA-UCE. Ha dirigido más de 100 tesis de doctorado, maestría y grado. Autor y coautor de más de 80 publicaciones académicas y de más de 300 ponencias en eventos nacionales e internacionales. Director de 30 proyectos de investigación científica nacionales e internacionales en el area de la Microbiología y Biotecnología. Miembro del comité editorial de la revista FIGEMPA. Evaluador de proyectos de investigación científica de DI-UCE, IIV-ESPOCH, DI-UNACH, DI-UTA, DI-UC, CEDIA, REDU, OIE, COLCIENCIA, CDCHT-ULA.']
   },
   {
-    name: 'Ing. Teresa Palacios, PhD(c)',
+    name: 'Ing. Teresa Palacios, PhD.',
     image: '/integrantes/Teresa-Palacios-Cabrera.png',
     role: 'Docente Investigador',
     title: null,
@@ -125,7 +125,7 @@ export const investigadores: Equipo[] = [
     description: ['Economista por la Universidad Central del Ecuador (UCE). Me he desempeñado como consultor e investigador en temas de Economía Popular y Solidaria en el Institutito Superior de Investigaciones y Postgrado (ISIP-UCE) y en el Instituto de Altos Estudios Nacionales (IAEN). Coautor del libro Investigar la economía popular y solidaria: metodologías, métodos, técnicas y su aplicación en casos ecuatorianos. Forma parte del grupo de investigación de Economía Social y Solidara de la Universidad Central del Ecuador y parte del grupo de investigación del Colegio de Economistas de Pichincha. Actualmente me desempeño como Consultor de Proyecto en la DGRV de Ecuador- Honduras, en el área de Finanzas Sostenibles y Finanzas Verdes enfocadas para el sector financiero Cooperativista.',]
   },
   {
-    name: 'Ing. Rodrigo López, MSc',
+    name: 'Ing. Rodrigo López, MSc.',
     image: '/integrantes/Rodrigo-Lopez.png',
     role: 'Docente Investigador',
     title: null,
@@ -139,7 +139,7 @@ export const investigadores: Equipo[] = [
     description: ['Ingeniero químico de la Universidad Central del Ecuador, master en sistemas energéticos por la Universidad de Melbourne y cursante de doctorado en gases de efecto invernadero en aguas continentales por la Universidad de Liège. Docente titular de termodinámica e ingeniería termodinámica en la Universidad Central y miembro del CO2 Group de la Unidad de Oceanografía Química de la Universidad de Liège. Investigador certificado en áreas de energía y cambio climático REG-INV-15-01312. Intereses investigativos enfocados al desarrollo de sistemas energéticos renovables, descarbonización y gases de efecto invernadero.']
   },
   {
-    name: 'Ing. Ghem Carvajal C., MSc ',
+    name: 'Ing. Ghem Carvajal C., MSc. ',
     image: '/integrantes/Ghem-Carvajal.png',
     role: 'Docente Investigador',
     title: null,
@@ -154,7 +154,7 @@ export const investigadores: Equipo[] = [
 // English Version
 export const team: Equipo[] = [
   {
-    name: 'Ing. Rony Parra, PhD',
+    name: 'Ing. Rony Parra, PhD.',
     image: '/integrantes/Rony-Parra.png',
     role: 'Director of the institute',
     title: 'Study of energy in complex systems from biophysical analysis',
@@ -186,11 +186,11 @@ export const team: Equipo[] = [
     description: ['He is a professor at the Central University of Ecuador, obtained a degree in Petroleum Engineering from the Faculty of Geology, Mines, Petroleum and Environmental Engineering of the Central University of Ecuador and a Master\'s Degree in Occupational Health and Safety with a mention in Occupational Risk Prevention SEK International University. He has experience as an Operations Engineer in the area of well drilling and workover; Safety Technician in identification, measurement, evaluation and control programs of occupational hazards. Additionally, he is coordinating the Master\'s program in Petroleum Engineering with a major in Enhanced Recovery.']
   },
   {
-    name: 'Ing. Christian Mejía E., PhD(c)',
+    name: 'Ing. Christian Mejía E., PhD.',
     image: '/integrantes/Christian-Mejia-Escobar.png',
     role: 'Teaching researcher',
     title: null,
-    description: ['Professor in the areas of Software and Statistics at the Faculty of Geology, Mining, Petroleum and Environmental Engineering of the Central University of Ecuador since 2013. He received the title of Computer Systems Engineer from the National Polytechnic School (EPN) , Quito, Ecuador, in 1999, and a Master\'s degree in Computer Science, from the Center for Research and Advanced Studies of the National Polytechnic Institute (CINVESTAV), Mexico City, Mexico, in 2007. He is currently pursuing a PhD in Computer Science from the University of Alicante, Spain. His research focuses on the use of Deep Learning in computer vision tasks. He is the author and reviewer of several scientific articles on Computing, Artificial Intelligence, Artificial Neural Networks, Machine Learning and Geostatistics applied to Earth Science problems and the use of natural resources.']
+    description: ['Professor in the areas of Software and Statistics at the Faculty of Geology, Mining, Petroleum and Environmental Engineering of the Central University of Ecuador since 2013. He received the title of Computer Systems Engineer from the National Polytechnic School (EPN), Quito, Ecuador, in 1999, and a Master\'s degree in Computer Science, from the Center for Research and Advanced Studies of the National Polytechnic Institute (CINVESTAV), Mexico City, Mexico, in 2007, and he is a PhD in Computer Science from the University of Alicante, Spain, 2023. His research focuses on the use of Deep Learning in computer vision tasks. He is the author and reviewer of several scientific articles on Computing, Artificial Intelligence, Artificial Neural Networks, Machine Learning and Geostatistics applied to Earth Science problems and the use of natural resources.']
   },
 ]
 
@@ -231,7 +231,7 @@ export const researchers: Equipo[] = [
     description: ['He is a professor/researcher of the Environmental Engineering career at FIGEMPA-Central University of Ecuador. Biologist with a Master\'s degree in Molecular Biology and Fermentations, Advanced Studies Diploma in Microbiology and PhD in Microbiology and Parasitology from the Complutense University of Madrid, Spain. He has been a research professor at the Escuela Superior Politecnica del Chimborazo (Ecuador) and the Universidad de los Andes (Venezuela). Visiting professor at the University of La Salle (Colombia). Researcher in the area of ​​Microbiology and Biotechnology, accredited as Associate II researcher at RNI-SENESCYT (Ecuador), senior researcher at CONCYTEC (Peru) and PPI Level B researcher at FONACIT (Venezuela). Member of the Scientific Committee of the Central University of Ecuador. Director of the Microbiology and Applied Biotechnology research group at FIGEMPA-UCE. He has directed more than 100 doctoral, master\'s and degree theses. He is the author and co-author of more than 80 academic publications and more than 300 presentations at national and international events. Director of 30 national and international scientific research projects in the area of ​​Microbiology and Biotechnology. Member of the editorial committee of the FIGEMPA magazine. Evaluator of scientific research projects for DI-UCE, IIV-ESPOCH, DI-UNACH, DI-UTA, DI-UC, CEDIA, REDU, OIE, COLCIENCIA, CDCHT-ULA.']
   },
   {
-    name: 'Ing. Teresa Palacios, PhD(c)',
+    name: 'Ing. Teresa Palacios, PhD.',
     image: '/integrantes/Teresa-Palacios-Cabrera.png',
     role: 'Teaching researcher',
     title: null,
@@ -269,7 +269,7 @@ export const researchers: Equipo[] = [
     description: ['Economist from the Central University of Ecuador (UCE). I have worked as a consultant and researcher on issues of Popular and Solidarity Economy at the Higher Institute of Research and Postgraduate Studies (ISIP-UCE) and at the Institute of Higher National Studies (IAEN). Co-author of the book Investigating the popular and solidarity economy: methodologies, methods, techniques and their application in Ecuadorian cases. He is part of the Social and Solidarity Economy research group of the Central University of Ecuador and part of the research group of the College of Economists of Pichincha. I am currently working as a Project Consultant at the DGRV of Ecuador-Honduras, in the area of Sustainable Finance and Green Finance focused on the Cooperative financial sector.',]
   },
   {
-    name: 'Ing. Rodrigo López, MSc',
+    name: 'Ing. Rodrigo López, MSc.',
     image: '/integrantes/Rodrigo-Lopez.png',
     role: 'Teaching researcher',
     title: null,
