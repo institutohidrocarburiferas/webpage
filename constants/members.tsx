@@ -196,7 +196,7 @@ export const team: Equipo[] = [
 
 export const researchers: Equipo[] = [
   {
-    name: 'Ing. Susana Arciniegas, PhD',
+    name: 'Ing. Susana Arciniegas, PhD.',
     image: '/integrantes/Susana-Arciniegas-Ortega.png',
     role: 'Teaching researcher',
     title: <a href='https://geotecambiente5.wixsite.com/geotecambiente/miembros' rel="noreferrer" style={{color: 'blue'}}target="_blank">Investigation Group</a>,
