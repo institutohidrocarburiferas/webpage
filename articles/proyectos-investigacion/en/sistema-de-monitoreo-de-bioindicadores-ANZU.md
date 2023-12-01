@@ -15,7 +15,7 @@ The Amazonian bioindicator monitoring system adheres to the 2030 Sustainable Dev
 ## App about the Amazonian bioindicator monitoring system
 ![ANZU Bioindicator Monitoring App](/proyectos-investigacion/sistema-de-monitoreo-de-bioindicadores-ANZU-grafica-01.png)
 
-<a href="https://app-sentinel-v1.herokuapp.com/" target="_blank">Link to Amazonian monitoring app</a>
+<a href="https://app-sentinel-v1.herokuapp.com/" target="_blank">Link Amazonian monitoring app</a>
 
 ### App QR code
 ![ANZU Monitoring App QR Code](/proyectos-investigacion/sistema-de-monitoreo-de-bioindicadores-ANZU-grafica-02.png)
