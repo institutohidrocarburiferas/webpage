@@ -1,3 +1,4 @@
+import Image from 'next/image'
 import {useTranslation} from 'next-i18next'
 
 interface Props {
@@ -45,7 +46,12 @@ export const Footer: React.FC<Props> = ({
 
         {/* Logo Section */}
         <section className='flex flex-col items-center justify-center gap-5 place-content-center'>
-          {/* UCE image deleted */}
+         <Image
+            alt="Universidad Central del Ecuador Logo"
+            height={100}
+            src="/UCE-logo.png"
+            width={100}
+          />          
         </section>
       </div>
     </div>

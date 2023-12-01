@@ -141,7 +141,10 @@ const Home: NextPage<Props> = ({allPostsData}) => {
             urlPath={pageData.sliderURL}
           />
         </section>
+<<<<<<< HEAD
         
+=======
+>>>>>>> e84c9197b4799e41c613999c8c3b9549c71dcac8
       </div>
     </main>
     <Footer image={pageData.image} />
