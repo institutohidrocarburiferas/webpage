@@ -141,7 +141,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
             urlPath={pageData.sliderURL}
           />
         </section>
-        <Participants data={colaboradores} title={t('ColaborationTitle')} />
+        
       </div>
     </main>
     <Footer image={pageData.image} />
