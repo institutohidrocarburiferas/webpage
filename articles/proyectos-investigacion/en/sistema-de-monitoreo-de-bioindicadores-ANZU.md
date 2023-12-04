@@ -4,7 +4,7 @@ image: "/proyectos-investigacion/sistema-de-monitoreo-de-bioindicadores-ANZU.jpg
 icon: "/proyectos-investigacion/sistema-de-monitoreo-de-bioindicadores-ANZU.svg"
 ---
 
-The “ Bioindicator Monitoring System” is a data science-based monitoring system that uses remote sensing techniques, drone data, and chemical-biological parameters to identify changes in ecosystems and use specific bioindicators to monitor impact. ecosystem in the reality of the Ecuadorian Amazon.
+The “Bioindicator Monitoring System” is a data science-based monitoring system that uses remote sensing techniques, drone data, and chemical-biological parameters to identify changes in ecosystems and use specific bioindicators to monitor impact. ecosystem in the reality of the Ecuadorian Amazon.
 
 This system is the first system programmed in open code for the Ecuadorian Amazon, in such a way that it will facilitate access to relevant data for government institutions and civil society organizations, promoting information for territorial planning, strengthening of mining control and involvement of communities caring for their ecosystems. Finally, it will help to make informed decisions to contribute to the fulfillment of the sustainable development objectives at the local and regional level.
 

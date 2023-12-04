@@ -1,5 +1,5 @@
 ---
-title: 'Sistema de Monitoreo del Bioindicadores Amazónico'
+title: 'Sistema de Monitoreo de Bioindicadores Amazónico'
 image: "/proyectos-investigacion/sistema-de-monitoreo-de-bioindicadores-ANZU.jpg"
 icon: "/proyectos-investigacion/sistema-de-monitoreo-de-bioindicadores-ANZU.svg"
 ---
