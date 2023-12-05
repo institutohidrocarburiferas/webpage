@@ -1,6 +1,7 @@
 ---
 title: 'Determinación de la presión ecosistémica en la dinámica del sector turismo en las islas Galápagos'
 
+icon: "/proyectos-investigacion/turismo-islas-galapagos.svg"
 ---
 
 El crecimiento demográfico desordenado, la necesidad del Estado sobre los recursos económicos para mantener la dinámica socioeconómica, la motivación de turistas por la biodiversidad endémica de las Galápagos y la reconfiguración de servicios turísticos intensivos en recursos, han impulsado el crecimiento de turistas que cada vez demandan de mayores bienes y servicios, lo cual pone en riesgo los límites ecosistémicos y la sostenibilidad de las Galápagos, por lo cual este estudio tiene por objetivo generar una contabilidad biofísica (ejemplo: energía, agua, alimentos, actividad humana) en el sector turismo para mostrar la presión ecosistémica en la dinámica y crecimiento del sector turismo en las islas Galápagos proporcionando insumos necesarios para la discusión de la sostenibilidad. Se usará una metodología innovadora basada en el entendimiento de los sistemas complejos y la aplicación de la matriz de uso final de MuSIASEM Multi-Scale Integrated Analysis of Societal and Ecosystem Metabolism. 
