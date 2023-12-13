@@ -1,13 +1,15 @@
 ---
-title: "Participation in the launch event of the National Green Hydrogen Roadmap and Strategy for Ecuador"
-date: "2023-07-19"
-image: "/noticias/participacion-en-el-evento-de-lanzamiento-de-hoja-de-ruta-y-estrategia-nacional-del-hidrógeno-verde-para-el-ecuador.jpeg"
+title: "Meetings to consolidate projects in the Amazon"
+date: "2023-09-14"
+image: "/noticias/reuniones-parar-consolidar-proyectos-en-la-amazonia.jpeg"
 ---
 
-The Director of the Hydrocarbon Research Institute of the Central University of Ecuador, PhD Rony Parra and the Dean of FIGEMPA, Mgtr. Gustavo Pinto Arteaga participated in the academic panel on the role of academia and research centers in the sustainable development of green hydrogen, which took place on July 17 of this year.
+On September 13 and 14 in the province of Napo, researchers from the Hydrocarbon Research Institute of the Central University of Ecuador held meetings with representatives of the sectoral governments of the province, the Provincial GAD Napo and the municipal GADs of Tena and Carlos Julio Arosemena Tola.
 
-During the launch event, the National Green Hydrogen Roadmap and Strategy for Ecuador was announced. Both initiatives strengthen the Just Energy Transition process and contribute to the reduction of GHG emissions. The term “green hydrogen”, H2V, refers to hydrogen that is obtained without causing polluting emissions and both the Roadmap and the National Green Hydrogen Strategy seek to boost available renewable energy resources.
+The purpose of these meetings was to generate alliances for the development of research projects on issues of carbon neutrality, soil quality monitoring, water and deforestation. Currently, a research project in the Oglán Alto Protective Forest is about to be completed.
 
-Ecuador is executing several projects and strategies to achieve the NDC (Nationally Determined Contributions) commitment, reducing emissions between 20 - 25% by 2025.
+A little over a year ago, the “ANZU Bioindicator Monitoring System” was developed, a monitoring system based on data science to identify changes in ecosystems and use specific bioindicators to monitor ecosystem impact in the Amazon.
 
-![imagenes del evento](/noticias/participacion-en-el-evento-de-lanzamiento-de-hoja-de-ruta-y-estrategia-nacional-del-hidrógeno-verde-para-el-ecuador.jpeg)
+Projects like these are proposed by researchers and teachers of the Hydrocarbon Research Institute and, through meetings with authorities and representatives, they seek to create and strengthen alliances, as well as have the cooperation of communities to proceed with field investigations.
+
+![imagenes del evento](/noticias/reuniones-parar-consolidar-proyectos-en-la-amazonia.jpeg)

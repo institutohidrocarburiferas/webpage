@@ -1,6 +1,6 @@
 ---
 title: "Presentation of research results at conference"
-date: "2023-09-14"
+date: "2023-11-20"
 image: "/noticias/presentacion-de-resultados-de-investigacion-en-congreso.jpeg"
 ---
 

@@ -1,5 +1,5 @@
 ---
-title: "Creación de capítulo estudiantil Student Energy at Universidad Central del Ecuador"
+title: "Creation of Student Energy student chapter at Universidad Central del Ecuador"
 date: "2023-11-06"
 ---
 

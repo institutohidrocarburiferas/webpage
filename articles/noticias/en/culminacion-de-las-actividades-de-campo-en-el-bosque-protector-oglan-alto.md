@@ -1,5 +1,5 @@
 ---
-title: "Culminación de las actividades de campo en el Bosque Protector Oglán Alto"
+title: "Culmination of field activities in the Oglán Alto Protective Forest"
 date: "2023-06-05"
 image: "/noticias/culminacion-de-las-actividades-de-campo-en-el-bosque-protector-oglan-alto.jpeg"
 ---

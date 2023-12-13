@@ -1,11 +1,6 @@
 ---
-title: "Reunión con autoridades sectoriales en las Islas Galápagos"
-date: "2023-11-22"
-image: "/noticias/reunion-con-autoridades-sectoriales-en-las-islas-galapagos.jpeg"
+title: "Entrevista Radio UCE"
+date: "2023-11-29"
 ---
 
-El Instituto de Investigaciones Hidrocarburíferas en cumplimiento de sus actividades planificadas viajó a Galápagos para mantener reuniones con el Gobierno de Galápagos, UCE sede Galápagos y Elecgalapagos.
-
-En reunión con el Presidente del Consejo de Galápagos se trataron temas referentes al desarrollo de investigaciones que fomenten la sostenibilidad en las islas mediante el cumplimiento de los Objetivos de Desarrollo Sostenible, y sean insumo en toma de decisiones y la elaboración de política pública.
-
-![imagenes del evento](/noticias/reunion-con-autoridades-sectoriales-en-las-islas-galapagos.jpeg)
+El Director del Instituto de Investigaciones Hidrocarburíferas, PhD. Rony Parra fue entrevistado por la Radio Universitaria, donde habló sobre los proyectos de investigación científica que está trabajando el IIH, líneas de investigación y colaboradores. Así mismo, conversó sobre la agenda en territorio realizada en Galápagos para la consecución de alianzas estratégicas y desarrollo de investigaciones que fomentan la sostenibilidad en las islas.

@@ -1,10 +1,11 @@
 ---
-title: "Participation in Energy Cooperation event Korea – Ecuador 2023"
-date: "2023-11-09"
-image: "/noticias/participacion-en-evento-de-cooperacion-energetica-corea-ecuador.jpeg"
+title: "Meeting with sectoral authorities in the Galapagos Islands"
+date: "2023-11-22"
+image: "/noticias/reunion-con-autoridades-sectoriales-en-las-islas-galapagos.jpg"
 ---
 
-The Director of the Hydrocarbon Research Institute, PhD Rony Parra, participated in the table “Panorama and Investment Strategies in the Hydrocarbon Sector” of the seminar “ENERGY COOPERATION KOREA – ECUADOR 2023”.
-During his intervention, the Director expressed to the main authorities of the national energy sector that the generation of State and not government policies is necessary to guarantee the sustainability of the energy and hydrocarbon sector of Ecuador.
+The Hydrocarbon Research Institute, in compliance with its planned activities, traveled to Galapagos to hold meetings with the Government of Galapagos, UCE Galapagos headquarters and Elecgalapagos.
 
-![imagenes del evento](/noticias/participacion-en-evento-de-cooperacion-energetica-corea-ecuador.jpeg)
+In a meeting with the President of the Galapagos Council, topics were discussed regarding the development of research that promotes sustainability on the islands through compliance with the Sustainable Development Goals, and is an input in decision-making and the development of public policy.
+
+![imagenes del evento](/noticias/reunion-con-autoridades-sectoriales-en-las-islas-galapagos.jpg)

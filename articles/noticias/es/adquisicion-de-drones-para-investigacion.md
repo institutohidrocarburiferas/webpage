@@ -1,11 +1,9 @@
 ---
-title: "Reunión con autoridades sectoriales en las Islas Galápagos"
-date: "2023-11-22"
-image: "/noticias/reunion-con-autoridades-sectoriales-en-las-islas-galapagos.jpeg"
+title: "Adquisición de drones para investigación"
+date: "2023-11-24"
+image: "/noticias/adquisicion-de-drones-para-investigacion.jpeg"
 ---
 
-El Instituto de Investigaciones Hidrocarburíferas en cumplimiento de sus actividades planificadas viajó a Galápagos para mantener reuniones con el Gobierno de Galápagos, UCE sede Galápagos y Elecgalapagos.
+Como parte del proyecto de investigación "Capacidad de captura de carbono del Bosque Protector Oglán Alto-Arajuno frente a la presión ambiental por el desarrollo del campo Oglan-Bloque 10" se adquirieron dos drones con tecnología RTK y multiespectral que servirán para el análisis cartográfico y el estudio de patrones espectrales de la cobertura vegetal mediante el calculo de índices de vegetación.
 
-En reunión con el Presidente del Consejo de Galápagos se trataron temas referentes al desarrollo de investigaciones que fomenten la sostenibilidad en las islas mediante el cumplimiento de los Objetivos de Desarrollo Sostenible, y sean insumo en toma de decisiones y la elaboración de política pública.
-
-![imagenes del evento](/noticias/reunion-con-autoridades-sectoriales-en-las-islas-galapagos.jpeg)
+![imagenes del evento](/noticias/adquisicion-de-drones-para-investigacion.jpeg)

@@ -1,11 +1,8 @@
 ---
-title: "Participación en el evento de lanzamiento de Hoja de Ruta y Estrategia Nacional del Hidrógeno Verde para el Ecuador"
-date: "2023-07-19"
-image: "/noticias/participacion-en-el-evento-de-lanzamiento-de-hoja-de-ruta-y-estrategia-nacional-del-hidrógeno-verde-para-el-ecuador.jpeg"
+title: "Creación de capítulo estudiantil Student Energy at Universidad Central del Ecuador"
+date: "2023-11-06"
 ---
 
-El Director del Instituto de Investigaciones Hidrocarburíferas de la Universidad Central del Ecuador, PhD Rony Parra y el Decano de la FIGEMPA, Mgtr. Gustavo Pinto Arteaga participaron en la mesa académica sobre el rol de la academia y los centros de investigación en el desarrollo sostenible del hidrógeno verde, que se llevó a cabo el 17 de julio del presente año.
+El Instituto de Investigaciones Hidrocarburíferas en conjunto con estudiantes de la Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental culminaron el proceso de creación del capítulo estudiantil de energía Student Energy at Universidad Central del Ecuador.
 
-Durante el evento de lanzamiento se dio a conocer la Hoja de Ruta y Estrategia Nacional del Hidrógeno Verde para el Ecuador, ambas iniciativas fortalecen el proceso de Transición Energética Justa y contribuyen a la reducción de las emisiones de GEI. El término “hidrogeno verde” H2V, hace referencia a un hidrógeno que se obtiene sin ocasionar emisiones contaminantes y tanto Hoja de ruta como Estrategia Nacional del Hidrógeno Verde buscan impulsar los recursos de energía renovable disponibles.
-
-![imagenes del evento](/noticias/participacion-en-el-evento-de-lanzamiento-de-hoja-de-ruta-y-estrategia-nacional-del-hidrógeno-verde-para-el-ecuador.jpeg)
+Student Energy es una organización sin fines de lucro canadiense que impulsa el involucramiento de los jóvenes en sector de la energía.
