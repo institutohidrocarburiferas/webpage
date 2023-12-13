@@ -1,7 +1,7 @@
 ---
 title: 'Determinación de la presión ecosistémica en la dinámica del sector turismo en las islas Galápagos'
-image: "/proyectos-investigacion/sistema-de-monitoreo-de-bioindicadores-ANZU.jpg"
-icon: "/proyectos-investigacion/sistema-de-monitoreo-de-bioindicadores-ANZU.svg"
+
+icon: "/proyectos-investigacion/turismo-islas-galapagos.svg"
 ---
 
 The disorderly demographic growth, the State's need for economic resources to maintain socioeconomic dynamics, the motivation of tourists due to the endemic biodiversity of the Galapagos and the reconfiguration of resource-intensive tourist services, have driven the growth of tourists who increasingly demand of greater goods and services, which puts the ecosystem limits and sustainability of the Galapagos at risk, which is why this study aims to generate biophysical accounting (example: energy, water, food, human activity) in the tourism sector to show the ecosystem pressure in the dynamics and growth of the tourism sector in the Galapagos Islands, providing necessary inputs for the discussion of sustainability. An innovative methodology will be used based on the understanding of complex systems and the application of the MuSIASEM Multi-Scale Integrated Analysis of Societal and Ecosystem Metabolism end-use matrix.
