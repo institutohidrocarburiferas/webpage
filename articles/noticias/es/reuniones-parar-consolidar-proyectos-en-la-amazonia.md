@@ -1,11 +1,15 @@
 ---
-title: "Participación en el evento de lanzamiento de Hoja de Ruta y Estrategia Nacional del Hidrógeno Verde para el Ecuador"
-date: "2023-07-19"
-image: "/noticias/participacion-en-el-evento-de-lanzamiento-de-hoja-de-ruta-y-estrategia-nacional-del-hidrógeno-verde-para-el-ecuador.jpeg"
+title: "Reuniones para consolidar proyectos en la Amazonia"
+date: "2023-09-14"
+image: "/noticias/reuniones-parar-consolidar-proyectos-en-la-amazonia.jpeg"
 ---
 
-El Director del Instituto de Investigaciones Hidrocarburíferas de la Universidad Central del Ecuador, PhD Rony Parra y el Decano de la FIGEMPA, Mgtr. Gustavo Pinto Arteaga participaron en la mesa académica sobre el rol de la academia y los centros de investigación en el desarrollo sostenible del hidrógeno verde, que se llevó a cabo el 17 de julio del presente año.
+Los días 13 y 14 de septiembre en la provincia de Napo, los investigadores del Instituto de Investigaciones Hidrocarburíferas de la Universidad Central del Ecuador mantuvieron reuniones con representantes de los gobiernos sectoriales de la provincia, el GAD Provincial Napo y los GAD municipales de Tena y Carlos Julio Arosemena Tola.
 
-Durante el evento de lanzamiento se dio a conocer la Hoja de Ruta y Estrategia Nacional del Hidrógeno Verde para el Ecuador, ambas iniciativas fortalecen el proceso de Transición Energética Justa y contribuyen a la reducción de las emisiones de GEI. El término “hidrogeno verde” H2V, hace referencia a un hidrógeno que se obtiene sin ocasionar emisiones contaminantes y tanto Hoja de ruta como Estrategia Nacional del Hidrógeno Verde buscan impulsar los recursos de energía renovable disponibles.
+El propósito de dichas reuniones fue generar alianzas para el desarrollo de proyectos de investigación en temas de carbono neutralidad, monitoreo de calidad del suelo, agua y deforestación. Actualmente está por culminar un proyecto de investigación en el Bosque Protector Oglán Alto.
 
-![imagenes del evento](/noticias/participacion-en-el-evento-de-lanzamiento-de-hoja-de-ruta-y-estrategia-nacional-del-hidrógeno-verde-para-el-ecuador.jpeg)
+Hace poco más de un año se desarrolló el “Sistema de Monitoreo de Bioindicadores ANZU”, un sistema de monitoreo basado en la ciencia de datos para identificar cambios en los ecosistemas y utilizar bioindicadores específicos para monitorear el impacto ecosistémico en la Amazonía.
+
+Proyectos como estos son planteados por los investigadores y docentes del Instituto de Investigaciones Hidrocarburíferas y, a través de reuniones con autoridades y representantes se busca crear y fortalecer alianzas, así como contar con la cooperación de las comunicades para proceder con las investigaciones en campo.
+
+![imagenes del evento](/noticias/reuniones-parar-consolidar-proyectos-en-la-amazonia.jpeg)
