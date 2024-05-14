@@ -2,13 +2,13 @@ import {useRouter} from 'next/router'
 import cn from 'classnames'
 
 // TODO: Arreglar esto para la página evento Perspectivas
-import {exception} from '@components/Navbar'
+import {exceptions} from '@components/Navbar'
 
 export const TopArea: React.FC = () => {
   const router = useRouter()
   const {pathname, asPath, locales, locale, push} = router
 
-  if (pathname === exception) {
+  if (exceptions.includes(pathname)) {
     return <div />
   }
 
