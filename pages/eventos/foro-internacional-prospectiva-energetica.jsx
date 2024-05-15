@@ -147,7 +147,6 @@ export default function Evento ({photos}) {
       </Head>
       <Sidebar gradient="from-amber-400 to-orange-200" items={sideItems} />
       <main>
-        <Separator id="content" />
         <HeroSection
           height={heroContent.height}
           image={heroContent.image}

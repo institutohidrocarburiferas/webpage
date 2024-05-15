@@ -6,7 +6,7 @@ export const TopArea: React.FC = () => {
   const {pathname, asPath, locales, locale, push} = router
 
   if (pathname.substring(1, 8) === 'eventos' || locales === undefined || locale === undefined) {
-    return <div aria-disabled className="w-full h-24" />
+    return <div aria-disabled className="w-full h-24" id="top-area"/>
   }
 
   const languajes = locales.map((local) => (

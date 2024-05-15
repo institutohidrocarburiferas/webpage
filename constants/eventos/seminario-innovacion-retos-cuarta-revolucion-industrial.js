@@ -4,7 +4,7 @@ const path = '/eventos/seminario-innovacion-retos-cuarta-revolucion-industrial'
 export const sideItems = [
   {
     label: 'Inicio',
-    url: '#content',
+    url: '#top-area',
     image: <svg className="icon icon-tabler icon-tabler-home-2" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none" stroke="none" />
       <polyline points="5 12 3 12 12 3 21 12 19 12" />
