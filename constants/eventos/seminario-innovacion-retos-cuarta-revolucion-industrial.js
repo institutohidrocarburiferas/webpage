@@ -150,22 +150,22 @@ export const sideItems = [
 
 export const sponsors = [
   {
-    title: 'Logo del Ministerio de Energía y Minas',
+    title: 'Ministerio de Energía y Minas',
     image: '/eventos/seminario-internacional-cuarta-revolucion-industrial/logominener.png',
   },
 ]
 
 export const organizers = [
   {
-    title: 'Logo de la Universidad Central',
+    title: 'Universidad Central',
     image: '/UCE-logo.png',
   },
   {
-    title: 'Logo de la FIGEMPA',
-    image: '/logofigempa.jpg',
+    title: 'FIGEMPA',
+    image: '/logos/logofigempa-anterior.jpg',
   },
   {
-    title: 'Logo de Ingeniería en Petróleos de Universidad Central del Ecuador',
+    title: 'Ingeniería en Petróleos de Universidad Central del Ecuador',
     image: '/logoiih.png',
   },
 ]
