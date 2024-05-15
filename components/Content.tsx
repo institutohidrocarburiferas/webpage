@@ -17,12 +17,14 @@ export const Content: React.FC<Props> = ({children, title, description, image, s
       <title>{title}</title>
       <meta content={description} name="description" />
     </Head>
-    <TitlePage
-      image={image}
-      svgColor={svgColor}
-      title={title}
-    />
-    {children}
-    <Footer image={image} svgColor={svgColor} />
+    <div className="flex flex-col justify-between min-h-[90dvh]">
+      <TitlePage
+        image={image}
+        svgColor={svgColor}
+        title={title}
+      />
+      {children}
+      <Footer image={image} svgColor={svgColor} />
+    </div>
   </>
 }
