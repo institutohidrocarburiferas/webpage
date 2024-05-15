@@ -241,87 +241,58 @@ export const organizers = [
   },
 ]
 
+export const auspiciantes = [
+  {
+    title: 'Instituto de Investigaciones Hidrocarburíferas',
+    image: '/logoiih.png',
+  },
+  {
+    title: 'Universidad Central del Ecuador',
+    image: '/UCE-logo.png',
+  },
+  {
+    title: 'Olade',
+    image: '/externalLinks/revistas/oladeorg-logo.jpg',
+  },
+  {
+    title: 'Student Energy at UCE',
+    image: '/logos/student-energy-uce.jpg',
+  },
+]
+
 export const programItems = [
   {
-    time: '08H00 - 08H30',
-    label: 'Registro',
-    expositor: 'Auditorio Máster del Centro de Información Integral',
-    institution: 'Universidad Central del Ecuador',
+    time: '20 de mayo 2024',
+    label: 'Publicación de convocatoria',
+    expositor: 'Página del Instituto',
+    institution: '',
   },
   {
-    time: '08H30 - 09H00',
-    label: 'Inauguración y palabras de bienvenida',
-    expositor: 'Autoridades: Ministerio de Energía y Minas - Universidad Central del Ecuador',
+    time: '20 de mayo - 20 junio 2024',
+    label: 'Envío de pósters',
+    institution: 'Mediante enlace habilitado',
   },
   {
-    time: '09H00 - 09H40',
-    label: 'Seguridad y sostenibilidad de los sistemas futuros de energía (fósil y electricidad) - Ponencia virtual',
-    institution: 'Universidad de Minería de San Petersburgo',
+    time: '30 de junio 2024',
+    label: 'Notificación de resultados',
+    institution: 'Mediante notificación',
   },
   {
-    time: '09H40 - 10H20',
-    label: 'Visión a largo plazo del sistema energético de Ecuador',
-    expositor: 'Ing. Enith Carrión, MSc',
-    institution: 'Viceministra de Electricidad y Energía Renovable - Ministerio de Energía y Minas',
+    time: '19 de julio de 2024',
+    label: 'Envío de artículos completos para el libro de actas',
+    expositor: '',
+    institution: 'Según formato establecido',
   },
   {
-    time: '10H20 - 11H00',
-    label: 'Visualización y retos de la transición energética en ALC a mediano y largo plazo (uso de herramientas de prospectiva de OLADE)',
-    expositor: 'Ing. Medardo Cadena, MSc',
-    institution: 'Director de Estudios, Proyectos e Información - Organización Latinoamericana de Energía (OLADE)',
+    time: '01 de julio de 2024',
+    label: 'Inscripciones para asistir al evento',
+    institution: 'Mediante enlace habilitado',
   },
   {
-    time: '11H00 - 11H30',
-    label: 'COFFEE BREAK',
-  },
-  {
-    time: '11H30 - 12H10',
-    label: 'Futuro de los mercados de precios de los commodities energéticos',
-    expositor: 'Rafael Espinoza',
-    institution: 'Socio - McKinsey & Company',
-  },
-  {
-    time: '12H10 - 12H50',
-    label: 'Prospectiva energética para el Ecuador con MuSIASEM o Multi-Scale Integrated Analysis and Ecosystem Metabolism',
-    expositor: 'Ing. Rony Parra, PhD',
-    institution: 'Director Instituto de Investigaciones Hidrocarburíferas IIH - Universidad Central del Ecuador',
-  },
-  {
-    time: '12H50 - 14H30',
-    label: 'ALMUERZO',
-  },
-  {
-    time: '14H30 - 15H10',
-    label: 'Visión a largo plazo del sistema energético (oferta y demanda de combustibles y electricidad) con la transformación del mercado hacia equipos energéticamente eficientes.',
-    expositor: 'Ing. Ignacio Sagardoy, MSc',
-    institution: 'Fundación Bariloche (Argentina)',
-  },
-  {
-    time: '15H10 - 15H50',
-    label: 'Estudio de prospectiva en el sector transporte de Ecuador',
-    expositor: 'Ing, Francisco Terneus, PhD(c)',
-    institution: 'Facultad de Ciencias Administrativas - Escuela Politécnica Nacional',
-  },
-  {
-    time: '15H50 - 16H20',
-    label: 'COFFEE BREAK',
-  },
-  {
-    time: '16H20 - 17H00',
-    label: 'Modelo de prospectiva energética para México',
-    expositor: 'Ing. Juan I. Navarrete, MSc',
-    institution: 'Director de Políticas y Programas - Comisión Nacional para el Uso Eficiente de la Energía (CONUEE-SENER)',
-  },
-  {
-    time: '17H00 - 17H40',
-    label: 'Tasas biofísicas de retorno energético en el uso de biocombustibles para el Ecuador',
-    expositor: 'Ing. Ghem Carvajal, MSc',
-    institution: 'Facultad de Ingeniería Química - Universidad Central del Ecuador',
-  },
-  {
-    time: '17H40 - 18H30',
-    label: 'Resumen y Cierre',
-    expositor: 'Autoridades',
+    time: '26 de julio de 2024',
+    label: 'Foro Regional de Divulgación Científica',
+    expositor: '',
+    institution: 'Lugar: Biblioteca de la Univeersidad Central del Ecuador',
   },
 ]
 

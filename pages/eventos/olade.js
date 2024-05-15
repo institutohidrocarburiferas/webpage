@@ -13,6 +13,7 @@ import {Participants} from '@components/Participants'
 import {RegisterButton} from '@components/RegisterButton'
 import {Sidebar} from '@components/Sidebar'
 import {
+  auspiciantes,
   programItems,
   organizers,
   sideItems,
@@ -158,7 +159,7 @@ export default function Evento ({photos}) {
           {/* Registro y cuenta regresiva */}
           <section className="flex flex-col gap-5 mt-5">
             <div className="flex flex-col items-center justify-center gap-2 mx-auto w-fit">
-              <RegisterButton class="pointer-events-none w-fit" href={pageData.eventPosterLink}>
+              <RegisterButton className="opacity-50 pointer-events-none w-fit" href={pageData.eventPosterLink}>
                 Envíanos tu Póster
               </RegisterButton>
               <span className="text-xs text-white lg:text-sm">
@@ -443,6 +444,14 @@ export default function Evento ({photos}) {
           <Separator id="organizadores" />
           <Participants data={organizers} title="Organizadores" />
 
+          {/* Participantes */}
+          <Separator id="patrocinadores" />
+          <Participants data={sponsors} title="Participantes" />\
+
+          {/* Auspiciantes */}
+          <Separator id="organizadores" />
+          <Participants data={auspiciantes} title="Auspiciantes" />
+
           {/* Agenda */}
           <Separator id="agenda" />
           <section
@@ -454,7 +463,7 @@ export default function Evento ({photos}) {
               backgroundImage:
                 'linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), url(/bgEvent.svg)',
             }}>
-            <Title>Agenda</Title>
+            <Title>Fechas Importantes</Title>
             <div className="container grid items-stretch grid-cols-1 p-5 gap-y-10 gap-x-20 md:pl-24 lg:grid-cols-2">
               {programItems.map(({time, label, expositor, institution}) => (
                 <ProgramItem
@@ -468,48 +477,18 @@ export default function Evento ({photos}) {
             </div>
           </section>
 
-          {/* Patrocinadores */}
-          <Separator id="patrocinadores" />
-          <Participants data={sponsors} title="Instituciones Participantes y Patrocinadores" />
-
           {/* ¿Qué busca el evento? */}
           <Separator id="que-busca-el-evento" />
           <section className="flex flex-col items-center gap-5 lg:flex-row lg:container">
             <section className="flex flex-col px-5 md:pl-24 lg:w-1/2">
-              <Title>¿Qué busca el evento?</Title>
+              <Title>Perfil de Auspiciantes</Title>
               <Text>
-                Generar un espacio de discusión entre instituciones de gobierno, empresas, academia
-                y sociedad civil, sobre la necesidad de realizar estudios prospectivos que vinculen
-                el aprovechamiento de los recursos energéticos y con ello fortalecer la
-                planificación energética del Ecuador con fines de seguridad y soberanía.
+                  El evento esta dirigido a varios actores de la gobernanza como:
+                  instituciones gubernamentales, sector empresarial, academia y
+                  otros grupos de la sociedad civil para su discusión de temas
+                  relevantes en los diferentes niveles del ciclo de las políticas
+                  energéticas.
               </Text>
-              <ul className="flex flex-col gap-3 list-disc pl-7">
-                <li>
-                  <Text>
-                    Entender sobre los problemas y retos que atañe a los sistemas energéticos a
-                    nivel global, regional y local, con fines de seguridad y soberanía
-                  </Text>
-                </li>
-                <li>
-                  <Text>
-                    Conocer sobre varias herramientas y modelos que permiten desarrollar escenarios
-                    de prospectiva energética para el fortalecimiento de las políticas públicas
-                  </Text>
-                </li>
-                <li>
-                  <Text>
-                    Identificar los beneficios de incorporar la transformación del mercado hacia
-                    equipos energéticamente eficientes a través de escenarios prospectivos
-                  </Text>
-                </li>
-                <li>
-                  <Text>
-                    Conocer sobre experiencias internacionales, investigaciones y trabajos que
-                    pueden servir para el fortalecimiento de la planificación energética al mediano
-                    y largo plazo del sistema energético del Ecuador
-                  </Text>
-                </li>
-              </ul>
             </section>
 
             <section className="w-2/3 md:w-1/2">
@@ -535,7 +514,7 @@ export default function Evento ({photos}) {
           {/* Ponentes */}
           <Separator id="ponentes" />
           <section className="flex flex-col items-center gap-5 p-5 lg:container md:pl-24">
-            <Title>Ponentes</Title>
+            <Title>Comité Científico</Title>
             <div className="flex flex-wrap justify-center gap-10 md:flex-row ">
               {/* <div className="grid grid-cols-1 gap-5 place-items-center md:grid-cols-2 md:gap-10 lg:grid-cols-3 lg:gap-x-20"> */}
               {speakers.map(({name, image, role, institute}) => (
@@ -551,11 +530,11 @@ export default function Evento ({photos}) {
           </section>
 
           {/* Exposiciones */}
-          <Separator id="expositions" />
+          {/* <Separator id="expositions" />
           <div className="mx-2">
-            <Title>Ponencias presentadas en el foro</Title>
+            <Title>Posters presentados</Title>
           </div>
-          <Expositions items={expositions} />
+          <Expositions items={expositions} /> */}
 
           {/* Registro */}
           {/* <Separator id="registro" />
@@ -577,16 +556,15 @@ export default function Evento ({photos}) {
 
           </HeroSection> */}
 
-          <Separator id="photos" />
+          {/* <Separator id="photos" />
 
           <div className="container mx-auto">
-            {/* Recent notices section */}
             <Title>Fotos del evento</Title>
 
             <section className="max-w-5xl p-2 mx-auto md:pl-16">
               <Slider data={photos} slice={photos.length} />
             </section>
-          </div>
+          </div> */}
 
           {/* <div className='container flex flex-wrap justify-center gap-20 mx-auto md:ml-16'>
             {photos.map(({image}) => (
