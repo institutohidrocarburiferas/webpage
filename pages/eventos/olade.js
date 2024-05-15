@@ -595,8 +595,9 @@ export default function Evento ({photos}) {
 }
 
 export const getStaticProps = async ({locale}) => {
+  const dir = 'eventos/foro-internacional-prospectiva-energetica/fotos'
   const i18nConf = await serverSideTranslations(locale)
-  const photos = await getEventPhotos()
+  const photos = await getEventPhotos({dir})
 
   return {
     props: {

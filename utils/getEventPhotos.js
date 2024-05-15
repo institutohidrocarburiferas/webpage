@@ -2,8 +2,7 @@ import fs from 'node:fs'
 import path from 'node:path'
 
 // To send Slider component
-export function getEventPhotos () {
-  const dir = 'eventos/foro-internacional-prospectiva-energetica/fotos'
+export function getEventPhotos ({dir}) {
   const dataDirectory = path.join(process.cwd(), 'public', dir)
 
   const photos = fs.readdirSync(dataDirectory)
