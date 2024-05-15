@@ -4,8 +4,8 @@ date: "2024-05-20"
 image: "/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica.jpg"
 ---
 
-El **Foro Regional de Divulgación Científica: Transición y Sostenibilidad Energética** busca generar un espacio de divulgación científica sobre los avances en estudios de investigación y de aplicación que permitan la materialización de la transición y sostenibilidad energética.
+The **Regional Scientific Dissemination Forum: Energy Transition and Sustainability** seeks to generate a space for scientific dissemination on advances in research and application studies that allow the materialization of the energy transition and sustainability.
 
-El evento es organizado por el Instituto de Investigaciones Hidrocarburíferas de la Universidad Central del Ecuador encoparticipación con la Organización Latinoamericana de Energía-OLADE y Student Energy at Universidad Central del Ecuador, se llevará acabo el 26 de julio de 2024 en el Teatro Universitario de la Universidad Central del Ecuador
+The event is organized by the Hydrocarbon Research Institute of the Central University of Ecuador in co-participation with the Latin American Energy Organization-OLADE and Student Energy at the Central University of Ecuador, it will take place on July 26, 2024 at the University Theater of the University Central Ecuador
 
 [Más información](/eventos/olade)
