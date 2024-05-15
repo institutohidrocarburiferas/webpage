@@ -22,7 +22,7 @@ import {
   // expositions,
   oportunidadesPublicacion,
 } from '@constants/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica'
-import {getEventPhotos} from '@utils/getEventPhotos'
+// import {getEventPhotos} from '@utils/getEventPhotos'
 
 const pageData = {
   title: 'Foro Regional De Divulgación Científica: Transición Y Sostenibilidad Energética',
@@ -594,9 +594,10 @@ export default function Evento ({photos}) {
 }
 
 export const getStaticProps = async ({locale}) => {
-  const dir = 'eventos/foro-internacional-prospectiva-energetica/fotos'
+  // const dir = '/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energeticafotos'
   const i18nConf = await serverSideTranslations(locale)
-  const photos = await getEventPhotos({dir})
+  const photos = []
+  // const photos = await getEventPhotos({dir})
 
   return {
     props: {

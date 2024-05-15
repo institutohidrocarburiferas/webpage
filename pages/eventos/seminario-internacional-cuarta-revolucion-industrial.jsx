@@ -351,7 +351,7 @@ export default function Evento ({photos}) {
 }
 
 export const getStaticProps = async ({locale}) => {
-  const dir = 'eventos/seminario-internacional-cuarta-revolucion-industrial/fotos'
+  const dir = '/eventos/seminario-internacional-cuarta-revolucion-industrial/fotos'
   const i18nConf = await serverSideTranslations(locale)
   const photos = await getEventPhotos({dir})
 
