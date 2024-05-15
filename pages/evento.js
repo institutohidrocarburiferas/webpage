@@ -160,7 +160,9 @@ export default function Evento ({photos}) {
           {/* Registro y cuenta regresiva */}
           <section className="flex flex-col gap-5 mt-5">
             <div className="flex justify-center w-full">
-              <RegisterButton />
+              <RegisterButton href="/evento/#expositions">
+                Descarga las ponencias del evento
+              </RegisterButton>
             </div>
             <Countdown eventDate={pageData.eventDay} />
           </section>
@@ -412,12 +414,12 @@ export default function Evento ({photos}) {
             {/* Recent notices section */}
             <Title>Fotos del evento</Title>
 
-            <section className="md:pl-16 p-2 max-w-5xl mx-auto">
+            <section className="max-w-5xl p-2 mx-auto md:pl-16">
               <Slider data={photos} slice={photos.length} />
             </section>
           </div>
 
-          {/* <div className='container flex flex-wrap mx-auto md:ml-16 justify-center gap-20'>
+          {/* <div className='container flex flex-wrap justify-center gap-20 mx-auto md:ml-16'>
             {photos.map(({image}) => (
               <picture key={image}>
 

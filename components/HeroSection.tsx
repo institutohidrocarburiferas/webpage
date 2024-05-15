@@ -40,8 +40,7 @@ export const HeroSection: React.FC<Props> = ({
         {containerRef.isNear
           ? <div className="container flex flex-col gap-5 animate-fade">
             <h2>
-              <p className='inline-block text-3xl font-extrabold text-transparent bg-gradient-to-r bg-clip-text from-amber-400 via-orange-400 to-amber-400 lg:max-w-4xl
-              sm:text-4xl md:text-5xl lg:text-6xl'>{title}</p>
+              <p className='inline-block text-3xl font-extrabold text-transparent bg-gradient-to-r bg-clip-text from-amber-400 via-orange-400 to-amber-400 lg:max-w-4xl sm:text-4xl md:text-5xl lg:text-6xl'>{title}</p>
             </h2>
             <p className='leading-normal tracking-wider text-gray-100 lg:text-justify'
               style={{
