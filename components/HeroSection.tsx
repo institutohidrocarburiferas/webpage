@@ -15,6 +15,7 @@ export const HeroSection: React.FC<Props> = ({
   title,
   text,
   image,
+  height,
   justifyContent = 'center',
   children,
 }) => {
@@ -28,6 +29,7 @@ export const HeroSection: React.FC<Props> = ({
         backgroundImage:
           `linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), url(${image})`,
         justifyContent,
+        height,
         alignContent: 'center',
       }}>
       <div ref={containerRef.ref}>
