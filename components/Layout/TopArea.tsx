@@ -1,19 +1,12 @@
 import {useRouter} from 'next/router'
 import cn from 'classnames'
 
-// TODO: Arreglar esto para la página evento Perspectivas
-import {exceptions} from '@components/Navbar'
-
 export const TopArea: React.FC = () => {
   const router = useRouter()
   const {pathname, asPath, locales, locale, push} = router
 
-  if (exceptions.includes(pathname)) {
-    return <div />
-  }
-
-  if (locales === undefined || locale === undefined) {
-    return <div />
+  if (pathname.substring(1, 8) === 'eventos' || locales === undefined || locale === undefined) {
+    return <div aria-disabled className="w-full h-24" />
   }
 
   const languajes = locales.map((local) => (
@@ -23,7 +16,8 @@ export const TopArea: React.FC = () => {
       onClick={() => push(
         pathname,
         asPath,
-        {locale: local})}
+        {locale: local}
+      )}
     >
       {local.toUpperCase()}
     </button>
