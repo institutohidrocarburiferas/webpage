@@ -1,5 +1,5 @@
 
-const path = '/eventos/foro-internacional-prospectiva-energetica'
+const path = '/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica'
 
 export const sideItems = [
   {
@@ -147,6 +147,17 @@ export const sideItems = [
   },
 ]
 
+export const oportunidadesPublicacion = [
+  {
+    title: 'Revista de Investigación de FIGEMPA',
+    image: '/logos/figempa-revista.jpeg',
+  },
+  {
+    title: 'EnerLAC - Revista de Energía de Latinoamérica y El Caribe',
+    image: '/logos/enerlac.jpg',
+  },
+]
+
 export const sponsors = [
   {
     title: 'Olade',
@@ -201,7 +212,7 @@ export const sponsors = [
     image: '/logos/geoil.png',
   },
   {
-    title: 'Secretaría de Energía de México',
+    title: 'Secretaría de Energía',
     image: '/logos/sener-secretaria-energia.png',
   },
   {
@@ -369,7 +380,7 @@ export const speakers = [
   },
 ]
 
-const expos = '/eventos/foro-internacional-prospectiva-energetica/expositions'
+const expos = '/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica'
 
 export const expositions = [
   {

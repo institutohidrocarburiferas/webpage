@@ -4,18 +4,19 @@ function Participant ({title, image, url}) {
   return <a className='grid bg-white rounded hover:scale-105 place-content-center' href={url} rel="noreferrer" target="_blank">
     <picture>
       <img
-        alt={title}
+        alt={'Logo de' + title}
         className='h-20 rounded md:h-28 aspect-auto'
         loading="lazy"
         src={image}
+        title={title}
       />
     </picture>
   </a>
 }
 
 export function Participants ({title, data}) {
-  const participants = data.map(({label, image, url}) => (
-    <Participant key={url} image={image} title={label} url={url} />
+  const participants = data.map(({title, image, url}) => (
+    <Participant key={url} image={image} title={title} url={url} />
   ))
 
   return (
