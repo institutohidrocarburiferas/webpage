@@ -1,16 +1,13 @@
 import type {PostsData} from '@utils/posts'
 
-import path from 'node:path'
-
 import {GetStaticProps, NextPage} from 'next'
 import {serverSideTranslations} from 'next-i18next/serverSideTranslations'
 import {useTranslation} from 'next-i18next'
 
-import Link from 'next/link'
-
+import {events} from '@constants/eventos'
 import {Content} from '@components/Content'
 import {NoticesList} from '@components/NoticesList'
-import {getPostsData} from '@utils/posts'
+import {sortedByDate} from '@utils/sortedByDate'
 
 const pageData = {
   image: '/background-footer.jpg',
@@ -18,10 +15,10 @@ const pageData = {
 }
 
 interface Props {
-  allNotices: PostsData[]
+  events: PostsData[]
 }
 
-export const Page: NextPage<Props> = ({allNotices}) => {
+export const Page: NextPage<Props> = ({events}) => {
   const {t} = useTranslation(['EventsPage'])
 
   return (
@@ -34,7 +31,7 @@ export const Page: NextPage<Props> = ({allNotices}) => {
         <section className='relative'>
           <div className='flex flex-col flex-wrap items-center justify-center gap-10 md:flex-row'>
             <NoticesList
-              items={allNotices}
+              items={events}
               title={null}
               urlPath={pageData.mainURL}
             />
@@ -46,13 +43,13 @@ export const Page: NextPage<Props> = ({allNotices}) => {
 }
 
 export const getStaticProps: GetStaticProps = async ({locale}) => {
-  const dataDirectory = path.join(process.cwd(), 'articles', pageData.mainURL, locale!)
-  const allNotices = getPostsData(dataDirectory)
+  const eventsSorted = sortedByDate([...events])
   const i18nConf = await serverSideTranslations(locale!)
 
   return {
     props: {
-      allNotices, ...i18nConf,
+      events: eventsSorted,
+      ...i18nConf,
     }
   }
 }
