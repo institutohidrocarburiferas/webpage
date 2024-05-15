@@ -171,8 +171,8 @@ export default function Evento ({photos}) {
         </HeroSection>
 
         <div className="grid w-full grid-cols-1 justify-items-center">
-          {/* ¿Por qué prospectiva ? */}
-          <Separator id="por-que-perspectiva" />
+          {/* Información */}
+          <Separator id="info" />
           <section className="flex flex-col items-center gap-5 p-5 lg:flex-row-reverse lg:container md:pl-24">
             <section className="flex flex-col lg:w-1/2">
               <Title>Información</Title>
@@ -445,11 +445,11 @@ export default function Evento ({photos}) {
           <Participants data={organizers} title="Organizadores" />
 
           {/* Participantes */}
-          <Separator id="patrocinadores" />
+          <Separator id="participantes" />
           <Participants data={sponsors} title="Participantes" />\
 
           {/* Auspiciantes */}
-          <Separator id="organizadores" />
+          <Separator id="auspiciantes" />
           <Participants data={auspiciantes} title="Auspiciantes" />
 
           {/* Agenda */}
@@ -477,8 +477,8 @@ export default function Evento ({photos}) {
             </div>
           </section>
 
-          {/* ¿Qué busca el evento? */}
-          <Separator id="que-busca-el-evento" />
+          {/* Perfil de Auspiciantes */}
+          <Separator id="perfil-auspiciantes" />
           <section className="flex flex-col items-center gap-5 lg:flex-row lg:container">
             <section className="flex flex-col px-5 md:pl-24 lg:w-1/2">
               <Title>Perfil de Auspiciantes</Title>

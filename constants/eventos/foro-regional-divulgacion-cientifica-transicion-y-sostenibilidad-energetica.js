@@ -14,8 +14,8 @@ export const sideItems = [
 
   },
   {
-    label: '¿Por qué prospectiva?',
-    url: '#por-que-perspectiva',
+    label: 'Información',
+    url: '#info',
     image: <svg className="icon icon-tabler icon-tabler-question-mark" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none" stroke="none" />
       <path d="M8 8a3.5 3 0 0 1 3.5 -3h1a3.5 3 0 0 1 3.5 3a3 3 0 0 1 -2 3a3 4 0 0 0 -2 4" />
@@ -38,6 +38,48 @@ export const sideItems = [
     </svg>
   },
   {
+    label: 'Oportunidades de publicación',
+    url: '#oportunidades',
+    image: <svg className="icon icon-tabler icon-tabler-briefcase" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+      <rect height="13" rx="2" width="18" x="3" y="7" />
+      <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
+      <line x1="12" x2="12" y1="12" y2="12.01" />
+      <path d="M3 13a20 20 0 0 0 18 0" />
+    </svg>
+  },
+  {
+    label: 'Organizadores',
+    url: '#organizadores',
+    image: <svg className="icon icon-tabler icon-tabler-ticket" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+      <line x1="15" x2="15" y1="5" y2="7" />
+      <line x1="15" x2="15" y1="11" y2="13" />
+      <line x1="15" x2="15" y1="17" y2="19" />
+      <path d="M5 5h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-3a2 2 0 0 0 0 -4v-3a2 2 0 0 1 2 -2" />
+    </svg>
+  },
+  {
+    label: 'Participantes',
+    url: '#participantes',
+    image: <svg className="icon icon-tabler icon-tabler-link" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+      <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
+      <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
+    </svg>
+  },
+  {
+    label: 'Auspiciantes',
+    url: '#auspiciantes',
+    image: <svg className="icon icon-tabler icon-tabler-speakerphone" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+      <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+      <path d="M18 8a3 3 0 0 1 0 6" />
+      <path d="M10 8v11a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-5" />
+      <path d="M12 8h0l4.524 -3.77a0.9 .9 0 0 1 1.476 .692v12.156a0.9 .9 0 0 1 -1.476 .692l-4.524 -3.77h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h8" />
+    </svg>
+
+  },
+  {
     label: 'Agenda',
     url: '#agenda',
     image: <svg className="icon icon-tabler icon-tabler-calendar-time" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
@@ -49,55 +91,22 @@ export const sideItems = [
       <path d="M3 11h16" />
       <path d="M18 16.496v1.504l1 1" />
     </svg>
+  },
+  // {
+  //   label: 'Descarga las ponencias',
+  //   url: '#expositions',
+  //   image: <svg className="icon icon-tabler icon-tabler-file-search" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  //     <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+  //     <path d="M14 3v4a1 1 0 0 0 1 1h4" />
+  //     <path d="M12 21h-5a2 2 0 0 1 -2 -2v-14a2 2 0 0 1 2 -2h7l5 5v4.5" />
+  //     <circle cx="16.5" cy="17.5" r="2.5" />
+  //     <line x1="18.5" x2="21" y1="19.5" y2="22" />
+  //   </svg>
 
-  },
+  // },
   {
-    label: 'Organizadores',
-    url: '#organizadores',
-    image: <svg className="icon icon-tabler icon-tabler-briefcase" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-      <rect height="13" rx="2" width="18" x="3" y="7" />
-      <path d="M8 7v-2a2 2 0 0 1 2 -2h4a2 2 0 0 1 2 2v2" />
-      <line x1="12" x2="12" y1="12" y2="12.01" />
-      <path d="M3 13a20 20 0 0 0 18 0" />
-    </svg>
-
-  },
-  {
-    label: 'Patrocinadores',
-    url: '#patrocinadores',
-    image: <svg className="icon icon-tabler icon-tabler-ticket" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-      <line x1="15" x2="15" y1="5" y2="7" />
-      <line x1="15" x2="15" y1="11" y2="13" />
-      <line x1="15" x2="15" y1="17" y2="19" />
-      <path d="M5 5h14a2 2 0 0 1 2 2v3a2 2 0 0 0 0 4v3a2 2 0 0 1 -2 2h-14a2 2 0 0 1 -2 -2v-3a2 2 0 0 0 0 -4v-3a2 2 0 0 1 2 -2" />
-    </svg>
-  },
-  {
-    label: '¿Qué busca el evento?',
-    url: '#que-busca-el-evento',
-    image: <svg className="icon icon-tabler icon-tabler-link" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-      <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-      <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
-    </svg>
-
-  },
-  {
-    label: 'Ponentes',
-    url: '#ponentes',
-    image: <svg className="icon icon-tabler icon-tabler-speakerphone" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-      <path d="M18 8a3 3 0 0 1 0 6" />
-      <path d="M10 8v11a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-5" />
-      <path d="M12 8h0l4.524 -3.77a0.9 .9 0 0 1 1.476 .692v12.156a0.9 .9 0 0 1 -1.476 .692l-4.524 -3.77h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h8" />
-    </svg>
-
-  },
-  {
-    label: 'Descarga las ponencias',
-    url: '#expositions',
+    label: 'Perfil de Auspiciantes',
+    url: '#perfil-auspiciantes',
     image: <svg className="icon icon-tabler icon-tabler-file-search" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none" stroke="none" />
       <path d="M14 3v4a1 1 0 0 0 1 1h4" />
@@ -105,6 +114,13 @@ export const sideItems = [
       <circle cx="16.5" cy="17.5" r="2.5" />
       <line x1="18.5" x2="21" y1="19.5" y2="22" />
     </svg>
+  },
+  {
+    label: 'Comité Científico',
+    url: '#ponentes',
+    image: <svg className="w-6 h-6" fill="none" stroke="currentColor" strokeWidth={1.5} viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+    <path d="M15.75 6a3.75 3.75 0 1 1-7.5 0 3.75 3.75 0 0 1 7.5 0ZM4.501 20.118a7.5 7.5 0 0 1 14.998 0A17.933 17.933 0 0 1 12 21.75c-2.676 0-5.216-.584-7.499-1.632Z" strokeLinecap="round" strokeLinejoin="round" />
+  </svg>
 
   },
   // {
@@ -119,18 +135,18 @@ export const sideItems = [
   //   </svg>
 
   // },
-  {
-    label: 'Fotos del Evento',
-    url: '#photos',
-    image: <svg className="icon icon-tabler icon-tabler-photo" fill="none" stroke="#2c3e50" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-    <path d="M0 0h24v24H0z" fill="none" stroke="none"/>
-    <line x1="15" x2="15.01" y1="8" y2="8" />
-    <rect height="16" rx="3" width="16" x="4" y="4" />
-    <path d="M4 15l4 -4a3 5 0 0 1 3 0l5 5" />
-    <path d="M14 14l1 -1a3 5 0 0 1 3 0l2 2" />
-  </svg>
+  // {
+  //   label: 'Fotos del Evento',
+  //   url: '#photos',
+  //   image: <svg className="icon icon-tabler icon-tabler-photo" fill="none" stroke="#2c3e50" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  //   <path d="M0 0h24v24H0z" fill="none" stroke="none"/>
+  //   <line x1="15" x2="15.01" y1="8" y2="8" />
+  //   <rect height="16" rx="3" width="16" x="4" y="4" />
+  //   <path d="M4 15l4 -4a3 5 0 0 1 3 0l5 5" />
+  //   <path d="M14 14l1 -1a3 5 0 0 1 3 0l2 2" />
+  // </svg>
 
-  },
+  // },
 
   {
     label: 'Lugar del evento',
