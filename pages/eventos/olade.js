@@ -439,6 +439,10 @@ export default function Evento ({photos}) {
             <Participants data={oportunidadesPublicacion} />
           </section>
 
+          {/* Organizadores */}
+          <Separator id="organizadores" />
+          <Participants data={organizers} title="Organizadores" />
+
           {/* Agenda */}
           <Separator id="agenda" />
           <section
@@ -463,10 +467,6 @@ export default function Evento ({photos}) {
               ))}
             </div>
           </section>
-
-          {/* Organizadores */}
-          <Separator id="organizadores" />
-          <Participants data={organizers} title="Organizadores" />
 
           {/* Patrocinadores */}
           <Separator id="patrocinadores" />

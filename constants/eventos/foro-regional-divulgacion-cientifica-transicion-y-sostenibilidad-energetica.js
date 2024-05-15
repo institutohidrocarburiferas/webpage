@@ -224,12 +224,20 @@ export const sponsors = [
 
 export const organizers = [
   {
+    title: 'Instituto de Investigaciones Hidrocarburíferas',
+    image: '/logoiih.png',
+  },
+  {
     title: 'Universidad Central del Ecuador',
     image: '/UCE-logo.png',
   },
   {
-    title: 'Ministerio de Energía y Minas',
-    image: '/eventos/foro-internacional-prospectiva-energetica/ministerio-energia-minas.jpg',
+    title: 'Olade',
+    image: '/externalLinks/revistas/oladeorg-logo.jpg',
+  },
+  {
+    title: 'Student Energy at UCE',
+    image: '/logos/student-energy-uce.jpg',
   },
 ]
 
