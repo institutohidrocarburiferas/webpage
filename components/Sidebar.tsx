@@ -8,9 +8,10 @@ interface Item {
 
 interface Props {
   items: Item[]
+  gradient: StringConstructor
 }
 
-export const Sidebar: React.FC<Props> = ({items}) => {
+export const Sidebar: React.FC<Props> = ({items, gradient}) => {
   const sections = items.map(({label, image, url}) => (
     <a key={label} className={styles.item} href={url}>
       <picture>
@@ -20,7 +21,7 @@ export const Sidebar: React.FC<Props> = ({items}) => {
     </a>
   ))
 
-  return <div className={`${styles.container} bg-gradient-to-br from-amber-400 to-orange-200 dark:text-black`}>
+  return <div className={`${styles.container} bg-gradient-to-br ${gradient}`}>
     <div>
       {sections}
     </div>

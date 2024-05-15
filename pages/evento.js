@@ -145,7 +145,7 @@ export default function Evento ({photos}) {
         <title>{pageData.title}</title>
         <meta content={pageData.description} name="description" />
       </Head>
-      <Sidebar items={sideItems} />
+      <Sidebar gradient="from-amber-400 to-orange-200" items={sideItems} />
       <main>
         <Separator id="content" />
         <HeroSection
