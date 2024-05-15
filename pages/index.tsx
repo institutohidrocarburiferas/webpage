@@ -16,8 +16,9 @@ import {Footer} from '@components/Layout/Footer'
 import {getPostsData, PostsData} from '@utils/posts'
 
 const eventDay = new Date(2024, 6, 24, 8)
-const eventURL = '/eventos/olade'
+const eventURL = '/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica'
 const eventLinkForm = ''
+const eventLinkRegister = ''
 
 const pageData = {
   title: 'Instituto de Investigaciones Hidrocarburíferas',
@@ -104,7 +105,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
                 </span>
               </div>
               <div>
-                <RegisterButton className='opacity-50 pointer-events-none' href={eventLinkForm}>
+                <RegisterButton className='opacity-50 pointer-events-none' href={eventLinkRegister}>
                   Asiste al evento
                 </RegisterButton>
                 <span className="text-xs text-white lg:text-sm">Asiste al evento</span>
