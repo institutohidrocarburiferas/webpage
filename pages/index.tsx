@@ -108,7 +108,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
                 <RegisterButton className='opacity-50 pointer-events-none' href={eventLinkRegister}>
                   Asiste al evento
                 </RegisterButton>
-                <span className="text-xs text-white lg:text-sm">Asiste al evento</span>
+                <span className="text-xs text-white lg:text-sm">Inscripciones a partir del 1 de Junio</span>
               </div>
             </div>
             <Countdown eventDate={eventDay} />
