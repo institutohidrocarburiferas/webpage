@@ -58,7 +58,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
       <Separator id={null} />
       <HeroSection
         height='auto'
-        image='https://images.unsplash.com/photo-1491914045721-6f2dd87cf09d?ixlib=rb-4.0.3&ixid=MnwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8&auto=format&fit=crop&w=774&q=80'
+        image='/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica.jpg'
         justifyContent="center"
         text={t('EventDate')}
         title={t('EventTitle')}
@@ -74,7 +74,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
                 alt="Logo del Ministerio de Energía y Minas"
                 className='h-16 rounded sm:h-24 lg:h-32 aspect-auto'
                 loading="lazy"
-                src="/eventos/foro-internacional-prospectiva-energetica/ministerio-energia-minas.jpg"
+                src="/logoiih.png"
               />
             </picture>
             <picture>
@@ -85,6 +85,23 @@ const Home: NextPage<Props> = ({allPostsData}) => {
                 src="/UCE-logo.png"
               />
             </picture>
+            <picture>
+              <img
+                alt="Logo de la Olade"
+                className='h-16 rounded sm:h-24 lg:h-32 aspect-auto'
+                loading="lazy"
+                src="/externalLinks/revistas/oladeorg-logo.jpg"
+              />
+            </picture>
+            <picture>
+              <img
+                alt="Logo de Student Energy"
+                className='h-16 rounded sm:h-24 lg:h-32 aspect-auto'
+                loading="lazy"
+                src="/logos/student-energ-uce.jpg"
+              />
+            </picture>
+            
           </div>
 
           <div className='flex flex-col items-center w-full gap-5 mt-8 xl:gap-44 lg:flex-row'>

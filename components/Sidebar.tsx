@@ -21,7 +21,7 @@ export const Sidebar: React.FC<Props> = ({items, gradient}) => {
     </a>
   ))
 
-  return <div className={`${styles.container} bg-gradient-to-br ${gradient}`}>
+  return <div className={`${styles.container} bg-gradient-to-br ${gradient} text-black`}>
     <div>
       {sections}
     </div>

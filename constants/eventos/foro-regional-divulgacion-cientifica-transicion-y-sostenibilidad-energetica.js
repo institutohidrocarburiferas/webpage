@@ -280,8 +280,8 @@ export const programItems = [
   {
     time: '20 de mayo 2024',
     label: 'Publicación de convocatoria',
-    expositor: 'Página del Instituto',
-    institution: '',
+    expositor: '',
+    institution: 'Página del Instituto',
   },
   {
     time: '20 de mayo - 20 junio 2024',

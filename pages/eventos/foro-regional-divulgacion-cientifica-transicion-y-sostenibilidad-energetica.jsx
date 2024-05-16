@@ -36,7 +36,7 @@ const heroContent = {
   height: '87vh',
   image:
     '/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica.jpg',
-  text: 'miércoles, 24 de julio del 2024',
+  text: 'miércoles, 26 de julio del 2024',
 }
 
 function ProgramItem ({time, label, expositor, institution}) {
@@ -45,7 +45,7 @@ function ProgramItem ({time, label, expositor, institution}) {
       <time className="text-xl font-semibold md:text-2xl text-amber-400">{time}</time>
       <h3 className="text-xl font-semibold text-justify text-white md:text-2xl">{label}</h3>
       <p className="font-semibold text-md md:text-xl">{expositor}</p>
-      <p className="text-sm md:text-md">{institution}</p>
+      <p className="text-s md:text-md">{institution}</p>
     </div>
   )
 }
