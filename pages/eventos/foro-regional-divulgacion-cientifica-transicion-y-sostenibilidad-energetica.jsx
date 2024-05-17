@@ -153,7 +153,7 @@ export default function Evento ({photos}) {
           text={heroContent.text}
           title={heroContent.title}>
           <section className="text-gray-400">
-            <span>Presencial - Cupos limitados</span>
+            <span>Evento Presencial</span>
           </section>
           {/* Registro y cuenta regresiva */}
           <section className="flex flex-col gap-10 mt-5">
