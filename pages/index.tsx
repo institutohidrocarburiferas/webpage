@@ -15,7 +15,7 @@ import {Slider} from '@components/Slider'
 import {Footer} from '@components/Layout/Footer'
 import {getPostsData, PostsData} from '@utils/posts'
 
-const eventDay = new Date(2024, 6, 24, 8)
+const eventDay = new Date(2024, 6, 26, 8)
 const eventURL = '/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica'
 const eventLinkForm = ''
 const eventLinkRegister = ''

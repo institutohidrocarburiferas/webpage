@@ -28,7 +28,7 @@ const pageData = {
   title: 'Foro Regional De Divulgación Científica: Transición Y Sostenibilidad Energética',
   description: 'Foro Regional De Divulgación Científica: Transición Y Sostenibilidad Energética',
   image: '/prueba.png',
-  eventDay: new Date(2024, 6, 24, 9),
+  eventDay: new Date(2024, 6, 26, 9),
   eventPosterLink: '',
 }
 const heroContent = {
