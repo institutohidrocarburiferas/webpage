@@ -98,10 +98,10 @@ const Home: NextPage<Props> = ({allPostsData}) => {
                 alt="Logo de Student Energy"
                 className='h-16 rounded sm:h-24 lg:h-32 aspect-auto'
                 loading="lazy"
-                src="/logos/student-energ-uce.jpg"
+                src="/logos/student-energy-uce.jpg"
               />
             </picture>
-            
+
           </div>
 
           <div className='flex flex-col items-center w-full gap-5 mt-8 xl:gap-44 lg:flex-row'>
