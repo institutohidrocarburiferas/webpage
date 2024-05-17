@@ -28,7 +28,7 @@ const pageData = {
   title: 'Foro Regional De Divulgación Científica: Transición Y Sostenibilidad Energética',
   description: 'Foro Regional De Divulgación Científica: Transición Y Sostenibilidad Energética',
   image: '/prueba.png',
-  eventDay: new Date(2024, 6, 26, 9),
+  eventDay: new Date(2024, 6, 26, 8),
   eventPosterLink: '',
 }
 const heroContent = {
@@ -36,7 +36,7 @@ const heroContent = {
   height: '87vh',
   image:
     '/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica.jpg',
-  text: 'miércoles, 26 de julio del 2024',
+  text: 'viernes, 26 de julio del 2024',
 }
 
 function ProgramItem ({time, label, expositor, institution}) {
@@ -44,8 +44,8 @@ function ProgramItem ({time, label, expositor, institution}) {
     <div className="flex flex-col gap-2 pb-5 border-b-2">
       <time className="text-xl font-semibold md:text-2xl text-amber-400">{time}</time>
       <h3 className="text-xl font-semibold text-justify text-white md:text-2xl">{label}</h3>
-      <p className="font-semibold text-md md:text-xl">{expositor}</p>
-      <p className="text-s md:text-md">{institution}</p>
+      <p className="text-md md:text-md">{expositor}</p>
+      <p className="text-md md:text-md">{institution}</p>
     </div>
   )
 }
@@ -383,6 +383,9 @@ export default function Evento ({photos}) {
               <ul className="font-semibold list-disc pl-7">
                 <li>
                   <Text>Petróleo y otras fuentes primarias de energía</Text>
+                  <span className="font-normal text-xs lg:text-sm">
+                   Enlace habilitado del 20 de mayo al 20 de junio del 2024 
+                  </span>
                 </li>
                 <li>
                   <Text>Sistemas renovables</Text>

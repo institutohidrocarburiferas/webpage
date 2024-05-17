@@ -291,13 +291,13 @@ export const programItems = [
   {
     time: '30 de junio 2024',
     label: 'Notificación de resultados',
-    institution: 'Mediante notificación',
+    institution: 'Mediante notificación'
   },
   {
-    time: '19 de julio de 2024',
+    time: ' Hasta el 19 de julio de 2024',
     label: 'Envío de artículos completos para el libro de actas',
-    expositor: '',
-    institution: 'Según formato establecido',
+    expositor: <a href="#" className='hover:text-red-500' style={{textDecoration:'underline'}}>Formato Póster</a>, //Link EN # .....de Los FORMATOS,
+    institution: <a href="#" className='hover:text-red-500' style={{textDecoration:'underline'}}>Formato Artículo</a>, //Link EN # .....de Los FORMATOS
   },
   {
     time: '01 de julio de 2024',
