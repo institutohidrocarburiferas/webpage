@@ -156,7 +156,7 @@ export default function Evento ({photos}) {
             <span>Presencial - Cupos limitados</span>
           </section>
           {/* Registro y cuenta regresiva */}
-          <section className="flex flex-col gap-5 mt-5">
+          <section className="flex flex-col gap-10 mt-5">
             <div className="flex flex-col items-center justify-center gap-2 mx-auto w-fit">
               <RegisterButton className="opacity-50 pointer-events-none w-fit" href={pageData.eventPosterLink}>
                 Envíanos tu Póster
@@ -427,7 +427,7 @@ export default function Evento ({photos}) {
 
           {/* Oportunidades de publicación */}
           <Separator id="oportunidades" />
-          <section className="container flex flex-col items-center gap-5">
+          <section className="container flex flex-col items-center gap-5 p-4">
             <Title>Oportunidades de publicación</Title>
             <div className='max-w-3xl mx-auto'>
               <Text>Los autores de los pósters y/o artículos aceptados realizarán una
@@ -445,7 +445,7 @@ export default function Evento ({photos}) {
 
           {/* Participantes */}
           <Separator id="participantes" />
-          <Participants data={sponsors} title="Participantes" />\
+          <Participants data={sponsors} title="Participantes" />
 
           {/* Auspiciantes */}
           <Separator id="auspiciantes" />

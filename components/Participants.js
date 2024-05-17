@@ -1,7 +1,7 @@
 import {Title} from './UI/Title'
 
 function Participant ({title, image, url}) {
-  return <a className='grid bg-white rounded hover:scale-105 place-content-center' href={url} rel="noreferrer" target="_blank">
+  return <a className='grid rounded dark:bg-white hover:scale-105 place-content-center' href={url} rel="noreferrer" target="_blank">
     <picture>
       <img
         alt={'Logo de' + title}

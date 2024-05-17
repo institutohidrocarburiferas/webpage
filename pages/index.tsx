@@ -68,7 +68,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
         </section>
         {/* Registro y cuenta regresiva */}
         <section className='flex flex-col w-full gap-3 mt-5'>
-          <div className='flex items-center justify-center w-full gap-10 lg:justify-start'>
+          <div className='flex flex-wrap items-center justify-center w-full gap-10 lg:justify-start'>
             <picture>
               <img
                 alt="Logo del Ministerio de Energía y Minas"
@@ -79,7 +79,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
             </picture>
             <picture>
               <img
-                alt="Logo de la Universidad Central del Ecuador"
+                alt="Logo del Instituto de Investigaciones Hidrocarburíferas"
                 className='h-16 rounded sm:h-24 lg:h-32 aspect-auto'
                 loading="lazy"
                 src="/UCE-logo.png"
@@ -104,7 +104,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
 
           </div>
 
-          <div className='flex flex-col items-center w-full gap-5 mt-8 xl:gap-44 lg:flex-row'>
+          <div className='flex flex-col items-center w-full gap-10 mt-8 xl:gap-44 lg:flex-row'>
             <div className='grid grid-cols-1 gap-4 w-fit xl:w-full'>
               <Link
                 className='flex items-stretch justify-center px-2 py-2 font-semibold text-center text-white transition-transform bg-transparent border border-white rounded md:px-6 sm:text-xl hover:bg-black/50 md:text-2xl lg:text-xl hover:scale-105 active:scale-95'
