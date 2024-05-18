@@ -261,16 +261,16 @@ export const organizers = [
     image: '/UCE-logo.png',
   },
   {
+    title: 'Student Energy at UCE',
+    image: '/logos/student-energy-uce.jpg',
+  },
+  {
     title: 'Instituto de Investigaciones Hidrocarburíferas',
     image: '/logoiih.png',
   },
   {
     title: 'Olade',
     image: '/externalLinks/revistas/oladen-logo.png',
-  },
-  {
-    title: 'Student Energy at UCE',
-    image: '/logos/student-energy-uce.jpg',
   },
 ]
 
