@@ -15,10 +15,10 @@ import {Slider} from '@components/Slider'
 import {Footer} from '@components/Layout/Footer'
 import {getPostsData, PostsData} from '@utils/posts'
 
-const eventDay = new Date(2024, 6, 26, 8)
+const eventDay = new Date(2024, 6, 2, 8)
 const eventURL = '/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica'
-const eventLinkForm = ''
-const eventLinkRegister = ''
+const eventLinkForm = 'https://docs.google.com/forms/d/e/1FAIpQLSeA3I-XTxDS0pjfgVLVrOXFni2D7LYteNxGFOftdm_eNxa-7A/viewform'
+const eventLinkRegister = 'https://docs.google.com/forms/d/e/1FAIpQLSdcVReGJZ7uxn8FbtWV7yB8wcKZ55fXs1cnXg5Zl6QbJBm2vA/closedform'
 
 const pageData = {
   title: 'Instituto de Investigaciones Hidrocarburíferas',

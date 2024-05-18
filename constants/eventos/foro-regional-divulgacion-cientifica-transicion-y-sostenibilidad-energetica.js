@@ -166,7 +166,15 @@ export const sideItems = [
 export const oportunidadesPublicacion = [
   {
     title: 'Revista de Investigación de FIGEMPA',
-    image: '/logos/figempa-revista.jpeg',
+    image: '/logos/figempa-revista.png',
+  },
+  {
+    title: 'EnerLAC - Revista de Energía de Latinoamérica y El Caribe',
+    image: '/logos/enerlac.jpg',
+  },
+  {
+    title: 'EnerLAC - Revista de Energía de Latinoamérica y El Caribe',
+    image: '/logos/enerlac.jpg',
   },
   {
     title: 'EnerLAC - Revista de Energía de Latinoamérica y El Caribe',
@@ -286,18 +294,19 @@ export const programItems = [
   {
     time: '20 de mayo - 20 junio 2024',
     label: 'Envío de pósters',
-    institution: 'Mediante enlace habilitado',
+    expositor: 'Mediante enlace habilitado',
+    institution: <a href="https://docs.google.com/presentation/d/1hoLy32EZvDsxL7ldU6PgsPjpPCLnxmJ5/edit#slide=id.p1" className='hover:text-red-500' style={{textDecoration:'underline'}}>Formato Póster</a>, //Link EN # .....de Los FORMATOS,
   },
   {
     time: '30 de junio 2024',
     label: 'Notificación de resultados',
-    institution: 'Mediante notificación'
+    institution: 'Notificación por correo electrónico'
   },
   {
     time: ' Hasta el 19 de julio de 2024',
     label: 'Envío de artículos completos para el libro de actas',
-    expositor: <a href="#" className='hover:text-red-500' style={{textDecoration:'underline'}}>Formato Póster</a>, //Link EN # .....de Los FORMATOS,
-    institution: <a href="#" className='hover:text-red-500' style={{textDecoration:'underline'}}>Formato Artículo</a>, //Link EN # .....de Los FORMATOS
+    expositor: '', //Link EN # .....de Los FORMATOS,
+    institution: <a href="https://docs.google.com/document/d/1-TajDn8lNW0z5Ggt1PTYDmyDxqxlbGD0/edit?pli=1" className='hover:text-red-500' style={{textDecoration:'underline'}}>Formato Artículo Corto</a>, //Link EN # .....de Los FORMATOS
   },
   {
     time: '01 de julio de 2024',

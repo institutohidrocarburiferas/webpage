@@ -29,7 +29,7 @@ const pageData = {
   description: 'Foro Regional De Divulgación Científica: Transición Y Sostenibilidad Energética',
   image: '/prueba.png',
   eventDay: new Date(2024, 6, 26, 8),
-  eventPosterLink: '',
+  eventPosterLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeA3I-XTxDS0pjfgVLVrOXFni2D7LYteNxGFOftdm_eNxa-7A/viewform',
 }
 const heroContent = {
   title: 'FORO REGIONAL DE DIVULGACIÓN CIENTÍFICA: TRANSICIÓN Y SOSTENIBILIDAD ENERGÉTICA',
@@ -176,17 +176,16 @@ export default function Evento ({photos}) {
             <section className="flex flex-col lg:w-1/2">
               <Title>Información</Title>
               <Text>
-                El Foro Regional de Divulgación Científica: Transición y Sostenibilidad
-                Energética** busca generar un espacio de divulgación científica sobre los avances en
-                estudios de investigación y de aplicación que permitan la materialización de la
-                transición y sostenibilidad energética.
+                El Foro Regional de Divulgación Científica: Transición y Sostenibilidad Energética 
+                busca generar un espacio de divulgación a través de la presentación de póster 
+                científicos sobre los avances en estudios de investigación y de aplicación que 
+                permitan la materialización de la transición y la sostenibilidad energética.
               </Text>
               <Text>
-                El evento es organizado por el Instituto de
-                Investigaciones Hidrocarburíferas de la Universidad Central del Ecuador
-                encoparticipación con la Organización Latinoamericana de Energía-OLADE y Student
-                Energy at Universidad Central del Ecuador, se llevará acabo el 26 de julio de 2024
-                en el Teatro Universitario de la Universidad Central del Ecuador.
+                El evento esta organizado por el Instituto de Investigaciones Hidrocarburíferas de 
+                la Universidad Central del Ecuador en coordinarción con la Organización Latinoamericana 
+                de Energía - OLADE y Student Energy,  se desarrollará el 26 de julio de 2024 en el 
+                Teatro Universitario de la Cuidadela Universitaria.
               </Text>
             </section>
             <section className="w-2/3 md:w-1/2">
@@ -379,12 +378,12 @@ export default function Evento ({photos}) {
           <section className="flex flex-col items-center gap-5 p-5 lg:flex-row md:pl-12 lg:pl-24 lg:container">
             <section className="flex flex-col lg:w-1/2">
               <Title>Ejes temáticos</Title>
-              <Text>Los temas que se tratarán en el foro son los siguientes:</Text>
+              {/*<Text>Los temas que se tratarán en el foro son los siguientes:</Text>*/}
               <ul className="font-semibold list-disc pl-7">
                 <li>
                   <Text>Petróleo y otras fuentes primarias de energía</Text>
                   <span className="font-normal text-xs lg:text-sm">
-                   Enlace habilitado del 20 de mayo al 20 de junio del 2024 
+                   Descripción del eje temático 
                   </span>
                 </li>
                 <li>
@@ -408,6 +407,12 @@ export default function Evento ({photos}) {
                   <Text>Innovaciones tecnológicas y aplicadas</Text>
                 </li>
               </ul>
+              <Text>El evento está dirigido a jovenes investigadores y 
+                actores responsables de la gobernanza energética. Será un 
+                espacio de interacción con representantes de las instituciones 
+                gubernamentales, sector empresarial, academia y otros grupos  
+                de la sociedad civil para compartir los avances científicos y 
+                de aplicación en el marco de la sostenibilidad.</Text>
             </section>
 
             <section className="w-2/3 md:w-1/2">
@@ -433,12 +438,13 @@ export default function Evento ({photos}) {
           <section className="container flex flex-col items-center gap-5 p-4">
             <Title>Oportunidades de publicación</Title>
             <div className='max-w-3xl mx-auto'>
-              <Text>Los autores de los pósters y/o artículos aceptados realizarán una
-              ponencia en el foro y recibirán una invitación para publicar su
-              investigación en un número especial del evento en las revistas
-              indexadas bajo revisión de pares académicos, ENERLAC y FIGEMPA:
-              Investigación y Desarrollo.</Text>
+              <Text>Los autores de los pósters aceptados realizarán una presentación 
+                en el evento presencial del 26 de julio y recibirán una invitación 
+                para publicar su investigación en un número especial en las revistas 
+                indexadas bajo revisión de pares académicos, enerLAC y FIGEMPA.</Text>
             </div>
+              <Text> Adicionalmente, los trabajos presentados se publicarán como 
+                artículos cortos en el libro de actas a entregarse el día del evento. </Text>
             <Participants data={oportunidadesPublicacion} />
           </section>
 
