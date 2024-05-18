@@ -304,7 +304,7 @@ export const programItems = [
     time: '20 de mayo - 20 junio 2024',
     label: 'Envío de pósters',
     expositor: 'Mediante enlace habilitado',
-    institution: <a className='block w-fit my-2 border py-2 px-4 hover:text-amber-500 hover:scale-105 transition-transform active:scale-95' href="https://docs.google.com/presentation/d/1hoLy32EZvDsxL7ldU6PgsPjpPCLnxmJ5/edit#slide=id.p1">Formato Póster</a>,
+    institution: <a className='block w-fit my-2 border py-2 px-4 hover:bg-black/50 hover:scale-105 transition-transform active:scale-95' href="https://docs.google.com/presentation/d/1hoLy32EZvDsxL7ldU6PgsPjpPCLnxmJ5/edit#slide=id.p1" rel='noopener noreferrer' target="_blank">Formato Póster</a>,
   },
   {
     time: '30 de junio 2024',
@@ -315,7 +315,7 @@ export const programItems = [
     time: ' Hasta el 19 de julio de 2024',
     label: 'Envío de artículos completos para el libro de actas',
     expositor: '',
-    institution: <a className='block w-fit my-2 border py-2 px-4 hover:text-amber-500 hover:scale-105 transition-transform active:scale-95' href="https://docs.google.com/document/d/1-TajDn8lNW0z5Ggt1PTYDmyDxqxlbGD0/edit?pli=1">Formato Artículo Corto</a>, // Link EN # .....de Los FORMATOS
+    institution: <a className='block w-fit my-2 border py-2 px-4 hover:bg-black/50 hover:scale-105 transition-transform active:scale-95' href="https://docs.google.com/document/d/1-TajDn8lNW0z5Ggt1PTYDmyDxqxlbGD0/edit?pli=1" rel='noopener noreferrer' target="_blank">Formato Artículo Corto</a>, // Link EN # .....de Los FORMATOS
   },
   {
     time: '01 de julio de 2024',

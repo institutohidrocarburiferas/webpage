@@ -157,7 +157,7 @@ export default function Evento ({photos}) {
           </section>
           {/* Registro y cuenta regresiva */}
           <section className="flex flex-col gap-10 mt-5">
-            <div className="flex flex-col items-center justify-center gap-2 mx-auto w-fit">
+            <div className="flex flex-col items-center justify-center gap-6 mx-auto w-fit">
               <RegisterButton className="" href={pageData.eventPosterLink}>
                 Envíanos tu Póster hasta el 20 de Junio
               </RegisterButton>
