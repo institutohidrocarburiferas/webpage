@@ -13,14 +13,13 @@ import {Participants} from '@components/Participants'
 import {RegisterButton} from '@components/RegisterButton'
 import {Sidebar} from '@components/Sidebar'
 import {
-  auspiciantes,
   programItems,
   organizers,
   sideItems,
   speakers,
-  sponsors,
   // expositions,
-  oportunidadesPublicacion,
+  revistas,
+  indexaciones,
 } from '@constants/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica'
 // import {getEventPhotos} from '@utils/getEventPhotos'
 
@@ -30,6 +29,7 @@ const pageData = {
   image: '/prueba.png',
   eventDay: new Date(2024, 6, 26, 8),
   eventPosterLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeA3I-XTxDS0pjfgVLVrOXFni2D7LYteNxGFOftdm_eNxa-7A/viewform',
+  eventLinkRegister: 'https://docs.google.com/forms/d/e/1FAIpQLSdcVReGJZ7uxn8FbtWV7yB8wcKZ55fXs1cnXg5Zl6QbJBm2vA/closedform'
 }
 const heroContent = {
   title: 'FORO REGIONAL DE DIVULGACIÓN CIENTÍFICA: TRANSICIÓN Y SOSTENIBILIDAD ENERGÉTICA',
@@ -157,21 +157,31 @@ export default function Evento ({photos}) {
           </section>
           {/* Registro y cuenta regresiva */}
           <section className="flex flex-col gap-10 mt-5">
-            <div className="flex flex-col items-center justify-center mx-auto w-fit">
-              <RegisterButton className="pointer-events-none opacity-50" href={pageData.eventPosterLink}>
-                Envíanos tu Póster hasta el 20 de Junio
-              </RegisterButton>
-              <span className="text-xs text-white lg:text-sm">
-                Enlace habilitado a partir del 20 de mayo
-              </span>
-              {/* <a
+            <div className="flex flex-col items-center justify-center gap-6 mx-auto w-fit">
+              <div>
+                <RegisterButton className="pointer-events-none opacity-50" href={pageData.eventPosterLink}>
+                  Envíanos tu Póster hasta el 20 de Junio
+                </RegisterButton>
+                <span className="text-xs text-white lg:text-sm">
+                  Enlace habilitado a partir del 20 de mayo
+                </span>
+              </div>
+              <div className='w-full'>
+                <RegisterButton className='opacity-50 pointer-events-none' href={pageData.eventLinkRegister}>
+                  Asiste al evento
+                </RegisterButton>
+                <span className="text-xs text-white lg:text-sm">
+                  Enlace habilitado a partir del 1 de junio
+                </span>
+              </div>
+              <a
                 className='w-full px-2 py-2 font-semibold text-center text-white transition-transform bg-transparent border border-white rounded md:px-6 sm:text-xl hover:bg-black/50 md:text-2xl lg:text-xl hover:scale-105 active:scale-95'
                 href="https://docs.google.com/presentation/d/1hoLy32EZvDsxL7ldU6PgsPjpPCLnxmJ5/edit#slide=id.p1"
                 rel='noopener noreferrer'
                 target="_blank"
               >
                 Revisa el formato del póster aquí
-              </a> */}
+              </a>
             </div>
             <Countdown eventDate={pageData.eventDay} />
           </section>
@@ -247,9 +257,9 @@ export default function Evento ({photos}) {
               <ul className="font-semibold list-disc pl-7">
                 <li>
                   <Text>Petróleo y otras fuentes primarias de energía</Text>
-                  <span className="font-normal text-xs lg:text-sm">
+                  <div className="font-normal my-4">
                     Descripción del eje temático
-                  </span>
+                  </div>
                 </li>
                 <li>
                   <Text>Sistemas renovables</Text>
@@ -322,20 +332,13 @@ export default function Evento ({photos}) {
                 artículos cortos en el libro de actas a entregarse el día del evento.
               </Text>
             </div>
-            <Participants data={oportunidadesPublicacion} />
+            <Participants data={revistas} title="Revistas" />
+            <Participants data={indexaciones} title="Indexaciones" />
           </section>
 
           {/* Organizadores */}
           <Separator id="organizadores" />
           <Participants data={organizers} title="Organizadores" />
-
-          {/* Participantes */}
-          {/* <Separator id="participantes" />
-          <Participants data={sponsors} title="Participantes" /> */}
-
-          {/* Auspiciantes */}
-          {/* <Separator id="auspiciantes" />
-          <Participants data={auspiciantes} title="Auspiciantes" /> */}
 
           {/* Agenda */}
           <Separator id="agenda" />
@@ -362,7 +365,7 @@ export default function Evento ({photos}) {
             </div>
           </section>
 
-          {/* Perfil de Auspiciantes */}
+          {/* Participantes */}
           <Separator id="perfil-participantes" />
           <section className="flex flex-col items-center gap-5 lg:flex-row lg:container">
             <section className="flex flex-col px-5 md:pl-24 lg:w-1/2">

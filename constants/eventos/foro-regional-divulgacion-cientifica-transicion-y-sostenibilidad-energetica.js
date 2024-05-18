@@ -60,27 +60,7 @@ export const sideItems = [
     </svg>
   },
   {
-    label: 'Participantes',
-    url: '#participantes',
-    image: <svg className="icon icon-tabler icon-tabler-link" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-      <path d="M10 14a3.5 3.5 0 0 0 5 0l4 -4a3.5 3.5 0 0 0 -5 -5l-.5 .5" />
-      <path d="M14 10a3.5 3.5 0 0 0 -5 0l-4 4a3.5 3.5 0 0 0 5 5l.5 -.5" />
-    </svg>
-  },
-  {
-    label: 'Auspiciantes',
-    url: '#auspiciantes',
-    image: <svg className="icon icon-tabler icon-tabler-speakerphone" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
-      <path d="M0 0h24v24H0z" fill="none" stroke="none" />
-      <path d="M18 8a3 3 0 0 1 0 6" />
-      <path d="M10 8v11a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-5" />
-      <path d="M12 8h0l4.524 -3.77a0.9 .9 0 0 1 1.476 .692v12.156a0.9 .9 0 0 1 -1.476 .692l-4.524 -3.77h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h8" />
-    </svg>
-
-  },
-  {
-    label: 'Agenda',
+    label: 'Fechas importantes',
     url: '#agenda',
     image: <svg className="icon icon-tabler icon-tabler-calendar-time" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none" stroke="none" />
@@ -92,6 +72,17 @@ export const sideItems = [
       <path d="M18 16.496v1.504l1 1" />
     </svg>
   },
+  // {
+  //   label: 'Auspiciantes',
+  //   url: '#auspiciantes',
+  //   image: <svg className="icon icon-tabler icon-tabler-speakerphone" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+  //     <path d="M0 0h24v24H0z" fill="none" stroke="none" />
+  //     <path d="M18 8a3 3 0 0 1 0 6" />
+  //     <path d="M10 8v11a1 1 0 0 1 -1 1h-1a1 1 0 0 1 -1 -1v-5" />
+  //     <path d="M12 8h0l4.524 -3.77a0.9 .9 0 0 1 1.476 .692v12.156a0.9 .9 0 0 1 -1.476 .692l-4.524 -3.77h-8a1 1 0 0 1 -1 -1v-4a1 1 0 0 1 1 -1h8" />
+  //   </svg>
+  // },
+
   // {
   //   label: 'Descarga las ponencias',
   //   url: '#expositions',
@@ -163,7 +154,7 @@ export const sideItems = [
   },
 ]
 
-export const oportunidadesPublicacion = [
+export const revistas = [
   {
     title: 'FIGEMPA -Investigación y Desarrollo',
     image: '/logos/figempa-revista.png',
@@ -174,6 +165,9 @@ export const oportunidadesPublicacion = [
     image: '/logos/enerlac.png',
     url: 'https://enerlac.olade.org/index.php/ENERLAC',
   },
+]
+
+export const indexaciones = [
   {
     title: 'SciElo Ecuador',
     image: '/logos/scielo-revist.png',
@@ -191,78 +185,10 @@ export const oportunidadesPublicacion = [
   },
 ]
 
-export const sponsors = [
-  {
-    title: 'Olade',
-    image: '/externalLinks/revistas/oladen-logo.png',
-  },
-  {
-    title: 'Fundación Bariloche',
-    image: '/logos/fundacion-bariloche.jpg',
-  },
-  {
-    title: 'Instituto de Metrología de Alemania (PTB)',
-    image: '/logos/instituto-metrologia-alemania.jpg',
-  },
-  {
-    title: 'Escuela Politécnica Nacional',
-    image: '/logos/epn.png',
-  },
-  {
-    title: 'Facultad de Ingeniería Química - UCE',
-    image: '/logos/ing-quimica-uce.jpeg',
-  },
-  {
-    title: 'Universidad de Minería de San Petersburgo',
-    image: '/logos/u-san-petersburgo.svg',
-  },
-  {
-    title: 'Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental - UCE',
-    image: '/logos/figempa.png',
-  },
-  {
-    title: 'Ingeniería en Petróleos de Universidad Central del Ecuador',
-    image: '/logos/petroleos-uce.png',
-  },
-  {
-    title: 'SERTECPET',
-    image: '/logos/sertecpet.png',
-  },
-  {
-    title: 'Halliburton',
-    image: '/logos/halliburton.jpg',
-  },
-  {
-    title: 'Best Energy Services S.A',
-    image: '/logos/best-energy.jpeg',
-  },
-  {
-    title: 'RENOVA Energia',
-    image: '/logos/renova-energia.webp',
-  },
-  {
-    title: 'GEOIL company',
-    image: '/logos/geoil.png',
-  },
-  {
-    title: 'Secretaría de Energía',
-    image: '/logos/sener-secretaria-energia.png',
-  },
-  {
-    title: 'Comisión Nacional para el Uso Eficiente de la Energía',
-    image: '/logos/conuee.jpg',
-  },
-
-]
-
 export const organizers = [
   {
     title: 'Universidad Central del Ecuador',
     image: '/UCE-logo.png',
-  },
-  {
-    title: 'Student Energy at UCE',
-    image: '/logos/student-energy-uce.jpg',
   },
   {
     title: 'Instituto de Investigaciones Hidrocarburíferas',
@@ -271,21 +197,6 @@ export const organizers = [
   {
     title: 'Olade',
     image: '/logos/olade.png',
-  },
-]
-
-export const auspiciantes = [
-  {
-    title: 'Universidad Central del Ecuador',
-    image: '/UCE-logo.png',
-  },
-  {
-    title: 'Instituto de Investigaciones Hidrocarburíferas',
-    image: '/logoiih.png',
-  },
-  {
-    title: 'Olade',
-    image: '/externalLinks/revistas/oladen-logo.png',
   },
   {
     title: 'Student Energy at UCE',
@@ -354,12 +265,6 @@ export const speakers = [
     image: `${path}/speakers/andrea-balcazar.jpg`,
     role: 'Docente Facultad de Ciencias Administrativas',
     institute: 'Escuela Politécnica Nacional'
-  },
-  {
-    name: 'Moderadora: Rebeca Illescas',
-    image: `${path}/speakers/Rebeca-Illescas.png`,
-    role: 'Consultora en Energía y Desarrollo',
-    institute: null,
   },
 ]
 
