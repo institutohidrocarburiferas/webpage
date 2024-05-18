@@ -13,9 +13,7 @@ import {
   programItems,
   organizers,
   sideItems,
-  // speakers,
   sponsors,
-  // expositions,
 } from '@constants/eventos/seminario-innovacion-retos-cuarta-revolucion-industrial'
 import {getEventPhotos} from '@utils/getEventPhotos'
 
@@ -72,8 +70,8 @@ export default function Evento ({photos}) {
         </HeroSection>
 
         <div className="grid w-full grid-cols-1 justify-items-center">
-          {/* ¿Por qué prospectiva ? */}
-          <Separator id="por-que-perspectiva" />
+          {/* Descripción */}
+          <Separator id="descripcion" />
           <section className="flex flex-col items-center gap-5 p-5 lg:flex-row-reverse lg:container md:pl-24">
             <section className="flex flex-col lg:w-1/2">
               <Title>Descripción</Title>
@@ -202,7 +200,7 @@ export default function Evento ({photos}) {
           <Participants data={sponsors} title="Auspiciado por" />
 
           {/* Objetivos */}
-          <Separator id="que-busca-el-evento" />
+          <Separator id="objetivos" />
           <section className="flex flex-col items-center gap-5 lg:flex-row lg:container">
             <section className="flex flex-col px-5 md:pl-24 lg:w-1/2">
               <Title>Objetivos</Title>
