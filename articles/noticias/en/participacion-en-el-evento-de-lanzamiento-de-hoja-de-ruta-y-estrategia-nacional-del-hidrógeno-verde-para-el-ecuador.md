@@ -10,4 +10,4 @@ During the launch event, the National Green Hydrogen Roadmap and Strategy for Ec
 
 Ecuador is executing several projects and strategies to achieve the NDC (Nationally Determined Contributions) commitment, reducing emissions between 20 - 25% by 2025.
 
-![imagenes del evento](/noticias/participacion-en-el-evento-de-lanzamiento-de-hoja-de-ruta-y-estrategia-nacional-del-hidrógeno-verde-para-el-ecuador.jpeg)
+![The Director of the Hydrocarbon Research Institute of the Central University of Ecuador, PhD Rony Parra, in front of the public](/noticias/participacion-en-el-evento-de-lanzamiento-de-hoja-de-ruta-y-estrategia-nacional-del-hidrógeno-verde-para-el-ecuador.jpeg)

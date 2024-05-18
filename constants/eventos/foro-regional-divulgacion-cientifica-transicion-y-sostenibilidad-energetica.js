@@ -339,7 +339,7 @@ export const speakers = [
   },
   {
     name: 'MSc. Pablo Garcés',
-    image: '/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica/speakers/pablo-garces.png', // Están en la carpeta del evento
+    image: `${path}/speakers/pablo-garces.jpg`,
     role: 'Dirección de Integración, Acceso y Seguridad Energética, OLADE',
     institute: 'Asesor Técnico en Energía Renovable y Desarrollo Energético Sostenible.'
   },
@@ -351,7 +351,7 @@ export const speakers = [
   },
   {
     name: 'MSc. Andrea Balcázar González ',
-    image: '/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica/speakers/andrea-balcazar.png', // están en la carpeta del evento
+    image: `${path}/speakers/andrea-balcazar.jpg`,
     role: 'Docente Facultad de Ciencias Administrativas',
     institute: 'Escuela Politécnica Nacional'
   },
