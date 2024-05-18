@@ -161,9 +161,9 @@ export default function Evento ({photos}) {
               <RegisterButton className="" href={pageData.eventPosterLink}>
                 Envíanos tu Póster hasta el 20 de Junio
               </RegisterButton>
-              <span className="hover:text-red-500 text-s text-white lg:text-m" href="https://docs.google.com/presentation/d/1hoLy32EZvDsxL7ldU6PgsPjpPCLnxmJ5/edit#slide=id.p1" style={{textDecoration:'underline'}}>
+              <a className="hover:text-red-500 text-s text-white lg:text-m" href="https://docs.google.com/presentation/d/1hoLy32EZvDsxL7ldU6PgsPjpPCLnxmJ5/edit#slide=id.p1" style={{textDecoration:'underline'}}>
                 Revisa el formato del póster aquí
-              </span>
+              </a>
             </div>
             <Countdown eventDate={pageData.eventDay} />
           </section>
