@@ -486,10 +486,10 @@ export default function Evento ({photos}) {
           </section>
 
           {/* Perfil de Auspiciantes */}
-          <Separator id="perfil-auspiciantes" />
+          <Separator id="perfil-participantes" />
           <section className="flex flex-col items-center gap-5 lg:flex-row lg:container">
             <section className="flex flex-col px-5 md:pl-24 lg:w-1/2">
-              <Title>Perfil de Auspiciantes</Title>
+              <Title>Participantes</Title>
               <Text>
                   El evento esta dirigido a varios actores de la gobernanza como:
                   instituciones gubernamentales, sector empresarial, academia y

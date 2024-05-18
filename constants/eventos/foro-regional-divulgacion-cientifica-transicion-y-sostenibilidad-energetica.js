@@ -105,7 +105,7 @@ export const sideItems = [
 
   // },
   {
-    label: 'Perfil de Auspiciantes',
+    label: 'Participante',
     url: '#perfil-auspiciantes',
     image: <svg className="icon icon-tabler icon-tabler-file-search" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none" stroke="none" />
@@ -339,7 +339,7 @@ export const speakers = [
   },
   {
     name: 'MSc. Pablo Garcés',
-    image: `${path}/speakers/pablo-garces.png`,
+    image: '/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica/speakers/pablo-garces.png', //Están en la carpeta del evento
     role: 'Dirección de Integración, Acceso y Seguridad Energética, OLADE',
     institute: 'Asesor Técnico en Energía Renovable y Desarrollo Energético Sostenible.'
   },
@@ -351,7 +351,7 @@ export const speakers = [
   },
   {
     name: 'MSc. Andrea Balcázar González ',
-    image: `${path}/speakers/andrea-balcazar.png`,
+    image: '/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica/speakers/andrea-balcazar.png', //están en la carpeta del evento
     role: 'Docente Facultad de Ciencias Administrativas',
     institute: 'Escuela Politécnica Nacional'
   },
