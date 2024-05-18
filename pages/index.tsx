@@ -15,7 +15,7 @@ import {Slider} from '@components/Slider'
 import {Footer} from '@components/Layout/Footer'
 import {getPostsData, PostsData} from '@utils/posts'
 
-const eventDay = new Date(2024, 6, 2, 8)
+const eventDay = new Date(2024, 6, 26, 8)
 const eventURL = '/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica'
 const eventLinkForm = 'https://docs.google.com/forms/d/e/1FAIpQLSeA3I-XTxDS0pjfgVLVrOXFni2D7LYteNxGFOftdm_eNxa-7A/viewform'
 const eventLinkRegister = 'https://docs.google.com/forms/d/e/1FAIpQLSdcVReGJZ7uxn8FbtWV7yB8wcKZ55fXs1cnXg5Zl6QbJBm2vA/closedform'
@@ -90,7 +90,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
                 alt="Logo de la Olade"
                 className='h-16 rounded sm:h-24 lg:h-32 aspect-auto'
                 loading="lazy"
-                src="/externalLinks/revistas/olade-blanco.jpg"
+                src="/externalLinks/revistas/olade-blanco.png"
               />
             </picture>
             <picture>
@@ -115,7 +115,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
 
               <div>
                 <RegisterButton className='opacity-50 pointer-events-none' href={eventLinkForm}>
-                  Envíanos tu Póster
+                  Envíanos tu Póster hasta el 20 de Junio 
                 </RegisterButton>
                 <span className="text-xs text-white lg:text-sm">
                   Enlace habilitado del 20 de mayo al 20 de junio del 2024

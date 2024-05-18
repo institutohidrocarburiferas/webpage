@@ -407,12 +407,6 @@ export default function Evento ({photos}) {
                   <Text>Innovaciones tecnológicas y aplicadas</Text>
                 </li>
               </ul>
-              <Text>El evento está dirigido a jovenes investigadores y 
-                actores responsables de la gobernanza energética. Será un 
-                espacio de interacción con representantes de las instituciones 
-                gubernamentales, sector empresarial, academia y otros grupos  
-                de la sociedad civil para compartir los avances científicos y 
-                de aplicación en el marco de la sostenibilidad.</Text>
             </section>
 
             <section className="w-2/3 md:w-1/2">
@@ -443,7 +437,7 @@ export default function Evento ({photos}) {
                 para publicar su investigación en un número especial en las revistas 
                 indexadas bajo revisión de pares académicos, enerLAC y FIGEMPA.</Text>
             </div>
-              <Text> Adicionalmente, los trabajos presentados se publicarán como 
+              <Text> **Adicionalmente, los trabajos presentados se publicarán como 
                 artículos cortos en el libro de actas a entregarse el día del evento. </Text>
             <Participants data={oportunidadesPublicacion} />
           </section>
@@ -453,12 +447,12 @@ export default function Evento ({photos}) {
           <Participants data={organizers} title="Organizadores" />
 
           {/* Participantes */}
-          <Separator id="participantes" />
-          <Participants data={sponsors} title="Participantes" />
+          {/*<Separator id="participantes" />
+          <Participants data={sponsors} title="Participantes" />*/}
 
           {/* Auspiciantes */}
-          <Separator id="auspiciantes" />
-          <Participants data={auspiciantes} title="Auspiciantes" />
+          {/*<Separator id="auspiciantes" />
+          <Participants data={auspiciantes} title="Auspiciantes" />*/}
 
           {/* Agenda */}
           <Separator id="agenda" />
@@ -491,11 +485,12 @@ export default function Evento ({photos}) {
             <section className="flex flex-col px-5 md:pl-24 lg:w-1/2">
               <Title>Participantes</Title>
               <Text>
-                  El evento esta dirigido a varios actores de la gobernanza como:
-                  instituciones gubernamentales, sector empresarial, academia y
-                  otros grupos de la sociedad civil para su discusión de temas
-                  relevantes en los diferentes niveles del ciclo de las políticas
-                  energéticas.
+              El evento está dirigido a jovenes investigadores y 
+                actores responsables de la gobernanza energética. Será un 
+                espacio de interacción con representantes de las instituciones 
+                gubernamentales, sector empresarial, academia y otros grupos  
+                de la sociedad civil para compartir los avances científicos y 
+                de aplicación en el marco de la sostenibilidad.
               </Text>
             </section>
 

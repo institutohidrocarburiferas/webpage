@@ -170,14 +170,14 @@ export const oportunidadesPublicacion = [
     url: 'http://scielo.senescyt.gob.ec/revistas/figempa/eaboutj.htm',
   },
   {
-    title: 'SciElo Ecuador',
-    image: '/logos/scielo-revist.png',
-    url: 'http://scielo.senescyt.gob.ec/scielo.php?lng=es',
-  },
-  {
     title: 'EnerLAC - Revista de Energía de Latinoamérica y El Caribe',
     image: '/logos/enerlac.png',
     url: 'https://enerlac.olade.org/index.php/ENERLAC',
+  },
+  {
+    title: 'SciElo Ecuador',
+    image: '/logos/scielo-revist.png',
+    url: 'http://scielo.senescyt.gob.ec/scielo.php?lng=es',
   },
   {
     title: 'Latindex',
@@ -257,12 +257,12 @@ export const sponsors = [
 
 export const organizers = [
   {
-    title: 'Instituto de Investigaciones Hidrocarburíferas',
-    image: '/logoiih.png',
-  },
-  {
     title: 'Universidad Central del Ecuador',
     image: '/UCE-logo.png',
+  },
+  {
+    title: 'Instituto de Investigaciones Hidrocarburíferas',
+    image: '/logoiih.png',
   },
   {
     title: 'Olade',
@@ -276,12 +276,12 @@ export const organizers = [
 
 export const auspiciantes = [
   {
-    title: 'Instituto de Investigaciones Hidrocarburíferas',
-    image: '/logoiih.png',
-  },
-  {
     title: 'Universidad Central del Ecuador',
     image: '/UCE-logo.png',
+  },
+  {
+    title: 'Instituto de Investigaciones Hidrocarburíferas',
+    image: '/logoiih.png',
   },
   {
     title: 'Olade',
