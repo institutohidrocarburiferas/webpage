@@ -20,7 +20,7 @@ export function Navbar () {
       className={cn(
         'w-full h-24 bg-white shadow dark:bg-gray-900 shadow-gray-400 top-0 z-10',
         {fixed: pathname.substring(1, 8) === 'eventos'},
-        {sticky: !pathname.substring(1, 8) === 'eventos'},
+        {sticky: pathname.substring(1, 8) !== 'eventos'},
       )}>
       <div className="container bg-white dark:bg-gray-900 px-2.5 flex flex-wrap items-center  justify-between w-full mx-auto  z-10 lg:flex-nowrap">
         {/* Logo */}
