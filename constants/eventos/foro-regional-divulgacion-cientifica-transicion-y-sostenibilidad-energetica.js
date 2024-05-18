@@ -169,16 +169,20 @@ export const oportunidadesPublicacion = [
     image: '/logos/figempa-revista.png',
   },
   {
-    title: 'EnerLAC - Revista de Energía de Latinoamérica y El Caribe',
-    image: '/logos/enerlac.jpg',
+    title: 'SciElo Ecuador',
+    image: '/logos/scielo-revist.png',
   },
   {
     title: 'EnerLAC - Revista de Energía de Latinoamérica y El Caribe',
-    image: '/logos/enerlac.jpg',
+    image: '/logos/enerlac.png',
   },
   {
-    title: 'EnerLAC - Revista de Energía de Latinoamérica y El Caribe',
-    image: '/logos/enerlac.jpg',
+    title: 'Latindex',
+    image: '/logos/latindex.png',
+  },
+  {
+    title: 'REDIB - Red Iberoamericana',
+    image: '/logos/redib.png',
   },
 ]
 
