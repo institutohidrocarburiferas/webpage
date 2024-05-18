@@ -4,7 +4,7 @@ function Participant ({title, image, url}) {
   return <a className='grid rounded dark:bg-white hover:scale-105 place-content-center' href={url} rel="noreferrer" target="_blank">
     <picture>
       <img
-        alt={'Logo de' + title}
+        alt={'Logo de ' + title}
         className='h-20 rounded md:h-28 aspect-auto'
         loading="lazy"
         src={image}

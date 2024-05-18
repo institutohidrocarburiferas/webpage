@@ -88,9 +88,9 @@ const Home: NextPage<Props> = ({allPostsData}) => {
             <picture>
               <img
                 alt="Logo Olade"
-                className='h-16 rounded sm:h-24 lg:h-32 aspect-auto'
+                className='h-16 rounded sm:h-24 lg:h-32 aspect-auto bg-white'
                 loading="lazy"
-                src="/externalLinks/revistas/olade-blanco.png"
+                src="/logos/olade.png"
               />
             </picture>
             <picture>

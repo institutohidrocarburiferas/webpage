@@ -270,7 +270,7 @@ export const organizers = [
   },
   {
     title: 'Olade',
-    image: '/externalLinks/revistas/oladen-logo.png',
+    image: '/logos/olade.png',
   },
 ]
 
