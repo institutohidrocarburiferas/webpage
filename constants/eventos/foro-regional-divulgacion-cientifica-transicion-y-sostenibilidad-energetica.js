@@ -167,22 +167,27 @@ export const oportunidadesPublicacion = [
   {
     title: 'Revista de Investigación de FIGEMPA',
     image: '/logos/figempa-revista.png',
+    url: 'http://scielo.senescyt.gob.ec/revistas/figempa/eaboutj.htm',
   },
   {
     title: 'SciElo Ecuador',
     image: '/logos/scielo-revist.png',
+    url: 'http://scielo.senescyt.gob.ec/scielo.php?lng=es',
   },
   {
     title: 'EnerLAC - Revista de Energía de Latinoamérica y El Caribe',
     image: '/logos/enerlac.png',
+    url: 'https://enerlac.olade.org/index.php/ENERLAC',
   },
   {
     title: 'Latindex',
     image: '/logos/latindex.png',
+    url: 'https://www.latindex.org/latindex/nosotros/descripcion',
   },
   {
     title: 'REDIB - Red Iberoamericana',
     image: '/logos/redib.png',
+    url: 'https://www.redib.org',
   },
 ]
 
@@ -327,58 +332,28 @@ export const programItems = [
 
 export const speakers = [
   {
-    name: 'PhD. Nazarychev Alexander Nikolaevich',
-    image: `${path}/speakers/Nazarychev-Alexander-Nikolaevich.png`,
-    role: 'Profesor del Departamento de Energía Eléctrica y Electromecánica',
-    institute: 'Universidad de Minería de San Petersburgo'
+    name: 'PhD. Carolina Montero',
+    image: `${path}/speakers/####Nazarychev-Alexander-Nikolaevich.png`,
+    role: 'Directora de Investigación, UCE',
+    institute: 'Área de Investigación: Procesos químicos para aprovechamiento de biomasa y eficiencia energética.'
   },
   {
-    name: 'Ing. Enith Carrión, MSc',
-    image: `${path}/speakers/Enith-Carrion.png`,
-    role: 'Viceministra de Electricidad y Energía Renovable',
-    institute: 'Ministerio de Energía y Minas'
+    name: 'MSc. Pablo Garcés',
+    image: `${path}/speakers/pablo-garces.png`,
+    role: 'Dirección de Integración, Acceso y Seguridad Energética, OLADE',
+    institute: 'Asesor Técnico en Energía Renovable y Desarrollo Energético Sostenible.'
   },
   {
-    name: 'Ing. Medardo Cadena, MSc',
-    image: `${path}/speakers/Medardo-Cadena.png`,
-    role: 'Director de Estudios, Proyectos e Información',
-    institute: 'Organización Latinoamericana de Energía'
-  },
-  {
-    name: 'Ing. Ignacio Sagradoy, MSc',
-    image: `${path}/speakers/Ignacio-Sagradoy.png`,
-    role: 'Investigador',
-    institute: 'Fundación Bariloche',
-  },
-  {
-    name: 'Ing. Juan I. Navarrete, MSc',
-    image: `${path}/speakers/Juan-I-Navarrete.png`,
-    role: 'Director de Políticas y Programas',
-    institute: 'Comisión para el Uso Eficiente de la Energía',
-  },
-  {
-    name: 'Ing. Rony Parra, PhD',
+    name: 'PhD. Rony Parra',
     image: '/integrantes/Rony-Parra.png',
-    role: 'Director Instituto de Investigaciones Hidrocarburíferas',
-    institute: 'Universidad Central del Ecuador'
+    role: 'Director Instituto de Investigaciones Hidrocarburíferas, UCE',
+    institute: 'Área de Investigación: Sostenibilidad desde los sistemas complejos y metabolismo energético.'
   },
   {
-    name: 'Ing. Francisco Terneus, PhD(c) ',
-    image: `${path}/speakers/Francisco-Terneus.png`,
+    name: 'MSc. Andrea Balcázar González ',
+    image: `${path}/speakers/andrea-balcazar.png`,
     role: 'Docente Facultad de Ciencias Administrativas',
     institute: 'Escuela Politécnica Nacional'
-  },
-  {
-    name: 'Ing. Ghem Carvajal, MSc',
-    image: '/integrantes/Ghem-Carvajal.png',
-    role: 'Facultad de Ingeniería Química',
-    institute: 'Universidad Central del Ecuador'
-  },
-  {
-    name: 'Rafael Espinoza',
-    image: `${path}/speakers/Rafael-Espinoza.png`,
-    role: 'Socio',
-    institute: 'McKinsey & Company',
   },
   {
     name: 'Moderadora: Rebeca Illescas',
