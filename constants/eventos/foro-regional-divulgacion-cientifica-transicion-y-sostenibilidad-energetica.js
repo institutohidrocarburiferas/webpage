@@ -105,8 +105,8 @@ export const sideItems = [
 
   // },
   {
-    label: 'Participante',
-    url: '#perfil-auspiciantes',
+    label: 'Participantes',
+    url: '#perfil-participantes',
     image: <svg className="icon icon-tabler icon-tabler-file-search" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none" stroke="none" />
       <path d="M14 3v4a1 1 0 0 0 1 1h4" />
@@ -194,7 +194,7 @@ export const oportunidadesPublicacion = [
 export const sponsors = [
   {
     title: 'Olade',
-    image: '/externalLinks/revistas/oladeorg-logo.jpg',
+    image: '/externalLinks/revistas/oladen-logo.png',
   },
   {
     title: 'Fundación Bariloche',
@@ -266,7 +266,7 @@ export const organizers = [
   },
   {
     title: 'Olade',
-    image: '/externalLinks/revistas/oladeorg-logo.jpg',
+    image: '/externalLinks/revistas/oladen-logo.png',
   },
   {
     title: 'Student Energy at UCE',
@@ -285,7 +285,7 @@ export const auspiciantes = [
   },
   {
     title: 'Olade',
-    image: '/externalLinks/revistas/oladeorg-logo.jpg',
+    image: '/externalLinks/revistas/oladen-logo.png',
   },
   {
     title: 'Student Energy at UCE',

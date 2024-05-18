@@ -90,7 +90,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
                 alt="Logo de la Olade"
                 className='h-16 rounded sm:h-24 lg:h-32 aspect-auto'
                 loading="lazy"
-                src="/externalLinks/revistas/oladeorg-logo.png"
+                src="/externalLinks/revistas/oladen-logo.png"
               />
             </picture>
             <picture>
