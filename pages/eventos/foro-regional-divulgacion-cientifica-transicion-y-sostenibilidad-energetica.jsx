@@ -157,18 +157,21 @@ export default function Evento ({photos}) {
           </section>
           {/* Registro y cuenta regresiva */}
           <section className="flex flex-col gap-10 mt-5">
-            <div className="flex flex-col items-center justify-center gap-6 mx-auto w-fit">
-              <RegisterButton className="" href={pageData.eventPosterLink}>
+            <div className="flex flex-col items-center justify-center mx-auto w-fit">
+              <RegisterButton className="pointer-events-none opacity-50" href={pageData.eventPosterLink}>
                 Envíanos tu Póster hasta el 20 de Junio
               </RegisterButton>
-              <a
+              <span className="text-xs text-white lg:text-sm">
+                Enlace habilitado a partir del 20 de mayo
+              </span>
+              {/* <a
                 className='w-full px-2 py-2 font-semibold text-center text-white transition-transform bg-transparent border border-white rounded md:px-6 sm:text-xl hover:bg-black/50 md:text-2xl lg:text-xl hover:scale-105 active:scale-95'
                 href="https://docs.google.com/presentation/d/1hoLy32EZvDsxL7ldU6PgsPjpPCLnxmJ5/edit#slide=id.p1"
                 rel='noopener noreferrer'
                 target="_blank"
               >
                 Revisa el formato del póster aquí
-              </a>
+              </a> */}
             </div>
             <Countdown eventDate={pageData.eventDay} />
           </section>
