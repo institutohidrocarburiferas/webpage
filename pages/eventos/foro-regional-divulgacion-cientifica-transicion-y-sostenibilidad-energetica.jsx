@@ -36,7 +36,7 @@ const heroContent = {
   height: '87vh',
   image:
     '/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica.jpg',
-  text: 'viernes, 26 de julio del 2024',
+  text: 'Viernes, 26 de julio del 2024',
 }
 
 function ProgramItem ({time, label, expositor, institution}) {
@@ -161,8 +161,8 @@ export default function Evento ({photos}) {
               <RegisterButton className="" href={pageData.eventPosterLink}>
                 Envíanos tu Póster hasta el 20 de Junio
               </RegisterButton>
-              <span className="text-xs text-white lg:text-sm">
-                Enlace habilitado del 20 de mayo al 20 de junio del 2024
+              <span className="hover:text-red-500 text-s text-white lg:text-m" href="https://docs.google.com/presentation/d/1hoLy32EZvDsxL7ldU6PgsPjpPCLnxmJ5/edit#slide=id.p1" style={{textDecoration:'underline'}}>
+                Revisa el formato del póster aquí
               </span>
             </div>
             <Countdown eventDate={pageData.eventDay} />
