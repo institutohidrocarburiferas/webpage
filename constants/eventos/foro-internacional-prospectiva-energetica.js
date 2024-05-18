@@ -309,31 +309,31 @@ export const programItems = [
 export const speakers = [
   {
     name: 'PhD. Nazarychev Alexander Nikolaevich',
-    image: `${path}/speakers/Nazarychev-Alexander-Nikolaevich.png`,
+    image: `${path}/speakers/Nazarychev-Alexander-Nikolaevich.jpg`,
     role: 'Profesor del Departamento de Energía Eléctrica y Electromecánica',
     institute: 'Universidad de Minería de San Petersburgo'
   },
   {
     name: 'Ing. Enith Carrión, MSc',
-    image: `${path}/speakers/Enith-Carrion.png`,
+    image: `${path}/speakers/Enith-Carrion.jpg`,
     role: 'Viceministra de Electricidad y Energía Renovable',
     institute: 'Ministerio de Energía y Minas'
   },
   {
     name: 'Ing. Medardo Cadena, MSc',
-    image: `${path}/speakers/Medardo-Cadena.png`,
+    image: `${path}/speakers/Medardo-Cadena.jpg`,
     role: 'Director de Estudios, Proyectos e Información',
     institute: 'Organización Latinoamericana de Energía'
   },
   {
     name: 'Ing. Ignacio Sagradoy, MSc',
-    image: `${path}/speakers/Ignacio-Sagradoy.png`,
+    image: `${path}/speakers/Ignacio-Sagradoy.jpg`,
     role: 'Investigador',
     institute: 'Fundación Bariloche',
   },
   {
     name: 'Ing. Juan I. Navarrete, MSc',
-    image: `${path}/speakers/Juan-I-Navarrete.png`,
+    image: `${path}/speakers/Juan-I-Navarrete.jpg`,
     role: 'Director de Políticas y Programas',
     institute: 'Comisión para el Uso Eficiente de la Energía',
   },
@@ -345,7 +345,7 @@ export const speakers = [
   },
   {
     name: 'Ing. Francisco Terneus, PhD(c) ',
-    image: `${path}/speakers/Francisco-Terneus.png`,
+    image: `${path}/speakers/Francisco-Terneus.jpg`,
     role: 'Docente Facultad de Ciencias Administrativas',
     institute: 'Escuela Politécnica Nacional'
   },
@@ -357,13 +357,13 @@ export const speakers = [
   },
   {
     name: 'Rafael Espinoza',
-    image: `${path}/speakers/Rafael-Espinoza.png`,
+    image: `${path}/speakers/Rafael-Espinoza.jpg`,
     role: 'Socio',
     institute: 'McKinsey & Company',
   },
   {
     name: 'Moderadora: Rebeca Illescas',
-    image: `${path}/speakers/Rebeca-Illescas.png`,
+    image: `${path}/speakers/Rebeca-Illescas.jpg`,
     role: 'Consultora en Energía y Desarrollo',
     institute: null,
   },
