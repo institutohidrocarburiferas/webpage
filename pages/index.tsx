@@ -69,6 +69,14 @@ const Home: NextPage<Props> = ({allPostsData}) => {
         {/* Registro y cuenta regresiva */}
         <section className='flex flex-col w-full gap-3 mt-5'>
           <div className='flex flex-wrap items-center justify-center w-full gap-10 lg:justify-start'>
+          <picture>
+              <img
+                alt="Logo del Instituto de Investigaciones Hidrocarburíferas"
+                className='h-16 rounded sm:h-24 lg:h-32 aspect-auto'
+                loading="lazy"
+                src="/UCE-logo.png"
+              />
+            </picture>
             <picture>
               <img
                 alt="Logo del Ministerio de Energía y Minas"
@@ -79,15 +87,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
             </picture>
             <picture>
               <img
-                alt="Logo del Instituto de Investigaciones Hidrocarburíferas"
-                className='h-16 rounded sm:h-24 lg:h-32 aspect-auto'
-                loading="lazy"
-                src="/UCE-logo.png"
-              />
-            </picture>
-            <picture>
-              <img
-                alt="Logo de la Olade"
+                alt="Logo Olade"
                 className='h-16 rounded sm:h-24 lg:h-32 aspect-auto'
                 loading="lazy"
                 src="/externalLinks/revistas/olade-blanco.png"

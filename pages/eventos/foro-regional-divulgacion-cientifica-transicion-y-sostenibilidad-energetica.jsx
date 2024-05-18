@@ -159,7 +159,7 @@ export default function Evento ({photos}) {
           <section className="flex flex-col gap-10 mt-5">
             <div className="flex flex-col items-center justify-center gap-2 mx-auto w-fit">
               <RegisterButton className="" href={pageData.eventPosterLink}>
-                Envíanos tu Póster
+                Envíanos tu Póster hasta el 20 de Junio
               </RegisterButton>
               <span className="text-xs text-white lg:text-sm">
                 Enlace habilitado del 20 de mayo al 20 de junio del 2024
