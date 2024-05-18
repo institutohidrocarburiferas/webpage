@@ -165,7 +165,7 @@ export const sideItems = [
 
 export const oportunidadesPublicacion = [
   {
-    title: 'Revista de Investigación de FIGEMPA',
+    title: 'FIGEMPA - Investigación y Desarrollo',
     image: '/logos/figempa-revista.png',
     url: 'http://scielo.senescyt.gob.ec/revistas/figempa/eaboutj.htm',
   },

@@ -429,7 +429,7 @@ export default function Evento ({photos}) {
 
           {/* Oportunidades de publicación */}
           <Separator id="oportunidades" />
-          <section className="container flex flex-col items-center gap-5 p-4">
+          <section className="container flex flex-col items-center gap-2 p-3">
             <Title>Oportunidades de publicación</Title>
             <div className='max-w-3xl mx-auto'>
               <Text>Los autores de los pósters aceptados realizarán una presentación 
@@ -437,8 +437,12 @@ export default function Evento ({photos}) {
                 para publicar su investigación en un número especial en las revistas 
                 indexadas bajo revisión de pares académicos, enerLAC y FIGEMPA.</Text>
             </div>
+          </section>
+          <section className="container flex flex-col items-center gap-0 p-3">
+            <div className='max-w-3xl mx-auto font-semibold italic'>
               <Text> **Adicionalmente, los trabajos presentados se publicarán como 
                 artículos cortos en el libro de actas a entregarse el día del evento. </Text>
+            </div>
             <Participants data={oportunidadesPublicacion} />
           </section>
 
@@ -587,7 +591,7 @@ export default function Evento ({photos}) {
               className="w-full my-5 bg-gray-200 border-none h-96"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d513.6758499995218!2d-78.50606974455522!3d-0.19899527957450538!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a46fc9a03a9%3A0xc052e4af4b47fe88!2sBiblioteca%20Central%20UCE!5e0!3m2!1sen!2sec!4v1667323605044!5m2!1sen!2sec"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7938196702685!2d-78.50461142545758!3d-0.20079379979722797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a40965d8b39%3A0x577d643e33c6aff4!2sTeatro%20Universitario%20-%20UCE!5e0!3m2!1ses-419!2sec!4v1716057068971!5m2!1ses-419!2sec" 
             />
           </section>
         </div>
