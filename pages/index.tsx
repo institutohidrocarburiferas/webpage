@@ -115,7 +115,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
 
               <div>
                 <RegisterButton className='opacity-50 pointer-events-none' href={eventLinkForm}>
-                  Envíanos tu Póster hasta el 20 de Junio 
+                  Envíanos tu Póster hasta el 20 de Junio
                 </RegisterButton>
                 <span className="text-xs text-white lg:text-sm">
                   Enlace habilitado del 20 de mayo al 20 de junio del 2024
