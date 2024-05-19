@@ -25,7 +25,7 @@ import {
 
 const pageData = {
   title: 'Foro Regional De Divulgación Científica: Transición Y Sostenibilidad Energética',
-  description: 'Foro Regional De Divulgación Científica: Transición Y Sostenibilidad Energética',
+  description: 'El Foro Regional de Divulgación Científica: Transición y Sostenibilidad Energética busca generar un espacio de divulgación a través de la presentación de póster científicos sobre los avances en estudios de investigación y de aplicación que permitan la materialización de la transición y la sostenibilidad energética.',
   image: '/prueba.png',
   eventDay: new Date(2024, 6, 26, 8),
   eventPosterLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeA3I-XTxDS0pjfgVLVrOXFni2D7LYteNxGFOftdm_eNxa-7A/viewform',
@@ -143,6 +143,10 @@ export default function Evento ({photos}) {
       <Head>
         <title>{pageData.title}</title>
         <meta content={pageData.description} name="description" />
+        <meta
+          content="https://www.iih-uce.org/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica/og.jpg"
+          property="og:image"
+        />
       </Head>
       <Sidebar gradient='from-[#EAEBEF] to-[#FAFAFF]' items={sideItems}/>
       <main>
