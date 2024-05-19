@@ -1,7 +1,7 @@
 ---
 title: "Submission of abstract to the Contest on Energy and Climate Change organized by China University of Petroleum-Beijing"
 date: "2022-04-15"
-image: "/colaboradores-externos/u-china-petroleo.png"
+image: "/logos/u-china-petroleo.webp"
 ---
 
 Within the framework of the activities of the 7<sup>th</sup> BRICS Energy Minister Meeting, the China University of Petroleum – Beijing extended the cordial invitation to the Competition on Energy and Climate Change of the International Energy Youth Conference, aimed at young researchers who develop research in the fields of energy and climate change.
