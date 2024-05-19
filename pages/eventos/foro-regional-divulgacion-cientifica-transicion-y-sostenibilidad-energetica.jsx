@@ -159,7 +159,7 @@ export default function Evento ({photos}) {
           <section className="flex flex-col gap-10 mt-5">
             <div className="flex flex-col items-center justify-center gap-6 mx-auto w-fit">
               <div>
-                <RegisterButton className="pointer-events-none opacity-50" href={pageData.eventPosterLink}>
+                <RegisterButton className="" href={pageData.eventPosterLink}>
                   Envíanos tu Póster hasta el 20 de Junio
                 </RegisterButton>
                 <span className="text-xs text-white lg:text-sm">

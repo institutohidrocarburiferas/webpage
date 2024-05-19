@@ -114,7 +114,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
               </Link>
 
               <div>
-                <RegisterButton className='opacity-50 pointer-events-none' href={eventLinkForm}>
+                <RegisterButton className='' href={eventLinkForm}>
                   Envíanos tu Póster hasta el 20 de Junio
                 </RegisterButton>
                 <span className="text-xs text-white lg:text-sm">
