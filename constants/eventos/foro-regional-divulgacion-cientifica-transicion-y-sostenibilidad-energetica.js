@@ -244,7 +244,7 @@ export const programItems = [
 export const speakers = [
   {
     name: 'PhD. Carolina Montero',
-    image: `${path}/speakers/####Nazarychev-Alexander-Nikolaevich.png`,
+    image: `${path}/speakers/carolina-montero.png`,
     role: 'Directora de Investigación, UCE',
     institute: 'Área de Investigación: Procesos químicos para aprovechamiento de biomasa y eficiencia energética.'
   },

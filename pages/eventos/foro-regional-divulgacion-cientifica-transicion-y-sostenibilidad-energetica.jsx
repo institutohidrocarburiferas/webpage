@@ -257,9 +257,9 @@ export default function Evento ({photos}) {
               <ul className="font-semibold list-disc pl-7">
                 <li>
                   <Text>Petróleo y otras fuentes primarias de energía</Text>
-                  <div className="font-normal my-4">
+                  {/*<div className="font-normal my-4">
                     Descripción del eje temático
-                  </div>
+                  </div>*/}
                 </li>
                 <li>
                   <Text>Sistemas renovables</Text>
