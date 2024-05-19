@@ -250,7 +250,7 @@ export const speakers = [
   },
   {
     name: 'MSc. Pablo Garcés',
-    image: `${path}/speakers/pablo-garces.jpg`,
+    image: `${path}/speakers/pablo-garces.webp`,
     role: 'Dirección de Integración, Acceso y Seguridad Energética, OLADE',
     institute: 'Asesor Técnico en Energía Renovable y Desarrollo Energético Sostenible.'
   },
@@ -262,7 +262,7 @@ export const speakers = [
   },
   {
     name: 'MSc. Andrea Balcázar González ',
-    image: `${path}/speakers/andrea-balcazar.jpg`,
+    image: `${path}/speakers/andrea-balcazar.webp`,
     role: 'Docente Facultad de Ciencias Administrativas',
     institute: 'Escuela Politécnica Nacional'
   },
