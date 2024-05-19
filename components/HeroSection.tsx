@@ -15,7 +15,7 @@ export const HeroSection: React.FC<Props> = ({
   title,
   text,
   image,
-  height = '100vh',
+  height,
   justifyContent = 'center',
   children,
 }) => {
@@ -24,24 +24,19 @@ export const HeroSection: React.FC<Props> = ({
 
   return (
     <div
-      className="p-5 sm:px-16 md:py-12 md:pl-24"
+      className="grid content-center p-5 bg-center bg-cover sm:px-16 md:py-12 md:pl-24 h-fit 2xl:p-40"
       style={{
-        backgroundSize: 'cover',
-        backgroundPosition: 'center',
         backgroundImage:
           `linear-gradient(250deg, rgba(130, 201, 30, 0) 0%, #062343 70%), url(${image})`,
-        display: 'grid',
-        height,
         justifyContent,
+        height,
         alignContent: 'center',
-        maxHeight: 1000,
       }}>
       <div ref={containerRef.ref}>
         {containerRef.isNear
           ? <div className="container flex flex-col gap-5 animate-fade">
-            <h2>
-              <p className='inline-block text-3xl font-extrabold text-transparent bg-gradient-to-r bg-clip-text from-amber-400 via-orange-400 to-amber-400 lg:max-w-4xl
-              sm:text-4xl md:text-5xl lg:text-6xl'>{title}</p>
+            <h2 className='inline-block w-full max-w-5xl text-3xl font-extrabold text-transparent bg-gradient-to-r bg-clip-text from-amber-400 via-orange-400 to-amber-400 sm:text-4xl lg:text-5xl text-balance 2xl:text-6xl'>
+              {title}
             </h2>
             <p className='leading-normal tracking-wider text-gray-100 lg:text-justify'
               style={{

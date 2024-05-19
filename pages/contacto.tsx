@@ -41,7 +41,7 @@ const Page: NextPage = () => {
 
   const contacts = pageData.contacts.map(({name, role, email}) => (
     <div key={name} className="w-full md:w-auto">
-      <p className='flex items-end mx-2 font-bold border-b text-md md:text-xl'>{name}</p>
+      <p className='flex items-end mx-2 font-bold border-b md:text-xl'>{name}</p>
       <p className='mx-2 mt-1 text-xs md:text-sm'>{role}</p>
       <a
         className='mx-2 mt-1 text-xs italic text-blue-500 transition-colors md:text-sm hover:text-blue-700 active:text-blue-900'

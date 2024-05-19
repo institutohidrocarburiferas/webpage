@@ -4,7 +4,7 @@ const path = '/eventos/foro-internacional-prospectiva-energetica'
 export const sideItems = [
   {
     label: 'Inicio',
-    url: '#content',
+    url: '#top-area',
     image: <svg className="icon icon-tabler icon-tabler-home-2" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none" stroke="none" />
       <polyline points="5 12 3 12 12 3 21 12 19 12" />
@@ -149,75 +149,75 @@ export const sideItems = [
 
 export const sponsors = [
   {
-    title: 'Logo de Olade',
+    title: 'Olade',
     image: '/externalLinks/revistas/oladeorg-logo.jpg',
   },
   {
-    title: 'Logo de la Fundación Bariloche',
-    image: `${path}/sponsors/fundacion-bariloche.jpg`,
+    title: 'Fundación Bariloche',
+    image: '/logos/fundacion-bariloche.jpg',
   },
   {
-    title: 'Logo del Instituto de Metrología de Alemania (PTB)',
-    image: `${path}/sponsors/instituto-metrologia-alemania.jpg`,
+    title: 'Instituto de Metrología de Alemania (PTB)',
+    image: '/logos/instituto-metrologia-alemania.jpg',
   },
   {
-    title: 'Logo de la Escuela Politécnica Nacional',
-    image: `${path}/sponsors/epn.png`,
+    title: 'Escuela Politécnica Nacional',
+    image: '/logos/epn.png',
   },
   {
-    title: 'Logo de la Facultad de Ingeniería Química - UCE',
-    image: `${path}/sponsors/ing-quimica-uce.jpeg`,
+    title: 'Facultad de Ingeniería Química - UCE',
+    image: '/logos/ing-quimica-uce.jpeg',
   },
   {
-    title: 'Logo de la Universidad de Minería de San Petersburgo',
-    image: `${path}/sponsors/u-san-petersburgo.svg`,
+    title: 'Universidad de Minería de San Petersburgo',
+    image: '/logos/u-san-petersburgo.svg',
   },
   {
-    title: 'Logo de la ',
-    image: `${path}/sponsors/figempa.png`,
+    title: 'Facultad de Ingeniería en Geología, Minas, Petróleos y Ambiental - UCE',
+    image: '/logos/figempa.png',
   },
   {
-    title: 'Logo de Ingeniería en Petróleos de Universidad Central del Ecuador',
-    image: `${path}/sponsors/petroleos-uce.png`,
+    title: 'Ingeniería en Petróleos de Universidad Central del Ecuador',
+    image: '/logos/petroleos-uce.png',
   },
   {
-    title: 'Logo de SERTECPET',
-    image: `${path}/sponsors/sertecpet.png`,
+    title: 'SERTECPET',
+    image: '/logos/sertecpet.png',
   },
   {
-    title: 'Logo de Halliburton',
-    image: `${path}/sponsors/halliburton.jpg`,
+    title: 'Halliburton',
+    image: '/logos/halliburton.jpg',
   },
   {
-    title: 'Logo de Best Energy Services S.A',
-    image: `${path}/sponsors/best-energy.jpeg`,
+    title: 'Best Energy Services S.A',
+    image: '/logos/best-energy.jpeg',
   },
   {
-    title: 'Logo de RENOVA Energia',
-    image: `${path}/sponsors/renova-energia.webp`,
+    title: 'RENOVA Energia',
+    image: '/logos/renova-energia.webp',
   },
   {
-    title: 'Logo de GEOIL company',
-    image: `${path}/sponsors/geoil.png`,
+    title: 'GEOIL company',
+    image: '/logos/geoil.png',
   },
   {
-    title: 'Logo de la Secretaría de Energía',
-    image: `${path}/sponsors/sener-secretaria-energia.png`,
+    title: 'Secretaría de Energía de México',
+    image: '/logos/sener-secretaria-energia.png',
   },
   {
-    title: 'Logo de la Comisión Nacional para el Uso Eficiente de la Energía',
-    image: `${path}/sponsors/conuee.jpg`,
+    title: 'Comisión Nacional para el Uso Eficiente de la Energía',
+    image: '/logos/conuee.jpg',
   },
 
 ]
 
 export const organizers = [
   {
-    title: 'Logo de la Universidad Central',
+    title: 'Universidad Central del Ecuador',
     image: '/UCE-logo.png',
   },
   {
-    title: 'Logo del Ministerio de Energía y Minas',
+    title: 'Ministerio de Energía y Minas',
     image: '/eventos/foro-internacional-prospectiva-energetica/ministerio-energia-minas.jpg',
   },
 ]
@@ -309,31 +309,31 @@ export const programItems = [
 export const speakers = [
   {
     name: 'PhD. Nazarychev Alexander Nikolaevich',
-    image: `${path}/speakers/Nazarychev-Alexander-Nikolaevich.png`,
+    image: `${path}/speakers/Nazarychev-Alexander-Nikolaevich.jpg`,
     role: 'Profesor del Departamento de Energía Eléctrica y Electromecánica',
     institute: 'Universidad de Minería de San Petersburgo'
   },
   {
     name: 'Ing. Enith Carrión, MSc',
-    image: `${path}/speakers/Enith-Carrion.png`,
+    image: `${path}/speakers/Enith-Carrion.jpg`,
     role: 'Viceministra de Electricidad y Energía Renovable',
     institute: 'Ministerio de Energía y Minas'
   },
   {
     name: 'Ing. Medardo Cadena, MSc',
-    image: `${path}/speakers/Medardo-Cadena.png`,
+    image: `${path}/speakers/Medardo-Cadena.jpg`,
     role: 'Director de Estudios, Proyectos e Información',
     institute: 'Organización Latinoamericana de Energía'
   },
   {
     name: 'Ing. Ignacio Sagradoy, MSc',
-    image: `${path}/speakers/Ignacio-Sagradoy.png`,
+    image: `${path}/speakers/Ignacio-Sagradoy.jpg`,
     role: 'Investigador',
     institute: 'Fundación Bariloche',
   },
   {
     name: 'Ing. Juan I. Navarrete, MSc',
-    image: `${path}/speakers/Juan-I-Navarrete.png`,
+    image: `${path}/speakers/Juan-I-Navarrete.jpg`,
     role: 'Director de Políticas y Programas',
     institute: 'Comisión para el Uso Eficiente de la Energía',
   },
@@ -345,7 +345,7 @@ export const speakers = [
   },
   {
     name: 'Ing. Francisco Terneus, PhD(c) ',
-    image: `${path}/speakers/Francisco-Terneus.png`,
+    image: `${path}/speakers/Francisco-Terneus.jpg`,
     role: 'Docente Facultad de Ciencias Administrativas',
     institute: 'Escuela Politécnica Nacional'
   },
@@ -357,13 +357,13 @@ export const speakers = [
   },
   {
     name: 'Rafael Espinoza',
-    image: `${path}/speakers/Rafael-Espinoza.png`,
+    image: `${path}/speakers/Rafael-Espinoza.jpg`,
     role: 'Socio',
     institute: 'McKinsey & Company',
   },
   {
     name: 'Moderadora: Rebeca Illescas',
-    image: `${path}/speakers/Rebeca-Illescas.png`,
+    image: `${path}/speakers/Rebeca-Illescas.jpg`,
     role: 'Consultora en Energía y Desarrollo',
     institute: null,
   },
@@ -374,7 +374,7 @@ const expos = '/eventos/foro-internacional-prospectiva-energetica/expositions'
 export const expositions = [
   {
     title: 'Seguridad y sostenibilidad de los sistemas futuros de energía (fósil y electricidad)',
-    image: `${path}/speakers/Nazarychev-Alexander-Nikolaevich.png`,
+    image: `${path}/speakers/Nazarychev-Alexander-Nikolaevich.jpg`,
     // url: '',
     expositor: 'PhD. Nazarychev Alexander Nikolaevich',
     role: 'Profesor del Departamento de Energía Eléctrica y Electromecánica - Universidad de Minería de San Petersburgo',
@@ -382,7 +382,7 @@ export const expositions = [
   },
   {
     title: 'Visión a largo plazo del sistema energético de Ecuador',
-    image: `${path}/speakers/Enith-Carrion.png`,
+    image: `${path}/speakers/Enith-Carrion.jpg`,
     // url: '',
     expositor: 'Ing. Enith Carrión, MSc',
     role: 'Viceministra de Electricidad y Energía Renovable - Ministerio de Energía y Minas',
@@ -390,11 +390,11 @@ export const expositions = [
   },
   {
     title: 'Visualización y retos de la transición energética en ALC a mediano y largo plazo (uso de herramientas de prospectiva de OLADE)',
-    image: `${path}/speakers/Medardo-Cadena.png`,
+    image: `${path}/speakers/Medardo-Cadena.jpg`,
     // url: '',
     expositor: 'Ing. Medardo Cadena, MSc',
     role: 'Director de Estudios, Proyectos e Información - Organización Latinoamericana de Energía (OLADE)',
-    download: `${expos}/03U_Presentación_OLADE.pdf`,
+    download: `${expos}/03U_Presentación_OLADE.jpg`,
   },
   {
     title: 'Prospectiva energética para el Ecuador con MuSIASEM o Multi-Scale Integrated Analysis and Ecosystem Metabolism',
@@ -406,7 +406,7 @@ export const expositions = [
   },
   {
     title: 'Visión a largo plazo del sistema energético (oferta y demanda de combustibles y electricidad) con la transformación del mercado hacia equipos energéticamente eficientes.',
-    image: `${path}/speakers/Ignacio-Sagradoy.png`,
+    image: `${path}/speakers/Ignacio-Sagradoy.jpg`,
     // url: '',
     expositor: 'Ing. Ignacio Sagardoy, MSc',
     role: 'Investigador - Fundación Bariloche de Argentina',
@@ -414,7 +414,7 @@ export const expositions = [
   },
   {
     title: 'Estudio de prospectiva en el sector transporte de Ecuador',
-    image: `${path}/speakers/Francisco-Terneus.png`,
+    image: `${path}/speakers/Francisco-Terneus.jpg`,
     // url: '',
     expositor: 'Ing, Francisco Terneus, PhD(c)',
     role: 'Facultad de Ciencias Administrativas - Escuela Politécnica Nacional',
@@ -422,7 +422,7 @@ export const expositions = [
   },
   {
     title: 'Modelo de prospectiva energética para México',
-    image: `${path}/speakers/Juan-I-Navarrete.png`,
+    image: `${path}/speakers/Juan-I-Navarrete.jpg`,
     // url: '',
     expositor: 'Ing. Juan I. Navarrete, MSc',
     role: 'Director de Políticas y Programas - Comisión Nacional para el Uso Eficiente de la Energía (CONUEE-SENER)',

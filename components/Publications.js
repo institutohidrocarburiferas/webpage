@@ -11,7 +11,7 @@ function Card ({title, image, url, date, download}) {
         <img alt={title} loading="lazy" src={image} />
       </picture>
       <div className='w-3/4 p-2'>
-        <h3 className='pb-5 font-semibold text-justify text-md md:text-2xl'>
+        <h3 className='pb-5 font-semibold text-justify md:text-2xl'>
           {title}
         </h3>
         <div className='flex justify-between'>

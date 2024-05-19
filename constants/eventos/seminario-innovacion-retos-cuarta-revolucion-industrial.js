@@ -1,10 +1,8 @@
 
-const path = '/eventos/seminario-innovacion-retos-cuarta-revolucion-industrial'
-
 export const sideItems = [
   {
     label: 'Inicio',
-    url: '#content',
+    url: '#top-area',
     image: <svg className="icon icon-tabler icon-tabler-home-2" fill="none" strokeLinecap="round" strokeLinejoin="round" strokeWidth="1.5" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
       <path d="M0 0h24v24H0z" fill="none" stroke="none" />
       <polyline points="5 12 3 12 12 3 21 12 19 12" />
@@ -150,22 +148,22 @@ export const sideItems = [
 
 export const sponsors = [
   {
-    title: 'Logo del Ministerio de Energía y Minas',
-    image: '/eventos/seminario-internacional-cuarta-revolucion-industrial/logominener.png',
+    title: 'Ministerio de Energía y Minas',
+    image: '/eventos/seminario-internacional-cuarta-revolucion-industrial/logominener.jpg',
   },
 ]
 
 export const organizers = [
   {
-    title: 'Logo de la Universidad Central',
+    title: 'Universidad Central',
     image: '/UCE-logo.png',
   },
   {
-    title: 'Logo de la FIGEMPA',
-    image: '/logofigempa.jpg',
+    title: 'FIGEMPA',
+    image: '/logos/logofigempa-anterior.jpg',
   },
   {
-    title: 'Logo de Ingeniería en Petróleos de Universidad Central del Ecuador',
+    title: 'Ingeniería en Petróleos de Universidad Central del Ecuador',
     image: '/logoiih.png',
   },
 ]
@@ -306,137 +304,5 @@ export const programItems = [
   {
     expositor: 'María Mercedes Gavilánez',
     institution: 'Vicerrectora de Investigación, Doctorados e Innovación de la Universidad Central del Ecuador',
-  },
-]
-
-export const speakers = [
-  {
-    name: 'PhD. Nazarychev Alexander Nikolaevich',
-    image: `${path}/speakers/Nazarychev-Alexander-Nikolaevich.png`,
-    role: 'Profesor del Departamento de Energía Eléctrica y Electromecánica',
-    institute: 'Universidad de Minería de San Petersburgo'
-  },
-  {
-    name: 'Ing. Enith Carrión, MSc',
-    image: `${path}/speakers/Enith-Carrion.png`,
-    role: 'Viceministra de Electricidad y Energía Renovable',
-    institute: 'Ministerio de Energía y Minas'
-  },
-  {
-    name: 'Ing. Medardo Cadena, MSc',
-    image: `${path}/speakers/Medardo-Cadena.png`,
-    role: 'Director de Estudios, Proyectos e Información',
-    institute: 'Organización Latinoamericana de Energía'
-  },
-  {
-    name: 'Ing. Ignacio Sagradoy, MSc',
-    image: `${path}/speakers/Ignacio-Sagradoy.png`,
-    role: 'Investigador',
-    institute: 'Fundación Bariloche',
-  },
-  {
-    name: 'Ing. Juan I. Navarrete, MSc',
-    image: `${path}/speakers/Juan-I-Navarrete.png`,
-    role: 'Director de Políticas y Programas',
-    institute: 'Comisión para el Uso Eficiente de la Energía',
-  },
-  {
-    name: 'Ing. Rony Parra, PhD',
-    image: '/integrantes/Rony-Parra.png',
-    role: 'Director Instituto de Investigaciones Hidrocarburíferas',
-    institute: 'Universidad Central del Ecuador'
-  },
-  {
-    name: 'Ing. Francisco Terneus, PhD(c) ',
-    image: `${path}/speakers/Francisco-Terneus.png`,
-    role: 'Docente Facultad de Ciencias Administrativas',
-    institute: 'Escuela Politécnica Nacional'
-  },
-  {
-    name: 'Ing. Ghem Carvajal, MSc',
-    image: '/integrantes/Ghem-Carvajal.png',
-    role: 'Facultad de Ingeniería Química',
-    institute: 'Universidad Central del Ecuador'
-  },
-  {
-    name: 'Rafael Espinoza',
-    image: `${path}/speakers/Rafael-Espinoza.png`,
-    role: 'Socio',
-    institute: 'McKinsey & Company',
-  },
-  {
-    name: 'Moderadora: Rebeca Illescas',
-    image: `${path}/speakers/Rebeca-Illescas.png`,
-    role: 'Consultora en Energía y Desarrollo',
-    institute: null,
-  },
-]
-
-const expos = '/eventos/foro-internacional-prospectiva-energetica/expositions'
-
-export const expositions = [
-  {
-    title: 'Seguridad y sostenibilidad de los sistemas futuros de energía (fósil y electricidad)',
-    image: `${path}/speakers/Nazarychev-Alexander-Nikolaevich.png`,
-    // url: '',
-    expositor: 'PhD. Nazarychev Alexander Nikolaevich',
-    role: 'Profesor del Departamento de Energía Eléctrica y Electromecánica - Universidad de Minería de San Petersburgo',
-    download: `${expos}/01_Презентация_Назарычев_АН_23.11.2022.pdf`,
-  },
-  {
-    title: 'Visión a largo plazo del sistema energético de Ecuador',
-    image: `${path}/speakers/Enith-Carrion.png`,
-    // url: '',
-    expositor: 'Ing. Enith Carrión, MSc',
-    role: 'Viceministra de Electricidad y Energía Renovable - Ministerio de Energía y Minas',
-    download: `${expos}/02_PRESENTACION_CONGRESO_UCENTRAL_23-11-2022.pdf`,
-  },
-  {
-    title: 'Visualización y retos de la transición energética en ALC a mediano y largo plazo (uso de herramientas de prospectiva de OLADE)',
-    image: `${path}/speakers/Medardo-Cadena.png`,
-    // url: '',
-    expositor: 'Ing. Medardo Cadena, MSc',
-    role: 'Director de Estudios, Proyectos e Información - Organización Latinoamericana de Energía (OLADE)',
-    download: `${expos}/03U_Presentación_OLADE.pdf`,
-  },
-  {
-    title: 'Prospectiva energética para el Ecuador con MuSIASEM o Multi-Scale Integrated Analysis and Ecosystem Metabolism',
-    image: '/integrantes/Rony-Parra.png',
-    // url: '',
-    expositor: 'Ing. Rony Parra, PhD',
-    role: 'Director Instituto de Investigaciones Hidrocarburíferas IIH - Universidad Central del Ecuador',
-    download: `${expos}/05_PPT_IIH_23-11-2022.pdf`,
-  },
-  {
-    title: 'Visión a largo plazo del sistema energético (oferta y demanda de combustibles y electricidad) con la transformación del mercado hacia equipos energéticamente eficientes.',
-    image: `${path}/speakers/Ignacio-Sagradoy.png`,
-    // url: '',
-    expositor: 'Ing. Ignacio Sagardoy, MSc',
-    role: 'Investigador - Fundación Bariloche de Argentina',
-    download: `${expos}/06_2022_11_Presentacion_Ecuador.pdf`,
-  },
-  {
-    title: 'Estudio de prospectiva en el sector transporte de Ecuador',
-    image: `${path}/speakers/Francisco-Terneus.png`,
-    // url: '',
-    expositor: 'Ing, Francisco Terneus, PhD(c)',
-    role: 'Facultad de Ciencias Administrativas - Escuela Politécnica Nacional',
-    download: `${expos}/07_Foro_Prospectiva_Energetica_171122_1800.pdf`,
-  },
-  {
-    title: 'Modelo de prospectiva energética para México',
-    image: `${path}/speakers/Juan-I-Navarrete.png`,
-    // url: '',
-    expositor: 'Ing. Juan I. Navarrete, MSc',
-    role: 'Director de Políticas y Programas - Comisión Nacional para el Uso Eficiente de la Energía (CONUEE-SENER)',
-    download: `${expos}/08_ProspectivaMX_Ecuador.pdf`,
-  },
-  {
-    title: 'Tasas biofísicas de retorno energético en el uso de biocombustibles para el Ecuador',
-    image: '/integrantes/Ghem-Carvajal.png',
-    // url: '',
-    expositor: 'Ing. Ghem Carvajal, MSc',
-    role: 'Facultad de Ingeniería Química - Universidad Central del Ecuador',
-    download: `${expos}/09_tre_biocombustibles_nov22.pdf`,
   },
 ]

@@ -10,4 +10,4 @@ Durante el evento de lanzamiento se dio a conocer la Hoja de Ruta y Estrategia N
 
 Ecuador está ejecutando varios proyectos y estrategias para alcanzar el compromiso de las NDC (Contribuciones Determinadas a Nivel Nacional), reducir las emisiones entre un 20 - 25% para 2025.
 
-![imagenes del evento](/noticias/participacion-en-el-evento-de-lanzamiento-de-hoja-de-ruta-y-estrategia-nacional-del-hidrógeno-verde-para-el-ecuador.jpeg)
+![El Director del Instituto de Investigaciones Hidrocarburíferas de la Universidad Central del Ecuador, PhD Rony Parra, frente al público](/noticias/participacion-en-el-evento-de-lanzamiento-de-hoja-de-ruta-y-estrategia-nacional-del-hidrógeno-verde-para-el-ecuador.jpeg)
