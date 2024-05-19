@@ -374,7 +374,7 @@ const expos = '/eventos/foro-internacional-prospectiva-energetica/expositions'
 export const expositions = [
   {
     title: 'Seguridad y sostenibilidad de los sistemas futuros de energía (fósil y electricidad)',
-    image: `${path}/speakers/Nazarychev-Alexander-Nikolaevich.png`,
+    image: `${path}/speakers/Nazarychev-Alexander-Nikolaevich.jpg`,
     // url: '',
     expositor: 'PhD. Nazarychev Alexander Nikolaevich',
     role: 'Profesor del Departamento de Energía Eléctrica y Electromecánica - Universidad de Minería de San Petersburgo',
@@ -382,7 +382,7 @@ export const expositions = [
   },
   {
     title: 'Visión a largo plazo del sistema energético de Ecuador',
-    image: `${path}/speakers/Enith-Carrion.png`,
+    image: `${path}/speakers/Enith-Carrion.jpg`,
     // url: '',
     expositor: 'Ing. Enith Carrión, MSc',
     role: 'Viceministra de Electricidad y Energía Renovable - Ministerio de Energía y Minas',
@@ -390,11 +390,11 @@ export const expositions = [
   },
   {
     title: 'Visualización y retos de la transición energética en ALC a mediano y largo plazo (uso de herramientas de prospectiva de OLADE)',
-    image: `${path}/speakers/Medardo-Cadena.png`,
+    image: `${path}/speakers/Medardo-Cadena.jpg`,
     // url: '',
     expositor: 'Ing. Medardo Cadena, MSc',
     role: 'Director de Estudios, Proyectos e Información - Organización Latinoamericana de Energía (OLADE)',
-    download: `${expos}/03U_Presentación_OLADE.pdf`,
+    download: `${expos}/03U_Presentación_OLADE.jpg`,
   },
   {
     title: 'Prospectiva energética para el Ecuador con MuSIASEM o Multi-Scale Integrated Analysis and Ecosystem Metabolism',
@@ -406,7 +406,7 @@ export const expositions = [
   },
   {
     title: 'Visión a largo plazo del sistema energético (oferta y demanda de combustibles y electricidad) con la transformación del mercado hacia equipos energéticamente eficientes.',
-    image: `${path}/speakers/Ignacio-Sagradoy.png`,
+    image: `${path}/speakers/Ignacio-Sagradoy.jpg`,
     // url: '',
     expositor: 'Ing. Ignacio Sagardoy, MSc',
     role: 'Investigador - Fundación Bariloche de Argentina',
@@ -414,7 +414,7 @@ export const expositions = [
   },
   {
     title: 'Estudio de prospectiva en el sector transporte de Ecuador',
-    image: `${path}/speakers/Francisco-Terneus.png`,
+    image: `${path}/speakers/Francisco-Terneus.jpg`,
     // url: '',
     expositor: 'Ing, Francisco Terneus, PhD(c)',
     role: 'Facultad de Ciencias Administrativas - Escuela Politécnica Nacional',
@@ -422,7 +422,7 @@ export const expositions = [
   },
   {
     title: 'Modelo de prospectiva energética para México',
-    image: `${path}/speakers/Juan-I-Navarrete.png`,
+    image: `${path}/speakers/Juan-I-Navarrete.jpg`,
     // url: '',
     expositor: 'Ing. Juan I. Navarrete, MSc',
     role: 'Director de Políticas y Programas - Comisión Nacional para el Uso Eficiente de la Energía (CONUEE-SENER)',

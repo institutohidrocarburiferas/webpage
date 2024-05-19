@@ -101,7 +101,6 @@ const Home: NextPage<Props> = ({allPostsData}) => {
                 src="/logos/student-energy-uce.jpg"
               />
             </picture>
-
           </div>
 
           <div className='flex flex-col items-center w-full gap-10 mt-8 xl:gap-44 lg:flex-row'>
@@ -112,15 +111,9 @@ const Home: NextPage<Props> = ({allPostsData}) => {
               >
                   {t('EventInfoText')}
               </Link>
-
-              <div>
-                <RegisterButton className='' href={eventLinkForm}>
-                  Envíanos tu Póster hasta el 20 de Junio
-                </RegisterButton>
-                <span className="text-xs text-white lg:text-sm">
-                  Enlace habilitado del 20 de mayo al 20 de junio del 2024
-                </span>
-              </div>
+              <RegisterButton className='' href={eventLinkForm}>
+                Envíanos tu Póster hasta el 20 de Junio
+              </RegisterButton>
               <div>
                 <RegisterButton className='opacity-50 pointer-events-none' href={eventLinkRegister}>
                   Asiste al evento

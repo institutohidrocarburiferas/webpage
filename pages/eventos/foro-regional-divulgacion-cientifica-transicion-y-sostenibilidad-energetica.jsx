@@ -158,22 +158,9 @@ export default function Evento ({photos}) {
           {/* Registro y cuenta regresiva */}
           <section className="flex flex-col gap-10 mt-5">
             <div className="flex flex-col items-center justify-center gap-6 mx-auto w-fit">
-              <div>
-                <RegisterButton className="" href={pageData.eventPosterLink}>
-                  Envíanos tu Póster hasta el 20 de Junio
-                </RegisterButton>
-                <span className="text-xs text-white lg:text-sm">
-                  Enlace habilitado a partir del 20 de mayo
-                </span>
-              </div>
-              <div className='w-full'>
-                <RegisterButton className='opacity-50 pointer-events-none' href={pageData.eventLinkRegister}>
-                  Asiste al evento
-                </RegisterButton>
-                <span className="text-xs text-white lg:text-sm">
-                  Enlace habilitado a partir del 1 de junio
-                </span>
-              </div>
+              <RegisterButton className="" href={pageData.eventPosterLink}>
+                Envíanos tu Póster hasta el 20 de Junio
+              </RegisterButton>
               <a
                 className='w-full px-2 py-2 font-semibold text-center text-white transition-transform bg-transparent border border-white rounded md:px-6 sm:text-xl hover:bg-black/50 md:text-2xl lg:text-xl hover:scale-105 active:scale-95'
                 href="https://docs.google.com/presentation/d/1hoLy32EZvDsxL7ldU6PgsPjpPCLnxmJ5/edit#slide=id.p1"
@@ -182,6 +169,14 @@ export default function Evento ({photos}) {
               >
                 Revisa el formato del póster aquí
               </a>
+              <div className='w-full'>
+                <RegisterButton className='opacity-50 pointer-events-none' href={pageData.eventLinkRegister}>
+                  Asiste al evento
+                </RegisterButton>
+                <span className="text-xs text-white lg:text-sm">
+                  Enlace habilitado a partir del 1 de junio
+                </span>
+              </div>
             </div>
             <Countdown eventDate={pageData.eventDay} />
           </section>
@@ -257,9 +252,9 @@ export default function Evento ({photos}) {
               <ul className="font-semibold list-disc pl-7">
                 <li>
                   <Text>Petróleo y otras fuentes primarias de energía</Text>
-                  {/*<div className="font-normal my-4">
+                  {/* <div className="font-normal my-4">
                     Descripción del eje temático
-                  </div>*/}
+                  </div> */}
                 </li>
                 <li>
                   <Text>Sistemas renovables</Text>
