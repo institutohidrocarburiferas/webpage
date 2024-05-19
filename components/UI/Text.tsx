@@ -6,7 +6,7 @@ interface Props {
 }
 
 export const Text: React.FC<Props> = ({children, margin = true}) => {
-  return <p className={cn('text-sm leading-loose tracking-wide text-justify sm: text-md md:text-lg', {'mt-3 md:mt-6': margin})}>
+  return <p className={cn('text-sm leading-loose tracking-wide text-justify sm:text-base md:text-lg', {'mt-3 md:mt-6': margin})}>
     {children}
   </p>
 }

@@ -36,8 +36,8 @@ function ProgramItem ({time, label, expositor, institution}) {
     <div className="flex flex-col gap-2 pb-5 border-b-2">
       <time className="text-xl font-semibold md:text-2xl text-amber-400">{time}</time>
       <h3 className="text-xl font-semibold text-justify text-white md:text-2xl">{label}</h3>
-      <p className="font-semibold text-md md:text-xl">{expositor}</p>
-      <p className="text-sm md:text-md">{institution}</p>
+      <p className="font-semibold md:text-xl">{expositor}</p>
+      <p className="text-sm md:text-base">{institution}</p>
     </div>
   )
 }

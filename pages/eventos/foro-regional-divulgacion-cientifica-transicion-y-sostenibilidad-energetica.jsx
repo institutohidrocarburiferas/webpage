@@ -44,8 +44,8 @@ function ProgramItem ({time, label, expositor, institution}) {
     <div className="flex flex-col gap-2 pb-5 border-b-2">
       <time className="text-xl font-semibold md:text-2xl text-amber-400">{time}</time>
       <h3 className="text-xl font-semibold text-justify text-white md:text-2xl">{label}</h3>
-      <p className="text-md md:text-md">{expositor}</p>
-      <p className="text-md md:text-md">{institution}</p>
+      <p className="text-sm md:text-base">{expositor}</p>
+      <p className="text-sm md:text-base">{institution}</p>
     </div>
   )
 }
@@ -63,8 +63,8 @@ function SpeakerCard ({name, image, role, institute, objectFit = 'cover'}) {
         }}
         width={300}
       />
-      <section className="grid w-full gap-1 font-semibold text-center justify-content-start rounded-b-md">
-        <span className="text-sm font-bold md:text-md">{name}</span>
+      <section className="grid w-full gap-3 font-semibold text-center justify-content-start rounded-b-md">
+        <span className="text-sm font-bold md:text-base">{name}</span>
         <span className="text-xs md:text-sm">{role}</span>
         <span className="text-[0.7rem] font-thin text-pretty md:text-xs">{institute}</span>
       </section>
@@ -82,7 +82,7 @@ function SpeakerCard ({name, image, role, institute, objectFit = 'cover'}) {
 //         <h3 className="pb-5 text-lg font-semibold text-justify md:text-2xl">{title}</h3>
 //         <div className="flex items-center justify-between gap-2 md:gap-10">
 //           <div className="flex flex-col">
-//             <span className="text-sm font-bold md:text-md">{expositor}</span>
+//             <span className="text-sm font-bold md:text-base">{expositor}</span>
 //             <span className="text-xs md:text-sm">{role}</span>
 //           </div>
 //           <div>
