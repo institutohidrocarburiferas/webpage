@@ -66,7 +66,7 @@ function SpeakerCard ({name, image, role, institute, objectFit = 'cover'}) {
       <section className="grid w-full gap-1 font-semibold text-center justify-content-start rounded-b-md">
         <span className="text-sm font-bold md:text-md">{name}</span>
         <span className="text-xs md:text-sm">{role}</span>
-        <span className="text-[0.7rem] md:text-xs">{institute}</span>
+        <span className="text-[0.7rem] font-thin text-pretty md:text-xs">{institute}</span>
       </section>
     </section>
   )

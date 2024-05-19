@@ -14,7 +14,6 @@ import {Footer} from '@components/Layout/Footer'
 import {Countdown} from '@components/Countdown'
 import {HeroSection} from '@components/HeroSection'
 import {Participants} from '@components/Participants'
-import {RegisterButton} from '@components/RegisterButton'
 import {Sidebar} from '@components/Sidebar'
 import {
   programItems,
