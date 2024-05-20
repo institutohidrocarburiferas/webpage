@@ -263,8 +263,8 @@ export const speakers = [
   {
     name: 'MSc. Andrea Balcázar González ',
     image: `${path}/speakers/andrea-balcazar.webp`,
-    role: 'Docente Facultad de Ciencias Administrativas',
-    institute: 'Escuela Politécnica Nacional'
+    role: 'Tecnológico de Monterrey / Senior Fellowship Associate at Student Energy',
+    institute: 'Área: Sostenibilidad energética y responsabilidad social corporativa',
   },
 ]
 
