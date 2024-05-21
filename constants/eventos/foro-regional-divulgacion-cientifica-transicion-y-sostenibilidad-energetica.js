@@ -252,19 +252,25 @@ export const speakers = [
     name: 'MSc. Pablo Garcés',
     image: `${path}/speakers/pablo-garces.webp`,
     role: 'Dirección de Integración, Acceso y Seguridad Energética, OLADE',
-    institute: 'Asesor Técnico en Energía Renovable y Desarrollo Energético Sostenible.'
+    institute: 'Especialista asociado en Energía Renovable y Desarrollo Energético Sostenible.'
   },
   {
     name: 'PhD. Rony Parra',
     image: '/integrantes/Rony-Parra.png',
     role: 'Director Instituto de Investigaciones Hidrocarburíferas, UCE',
-    institute: 'Área de Investigación: Sostenibilidad desde los sistemas complejos y metabolismo energético.'
+    institute: 'Área de Investigación: Hidrocarburos, sistemas complejos y metabolismo energético.'
   },
   {
     name: 'MSc. Andrea Balcázar González ',
     image: `${path}/speakers/andrea-balcazar.webp`,
     role: 'Tecnológico de Monterrey / Senior Fellowship Associate at Student Energy',
     institute: 'Área: Sostenibilidad energética y responsabilidad social corporativa',
+  },
+  {
+    name: 'PhD. Juan Fernando Saldarriaga',
+    image: `${path}/speakers/juan-fernando.webp`,
+    role: 'Investigador - Universidad de los Andes, Colombia',
+    institute: 'Área de Investigación: Procesos químicos y desarrollo sostenible.'
   },
 ]
 
