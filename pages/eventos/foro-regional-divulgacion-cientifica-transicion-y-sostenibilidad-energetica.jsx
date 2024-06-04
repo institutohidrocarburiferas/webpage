@@ -178,7 +178,7 @@ export default function Evento ({photos}) {
                   Asiste al evento
                 </RegisterButton>
                 <span className="text-xs text-white lg:text-sm">
-                  Enlace habilitado a partir del 1 de junio
+                  Enlace habilitado a partir del 1 de julio
                 </span>
               </div>
             </div>
