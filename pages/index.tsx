@@ -18,7 +18,7 @@ import {getPostsData, PostsData} from '@utils/posts'
 const eventDay = new Date(2024, 6, 26, 8)
 const eventURL = '/eventos/foro-regional-divulgacion-cientifica-transicion-y-sostenibilidad-energetica'
 const eventLinkForm = 'https://docs.google.com/forms/d/e/1FAIpQLSeA3I-XTxDS0pjfgVLVrOXFni2D7LYteNxGFOftdm_eNxa-7A/viewform'
-const eventLinkRegister = '' // 'https://docs.google.com/forms/d/e/1FAIpQLSdcVReGJZ7uxn8FbtWV7yB8wcKZ55fXs1cnXg5Zl6QbJBm2vA/closedform'
+const eventLinkRegister = 'https://docs.google.com/forms/d/e/1FAIpQLSdcVReGJZ7uxn8FbtWV7yB8wcKZ55fXs1cnXg5Zl6QbJBm2vA/closedform'
 
 const pageData = {
   title: 'Instituto de Investigaciones Hidrocarburíferas',
@@ -114,7 +114,7 @@ const Home: NextPage<Props> = ({allPostsData}) => {
                 Envíanos tu Póster hasta el 20 de Junio
               </RegisterButton>
               <div>
-                <RegisterButton className='opacity-50 pointer-events-none' href={eventLinkRegister}>
+                <RegisterButton className='' href={eventLinkRegister}>
                   Asiste al evento
                 </RegisterButton>
                 <span className="text-xs text-white lg:text-sm">Inscripciones a partir del 1 de Julio</span>

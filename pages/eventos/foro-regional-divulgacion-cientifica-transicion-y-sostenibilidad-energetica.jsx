@@ -29,7 +29,7 @@ const pageData = {
   image: '/prueba.png',
   eventDay: new Date(2024, 6, 26, 8),
   eventPosterLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeA3I-XTxDS0pjfgVLVrOXFni2D7LYteNxGFOftdm_eNxa-7A/viewform',
-  eventLinkRegister: ''// 'https://docs.google.com/forms/d/e/1FAIpQLSdcVReGJZ7uxn8FbtWV7yB8wcKZ55fXs1cnXg5Zl6QbJBm2vA/closedform'
+  eventLinkRegister: 'https://docs.google.com/forms/d/e/1FAIpQLSdcVReGJZ7uxn8FbtWV7yB8wcKZ55fXs1cnXg5Zl6QbJBm2vA/closedform'
 }
 const heroContent = {
   title: 'FORO REGIONAL DE DIVULGACIÓN CIENTÍFICA: TRANSICIÓN Y SOSTENIBILIDAD ENERGÉTICA',
@@ -163,7 +163,7 @@ export default function Evento ({photos}) {
           <section className="flex flex-col gap-10 mt-5">
             <div className="flex flex-col items-center justify-center gap-6 mx-auto w-fit">
               <RegisterButton className="" href={pageData.eventPosterLink}>
-                Envíanos tu Póster hasta el 20 de Junio
+                Envíanos tu Póster hasta el 20 de Julio
               </RegisterButton>
               <a
                 className='w-full px-2 py-2 font-semibold text-center text-white transition-transform bg-transparent border border-white rounded md:px-6 sm:text-xl hover:bg-black/50 md:text-2xl lg:text-xl hover:scale-105 active:scale-95'
@@ -174,7 +174,7 @@ export default function Evento ({photos}) {
                 Revisa el formato del póster aquí
               </a>
               <div className='w-full'>
-                <RegisterButton className='opacity-50 pointer-events-none' href={pageData.eventLinkRegister}>
+                <RegisterButton className='' href={pageData.eventLinkRegister}>
                   Asiste al evento
                 </RegisterButton>
                 <span className="text-xs text-white lg:text-sm">
