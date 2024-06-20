@@ -237,7 +237,7 @@ export const programItems = [
     time: '26 de julio de 2024',
     label: 'Foro Regional de Divulgación Científica',
     expositor: '',
-    institution: 'Lugar: Biblioteca de la Univeersidad Central del Ecuador',
+    institution: 'Lugar: Teatro Universitario de la Universidad Central del Ecuador',
   },
 ]
 
