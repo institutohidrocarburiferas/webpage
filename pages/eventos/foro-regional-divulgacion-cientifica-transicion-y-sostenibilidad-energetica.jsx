@@ -162,8 +162,8 @@ export default function Evento ({photos}) {
           {/* Registro y cuenta regresiva */}
           <section className="flex flex-col gap-10 mt-5">
             <div className="flex flex-col items-center justify-center gap-6 mx-auto w-fit">
-              <RegisterButton className="" href={pageData.eventPosterLink}>
-                Envíanos tu Póster hasta el 20 de Julio
+              {/*<RegisterButton className="" href={pageData.eventPosterLink}>
+                Envíanos tu Póster hasta el 20 de Junio
               </RegisterButton>
               <a
                 className='w-full px-2 py-2 font-semibold text-center text-white transition-transform bg-transparent border border-white rounded md:px-6 sm:text-xl hover:bg-black/50 md:text-2xl lg:text-xl hover:scale-105 active:scale-95'
@@ -172,7 +172,7 @@ export default function Evento ({photos}) {
                 target="_blank"
               >
                 Revisa el formato del póster aquí
-              </a>
+              </a>*/}
               <div className='w-full'>
                 <RegisterButton className='' href={pageData.eventLinkRegister}>
                   Asiste al evento

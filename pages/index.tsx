@@ -110,9 +110,9 @@ const Home: NextPage<Props> = ({allPostsData}) => {
               >
                   {t('EventInfoText')}
               </Link>
-              <RegisterButton className='' href={eventLinkForm}>
+              {/*<RegisterButton className='' href={eventLinkForm}>
                 Envíanos tu Póster hasta el 20 de Junio
-              </RegisterButton>
+              </RegisterButton>*/}
               <div>
                 <RegisterButton className='' href={eventLinkRegister}>
                   Asiste al evento

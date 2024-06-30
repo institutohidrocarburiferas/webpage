@@ -223,7 +223,7 @@ export const programItems = [
     institution: 'Notificación por correo electrónico'
   },
   {
-    time: ' Hasta el 19 de julio de 2024',
+    time: ' Hasta el 15 de julio de 2024',
     label: 'Envío de artículos completos para el libro de actas',
     expositor: '',
     institution: <a className='block w-fit my-2 border py-2 px-4 hover:bg-black/50 hover:scale-105 transition-transform active:scale-95' href="https://docs.google.com/document/d/1-TajDn8lNW0z5Ggt1PTYDmyDxqxlbGD0/edit?pli=1" rel='noopener noreferrer' target="_blank">Formato Artículo Corto</a>, // Link EN # .....de Los FORMATOS
