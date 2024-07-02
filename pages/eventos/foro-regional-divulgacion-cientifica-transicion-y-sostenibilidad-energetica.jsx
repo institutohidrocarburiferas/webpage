@@ -29,7 +29,7 @@ const pageData = {
   image: '/prueba.png',
   eventDay: new Date(2024, 6, 26, 8),
   eventPosterLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeA3I-XTxDS0pjfgVLVrOXFni2D7LYteNxGFOftdm_eNxa-7A/viewform',
-  eventLinkRegister: 'https://docs.google.com/forms/d/e/1FAIpQLSdcVReGJZ7uxn8FbtWV7yB8wcKZ55fXs1cnXg5Zl6QbJBm2vA/closedform'
+  eventLinkRegister: 'https://forms.gle/xPjJxJf9iS2Roexi6'
 }
 const heroContent = {
   title: 'FORO REGIONAL DE DIVULGACIÓN CIENTÍFICA: TRANSICIÓN Y SOSTENIBILIDAD ENERGÉTICA',
@@ -162,7 +162,7 @@ export default function Evento ({photos}) {
           {/* Registro y cuenta regresiva */}
           <section className="flex flex-col gap-10 mt-5">
             <div className="flex flex-col items-center justify-center gap-6 mx-auto w-fit">
-              <RegisterButton className="" href={pageData.eventPosterLink}>
+              {/*<RegisterButton className="" href={pageData.eventPosterLink}>
                 Envíanos tu Póster hasta el 20 de Julio
               </RegisterButton>
               <a
@@ -172,7 +172,7 @@ export default function Evento ({photos}) {
                 target="_blank"
               >
                 Revisa el formato del póster aquí
-              </a>
+              </a>*/}
               <div className='w-full'>
                 <RegisterButton className='' href={pageData.eventLinkRegister}>
                   Asiste al evento
