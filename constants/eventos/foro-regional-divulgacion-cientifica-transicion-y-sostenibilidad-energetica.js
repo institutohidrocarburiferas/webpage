@@ -215,7 +215,7 @@ export const programItems = [
     time: '20 de mayo - 20 junio 2024',
     label: 'Envío de pósters',
     expositor: 'Mediante enlace habilitado',
-    institution: <a className='block w-fit my-2 border py-2 px-4 hover:bg-black/50 hover:scale-105 transition-transform active:scale-95' href="https://docs.google.com/presentation/d/1hoLy32EZvDsxL7ldU6PgsPjpPCLnxmJ5/edit#slide=id.p1" rel='noopener noreferrer' target="_blank">Formato Póster</a>,
+    institution: <a className='block px-4 py-2 my-2 transition-transform border w-fit hover:bg-black/50 hover:scale-105 active:scale-95' href="https://docs.google.com/presentation/d/1hoLy32EZvDsxL7ldU6PgsPjpPCLnxmJ5/edit#slide=id.p1" rel='noopener noreferrer' target="_blank">Formato Póster</a>,
   },
   {
     time: '30 de junio 2024',
@@ -226,7 +226,7 @@ export const programItems = [
     time: ' Hasta el 15 de julio de 2024',
     label: 'Envío de artículos completos para el libro de actas',
     expositor: '',
-    institution: <a className='block w-fit my-2 border py-2 px-4 hover:bg-black/50 hover:scale-105 transition-transform active:scale-95' href="https://docs.google.com/document/d/1-TajDn8lNW0z5Ggt1PTYDmyDxqxlbGD0/edit?pli=1" rel='noopener noreferrer' target="_blank">Formato Artículo Corto</a>, // Link EN # .....de Los FORMATOS
+    institution: <a className='block px-4 py-2 my-2 transition-transform border w-fit hover:bg-black/50 hover:scale-105 active:scale-95' href="https://docs.google.com/document/d/1-TajDn8lNW0z5Ggt1PTYDmyDxqxlbGD0/edit?pli=1" rel='noopener noreferrer' target="_blank">Formato Artículo Corto</a>, // Link EN # .....de Los FORMATOS
   },
   {
     time: '01 de julio de 2024',
@@ -237,7 +237,7 @@ export const programItems = [
     time: '26 de julio de 2024',
     label: 'Foro Regional de Divulgación Científica',
     expositor: '',
-    institution: 'Lugar: Teatro Universitario de la Universidad Central del Ecuador',
+    institution: 'Lugar: Biblioteca General de la Universidad Central del Ecuador',
   },
 ]
 
