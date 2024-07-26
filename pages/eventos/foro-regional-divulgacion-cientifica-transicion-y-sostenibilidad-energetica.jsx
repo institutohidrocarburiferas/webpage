@@ -176,7 +176,7 @@ export default function Evento ({photos}) {
               </a>*/}
               <div className='w-full'>
                 <RegisterButton className='' href={pageData.eventActa}>
-                  Descarga el libro de actas
+                  Descarga el libro de Actas 
                 </RegisterButton>
                 <span className="text-xs text-white lg:text-sm">
                   {/*Enlace habilitado a partir del 1 de julio*/}
