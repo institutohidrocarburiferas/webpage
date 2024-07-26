@@ -29,7 +29,8 @@ const pageData = {
   image: '/prueba.png',
   eventDay: new Date(2024, 6, 26, 8),
   eventPosterLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeA3I-XTxDS0pjfgVLVrOXFni2D7LYteNxGFOftdm_eNxa-7A/viewform',
-  eventLinkRegister: 'https://docs.google.com/forms/d/e/1FAIpQLSdcVReGJZ7uxn8FbtWV7yB8wcKZ55fXs1cnXg5Zl6QbJBm2vA/closedform'
+  eventLinkRegister: 'https://docs.google.com/forms/d/e/1FAIpQLSdcVReGJZ7uxn8FbtWV7yB8wcKZ55fXs1cnXg5Zl6QbJBm2vA/closedform',
+  eventActa: 'https://uceedu-my.sharepoint.com/:b:/g/personal/iih_uce_edu_ec/EVnLx0kz3MFOve8cHV7hhzwBgJ-0AKTNFXoyd_AAOmEdjA?e=EmEeNi'
 }
 const heroContent = {
   title: 'FORO REGIONAL DE DIVULGACIÓN CIENTÍFICA: TRANSICIÓN Y SOSTENIBILIDAD ENERGÉTICA',
@@ -174,11 +175,11 @@ export default function Evento ({photos}) {
                 Revisa el formato del póster aquí
               </a>*/}
               <div className='w-full'>
-                <RegisterButton className='' href={pageData.eventLinkRegister}>
-                  Asiste al evento
+                <RegisterButton className='' href={pageData.eventActa}>
+                  Descarga el libro de actas
                 </RegisterButton>
                 <span className="text-xs text-white lg:text-sm">
-                  Enlace habilitado a partir del 1 de julio
+                  {/*Enlace habilitado a partir del 1 de julio*/}
                 </span>
               </div>
             </div>
