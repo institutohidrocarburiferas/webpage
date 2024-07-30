@@ -30,7 +30,7 @@ const pageData = {
   eventDay: new Date(2024, 6, 26, 8),
   eventPosterLink: 'https://docs.google.com/forms/d/e/1FAIpQLSeA3I-XTxDS0pjfgVLVrOXFni2D7LYteNxGFOftdm_eNxa-7A/viewform',
   eventLinkRegister: 'https://docs.google.com/forms/d/e/1FAIpQLSdcVReGJZ7uxn8FbtWV7yB8wcKZ55fXs1cnXg5Zl6QbJBm2vA/closedform',
-  eventActa: 'https://uceedu-my.sharepoint.com/:b:/g/personal/iih_uce_edu_ec/EVnLx0kz3MFOve8cHV7hhzwBgJ-0AKTNFXoyd_AAOmEdjA?e=EmEeNi'
+  eventActa: 'https://drive.google.com/file/d/1wccE7_BHml0QWutnKbJsz322YOwUpd5C/view'
 }
 const heroContent = {
   title: 'FORO REGIONAL DE DIVULGACIÓN CIENTÍFICA: TRANSICIÓN Y SOSTENIBILIDAD ENERGÉTICA',
@@ -203,7 +203,7 @@ export default function Evento ({photos}) {
                 El evento esta organizado por el Instituto de Investigaciones Hidrocarburíferas de
                 la Universidad Central del Ecuador en coordinarción con la Organización Latinoamericana
                 de Energía - OLADE y Student Energy,  se desarrollará el 26 de julio de 2024 en el
-                Teatro Universitario de la Cuidadela Universitaria.
+                Centro de Información Integral de la Universidad Central del Ecuador.
               </Text>
             </section>
             <section className="w-2/3 mx-auto md:w-1/3">
@@ -494,7 +494,7 @@ export default function Evento ({photos}) {
               className="w-full my-5 bg-gray-200 border-none h-96"
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
-              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.7938196702685!2d-78.50461142545758!3d-0.20079379979722797!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a40965d8b39%3A0x577d643e33c6aff4!2sTeatro%20Universitario%20-%20UCE!5e0!3m2!1ses-419!2sec!4v1716057068971!5m2!1ses-419!2sec"
+              src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3989.794303962263!2d-78.50574019999999!3d-0.1987994!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x91d59a46e4cd72f7%3A0x1a520161ab60d7c5!2sCentro%20de%20Informaci%C3%B3n%20Integral!5e0!3m2!1ses-419!2sec!4v1722307947018!5m2!1ses-419!2sec"
             />
           </section>
         </div>
