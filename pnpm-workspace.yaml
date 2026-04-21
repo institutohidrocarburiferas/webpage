@@ -1,0 +1,4 @@
+ignoreScripts: true
+minimumReleaseAge: 2880 #2 días
+blockExoticSubdeps: true
+trustPolicy: no-downgrade
